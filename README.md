@@ -5,37 +5,51 @@ Pythonを活用し、制御理論の直感的理解からAI統合型制御設計
 
 ---
 
-## 🧭 全体構成（Two-Part Curriculum）
+## 🧭 構成概要：制御理論とAI制御の2系統
 
-### 🧱 第1部：制御理論（Part 1: Control Theory）
+EduControllerは、全9章から構成され、以下の2系統に分類されます：
 
-| ディレクトリ名 | 内容 | 主なキーワード |
-|----------------|------|----------------|
-| `part01_classical/` | 古典制御理論 | PID、ボード線図、安定性判別 |
-| `part02_modern/`    | 現代制御理論 | 状態空間、LQR、カルマンフィルタ |
-| `part03_adaptive/`  | 適応・ロバスト制御 | MRAC、H∞制御、L1制御 |
-| `part04_digital/`   | デジタル制御と信号処理 | Z変換、FIR/IIR、FFT、離散PID |
-| `part05_practical/` | 実装・演習編 | Python/ROS実装、マイコン制御、FPGA入門 |
+- 🎓 **制御理論系（Part 01〜05）**  
+  古典制御から現代制御、デジタル制御・実装技術までの体系的な章群
+
+- 🤖 **AI制御系（Part 06〜09）**  
+  ニューラルネット・強化学習・データ駆動・LLM統合など、AIによる次世代制御手法を扱う章群
+
+※各章は独立して学べますが、AI制御系は制御理論の基礎知識を前提とします。
 
 ---
 
-### 🤖 第2部：AIによる制御（Part 2: AI-based Control）
+## 📚 章構成一覧（リンク付き）
 
-| ディレクトリ名 | 内容 | 主なキーワード |
-|----------------|------|----------------|
-| `part06_nn_control/`     | ニューラルネット制御 | NN-PID、逆モデル、時系列制御 |
-| `part07_rl_control/`     | 強化学習制御 | Q学習、DDPG、PPO、報酬設計 |
-| `part08_data_driven/`    | データ駆動制御 | Koopman、行列識別、モデリング |
-| `part09_llm_hybrid/`     | ハイブリッド・LLM統合制御 | FSM×PID×LLM、AITL構想、ChatGPT連携 |
+### 🎓 制御理論系（Control Theory）
+
+| 章 | ディレクトリ | 内容概要 |
+|----|----------------|----------|
+| Part 01 | [part01_classical](./part01_classical/) | 古典制御理論（PID、周波数解析、安定性） |
+| Part 02 | [part02_modern](./part02_modern/) | 現代制御理論（状態空間、LQR、カルマン） |
+| Part 03 | [part03_adaptive](./part03_adaptive/) | 適応・ロバスト制御（MRAC、H∞、L1） |
+| Part 04 | [part04_digital](./part04_digital/) | デジタル制御とDSP（Z変換、FFTなど） |
+| Part 05 | [part05_practical](./part05_practical/) | 実装・演習編（Python、ROS、FPGAなど） |
+
+---
+
+### 🤖 AI制御系（AI-based Control）
+
+| 章 | ディレクトリ | 内容概要 |
+|----|----------------|----------|
+| Part 06 | [part06_nn_control](./part06_nn_control/) | ニューラルネット制御（NN-PID、逆モデル） |
+| Part 07 | [part07_rl_control](./part07_rl_control/) | 強化学習制御（Q学習、DDPG、PPO） |
+| Part 08 | [part08_data_driven](./part08_data_driven/) | データ駆動制御（Koopman、行列識別） |
+| Part 09 | [part09_llm_hybrid](./part09_llm_hybrid/) | LLM統合・ハイブリッド制御（FSM×PID×LLM） |
 
 ---
 
 ## 🔧 推奨ツール / Tools
 
 - Python：`control`, `scipy`, `matplotlib`, `torch`, `gymnasium`, `stable-baselines3`
-- MATLAB / Simulink（オプション）
 - Jupyter Notebook（演習と可視化）
 - ROS（リアルタイム実装例）
+- MATLAB / Simulink（オプション）
 - ChatGPT / GPT-4o（LLM連携）
 
 ---
@@ -49,35 +63,16 @@ Pythonを活用し、制御理論の直感的理解からAI統合型制御設計
 
 ---
 
-## 📂 ディレクトリ構成（統一形式）
-
-```
-EduController/
-├── part01_classical/        # 古典制御理論
-├── part02_modern/           # 現代制御理論
-├── part03_adaptive/         # 適応・ロバスト制御
-├── part04_digital/          # デジタル制御とDSP
-├── part05_practical/        # 実装・演習編
-├── part06_nn_control/       # ニューラルネット制御
-├── part07_rl_control/       # 強化学習による制御
-├── part08_data_driven/      # データ駆動型制御
-├── part09_llm_hybrid/       # LLM統合・AITL構想
-└── README.md
-
-```
-
----
-
 ## 🔖 ライセンス / License
 
-MIT License © 2025 Shinichi Samizo  
+MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
 本教材は教育・研究・個人学習の目的で自由にご利用いただけます。
 
 ---
 
-## 📬 お問い合わせ
+## 📬 お問い合わせ / Contact
 
-- GitHub: [Samizo-AITL](https://github.com/Samizo-AITL)
-- Email: shin3t72@gmail.com
+- GitHub: [Samizo-AITL](https://github.com/Samizo-AITL)  
+- Email: [shin3t72@gmail.com](mailto:shin3t72@gmail.com)
 
 ---
