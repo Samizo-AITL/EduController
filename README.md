@@ -63,6 +63,20 @@ EduControllerは、全9章から構成され、以下の2系統に分類され�
 
 ---
 
+## 🔗 関連プロジェクト / Related Projects
+
+EduControllerは、以下のプロジェクトと連携・相互参照されています：
+
+### 🧩 [Edusemi v4.x](https://github.com/Samizo-AITL/Edusemi-v4x)  
+半導体教育に特化した教材プロジェクト。プロセス・回路・レイアウト設計を横断的に扱い、Python自動化やSoC設計も含まれます。  
+**特別編では、AITL-H構想やLLM連携制御とも統合**されています。
+
+### 🤖 [AITL-H：Hybrid型知能制御](https://github.com/Samizo-AITL/AITL-H)  
+人型ロボットなどに向けた**階層型構造知能制御フレームワーク**。  
+**FSM（本能）＋PID（理性）＋LLM（知性）**の3層によるハイブリッド制御を提案し、本教材の最終章（Part 09）と連動しています。
+
+---
+
 ## 🔖 ライセンス / License
 
 MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
