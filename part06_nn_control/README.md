@@ -1,62 +1,77 @@
 # 🤖 Part 6: ニューラルネットによる制御（Neural Network-based Control）
 
-本章では、ニューラルネットワーク（NN）を用いた制御器設計手法を扱います。  
-従来のPID制御をNNで置き換えたり、非線形系への適応を行うための基礎的アプローチを学びます。
+本章では、ニューラルネットワーク（NN）を用いた制御手法を学びます。  
+従来のPID制御との比較や、NNによる補正・逆モデル制御、強化学習との接続可能性について扱います。
 
 ---
 
 ## 🎯 学習目標 / Learning Objectives
 
-- NN制御の基本原理（関数近似・逆モデル）を理解する
-- ニューラルPID（NN-PID）制御器を設計・訓練する
-- LSTMやRNNによる時系列制御の適用例を知る
-- PythonとPyTorchによる実装を体験する
-- 従来のPID制御との比較と利点・限界を理解する
+- NN制御の基本原理（関数近似・逆モデル）を理解する  
+- ニューラルPID（NN-PID）制御器を設計・訓練する  
+- 逆モデル学習によるフィードフォワード制御を実装する  
+- PIDとの比較や統合設計（AITL構想）を考察する
 
 ---
 
-## 🧩 主なトピック / Key Topics
+## 📁 ディレクトリ構成
 
-| トピック | 内容 |
-|----------|------|
-| NN制御の概要 | 制御則の関数近似、非線形系への適用 |
-| NN-PID制御 | PIDゲインをNNが学習・調整 |
-| 逆モデル制御 | 入力から出力を予測して逆算する制御器 |
-| 時系列制御 | LSTMやGRUによるシーケンス予測 |
-| 実装例 | PyTorch + SciPy + Gymでの実験例
-
----
-
-## 📂 サブフォルダ構成
-```
+```plaintext
 part06_nn_control/
-├── theory/         # 理論解説（MarkdownまたはPDF）
-├── notebooks/      # Jupyter実験ノート
-├── python/         # PyTorchによる実装例
-├── figures/        # 構成図・学習曲線・応答グラフ
-└── README.md
+├── theory/                   # 理論資料（Markdown）
+│   ├── 01_nn_control.md
+│   ├── 02_nn_pid.md
+│   ├── 03_inverse_model.md
+│   └── 04_ai_vs_classical.md
+├── simulation/               # PyTorchなどによるコード実装
+│   ├── nn_pid_control.py
+│   ├── inverse_model_train.py
+│   └── ai_vs_pid_sim.py
+├── notebooks/                # 可視化・実験Notebook
+│   ├── train_nn_pid.ipynb
+│   └── (future) ai_vs_pid_comparison.ipynb
+├── figures/                  # 図版フォルダ
+│   └── nn_pid_structure.png など
+└── README.md                # 本章の概要と進捗まとめ
 ```
----
-
-## 🛠️ 推奨ツール / Tools
-
-- Python: `torch`, `numpy`, `matplotlib`, `scipy`
-- Jupyter: 実験・可視化用
-- 学習対象モデル：一次遅れ系、二次系、非線形関数モデルなど
 
 ---
 
-## 🔗 関連資料
+## 🧪 実験コードとNotebook
 
-- Suykens, J.A.K. “Neural Networks for Nonlinear Control”
-- PyTorch Docs: https://pytorch.org/docs/
-- EduController 第1部との比較視点：PID vs NN-PID
+| 内容                           | ファイル名                                                    |
+|--------------------------------|---------------------------------------------------------------|
+| NN-PID制御器（PyTorch）        | [`nn_pid_control.py`](./simulation/nn_pid_control.py)         |
+| NN制御の学習・可視化           | [`train_nn_pid.ipynb`](./notebooks/train_nn_pid.ipynb)        |
+| 逆モデル制御の学習             | [`inverse_model_train.py`](./simulation/inverse_model_train.py) |
+| PID vs NN 比較シミュレーション | [`ai_vs_pid_sim.py`](./simulation/ai_vs_pid_sim.py)           |
+
+---
+
+## 🧠 理論資料（Markdown）
+
+| タイトル                         | ファイル                                                    |
+|----------------------------------|-------------------------------------------------------------|
+| NN制御の概要と特徴               | [`01_nn_control.md`](./theory/01_nn_control.md)             |
+| NN-PID制御の構成と学習方法       | [`02_nn_pid.md`](./theory/02_nn_pid.md)                     |
+| 逆モデル制御の理論と実装         | [`03_inverse_model.md`](./theory/03_inverse_model.md)       |
+| AI制御と古典制御の比較と統合戦略 | [`04_ai_vs_classical.md`](./theory/04_ai_vs_classical.md)   |
 
 ---
 
-## 📌 備考
+ ## 🔜 今後の展開（Next Steps）
 
-本章では「モデルベース制御」と「データ駆動制御」の橋渡しとして、NNを使った制御の**直感と構造理解**を目的とします。  
-制御性能の安定性・学習性・一般化など、従来手法との比較も重視します。
+- LSTMやTransformerによる時系列制御への応用  
+- 強化学習ベース制御への接続（→ [`part07_rl_control/`](../part07_rl_control/)）  
+- AITL構想との統合：PID + NN + LLMによる三層制御アーキテクチャ（→ [`part09_llm_control/`](../part09_llm_control/)）
 
 ---
+
+## 📚 参考文献・リンク
+
+- [PyTorch公式ドキュメント](https://pytorch.org/docs/)
+- Narendra & Parthasarathy, “Neural Networks for Control”, 1990
+- 本教材：[EduController](https://github.com/Samizo-AITL/EduController)
+
+---
+
