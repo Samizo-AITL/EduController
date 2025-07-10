@@ -18,12 +18,12 @@
 制御対象 $P$ の動作が $u(t) \rightarrow y(t)$ で表されるとき、  
 **その逆関数** $P^{-1}$ をNNなどで学習し、目標出力 $y_d(t)$ を入力として制御入力 $u(t)$ を生成します。
 
-\[
+$$
 \begin{align*}
 y(t) &= P(u(t)) \\
 u(t) &= f_\theta(y_d(t), y(t), \dots) \approx P^{-1}(y_d)
 \end{align*}
-\]
+$$
 
 ---
 
