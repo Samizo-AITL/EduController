@@ -70,7 +70,7 @@ A = \begin{bmatrix} 0 & 1 \\\\ -2 & -3 \end{bmatrix}, \quad
 B = \begin{bmatrix} 0 \\\\ 1 \end{bmatrix}
 $$
 
-目標極（例）：$s = -2$, $s = -5$
+目標極（例）： $s = -2$, $s = -5$
 
 ---
 
