@@ -15,51 +15,56 @@
 
 ---
 
-## 🧩 主なトピック / Key Topics
+## 📁 ディレクトリ構成（予定）
 
-| トピック | 内容 |
-|----------|------|
-| Koopman制御 | 非線形系を線形作用素として近似・制御 |
-| 動的モード分解（DMD） | データからシステムダイナミクスを抽出 |
-| サブスペース同定 | 行列演算に基づく状態空間モデルの推定 |
-| 識別制御 | 入出力データから制御器を直接設計する手法 |
-| 制御対象 | カオス系、実データ系（例：DCモーター）など
-
----
-
-## 📂 サブフォルダ構成
-```
+```plaintext
 part08_data_driven/
-├── theory/         # データ駆動型制御の解説資料
-├── notebooks/      # Python実験ノート（Koopman, DMD等）
-├── python/         # 実装スクリプト（行列推定、同定制御器等）
-├── datasets/       # 制御対象の入出力データ（CSVなど）
-├── figures/        # 時系列、スペクトル、同定結果などの図
+├── theory/
+│   ├── 01_model_free_control.md
+│   ├── 02_koopman_operator.md
+│   ├── 03_dmd.md
+│   ├── 04_subspace_id.md
+│   └── 05_data_vs_model.md
+├── simulation/
+│   ├── koopman_linearization.py
+│   ├── dmd_analysis.py
+│   └── subspace_identification.py
+├── notebooks/
+│   └── koopman_vs_dmd_visual.ipynb
+├── figures/
 └── README.md
 ```
----
-
-## 🛠️ 推奨ツール / Tools
-
-- Python: `numpy`, `scipy`, `matplotlib`, `pandas`, `pykoopman`, `pyDMD`
-- データ形式：CSV, NumPy配列
-- 可視化：固有値配置、モード構造、再構成誤差 など
 
 ---
 
-## 🔗 関連資料
+## 📚 理論資料（Markdown）
 
-- Brunton & Kutz, “Data-Driven Science & Engineering”
-- https://github.com/dynamicslab/pykoopman
-- https://mathlab.github.io/PyDMD/
-- EduController 第1部との比較視点：モデルベース vs データ駆動
+| タイトル                    | ファイル名                                      |
+|-----------------------------|-------------------------------------------------|
+| モデルフリー制御の基礎       | [`01_model_free_control.md`](./theory/01_model_free_control.md) |
+| Koopman演算子と線形化        | [`02_koopman_operator.md`](./theory/02_koopman_operator.md)     |
+| 動的モード分解（DMD）        | [`03_dmd.md`](./theory/03_dmd.md)                               |
+| サブスペース同定            | [`04_subspace_id.md`](./theory/04_subspace_id.md)               |
+| モデルベース制御との比較     | [`05_data_vs_model.md`](./theory/05_data_vs_model.md)           |
+
+---
+
+## 🧪 実験コード（Python）
+
+- [`koopman_linearization.py`](./simulation/koopman_linearization.py)  
+- [`dmd_analysis.py`](./simulation/dmd_analysis.py)  
+- [`subspace_identification.py`](./simulation/subspace_identification.py)
 
 ---
 
-## 📌 備考
+## 📊 可視化Notebook
 
-データ駆動型制御は、AI制御と従来制御の**中間的な位置づけ**にあり、  
-実用システムでのモデル構築や予測制御において有用性が高い分野です。  
-本章ではデータ分析・行列演算・予測制御の統合を目指します。
+- [`koopman_vs_dmd_visual.ipynb`](./notebooks/koopman_vs_dmd_visual.ipynb)
 
 ---
+
+## 🔜 今後の展開（Next Steps）
+
+- Deep KoopmanやAutoencoderによる次世代識別法
+- 制御対象に特化したデータ拡張・識別器設計
+- AITL構想への応用（観測に基づく学習制御）
