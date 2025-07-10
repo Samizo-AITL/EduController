@@ -1,66 +1,64 @@
-# 🔄 Part 3: 適応制御・ロバスト制御（Adaptive and Robust Control）
+# 🔄 Part 03: 適応制御・ロバスト制御（Adaptive & Robust Control）
 
-本章では、制御対象の変動や不確かさに対応するための制御理論を扱います。  
-モデル不整合・パラメータ変動に強い制御系を設計するための基礎を学びます。
-
----
-
-## 🎯 学習目標 / Learning Objectives
-
-- 制御対象が変化する場合の課題と適応戦略を理解する
-- MRAC（モデル参照型適応制御）の構造と設計法を学ぶ
-- L1適応制御の基本思想を理解する
-- ゲインスケジューリングによる準適応戦略を学ぶ
-- H∞制御・μ解析によるロバスト性評価の概念を把握する
-- 代表的な適応制御系をPython/MATLABで実装する
+本章では、制御対象のパラメータ変動・モデリング誤差に対応する  
+**適応制御**と**ロバスト制御**について理論と実装の両面から学びます。  
+また、FSM×PID×LLMで構成される AITL-H における「理性層」の柔軟化技術としても位置づけられます。
 
 ---
 
-## 🧩 主なトピック / Key Topics
+## 🎯 学習目標
 
-| トピック | 内容 |
-|----------|------|
-| 適応制御の分類 | 直接法 vs 間接法、オンライン推定の有無 |
-| MRAC | モデル参照によるパラメータ調整系（MITルールなど） |
-| L1適応制御 | 高速推定と安定性の両立（低帯域出力） |
-| ゲインスケジューリング | 外部パラメータに応じた制御ゲイン切替 |
-| ロバスト制御概念 | モデル誤差に対するH∞制御の耐性設計 |
-| Python/MATLAB演習 | オンライン学習、リアルタイム適応シミュレーションなど
+- モデル変動・外乱に強い制御器の設計方法を理解する  
+- MRACやゲインスケジューリングなどの適応戦略を体験する  
+- H∞制御の基本概念と感度関数・補償関数を理解する  
+- FSM/LLMと連携した適応的な制御判断の構造を設計できる
 
 ---
 
-## 📂 サブフォルダ構成
-```
-part3_adaptive/
-├── theory/         # 適応・ロバスト制御の基礎理論
-├── examples/       # 時変系、不確かさを含む制御対象例
-├── python/         # Pythonコード（MRAC, L1, gain scheduling）
-├── matlab/         # MATLAB版適応制御実装
-├── figures/        # 構成図・応答グラフなど
-└── README.md
-```
+## 🧩 構成一覧
+
+### 📘 theory/
+
+| ファイル名                | 内容 |
+|---------------------------|------|
+| 01_adaptive_intro.md      | 適応制御の概要と必要性 |
+| 02_mrac_design.md         | MRAC（モデル参照型適応制御）の理論 |
+| 03_gain_scheduling.md     | ゲインスケジューリング制御の仕組み |
+| 04_robust_control.md      | ロバスト制御とH∞制御の基礎 |
+
+### 🧪 simulation/
+
+| スクリプト名              | 内容 |
+|---------------------------|------|
+| mrac_simulation.py        | MITルールによるMRACのステップ追従 |
+| gain_schedule_demo.py     | スケジューリングによる比例制御の補間 |
+| hinf_synthesis_demo.py    | 感度・補償関数のボード解析によるH∞デモ |
+
+### 🖼️ figures/
+
+| ファイル名                        | 内容 |
+|----------------------------------|------|
+| mrac_response.png                | MRAC応答曲線 |
+| gain_schedule_response.png       | GS制御の動的応答 |
+| hinf_sensitivity_response.png    | H∞制御における $S$/$T$ の周波数応答 |
+
 ---
 
-## 🛠️ 推奨ツール / Tools
+## 🔗 AITL-H連携ポイント
 
-- Python: `numpy`, `control`, `sympy`, `matplotlib`
-- MATLAB: `Robust Control Toolbox`, `Simulink`
-- Jupyter / Simulink を使った適応挙動の可視化推奨
-
----
-
-## 🔗 関連資料
-
-- Ioannou & Sun, “Robust Adaptive Control”
-- Narendra & Annaswamy, “Stable Adaptive Systems”
-- H∞制御とμ解析入門（Zhou & Doyle）
-- L1 Control Primer: https://arc.aiaa.org/doi/10.2514/1.G003472
+| AITL層 | 制御役割 | 本章との関係 |
+|--------|----------|--------------|
+| 本能（FSM） | 状態遷移制御 | モードごとのゲインスケジューリング |
+| 理性（PID） | 汎用的物理制御 | MRACでチューニング、H∞で保証強化 |
+| 知性（LLM） | 状況予測・判断 | 制御戦略選択・制御パラメータ提案支援 |
 
 ---
 
-## 📌 備考
+## 🚧 今後の展開予定
 
-適応制御は、状態推定と制御設計を**リアルタイムで行う**点が重要です。  
-本章では「学習しながら制御する」系の入門を目指します。
+- `05_l1_adaptive.md`：L1適応制御の設計原理  
+- `robust_block_diagram.png`：H∞制御構成図のAI生成  
+- `notebooks/`：MRAC・GSのインタラクティブ実験版追加  
+- `AITL連携図`：Part03を含む知能制御構造図の統合更新
 
 ---
