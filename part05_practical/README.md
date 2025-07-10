@@ -27,10 +27,11 @@
 
 ## 📊 ノートブック・図解
 
-| ディレクトリ                | 内容                             |
-|-----------------------------|----------------------------------|
-| [notebooks/](notebooks/)    | 制御可視化や検証用のJupyter演習 |
-| [figures/](figures/)        | 制御ブロック図・構成図等の図版  |
+| ファイル名                                 | 内容                                      |
+|--------------------------------------------|-------------------------------------------|
+| [notebooks/ros_pid_log_plot.py](notebooks/ros_pid_log_plot.py)     | ROSトピック可視化スクリプト（.py版）     |
+| [notebooks/ros_pid_log_plot.ipynb](notebooks/ros_pid_log_plot.ipynb) | 同上のNotebook形式（実験ログ記録向け）   |
+| [figures/](figures/)                        | 制御ブロック図・構成図などの図版         |
 
 ---
 
