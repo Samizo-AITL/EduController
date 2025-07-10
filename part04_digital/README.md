@@ -1,66 +1,65 @@
-# 💻 Part 4: デジタル制御と信号処理（Digital Control & Signal Processing）
+# 💻 Part 04: デジタル制御と信号処理（Digital Control & Signal Processing）
 
-本章では、離散時間領域での制御設計や信号処理を扱います。  
-サンプリング理論、Z変換、ディジタルPID設計、FIR/IIRフィルタ、FFTなど、  
-実装を意識したデジタル制御設計の基礎を学びます。
-
----
-
-## 🎯 学習目標 / Learning Objectives
-
-- 連続系と離散系の違いを理解し、サンプリングの基本を学ぶ
-- Z変換による離散時間系の記述と安定性解析を行う
-- 離散PID制御の設計法を理解し、シミュレーションできる
-- FIR/IIR フィルタの設計と特性を把握する
-- FFTを使った信号の周波数解析・雑音除去を体験する
-- 実際のディジタル制御設計プロセスを一通り実施する
+本章では、ディジタル実装を意識した制御設計と信号処理技術を体系的に学びます。  
+Z変換、離散PID、デジタルフィルタ、FFT解析など、実機マイコン制御にも直結する内容を扱います。
 
 ---
 
-## 🧩 主なトピック / Key Topics
+## 🎯 学習目標
 
-| トピック | 内容 |
-|----------|------|
-| 離散時間システム | サンプリング、ZOH、ディジタルモデル化 |
-| Z変換と極配置 | 離散系安定性、設計視点の違い |
-| 離散PID制御 | 前進差分/後退差分法によるディジタル制御設計 |
-| フィルタ設計 | FIR/IIRの原理と実装（scipy.signalなど） |
-| FFT解析 | 時系列信号のスペクトル可視化と処理 |
-| Python演習 | `scipy.signal`, `numpy.fft`, `control` などの応用
+- サンプリング理論を理解し、離散制御の基礎を習得する  
+- Z変換による離散伝達関数を構築できる  
+- 離散PID制御器を設計し、連続系と比較できる  
+- FIR/IIRフィルタを設計し、信号処理応用を体験する  
+- FFTを用いた信号の周波数解析・雑音除去を実施する
 
 ---
 
-## 📂 サブフォルダ構成
-```
-part4_digital/
-├── theory/         # 離散制御・DSPに関する解説資料
-├── examples/       # 離散化対象系、信号例
-├── python/         # Pythonコード（Z変換、PID、FFT等）
-├── matlab/         # MATLAB/Simulinkによる離散制御演習
-├── figures/        # サンプリング図、Bode応答、スペクトル図など
-└── README.md
-```
----
+## 📘 theory/
 
-## 🛠️ 推奨ツール / Tools
-
-- Python: `scipy.signal`, `numpy.fft`, `matplotlib`, `control`
-- MATLAB: 離散制御設計機能 + DSP System Toolbox
-- シミュレーション：Jupyter Notebook、MATLAB Live Script
+| ファイル名                 | 内容 |
+|----------------------------|------|
+| 01_sampling_theory.md      | サンプリング定理とZOHの基礎 |
+| 02_z_transform.md          | Z変換と離散時間伝達関数の構成 |
+| 03_digital_pid.md          | 離散PID制御器の設計と比較 |
+| 04_fir_iir_filter.md       | FIR/IIRフィルタの構造と設計法 |
+| 05_fft_analysis.md         | FFTによる信号の周波数分析と雑音除去 |
 
 ---
 
-## 🔗 関連資料
+## 🧪 simulation/
 
-- Franklin, Powell, Emami-Naeini, “Digital Control of Dynamic Systems”
-- Oppenheim & Schafer, “Discrete-Time Signal Processing”
-- Python SciPy Signal Documentation: https://docs.scipy.org/doc/scipy/reference/signal.html
+| スクリプト名              | 内容 |
+|----------------------------|------|
+| digital_pid.py             | 離散PIDと連続PIDの比較シミュレーション |
+| iir_fir_filter_demo.py (*) | FIR/IIR通過特性と応答の比較（予定） |
+| fft_noise_removal.py       | FFTを用いた周波数成分除去と信号再構成 |
+
+---
+
+## 🖼️ figures/
+
+| ファイル名                  | 内容 |
+|-----------------------------|------|
+| digital_pid_response.png    | 離散PIDと連続PIDのステップ応答比較 |
+| fft_spectrum.png            | FFTによる信号のスペクトルと除去後波形 |
 
 ---
 
-## 📌 備考
+## 🧩 応用展開例
 
-本章では、アナログからディジタルへと移る際の考え方の違いを明確にし、  
-**実装可能な制御理論と信号処理の橋渡し**を行います。
+| 分野 | 応用内容 |
+|------|----------|
+| マイコン制御 | 離散PIDやLPFを実装し、センサ信号処理 |
+| 振動抑制 | FFTによる振動検出とアクティブ制御 |
+| 通信処理 | 周波数帯域の整形とノイズ分離 |
+| FPGA処理 | FIR/IIRフィルタのハードウェア化 |
 
 ---
+
+## 🚧 今後の予定
+
+- `iir_fir_filter_demo.py` の補完・可視化対応  
+- `notebooks/`：インタラクティブNotebook版教材の追加  
+- `README_jp.md`：日本語と英語の切替構成化（オプション）  
+- `part05_implementation/` への接続準備
