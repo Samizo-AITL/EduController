@@ -1,0 +1,11 @@
+<launch>
+  <!-- PIDノードの起動 -->
+  <node pkg="your_package_name" type="ros_pid_node.py" name="pid_node" output="screen">
+    <!-- 制御パラメータをここで指定可能 -->
+    <param name="kp" value="1.0" />
+    <param name="ki" value="0.1" />
+    <param name="kd" value="0.01" />
+    <param name="target" value="1.0" />
+    <param name="dt" value="0.05" />
+  </node>
+</launch>
