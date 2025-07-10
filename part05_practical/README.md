@@ -1,68 +1,73 @@
 # 🧪 Part 5: 実装・応用編（Implementation and Applications）
 
-本章では、制御理論の実践的な応用に焦点を当て、  
-Python や MATLAB によるシミュレーション、ROS・FPGA・組込み系との連携など、  
-現実的な制御系設計と実装フローを学びます。
+この章では、制御理論を実際のシステムに適用するための  
+**Python実装・マイコン展開・ROS連携** などの実践的な応用手法を学びます。
 
 ---
 
-## 🎯 学習目標 / Learning Objectives
+## 📚 本章の構成
 
-- 制御理論をPythonやMATLABでシミュレーションできる
-- ROSやマイコン環境と制御アルゴリズムを接続する方法を知る
-- センサ・アクチュエータとのインタフェースを理解する
-- 状態推定・パラメータチューニングを実装ベースで体験する
-- FPGAやリアルタイム制御への発展的応用の方向性を掴む
-
----
-
-## 🧩 主なトピック / Key Topics
-
-| トピック | 内容 |
-|----------|------|
-| 制御理論のコード実装 | PID, LQR, Kalman などを Python / MATLAB で設計 |
-| Python実装 | `control`, `scipy`, `numpy`, `matplotlib` による可視化 |
-| 組込み連携 | Raspberry Pi, Arduino 等との簡易I/O制御 |
-| ROS連携 | トピック/サービスを使った動的制御系との接続（入門） |
-| FPGA制御入門 | RTLでのPID, FIR制御器の構成（概要） |
-| Jupyter演習 | インタラクティブな可視化と学習ツール化
+| セクション                     | 内容                                    |
+|-------------------------------|-----------------------------------------|
+| [01_simulation_setup.md](theory/01_simulation_setup.md) | Python制御シミュレーションの環境構築     |
+| [02_python_control.md](theory/02_python_control.md)     | Pythonによる制御設計の実装方法           |
+| [03_embedded_control.md](theory/03_embedded_control.md) | Arduino等のマイコン向け制御展開          |
+| [04_ros_control.md](theory/04_ros_control.md)           | ROS制御ノードの設計と通信構成            |
 
 ---
 
-## 📂 サブフォルダ構成
-```
-part5_practical/
-├── notebooks/      # Jupyterベースの演習教材
-├── python/         # スクリプトベースの制御設計コード
-├── ros/            # ROSベースの実験例（launch, pub/sub）
-├── embedded/       # マイコンやRaspberry Piとの連携
-├── fpga/           # Verilog/VHDLベース制御（設計例）
-├── figures/        # 回路図、ブロック図、システム構成図
-└── README.md
-```
----
+## 💻 実装・シミュレーションコード
 
-## 🛠️ 推奨ツール / Tools
-
-- Python: `control`, `scipy`, `jupyter`, `matplotlib`, `pyserial`
-- MATLAB / Simulink
-- ROS2 (Foxglove, rqt_plot, turtlesim などで可視化)
-- ハードウェア: Arduino, Raspberry Pi, DE10-Nano (FPGA)
+| ファイル名                                                   | 内容                             |
+|--------------------------------------------------------------|----------------------------------|
+| [dc_motor_sim.py](simulation/dc_motor_sim.py)                | 状態空間モデルによるDCモータ制御 |
+| [ros_pid_node.py](simulation/ros_pid_node.py)                | ROS用PID制御ノード実装           |
 
 ---
 
-## 🔗 関連資料
+## 📊 ノートブック・図解
 
-- ROS Tutorials: https://docs.ros.org/
-- Python Control Library: https://python-control.readthedocs.io/
-- Raspberry Pi GPIO: https://gpiozero.readthedocs.io/
-- FPGA 制御実装例（Edusemi 特別編 第4章）
+| ディレクトリ                | 内容                             |
+|-----------------------------|----------------------------------|
+| [notebooks/](notebooks/)    | 制御可視化や検証用のJupyter演習 |
+| [figures/](figures/)        | 制御ブロック図・構成図等の図版  |
 
 ---
 
-## 📌 備考
+## 🔧 使用ライブラリ・ツール
 
-この章は「理論を現場に活かす」ための**接地的なアウトプット**を目指します。  
-コードの精度よりも、実験と制御ループの全体像を捉えることが目的です。
+- Python: `control`, `matplotlib`, `pyserial`
+- ROS1 (Noetic) / ROS2 (Foxy)
+- Arduino IDE / STM32CubeIDE
+- `rqt_plot`, `rosbag`, `rosparam`
+
+---
+
+## 🧪 実験の流れ
+
+1. Pythonで制御モデルを実装・確認
+2. 組み込み向けに離散PID等を移植
+3. ROSノード化してセンサ/アクチュエータと接続
+4. 可視化・ロギングで実験を支援
+5. [Part06](../part06_ai/) へ接続し、AI制御へ展開
+
+---
+
+## 🔗 関連章・接続
+
+| 章                     | 内容                             |
+|------------------------|----------------------------------|
+| [Part 4: Digital Control](../part04_digital/) | 離散制御理論・Z変換                   |
+| [Part 6: AI Control](../part06_ai/)          | ニューラル・強化学習・DNN制御         |
+| [Part 9: LLM統合](../part09_llm/)            | ChatGPT等との統合型制御（AITL構想）   |
+
+---
+
+## 📬 メンテナンス・著作権
+
+- 制作者：三溝 真一（Samizo Shinichi）  
+- GitHub: [Samizo-AITL](https://github.com/Samizo-AITL)  
+- Email: [shin3t72@gmail.com](mailto:shin3t72@gmail.com)  
+- ライセンス：MIT License
 
 ---
