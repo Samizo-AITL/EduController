@@ -100,12 +100,14 @@ Pythonでは control.ss2tf() を使って変換できます。
 ---
 
 ## 📈 ステップ応答の例
+```
 import matplotlib.pyplot as plt
 T, y = control.step_response(sys)
 plt.plot(T, y)
 plt.title("Step Response of State-Space System")
 plt.grid(True)
 plt.show()
+```
 
 ---
 
