@@ -17,7 +17,7 @@ AITL構想（FSM × PID × LLM）に基づき、AI時代の制御システム構
 
 ---
 
-## 🧩 章構成
+## 🧩 章構成（理論教材）
 
 | ファイル | 内容 |
 |---------|------|
@@ -30,11 +30,30 @@ AITL構想（FSM × PID × LLM）に基づき、AI時代の制御システム構
 
 ## 🧪 実装コードとNotebook
 
+以下は、Part 09の理論内容に対応したシミュレーションスクリプトやエージェント実装です。  
+Notebookでは、動作の可視化やユーザーとの対話が実行できます。
+
 | ファイル | 役割 |
 |---------|------|
 | [`fsm_pid_llm_sim.py`](simulation/fsm_pid_llm_sim.py) | 三層統合制御のシミュレーションPoC |
 | [`goal_reasoning_agent.py`](simulation/goal_reasoning_agent.py) | 目的推論エージェントのクラス実装 |
-| [`hybrid_control_demo.ipynb`](notebooks/hybrid_control_demo.ipynb) | Notebook形式の統合デモ・可視化実行 |
+| [`hybrid_control_demo.ipynb`](notebooks/hybrid_control_demo.ipynb) | Notebook形式の統合デモ・可視化実行（予定） |
+
+---
+
+## 🧪 実装コード対応表
+
+| 教材章 | 内容 | 実装ファイル | 説明 |
+|--------|------|--------------|------|
+| 第1章 | FSM・PID・LLM 三層構成の統合 | [`fsm_pid_llm_sim.py`](simulation/fsm_pid_llm_sim.py) | モード遷移・3軸PID制御・LLM判断を含む統合PoC |
+| 第2章 | シナリオ制御の設計と実行 | 〃（上記に統合） | FSMによる状態モード切替の実装含む |
+| 第3章 | 例外対応・異常状態の検知と処理 | 〃 or LLMログ出力部 | LLMによる状況判断・緊急切替ロジック含む |
+| 第4章 | 目的推論と対話型制御 | [`goal_reasoning_agent.py`](simulation/goal_reasoning_agent.py) | GPTなどを活用した行動決定エージェント |
+
+> 💡 **実装の特徴**  
+> - 各スクリプトは、教育用に構成されたモジュール型実装です。  
+> - センサシミュレーション、PID応答、FSM切替、LLM判断のログが出力されます。  
+> - 学習者は部分的なコード改変から全体統合設計まで体験できます。
 
 ---
 
@@ -42,7 +61,7 @@ AITL構想（FSM × PID × LLM）に基づき、AI時代の制御システム構
 
 - ChatGPT APIとのリアル連携による実機制御実験
 - ロボット実装／GUI／音声対話制御への応用展開
-- 自己適応・オンライン学習との統合（Part10構想へ）
+- 自己適応・オンライン学習との統合（👉 Part 10: 自律型制御構想に続く予定）
 
 ---
 
