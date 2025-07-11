@@ -102,3 +102,7 @@ MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)
 本教材は教育・研究・個人学習の目的で自由にご利用いただけます。
 
 ---
+
+💬 [EduController教材の議論はこちら → Discussions](https://github.com/Samizo-AITL/EduController/discussions)
+
+---
