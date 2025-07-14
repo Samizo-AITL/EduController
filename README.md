@@ -5,6 +5,10 @@ Pythonを活用し、制御理論の直感的理解からAI統合型制御設計
 
 ---
 
+- 🇺🇸 [English README here](./README_en.md)
+
+---
+
 ## 🧭 構成概要：制御理論とAI制御の2系統
 
 EduControllerは、全9章から構成され、以下の2系統に分類されます：
