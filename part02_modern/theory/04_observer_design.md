@@ -100,15 +100,17 @@ r ───►│          │     │ Observer │
 ---
 
 ## ⚠️ 設計のポイント
-$A - LC$ の極は制御系よりも左側に速く収束するよう設計（例：制御の2～5倍速）
-可観測性がないとオブザーバは設計できない（control.obsv(A, C) で検査）
+
+- $A - LC$ の極は制御系よりも左側に速く収束するよう設計（例：制御の2～5倍速）
+- 可観測性がないとオブザーバは設計できない（control.obsv(A, C) で検査）
 
 ---
 
 ## 📚 参考資料
-「現代制御理論入門」森北出版
-Ogata, Modern Control Engineering
-Python: control.place(), control.obsv(), numpy.linalg
+
+- 「現代制御理論入門」森北出版
+- Ogata, Modern Control Engineering
+- Python: control.place(), control.obsv(), numpy.linalg
 
 ---
 
