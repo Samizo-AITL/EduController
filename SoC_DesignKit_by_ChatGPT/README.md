@@ -34,10 +34,10 @@ FSM、PID、LLM統合制御などの構成要素を、**HDL記述ベースで学
 
 | テンプレート名 | 対応ディレクトリ | 内容 |
 |-----------------------------|------------------|--------------------------------------------------|
-| [`fsm_prompt.md`](./prompts/control_templates/fsm_prompt.md) | [`fsm/`](../fsm/) | 状態数・トリガ記述などからFSMテンプレ生成 |
-| `conversion_prompt.md` ※近日追加予定 | [`c_to_hdl/`](../c_to_hdl/) | Cコード（制御式）をVerilogに変換 |
+| [`fsm_prompt.md`](./prompts/control_templates/fsm_prompt.md) | [`fsm/`](fsm/) | 状態数・トリガ記述などからFSMテンプレ生成 |
+| `conversion_prompt.md` ※近日追加予定 | [`c_to_hdl/`](c_to_hdl/) | Cコード（制御式）をVerilogに変換 |
 | `choose_template_prompt.md` ※近日追加予定 | 全体 | 初学者向けテンプレ選択支援 |
-| `llm_control_prompt.md` ※近日追加予定 | [`llm/`](../llm/) | FSM×LLM制御の構造設計補助 |
+| `llm_control_prompt.md` ※近日追加予定 | [`llm/`](llm/) | FSM×LLM制御の構造設計補助 |
 
 > 💬 各テンプレートの実行ログは [`execution_logs/`](../execution_logs/) に記録可能です。
 
