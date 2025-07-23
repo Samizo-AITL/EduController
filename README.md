@@ -77,13 +77,42 @@ EduControllerは、全9章から構成され、以下の2系統に分類され�
 
 ## 🗂️ ディレクトリ構成
 
-| ディレクトリ | 内容 |
-|--------------|------|
-| `/textbook/` | 各章の教材（理論とPython演習） |
-| `/prompts/` | ChatGPT支援プロンプト群（SamizoGPT連携） |
-| `/SoC_DesignKit_by_ChatGPT/` | FSM・PID・LLM・HDLテンプレート |
-| `/matlab_tools/` | Simulinkモデル例と自動コード生成支援 |
-| `/execution_logs/` | プロンプト対話記録（旧Rekidenログ）※任意 |
+本リポジトリは、古典・現代・AI制御の学習と実装を支援する構造化教材パッケージです。  
+章別教材と演習ツールは以下のように構成されています：
+
+```
+EduController/
+├── part01_classical/               # 古典制御理論（ゲイン・Bode・位相余裕など）
+├── part02_modern/                  # 現代制御（状態空間・可制御性・可観測性）
+├── part03_adaptive/                # 適応制御（MRACなど）
+├── part04_digital/                 # デジタル制御（Z変換・離散系）
+├── part05_practical/               # 組込み・干渉・ノイズ・実装技術
+├── part06_nn_control/              # ニューラルネットワーク制御（学習済み制御）
+├── part07_rl_control/              # 強化学習制御（Q学習・Actor-Critic）
+├── part08_data_driven/             # データ駆動制御（VRFT・システム同定）
+├── part09_llm_hybrid/              # LLM統合型制御（自然言語×制御）
+│
+├── SoC_DesignKit_by_ChatGPT/       # HDL記述ベースの制御テンプレート集
+│   ├── fsm/                        # 有限状態機械（FSM）テンプレート
+│   ├── pid/                        # PID制御のVerilog記述例
+│   ├── llm/                        # FSM×LLM統合制御テンプレート
+│   ├── c_to_hdl/                   # C → Verilog変換プロンプトテンプレ
+│   ├── testbench/                  # HDLテストベンチと波形解析
+│   ├── execution_logs/             # ChatGPT対話ログ（任意記録）
+│   ├── prompts/control_templates/  # ChatGPT用プロンプトテンプレート群
+│   └── template_mapping_matrix.md  # テンプレート対応表（設計マッピング）
+│
+├── matlab_tools/                   # Simulink設計＋Cコード生成演習
+│   ├── pid_simulink_example.slx    # PID制御モデル（Simulink）
+│   ├── state_space_example.slx     # 状態空間モデル（Simulink）
+│   ├── model_to_code.md            # Simulink→Cコード変換手順
+│   └── getting_started.md          # Simulink入門手引き
+│
+├── README.md                       # トップページ（日本語）
+└── README_en.md                    # 英文版トップページ
+```
+
+> 📦 各ディレクトリ内の教材詳細は、それぞれの `README.md` をご覧ください。
 
 ---
 
