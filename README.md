@@ -1,7 +1,7 @@
 # 🎛️ EduController：制御理論とAI制御の教育フレームワーク
 
 **EduController** は、古典制御から現代制御、さらにAIベースの次世代型制御までを体系的に学べる、**段階的・実践的な制御教育教材プロジェクト**です。  
-Pythonを活用し、制御理論の直感的理解からAI統合型制御設計までをサポートします。
+Pythonを活用し、制御理論の直感的理解から、HDL記述やLLM統合設計まで幅広くサポートします。
 
 ---
 
@@ -14,30 +14,30 @@ Pythonを活用し、制御理論の直感的理解からAI統合型制御設計
 EduControllerは、全9章から構成され、以下の2系統に分類されます：
 
 - 🎓 **制御理論系（Part 01〜05）**  
-  古典制御から現代制御、デジタル制御・実装技術までの体系的な章群
+  古典制御、状態空間、デジタル制御、実装演習を体系的に学習
 
 - 🤖 **AI制御系（Part 06〜09）**  
-  ニューラルネット・強化学習・データ駆動・LLM統合など、AIによる次世代制御手法を扱う章群
+  ニューラルネット、強化学習、データ駆動制御、LLM統合制御を段階的に習得
 
-※各章は独立して学べますが、AI制御系は制御理論の基礎知識を前提とします。
+> ※ 各章は独立して学習可能ですが、AI制御系は制御理論の基礎を前提としています。
 
 ---
 
 ## 📚 章構成一覧（リンク付き）
 
-### 🎓 制御理論系（Control Theory）
+### 🎓 制御理論系
 
 | 章 | ディレクトリ | 内容概要 |
 |----|----------------|----------|
-| Part 01 | [part01_classical](./part01_classical/) | 古典制御理論（PID、周波数解析、安定性） |
-| Part 02 | [part02_modern](./part02_modern/) | 現代制御理論（状態空間、LQR、カルマン） |
+| Part 01 | [part01_classical](./part01_classical/) | PID制御、ボード線図、安定性 |
+| Part 02 | [part02_modern](./part02_modern/) | 状態空間、LQR、カルマンフィルタ |
 | Part 03 | [part03_adaptive](./part03_adaptive/) | 適応・ロバスト制御（MRAC、H∞、L1） |
-| Part 04 | [part04_digital](./part04_digital/) | デジタル制御とDSP（Z変換、FFTなど） |
-| Part 05 | [part05_practical](./part05_practical/) | 実装・演習編（Python、ROS、FPGAなど） |
+| Part 04 | [part04_digital](./part04_digital/) | デジタル制御、Z変換、DSP実装 |
+| Part 05 | [part05_practical](./part05_practical/) | Python実装、ROS演習、FPGA制御 |
 
 ---
 
-### 🤖 AI制御系（AI-based Control）
+### 🤖 AI制御系
 
 | 章 | ディレクトリ | 内容概要 |
 |----|----------------|----------|
@@ -48,55 +48,64 @@ EduControllerは、全9章から構成され、以下の2系統に分類され�
 
 ---
 
-## 🔧 推奨ツール / Tools
+## 🔩 実装支援ツールキット（目玉モジュール）
 
-EduControllerでは、制御演習に以下のツールを活用します：
+### 🔹 [`matlab_tools/`](./matlab_tools/)  
+- Simulinkによる **PID・状態空間制御の可視化**
+- Simulink Coderによる **Cコード生成**
+- 生成されたCコードは `c_to_hdl/` を通じてHDL設計へ展開可能
+
+### 🔹 [`SoC_DesignKit_by_ChatGPT/`](./SoC_DesignKit_by_ChatGPT/)  
+- FSM、PID、LLM制御構成のテンプレート群
+- ChatGPTプロンプトによるVerilog生成や、`testbench/` による波形検証も含む
+- **教育から実装・PoCまで橋渡し可能な再利用可能テンプレート集**
+
+> 🧠 教材・Simulink・ChatGPTを接続した「教育×実装×AI」の融合設計を実現
+
+---
+
+## 🔧 推奨ツール
 
 | 分類 | ツール群 | 主な用途 |
 |------|-----------|-----------|
-| 🐍 Python系 | `control`, `scipy`, `matplotlib`, `torch`, `gymnasium`, `stable-baselines3` | 演習・理論検証・AI制御（Jupyter対応） |
-| 🤖 LLM系 | ChatGPT / GPT-4o（API/Chat） | プロンプト設計支援、C→HDL変換、構造思考補助 |
-| 🧩 組込み系 | ROS / FPGA / Verilog | 実装演習、リアルタイム制御系との連携（Part05, 09） |
-| 📊 GUI系 | MATLAB / Simulink（任意） | 制御ブロックの視覚化・状態空間設計・Cコード生成（Simulink Coder） |
-
-> 💡 MATLAB/Simulinkは教育版・学生版も提供されており、Simulinkによる可視化・PID設計・状態空間制御の理解促進に役立ちます。
+| 🐍 Python系 | `control`, `scipy`, `matplotlib`, `torch`, `gymnasium` | 理論演習、AI制御実験 |
+| 📊 GUI系 | MATLAB / Simulink | ブロック図設計、状態空間設計、Cコード生成（Simulink Coder） |
+| 🤖 LLM系 | ChatGPT / GPT-4o | 設計支援プロンプト、C→Verilog変換、設計記録支援 |
+| ⚙️ 実装系 | ROS / Verilog / FPGA | ハードウェア実装、PoC展開（Part05・09） |
 
 ---
 
-## 🗂️ サブディレクトリ一覧 / Submodules
+## 🗂️ ディレクトリ構成
 
 | ディレクトリ | 内容 |
 |--------------|------|
-| `/textbook/` | 各章の教材（理論と演習） |
-| `/prompts/` | SamizoGPT連携：設計支援プロンプト群 |
-| `/SoC_DesignKit_by_ChatGPT/` | FSM・PID・LLM・HDL記述などの実装テンプレート集 |
-| `/matlab_tools/` | Simulinkモデル例（PID・状態空間など）と導入ガイド |
-| `/rekiden_logs/` | 設計記録と再構成ログ（Rekiden連携オプション） |
+| `/textbook/` | 各章の教材（理論とPython演習） |
+| `/prompts/` | ChatGPT支援プロンプト群（SamizoGPT連携） |
+| `/SoC_DesignKit_by_ChatGPT/` | FSM・PID・LLM・HDLテンプレート |
+| `/matlab_tools/` | Simulinkモデル例と自動コード生成支援 |
+| `/execution_logs/` | プロンプト対話記録（旧Rekidenログ）※任意 |
 
 ---
 
-## 🚀 特徴 / Features
+## 🚀 特徴
 
-- 🔁 古典〜AI制御を段階的に学べる構成
-- 🧠 ChatGPTなどのLLMと連携した設計も可能
-- 💡 直感的な演習を通じて理論と実装を接続
-- 📊 MATLAB/SimulinkやROSとの補助連携にも対応
-- 📚 授業・研修・自習に対応（MITライセンス）
+- 🔁 理論 → 実装 → AI応用 を一貫して学習可能
+- 🧠 LLM（ChatGPT）と連携した再利用型設計
+- 📊 SimulinkとHDLの橋渡しにも対応（Simulink Coder）
+- 🛠️ テンプレート中心設計で再現性の高い教材構築
 
 ---
 
-## 🔗 関連プロジェクト / Related Projects
+## 🔗 関連プロジェクト
 
-### 🧩 [Edusemi v4.x](https://github.com/Samizo-AITL/Edusemi-v4x)  
-半導体教育に特化した教材プロジェクト。プロセス・回路・レイアウト設計を横断的に扱い、Python自動化やSoC設計も含まれます。  
-**特別編では、AITL-H構想やLLM連携制御とも統合**されています。
+- 🧩 [Edusemi v4.x](https://github.com/Samizo-AITL/Edusemi-v4x)  
+  半導体教育教材（プロセス設計、Python、SoC設計など）
 
-### 🤖 [AITL-H：Hybrid型知能制御](https://github.com/Samizo-AITL/AITL-H)  
-人型ロボットなどに向けた**階層型構造知能制御フレームワーク**。  
-**FSM（本能）＋PID（理性）＋LLM（知性）**の3層によるハイブリッド制御を提案し、本教材の最終章（Part 09）と連動しています。
+- 🤖 [AITL-H：Hybrid型知能制御](https://github.com/Samizo-AITL/AITL-H)  
+  FSM×PID×LLMによる3層ハイブリッド制御。EduController Part09と連携
 
-### 🧠 [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT)  
-ChatGPT用のプロンプト構造支援フレームワーク。EduController内のプロンプト設計にも活用され、C/HDL変換や設計思想記録（Rekiden）とも接続。
+- 🧠 [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT)  
+  ChatGPTの構造的プロンプト設計支援フレームワーク。EduControllerの設計支援にも活用
 
 ---
 
