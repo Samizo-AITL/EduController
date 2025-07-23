@@ -5,7 +5,7 @@ It uses **Python-based simulation and visualization** to support intuitive under
 
 ---
 
-- 🇯🇵 [日本語版 READMEはこちら](./README.md) 
+- 🇯🇵 [日本語版 READMEはこちら](./README.md)
 
 ---
 
@@ -53,16 +53,38 @@ The EduController curriculum consists of 9 parts, divided into the following two
 - Python: `control`, `scipy`, `matplotlib`, `torch`, `gymnasium`, `stable-baselines3`
 - Jupyter Notebook (interactive simulations and visualizations)
 - ROS (real-time implementation examples)
-- MATLAB / Simulink (optional)
+- MATLAB / Simulink (optional): for graphical modeling and C code generation using Simulink Coder
 - ChatGPT / GPT-4o (LLM integration support)
+
+> 💡 Additional Simulink models and HDL-ready templates are provided in `/matlab_tools/` and `/SoC_DesignKit_by_ChatGPT/`.
+
+---
+
+## 🔩 Implementation Toolkits
+
+In addition to theoretical learning, EduController offers two practical toolkits for design and implementation:
+
+### 🔹 [matlab_tools/](./matlab_tools/)  
+Includes Simulink models for:
+- Visualizing PID and state-space control systems
+- Generating C code via Simulink Coder
+- Preparing for HDL-level design by exporting to `c_to_hdl/`
+
+### 🔹 [SoC_DesignKit_by_ChatGPT/](./SoC_DesignKit_by_ChatGPT/)  
+Template-based toolkit that supports:
+- FSM, PID, and hybrid LLM-based controller generation
+- Verilog code generation from C expressions (with ChatGPT support)
+- Testbench development and waveform analysis
+
+> These toolkits bridge the gap between **education and implementation**, and support hands-on design flows from Python/Simulink to HDL.
 
 ---
 
 ## 🚀 Features
 
-- 🔁 Learn classical to AI-based control in a progressive and structured way
-- 🧠 Integrate LLMs like ChatGPT into the control design process
-- 💡 Bridge theory and implementation with intuitive, hands-on exercises
+- 🔁 Learn classical to AI-based control in a progressive and structured way  
+- 🧠 Integrate LLMs like ChatGPT into the control design process  
+- 💡 Bridge theory and implementation with intuitive, hands-on exercises  
 - 📚 Suitable for courses, workshops, or self-study (MIT Licensed)
 
 ---
