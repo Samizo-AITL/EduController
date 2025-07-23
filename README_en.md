@@ -80,6 +80,47 @@ Template-based toolkit that supports:
 
 ---
 
+## 📂 Directory Structure
+
+This repository provides a structured educational framework for learning classical, modern, and AI-enhanced control theories.  
+It consists of chapter-based textbooks and practical implementation toolkits.
+
+```
+EduController/
+├── part01_classical/               # Classical control theory (gain, Bode, phase margin, etc.)
+├── part02_modern/                  # Modern control (state-space, controllability, observability)
+├── part03_adaptive/                # Adaptive control (e.g., MRAC)
+├── part04_digital/                 # Digital control (Z-transform, discrete-time systems)
+├── part05_practical/               # Practical control (embedded, noise, interference countermeasures)
+├── part06_nn_control/              # Neural network control (trained controller models)
+├── part07_rl_control/              # Reinforcement learning control (Q-learning, actor-critic)
+├── part08_data_driven/             # Data-driven control (VRFT, system identification)
+├── part09_llm_hybrid/              # LLM-integrated hybrid control (language + control)
+│
+├── SoC_DesignKit_by_ChatGPT/       # HDL-based control design templates
+│   ├── fsm/                        # FSM (finite state machine) YAML + Mermaid templates
+│   ├── pid/                        # Verilog-based PID controller implementations
+│   ├── llm/                        # FSM × LLM integrated control templates
+│   ├── c_to_hdl/                   # C to Verilog prompt-based conversion templates
+│   ├── testbench/                  # HDL simulation testbenches and waveform analysis
+│   ├── execution_logs/             # Execution records (ChatGPT prompt logs)
+│   ├── prompts/control_templates/  # Prompt templates for ChatGPT-based design
+│   └── template_mapping_matrix.md  # Mapping table for template coverage
+│
+├── matlab_tools/                   # Simulink-based design and C code generation tools
+│   ├── pid_simulink_example.slx    # PID control in Simulink
+│   ├── state_space_example.slx     # State-space model in Simulink
+│   ├── model_to_code.md            # Guide: from Simulink model to C code
+│   └── getting_started.md          # Getting started with Simulink
+│
+├── README.md                       # Japanese main README
+└── README_en.md                    # English version of README
+```
+
+> 📘 For more details, see the individual `README.md` files in each directory.
+
+---
+
 ## 🚀 Features
 
 - 🔁 Learn classical to AI-based control in a progressive and structured way  
