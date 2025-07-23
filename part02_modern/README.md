@@ -49,24 +49,24 @@
 pip install control matplotlib numpy
 ```
 
-	•	Python 3.8〜3.12 で動作確認済み
-	•	control.place, control.ctrb, control.obsv など使用
-	•	推奨：VSCode + Python, または Jupyter Lab
+- Python 3.8〜3.12 で動作確認済み
+- control.place, control.ctrb, control.obsv など使用
+- 推奨：VSCode + Python, または Jupyter Lab
 
 ---
 
 ## 🧠 学習の流れとポイント
-	1.	状態空間表現：行列でモデル化し、動的システムを数式化
-	2.	可制御性/可観測性：設計可能か、推定可能かの判別
-	3.	状態フィードバック：閉ループ極を望ましい位置に配置
-	4.	オブザーバ設計：センサから得られない状態を推定し活用
+1. 状態空間表現：行列でモデル化し、動的システムを数式化
+2. 可制御性/可観測性：設計可能か、推定可能かの判別
+3. 状態フィードバック：閉ループ極を望ましい位置に配置
+4. オブザーバ設計：センサから得られない状態を推定し活用
 
 ---
 
 ## 📚 参考資料
-	•	「現代制御理論入門」森北出版
-	•	Ogata, Modern Control Engineering
-	•	Pythonライブラリ：control, numpy, matplotlib
+- 「現代制御理論入門」森北出版
+- Ogata, Modern Control Engineering
+- Pythonライブラリ：control, numpy, matplotlib
 
 ---
 
