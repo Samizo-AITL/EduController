@@ -1,0 +1,32 @@
+# 🧮 fsm_example_counter.yaml
+# 3状態の簡易カウンタFSM例（Verilog化やMermaid変換を想定）
+
+fsm:
+  name: counter_fsm
+  states:
+    - idle
+    - count1
+    - count2
+    - done
+  transitions:
+    - from: idle
+      to: count1
+      trigger: start
+    - from: count1
+      to: count2
+      trigger: clk
+    - from: count2
+      to: done
+      trigger: clk
+    - from: done
+      to: idle
+      trigger: reset
+  outputs:
+    - state: idle
+      signal: 0b00
+    - state: count1
+      signal: 0b01
+    - state: count2
+      signal: 0b10
+    - state: done
+      signal: 0b11
