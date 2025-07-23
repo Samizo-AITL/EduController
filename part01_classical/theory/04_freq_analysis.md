@@ -95,16 +95,16 @@ control.bode_plot(G, dB=True, Hz=False, deg=True)
 plt.show()
 ```
 
-	•	control.bode_plot：ゲイン・位相を一括描画
-	•	matplotlibとの連携で図の調整・保存が可能
+- control.bode_plot：ゲイン・位相を一括描画
+- matplotlibとの連携で図の調整・保存が可能
 
 出力例は /figures/bode_example.png を参照。
 
 ---
 
 ## 📚 参考資料
-	•	森北出版「制御工学」
-	•	Franklin et al., Feedback Control of Dynamic Systems
-	•	Python: control, matplotlib
+- 森北出版「制御工学」
+- Franklin et al., Feedback Control of Dynamic Systems
+- Python: control, matplotlib
 
 ---
