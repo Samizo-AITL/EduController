@@ -114,16 +114,16 @@ plt.show()
 ---
 
 ## 💡 設計のヒント
-	•	極を左に配置しすぎると速くなるが、過大ゲインやノイズ感度上昇のリスク
-	•	PID設計と同様、速度・振動・安定性のトレードオフを意識
-	•	最小位相系・可制御性・モデル精度が重要
+- 極を左に配置しすぎると速くなるが、過大ゲインやノイズ感度上昇のリスク
+- PID設計と同様、速度・振動・安定性のトレードオフを意識
+- 最小位相系・可制御性・モデル精度が重要
 
 ---
 
 ## 📚 参考資料
-	•	「現代制御理論入門」森北出版
-	•	Ogata, Modern Control Engineering
-	•	Python: control.place(), control.ss(), step_response()
+-「現代制御理論入門」森北出版
+- Ogata, Modern Control Engineering
+- Python: control.place(), control.ss(), step_response()
 
 ---
 
