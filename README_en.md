@@ -103,21 +103,21 @@ A hierarchical intelligent control framework for humanoid systems.
 
 ---
 
-## 🧑‍🔬 Author Information
+## 👤 Author Profile
 
-- **Name**: Shinichi Samizo  
-- **Education**: M.E. in Electrical and Electronic Engineering, Shinshu University Graduate School  
+**Shinichi Samizo**  
+- M.S. in Electrical and Electronic Engineering, Shinshu University  
+- Former R&D Engineer at Seiko Epson Corporation (1997–)
 
-- **Career**:  
-  Joined Seiko Epson Corporation in 1997. Engaged in:  
-  - Semiconductor device development (0.35μm to 0.18μm nodes)  
-  - Logic/memory integration, high-voltage mixed-signal design  
-  - Thin-film piezo actuator development  
-  - Commercialization of PrecisionCore printhead technology  
+📌 **Expertise**:  
+- Semiconductor devices (logic, memory, high-voltage mixed process)  
+- Thin-film piezoelectric actuators  
+- PrecisionCore printhead commercialization, configuration management, and technical education
 
-- **Contact**:  
-  GitHub: [Samizo-AITL](https://github.com/Samizo-AITL)  
-  Email: [shin3t72@gmail.com](mailto:shin3t72@gmail.com)
+📬 **Contact**  
+- ✉️ Email: [shin3t72@gmail.com](mailto:shin3t72@gmail.com)  
+- 🐦 X (Twitter): [https://x.com/shin3t72](https://x.com/shin3t72)  
+- 💻 GitHub: [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/)
 
 ---
 
