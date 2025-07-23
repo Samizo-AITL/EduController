@@ -76,9 +76,9 @@ x_filtered = np.fft.ifft(X_filtered).real
 ---
 
 ## 📚 参考資料
-	•	Oppenheim & Schafer, Signals and Systems
-	•	Lyons, Understanding Digital Signal Processing
-	•	numpy/scipy の FFT 関数ドキュメント
+- Oppenheim & Schafer, Signals and Systems
+- Lyons, Understanding Digital Signal Processing
+- numpy/scipy の FFT 関数ドキュメント
 
 ---
 
