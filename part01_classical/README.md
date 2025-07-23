@@ -55,23 +55,23 @@
 pip install control matplotlib numpy
 ```
 
-	•	Python 3.8〜3.12 で動作確認済み
-	•	推奨エディタ：VSCode / Jupyter Lab / Google Colab
+- Python 3.8〜3.12 で動作確認済み
+- 推奨エディタ：VSCode / Jupyter Lab / Google Colab
 
 ---
 
 ## 🧠 学習目標のまとめ
-	•	PID制御の動作理解とゲイン調整
-	•	過渡応答・定常偏差の評価
-	•	安定性判定（Routh/RootLocus/Nyquist）
-	•	周波数応答とPM/GMによるロバスト設計
+- PID制御の動作理解とゲイン調整
+- 過渡応答・定常偏差の評価
+- 安定性判定（Routh/RootLocus/Nyquist）
+- 周波数応答とPM/GMによるロバスト設計
 
 ---
 
 ## 📚 参考資料
-	•	「制御工学入門」森北出版
-	•	Feedback Control of Dynamic Systems – Franklin et al.
-	•	Pythonライブラリ：control, matplotlib, numpy
+- 「制御工学入門」森北出版
+- Feedback Control of Dynamic Systems – Franklin et al.
+- Pythonライブラリ：control, matplotlib, numpy
 
 ---
 
