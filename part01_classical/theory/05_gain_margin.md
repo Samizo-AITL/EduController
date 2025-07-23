@@ -75,25 +75,25 @@ print(f"Gain Margin: {gm}, Phase Margin: {pm}")
 ## 🔍 ロバスト性との関係
 
 ## ✅ ロバスト性とは？
-	•	不確かさや変動に対する安定性・性能維持の能力
-	•	モデル誤差、パラメータ変動、外乱などへの耐性
+- 不確かさや変動に対する安定性・性能維持の能力
+- モデル誤差、パラメータ変動、外乱などへの耐性
 
 安定余裕がロバスト性を担保する理由
-	•	大きなPM/GM → 安定の「バッファ」あり
-	•	ノイズ・遅延・位相ずれ があっても発散しにくい
+- 大きなPM/GM → 安定の「バッファ」あり
+- ノイズ・遅延・位相ずれ があっても発散しにくい
 
 ---
 
 ## 💡 設計改善のヒント
-	•	PMが小さい → 位相補償器（リード補償）を追加
-	•	GMが小さい → ゲインを抑える or フィルタ追加
-	•	両者が小さい → 制御器の構造見直し（PI → PIDなど）
+- PMが小さい → 位相補償器（リード補償）を追加
+- GMが小さい → ゲインを抑える or フィルタ追加
+- 両者が小さい → 制御器の構造見直し（PI → PIDなど）
 
 ---
 
 ## 📚 参考資料
-	•	森北出版「制御工学」
-	•	Franklin et al., Feedback Control of Dynamic Systems
-	•	Python: control.margin, bode_plot
+- 森北出版「制御工学」
+- Franklin et al., Feedback Control of Dynamic Systems
+- Python: control.margin, bode_plot
 
 ---
