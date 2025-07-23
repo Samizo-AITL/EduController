@@ -121,7 +121,7 @@ plt.show()
 ---
 
 ## 📚 参考資料
--「現代制御理論入門」森北出版
+- 「現代制御理論入門」森北出版
 - Ogata, Modern Control Engineering
 - Python: control.place(), control.ss(), step_response()
 
