@@ -34,10 +34,10 @@ derivative = (e - prev_e) / dt;
 u = Kp * e + Ki * integral + Kd * derivative;
 prev_e = e;
 ```
-	•	ref：目標値
-	•	y：現在の出力
-	•	dt：サンプリング周期
-	•	Kp, Ki, Kd：各ゲイン
+- ref：目標値
+- y：現在の出力
+- dt：サンプリング周期
+- Kp, Ki, Kd：各ゲイン
 
 ---
 
@@ -85,8 +85,8 @@ int16_t e = ref - y;
 int32_t p_term = (int32_t)(Kp * e) >> scale;
 ```
 
-	•	Kp = 32、scale = 5 ⇒ 実効ゲイン = 32 / 2⁵ = 1.0
-	•	>> scale は「除算より高速なビットシフト演算」
+- Kp = 32、scale = 5 ⇒ 実効ゲイン = 32 / 2⁵ = 1.0
+- >> scale は「除算より高速なビットシフト演算」
 
 ---
 
