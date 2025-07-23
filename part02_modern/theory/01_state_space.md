@@ -119,7 +119,7 @@ plt.show()
 ---
 
 ## 📚 参考資料
--「現代制御理論入門」森北出版
+- 「現代制御理論入門」森北出版
 - Franklin et al., Feedback Control of Dynamic Systems
 - Python: control.ss, ss2tf, step_response
 
