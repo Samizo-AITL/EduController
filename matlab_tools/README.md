@@ -19,7 +19,7 @@
 ## 🎯 目的 / 活用意図
 
 - EduControllerの **前段フェーズ**（制御モデル設計）におけるSimulink活用
-- Cコード生成後、[`c_to_hdl/`](../c_to_hdl/) によるVerilog化の導入ステップ
+- Cコード生成後、[`c_to_hdl/`](../SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化の導入ステップ
 - 離散時間制御、状態空間制御、PID制御などの設計検証
 
 ---
@@ -28,8 +28,8 @@
 
 | 関連ディレクトリ | 役割 |
 |------------------|------|
-| [`c_to_hdl/`](../c_to_hdl/) | CコードをVerilog HDLに変換（今後の展開） |
-| [`testbench/`](../testbench/) | HDL化後のシミュレーション検証 |
+| [`c_to_hdl/`](../SoC_DesignKit_by_ChatGPT/c_to_hdl/) | CコードをVerilog HDLに変換（今後の展開） |
+| [`testbench/`](../SoC_DesignKit_by_ChatGPT/testbench/) | HDL化後のシミュレーション検証 |
 | [`EduController`](../) | 教材本体との統合設計演習（Part04, Part05など） |
 
 ---
