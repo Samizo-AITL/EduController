@@ -62,9 +62,11 @@ transitions:
 
 ### ✅ PID式のC→HDL変換演習（GPT連携）
 
+```
 // 入力
 error = ref - meas;
 output = Kp * error + Ki * integral;
+```
 
 → conversion_prompt.md を使い、ChatGPTにVerilog記述を出力させる → testbench/ で波形確認へ
 
