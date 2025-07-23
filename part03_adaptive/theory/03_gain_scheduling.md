@@ -59,28 +59,28 @@ def gain_schedule(rho):
     return K
 ```
 
-	•	時刻や外部変数に応じて制御器を動的に切り替え
-	•	スムーズな補間を行えば過渡応答も良好になる
+- 時刻や外部変数に応じて制御器を動的に切り替え
+- スムーズな補間を行えば過渡応答も良好になる
 
 ---
 
 ## 🖼️ AITL-Hとの接続例
-	•	FSM層の状態遷移に応じて、異なるゲインを適用（モード切替）
-	•	PIDや状態フィードバックのゲインに対してGSを導入
-	•	LLM層がスケジューリング変数を「予測・分類」する補助も可能
+- FSM層の状態遷移に応じて、異なるゲインを適用（モード切替）
+- PIDや状態フィードバックのゲインに対してGSを導入
+- LLM層がスケジューリング変数を「予測・分類」する補助も可能
 
 ---
 
 ## ⚠️ 注意点と限界
-	•	線形モデル設計の妥当性：各動作点ごとにモデルが必要
-	•	スムーズな補間性を保証しないと、不連続な挙動になる
-	•	非線形系への厳密な適用は難しい → LPVや非線形GSが研究中
+- 線形モデル設計の妥当性：各動作点ごとにモデルが必要
+- スムーズな補間性を保証しないと、不連続な挙動になる
+- 非線形系への厳密な適用は難しい → LPVや非線形GSが研究中
 
 ---
 
 ## 📚 参考資料
-	•	Nise, Control Systems Engineering
-	•	Stevens & Lewis, Aircraft Control and Simulation
-	•	Takagi-Sugeno系のファジィ推論（非線形GSの拡張）
+- Nise, Control Systems Engineering
+- Stevens & Lewis, Aircraft Control and Simulation
+- Takagi-Sugeno系のファジィ推論（非線形GSの拡張）
 
 ---
