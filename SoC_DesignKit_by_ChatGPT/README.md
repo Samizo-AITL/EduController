@@ -84,7 +84,7 @@ output = Kp * error + Ki * integral;
 
 ## 🛠️ 今後の拡張予定
 
-- Simulink→C→Verilogへの自動変換連携（[`matlab_tools/`](./matlab_tools/) との接続）
+- Simulink→C→Verilogへの自動変換連携（[`matlab_tools/`](../matlab_tools/) との接続）
 - VHDLテンプレートへの拡張
 - FPGA開発環境（Vivado等）との導入連携資料
 
