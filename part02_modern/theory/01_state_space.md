@@ -112,15 +112,15 @@ plt.show()
 ---
 
 ## 🔍 状態の意味と設計視点
-	•	状態とは「システムの内部の記憶（履歴）」を最小限に保持する変数群
-	•	制御器設計では、この状態を操作・推定することが目的となる
-	•	例：モータ回転数→[位置, 速度] を状態とみなす
+- 状態とは「システムの内部の記憶（履歴）」を最小限に保持する変数群
+- 制御器設計では、この状態を操作・推定することが目的となる
+- 例：モータ回転数→[位置, 速度] を状態とみなす
 
 ---
 
 ## 📚 参考資料
-	•	「現代制御理論入門」森北出版
-	•	Franklin et al., Feedback Control of Dynamic Systems
-	•	Python: control.ss, ss2tf, step_response
+-「現代制御理論入門」森北出版
+- Franklin et al., Feedback Control of Dynamic Systems
+- Python: control.ss, ss2tf, step_response
 
 ---
