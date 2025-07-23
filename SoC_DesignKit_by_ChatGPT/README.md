@@ -30,7 +30,7 @@ FSM、PID、LLM統合制御などの構成要素を、**HDL記述ベースで学
 
 ## 🧠 ChatGPT連携（SamizoGPT）
 
-以下のプロンプトテンプレート群と連携しています（[`EduController/prompts/control_templates/`](../prompts/control_templates/) 配下）：
+以下のプロンプトテンプレート群と連携しています（[`EduController/prompts/control_templates/`](./prompts/control_templates/) 配下）：
 
 | テンプレート名 | 対応ディレクトリ | 内容 |
 |-----------------------------|------------------|--------------------------------------------------|
