@@ -50,11 +50,28 @@ EduControllerは、全9章から構成され、以下の2系統に分類され�
 
 ## 🔧 推奨ツール / Tools
 
-- Python：`control`, `scipy`, `matplotlib`, `torch`, `gymnasium`, `stable-baselines3`
-- Jupyter Notebook（演習と可視化）
-- ROS（リアルタイム実装例）
-- MATLAB / Simulink（オプション）
-- ChatGPT / GPT-4o（LLM連携）
+EduControllerでは、制御演習に以下のツールを活用します：
+
+| 分類 | ツール群 | 主な用途 |
+|------|-----------|-----------|
+| 🐍 Python系 | `control`, `scipy`, `matplotlib`, `torch`, `gymnasium`, `stable-baselines3` | 演習・理論検証・AI制御（Jupyter対応） |
+| 🤖 LLM系 | ChatGPT / GPT-4o（API/Chat） | プロンプト設計支援、C→HDL変換、構造思考補助 |
+| 🧩 組込み系 | ROS / FPGA / Verilog | 実装演習、リアルタイム制御系との連携（Part05, 09） |
+| 📊 GUI系 | MATLAB / Simulink（任意） | 制御ブロックの視覚化・状態空間設計・Cコード生成（Simulink Coder） |
+
+> 💡 MATLAB/Simulinkは教育版・学生版も提供されており、Simulinkによる可視化・PID設計・状態空間制御の理解促進に役立ちます。
+
+---
+
+## 🗂️ サブディレクトリ一覧 / Submodules
+
+| ディレクトリ | 内容 |
+|--------------|------|
+| `/textbook/` | 各章の教材（理論と演習） |
+| `/prompts/` | SamizoGPT連携：設計支援プロンプト群 |
+| `/SoC_DesignKit_by_ChatGPT/` | FSM・PID・LLM・HDL記述などの実装テンプレート集 |
+| `/matlab_tools/` | Simulinkモデル例（PID・状態空間など）と導入ガイド |
+| `/rekiden_logs/` | 設計記録と再構成ログ（Rekiden連携オプション） |
 
 ---
 
@@ -63,13 +80,12 @@ EduControllerは、全9章から構成され、以下の2系統に分類され�
 - 🔁 古典〜AI制御を段階的に学べる構成
 - 🧠 ChatGPTなどのLLMと連携した設計も可能
 - 💡 直感的な演習を通じて理論と実装を接続
+- 📊 MATLAB/SimulinkやROSとの補助連携にも対応
 - 📚 授業・研修・自習に対応（MITライセンス）
 
 ---
 
 ## 🔗 関連プロジェクト / Related Projects
-
-EduControllerは、以下のプロジェクトと連携・相互参照されています：
 
 ### 🧩 [Edusemi v4.x](https://github.com/Samizo-AITL/Edusemi-v4x)  
 半導体教育に特化した教材プロジェクト。プロセス・回路・レイアウト設計を横断的に扱い、Python自動化やSoC設計も含まれます。  
@@ -78,6 +94,9 @@ EduControllerは、以下のプロジェクトと連携・相互参照されて�
 ### 🤖 [AITL-H：Hybrid型知能制御](https://github.com/Samizo-AITL/AITL-H)  
 人型ロボットなどに向けた**階層型構造知能制御フレームワーク**。  
 **FSM（本能）＋PID（理性）＋LLM（知性）**の3層によるハイブリッド制御を提案し、本教材の最終章（Part 09）と連動しています。
+
+### 🧠 [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT)  
+ChatGPT用のプロンプト構造支援フレームワーク。EduController内のプロンプト設計にも活用され、C/HDL変換や設計思想記録（Rekiden）とも接続。
 
 ---
 
@@ -105,5 +124,3 @@ MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)
 ---
 
 💬 [EduController教材の議論はこちら → Discussions](https://github.com/Samizo-AITL/EduController/discussions)
-
----
