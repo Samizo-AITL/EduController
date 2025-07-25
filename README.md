@@ -50,12 +50,12 @@ EduControllerは、全9章から構成され、以下の2系統に分類され�
 
 ## 🔩 実装支援ツールキット（目玉モジュール）
 
-🔹 **[`matlab_tools/`](./matlab_tools/)**  
+🔹 **[matlab_tools/](./matlab_tools/)**  
 - Simulinkによる **PID・状態空間制御の可視化**
 - Simulink Coderによる **Cコード生成**
 - 生成されたCコードは `c_to_hdl/` を通じてHDL設計へ展開可能
 
-🔹 **[`SoC_DesignKit_by_ChatGPT/`](./SoC_DesignKit_by_ChatGPT/)**  
+🔹 **[SoC_DesignKit_by_ChatGPT/](./SoC_DesignKit_by_ChatGPT/)**  
 - FSM、PID、LLM制御構成のテンプレート群
 - ChatGPTプロンプトによるVerilog生成や、`testbench/` による波形検証も含む
 - **教育から実装・PoCまで橋渡し可能な再利用可能テンプレート集**
