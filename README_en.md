@@ -64,13 +64,13 @@ The EduController curriculum consists of 9 parts, divided into the following two
 
 In addition to theoretical learning, EduController offers two practical toolkits for design and implementation:
 
-### 🔹 [matlab_tools/](./matlab_tools/)  
+🔹 **[matlab_tools/](./matlab_tools/)**  
 Includes Simulink models for:
 - Visualizing PID and state-space control systems
 - Generating C code via Simulink Coder
 - Preparing for HDL-level design by exporting to `c_to_hdl/`
 
-### 🔹 [SoC_DesignKit_by_ChatGPT/](./SoC_DesignKit_by_ChatGPT/)  
+🔹 **[SoC_DesignKit_by_ChatGPT/](./SoC_DesignKit_by_ChatGPT/)**  
 Template-based toolkit that supports:
 - FSM, PID, and hybrid LLM-based controller generation
 - Verilog code generation from C expressions (with ChatGPT support)
