@@ -5,7 +5,7 @@ It uses **Python-based simulation and visualization** to support intuitive under
 
 ---
 
-- 🇯🇵 [日本語版 READMEはこちら](./README.md)
+🇯🇵 [日本語版 READMEはこちら](./README.md)
 
 ---
 
