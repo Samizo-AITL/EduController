@@ -5,7 +5,7 @@ Pythonを活用し、制御理論の直感的理解から、HDL記述やLLM統�
 
 ---
 
-- 🇺🇸 [English README here](./README_en.md)
+🇺🇸 [English README here](./README_en.md)
 
 ---
 
