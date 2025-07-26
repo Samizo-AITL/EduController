@@ -162,3 +162,4 @@ MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)
 💬 [**EduController教材の議論はこちら → Discussions**](https://github.com/Samizo-AITL/EduController/discussions)
 
 ---
+
