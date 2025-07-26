@@ -139,18 +139,18 @@ EduController/
 
 ---
 
-## 👤 Author Profile
+## 👤 **Author Information**
 
 **Shinichi Samizo**  
-- M.S. in Electrical and Electronic Engineering, Shinshu University  
-- Former R&D Engineer at Seiko Epson Corporation (1997–)
+- **M.S. in Electrical and Electronic Engineering, Shinshu University**  
+- Former **Seiko Epson** Corporation Engineer (since 1997)
 
-📌 **Expertise**  
-- Semiconductor device design (logic / memory / HV mixed process)  
-- Thin-film piezo actuators and control hardware  
-- Configuration and training for **PrecisionCore** inkjet platforms
+📌 **Areas of Expertise**:  
+- **Semiconductor Devices (Logic, Memory, High-Voltage Integrated with Logic)**  
+- **Inkjet Thin-Film Piezoelectric Actuators**  
+- **PrecisionCore Printhead Development, BOM Management, ISO Education**
 
-📬 **Contact**
+📬 **Contact**  
 - ✉️ [shin3t72@gmail.com](mailto:shin3t72@gmail.com)  
 - 🐦 [https://x.com/shin3t72](https://x.com/shin3t72)  
 - 💻 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/)
