@@ -81,28 +81,31 @@ EduController は、全9章から構成され、以下の2系統に分類され�
 
 ```
 EduController/
-├── part01_classical/
-├── part02_modern/
-├── part03_adaptive/
-├── part04_digital/
-├── part05_practical/
-├── part06_nn_control/
-├── part07_rl_control/
-├── part08_data_driven/
-├── part09_llm_hybrid/
+├── part01_classical/            # 古典制御理論（PID・ボード線図・安定性）
+├── part02_modern/               # 現代制御理論（状態空間・LQR・カルマン）
+├── part03_adaptive/             # 適応・ロバスト制御（MRAC・H∞・L1）
+├── part04_digital/              # デジタル制御（Z変換・離散時間系・DSP）
+├── part05_practical/            # 実装・ノイズ・ROS・FPGA制御演習
+├── part06_nn_control/           # ニューラルネット制御（NN-PID・逆モデル）
+├── part07_rl_control/           # 強化学習制御（Q学習・DDPG・PPO）
+├── part08_data_driven/          # データ駆動制御（Koopman・行列識別）
+├── part09_llm_hybrid/           # LLM統合制御（FSM×PID×LLMハイブリッド）
 │
-├── SoC_DesignKit_by_ChatGPT/
-│   ├── fsm/
-│   ├── pid/
-│   ├── llm/
-│   ├── c_to_hdl/
-│   ├── testbench/
-│   ├── prompts/
+├── SoC_DesignKit_by_ChatGPT/    # ChatGPTベースの制御設計テンプレート群
+│   ├── fsm/                     # FSM（有限状態機械）のテンプレート
+│   ├── pid/                     # PID制御のVerilog記述例
+│   ├── llm/                     # LLM統合制御テンプレート（自然言語対応）
+│   ├── c_to_hdl/                # Cコード→Verilog変換プロンプト
+│   ├── testbench/               # テストベンチ・波形検証（Verilog用）
+│   ├── prompts/                 # ChatGPTプロンプトテンプレート（設計補助）
 │
-├── matlab_tools/
+├── matlab_tools/                # Simulink設計とCコード生成支援モジュール
+│   ├── *.slx                    # Simulinkモデル（PID、状態空間）
+│   ├── *.md                     # Simulink操作ガイド・導入手順
 │
-├── README.md
-└── README_en.md
+├── README.md                    # 日本語トップREADME（本ファイル）
+└── README_en.md                 # 英語版トップREADME
+
 ```
 
 > 📦 各ディレクトリ内の教材詳細は、それぞれの `README.md` をご覧ください。
