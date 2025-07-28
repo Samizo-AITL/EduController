@@ -45,6 +45,7 @@ The **EduController** curriculum consists of 9 parts, divided into the following
 | Part 07 | [part07_rl_control](./part07_rl_control/) | **Reinforcement Learning Control** (Q-learning, DDPG, PPO) |
 | Part 08 | [part08_data_driven](./part08_data_driven/) | **Data-Driven Control** (Koopman, matrix identification) |
 | Part 09 | [part09_llm_hybrid](./part09_llm_hybrid/) | **LLM-Integrated Hybrid Control** (FSM × PID × LLM) |
+| **Part 10** | [part10_pendulum](./part10_pendulum/) | **Hybrid Control of Inverted Pendulum (PID / LQR / DDPG / HDL)** |
 
 ---
 
