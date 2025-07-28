@@ -16,8 +16,8 @@ The **EduController** curriculum consists of 9 parts, divided into the following
 - 🎓 **Control Theory Track (Part 01–05)**  
   Covers **classical to modern control theory**, **digital implementation**, and **hands-on practice**
 
-- 🤖 **AI-based Control Track (Part 06–09)**  
-  Covers **neural networks**, **reinforcement learning**, **data-driven control**, and **LLM-integrated hybrid control**
+- 🤖 **AI-based Control Track (Part 06–10)**  
+  Covers **neural networks**, **reinforcement learning**, **data-driven control**, **LLM-integrated control**, and a **hybrid inverted pendulum example**
 
 > Each chapter is independently accessible, but AI-based control assumes **basic knowledge of control theory**
 
