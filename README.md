@@ -91,6 +91,7 @@ EduController/
 ├── part07_rl_control/           # 強化学習制御（Q学習・DDPG・PPO）
 ├── part08_data_driven/          # データ駆動制御（Koopman・行列識別）
 ├── part09_llm_hybrid/           # LLM統合制御（FSM×PID×LLMハイブリッド）
+├── part10_pendulum/             # 倒立振子の総合制御（PID・LQR・RL・HDL・LLM）
 │
 ├── SoC_DesignKit_by_ChatGPT/    # ChatGPTベースの制御設計テンプレート群
 │   ├── fsm/                     # FSM（有限状態機械）のテンプレート
