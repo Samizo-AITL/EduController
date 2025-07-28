@@ -45,6 +45,7 @@ EduController は、全9章から構成され、以下の2系統に分類され�
 | **Part 07** | [part07_rl_control](./part07_rl_control/) | **強化学習制御（Q学習、DDPG、PPO）** |
 | **Part 08** | [part08_data_driven](./part08_data_driven/) | **データ駆動制御（Koopman、行列識別）** |
 | **Part 09** | [part09_llm_hybrid](./part09_llm_hybrid/) | **LLM統合・ハイブリッド制御（FSM×PID×LLM）** |
+| **Part 10** | [part10_pendulum](./part10_pendulum/) | **倒立振子の総合制御（PID / LQR / DDPG / HDL）** |
 
 ---
 
