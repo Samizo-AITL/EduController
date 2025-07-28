@@ -114,8 +114,6 @@ EduController/
 │
 ├── README.md                       # Japanese main README
 └── README_en.md                    # English main README
-
-
 ```
 
 > 📘 See each subfolder's `README.md` for detailed content
