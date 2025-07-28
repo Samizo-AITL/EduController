@@ -94,6 +94,7 @@ EduController/
 ├── part07_rl_control/              # Reinforcement learning (DDPG, PPO)
 ├── part08_data_driven/             # Data-driven control (Koopman, system ID)
 ├── part09_llm_hybrid/              # LLM-integrated hybrid control
+├── part10_pendulum/                # Hybrid control of inverted pendulum (PID, LQR, RL, HDL)
 │
 ├── SoC_DesignKit_by_ChatGPT/       # HDL design templates for FSM/PID/LLM
 │   ├── fsm/                        # FSM YAML + Mermaid templates
@@ -113,6 +114,8 @@ EduController/
 │
 ├── README.md                       # Japanese main README
 └── README_en.md                    # English main README
+
+
 ```
 
 > 📘 See each subfolder's `README.md` for detailed content
