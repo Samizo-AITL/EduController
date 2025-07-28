@@ -16,13 +16,13 @@
 
 | ディレクトリ | 内容 |
 |--------------|------|
-| `model/` | 倒立振子の物理モデル（微分方程式、線形化） |
-| `classical_control/` | PID制御（Python, Simulink） |
-| `modern_control/` | LQR、カルマンフィルタ、状態空間設計 |
-| `rl_control/` | DDPG/PPOによる強化学習制御（gym環境） |
-| `hdl_implementation/` | FSM・PIDベースのHDL制御器（Verilog） |
-| `llm_prompt_design/` | ChatGPT用プロンプトテンプレート（C→Verilog） |
-| `ros_simulation/` | ROS/Gazeboによる物理シミュレーション（拡張予定） |
+| [`model/`](./model/) | 倒立振子の物理モデル（微分方程式、線形化） |
+| [`classical_control/`](./classical_control/) | PID制御（Python, Simulink） |
+| [`modern_control/`](./modern_control/) | LQR、カルマンフィルタ、状態空間設計 |
+| [`rl_control/`](./rl_control/) | DDPG/PPOによる強化学習制御（gym環境） |
+| [`hdl_implementation/`](./hdl_implementation/) | FSM・PIDベースのHDL制御器（Verilog） |
+| [`llm_prompt_design/`](./llm_prompt_design/) | ChatGPT用プロンプトテンプレート（C→Verilog） |
+| [`ros_simulation/`](./ros_simulation/) | ROS/Gazeboによる物理シミュレーション（拡張予定） |
 
 ---
 
@@ -88,5 +88,3 @@
 
 MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
 教育・研究・個人学習を目的とした自由な利用を歓迎します。
-
----
