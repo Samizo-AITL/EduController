@@ -1,7 +1,22 @@
 # 🧰 matlab_tools/
 
-このディレクトリは、SimulinkやMATLABコードによる制御設計の演習を支援するための補助モジュール群です。  
+このディレクトリは、**SimulinkやMATLABコードによる制御設計の演習**を支援する補助モジュール群です。  
 設計モデルからCコードへの変換や、将来的なVerilog連携（C→HDL）に向けた教材基盤としても活用されます。
+
+---
+
+## 📘 Simulink / MATLABとは？
+
+**MATLAB** は、数値計算・可視化・プログラミングを統合した技術計算環境です。  
+**Simulink** は、MATLABと連携して動作するブロック線図ベースの**モデルベースデザインツール**であり、制御系設計・信号処理・システムシミュレーションに広く用いられています。
+
+| 概要 | 内容 |
+|------|------|
+| **MATLAB** | スクリプトベースの数値計算環境。行列演算、関数定義、制御工学ツールボックスなどを利用可能。 |
+| **Simulink** | グラフィカルなブロック線図により、連続/離散システムを視覚的に設計・シミュレーション可能。ブロックの接続で制御系を構築。 |
+| **Simulink Coder** | 作成したSimulinkモデルからC/C++コードを自動生成し、組込み制御システムへの実装が可能。 |
+
+> 🎯 本教材は、制御工学の演習において **Simulinkでモデル設計 → Cコード生成 → HDL連携へ展開** する一連の流れを支援します。
 
 ---
 
@@ -18,9 +33,10 @@
 
 ## 🎯 目的 / 活用意図
 
-- EduControllerの **前段フェーズ**（制御モデル設計）におけるSimulink活用
-- Cコード生成後、[`c_to_hdl/`](../SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化の導入ステップ
+- **EduController** の **前段フェーズ**（制御モデル設計）におけるSimulink活用
+- **Cコード生成後**、[`c_to_hdl/`](../SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化の導入ステップ
 - 離散時間制御、状態空間制御、PID制御などの設計検証
+- **MATLAB/Simulinkの教育的導入**から自動化・HDL連携までの一貫教材化
 
 ---
 
@@ -39,17 +55,19 @@
 - Simulink + Embedded Coder による自動Cコード生成→HDL変換支援
 - `fsm_simulink_example.slx` の追加（状態遷移系の可視化設計）
 - `.m` ファイル形式での状態空間シミュレーションスクリプト追加
+- SimulinkモデルからのPython連携（Simulink Compiler活用）
 
 ---
 
 ## 📖 参考ドキュメント
 
-- [MathWorks公式：Simulink入門](https://www.mathworks.com/learn/tutorials/simulink-onramp.html)
-- [Simulink Coder ドキュメント](https://www.mathworks.com/products/simulink-coder.html)
+- [📘 MathWorks公式：Simulink入門](https://www.mathworks.com/learn/tutorials/simulink-onramp.html)
+- [📘 Simulink Coder ドキュメント](https://www.mathworks.com/products/simulink-coder.html)
+- [📘 Control System Toolbox](https://www.mathworks.com/products/control.html)
 
 ---
 
 ## 🔖 ライセンス
 
 MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
-本ディレクトリ内の教材・モデルは教育・研究目的で自由に使用可能です。
+本ディレクトリ内の教材・モデルは**教育・研究目的で自由に使用可能**です。商用利用にはご留意ください。
