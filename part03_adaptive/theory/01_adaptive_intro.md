@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 01. 適応制御の概要（Introduction to Adaptive Control）
 ---
 
 <!-- MathJax support for both inline and block math -->
