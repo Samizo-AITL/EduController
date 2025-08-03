@@ -1,20 +1,3 @@
----
-layout: default
-title: 03. 安定性判別法（Routh, 根軌跡, ナイキスト）
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 🧮 03. 安定性判別法（Routh, 根軌跡, ナイキスト）
 
 制御系の最も基本的な要件は「安定であること」です。本節では、古典制御理論における安定性の定義と、主要な判別法である **Routh-Hurwitz判別法**, **根軌跡法（Root Locus）**, **ナイキスト法（Nyquist）** を学びます。
