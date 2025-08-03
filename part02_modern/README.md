@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Part 2  現代制御理論
+title: Part 2: 現代制御理論 / Modern Control Theory
 ---
 
 <!-- MathJax support for both inline and block math -->
