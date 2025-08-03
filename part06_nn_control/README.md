@@ -1,77 +1,99 @@
-# 🤖 Part 6: ニューラルネットによる制御（Neural Network-based Control）
+# 🤖 Part 6: ニューラルネットによる制御 / Neural Network-based Control
 
-本章では、ニューラルネットワーク（NN）を用いた制御手法を学びます。  
-従来のPID制御との比較や、NNによる補正・逆モデル制御、強化学習との接続可能性について扱います。
+本章では、**ニューラルネットワーク（NN）を用いた制御手法**を学びます。  
+従来の**PID制御との比較**や、**NNによる補正・逆モデル制御**、**強化学習との接続可能性**についても扱います。
 
----
-
-## 🎯 学習目標 / Learning Objectives
-
-- NN制御の基本原理（関数近似・逆モデル）を理解する  
-- ニューラルPID（NN-PID）制御器を設計・訓練する  
-- 逆モデル学習によるフィードフォワード制御を実装する  
-- PIDとの比較や統合設計（AITL構想）を考察する
+This chapter introduces **control techniques using Neural Networks (NN)**,  
+covering comparisons with traditional **PID control**, **NN-based compensation**, **inverse modeling**, and potential connections to **reinforcement learning**.
 
 ---
 
-## 📁 ディレクトリ構成
+## 🎯 **学習目標 / Learning Objectives**
+
+- NN制御の基本原理（**関数近似・逆モデル**）を理解する  
+  Understand the fundamentals of NN control (**function approximation & inverse modeling**)  
+- **ニューラルPID（NN-PID）**制御器を設計・訓練する  
+  Design and train a **Neural PID controller (NN-PID)**  
+- 逆モデル学習による**フィードフォワード制御**を実装する  
+  Implement **feedforward control** using inverse model learning  
+- **PIDとの比較や統合設計（AITL構想）**を考察する  
+  Explore integration of **PID and NN-based control** in the **AITL framework**
+
+---
+
+## 📁 **ディレクトリ構成 / Directory Structure**
 
 ```plaintext
 part06_nn_control/
-├── theory/                   # 理論資料（Markdown）
+├── theory/                   # 理論資料 / Theoretical docs
 │   ├── 01_nn_control.md
 │   ├── 02_nn_pid.md
 │   ├── 03_inverse_model.md
 │   └── 04_ai_vs_classical.md
-├── simulation/               # PyTorchなどによるコード実装
+├── simulation/               # 実装コード / PyTorch-based simulations
 │   ├── nn_pid_control.py
 │   ├── inverse_model_train.py
 │   └── ai_vs_pid_sim.py
-├── notebooks/                # 可視化・実験Notebook
+├── notebooks/                # 実験Notebook / Jupyter Notebooks
 │   ├── train_nn_pid.ipynb
 │   └── (future) ai_vs_pid_comparison.ipynb
-├── figures/                  # 図版フォルダ
+├── figures/                  # 図版 / Figures
 │   └── nn_pid_structure.png など
-└── README.md                # 本章の概要と進捗まとめ
+└── README.md                # 本章の概要と進捗まとめ / This file
 ```
 
 ---
 
-## 🧪 実験コードとNotebook
+## 🧪 **実験コードとNotebook / Experiments & Notebooks**
 
-| 内容                           | ファイル名                                                    |
-|--------------------------------|---------------------------------------------------------------|
-| NN-PID制御器（PyTorch）        | [`nn_pid_control.py`](./simulation/nn_pid_control.py)         |
-| NN制御の学習・可視化           | [`train_nn_pid.ipynb`](./notebooks/train_nn_pid.ipynb)        |
-| 逆モデル制御の学習             | [`inverse_model_train.py`](./simulation/inverse_model_train.py) |
-| PID vs NN 比較シミュレーション | [`ai_vs_pid_sim.py`](./simulation/ai_vs_pid_sim.py)           |
-
----
-
-## 🧠 理論資料（Markdown）
-
-| タイトル                         | ファイル                                                    |
-|----------------------------------|-------------------------------------------------------------|
-| NN制御の概要と特徴               | [`01_nn_control.md`](./theory/01_nn_control.md)             |
-| NN-PID制御の構成と学習方法       | [`02_nn_pid.md`](./theory/02_nn_pid.md)                     |
-| 逆モデル制御の理論と実装         | [`03_inverse_model.md`](./theory/03_inverse_model.md)       |
-| AI制御と古典制御の比較と統合戦略 | [`04_ai_vs_classical.md`](./theory/04_ai_vs_classical.md)   |
+| **内容 / Description** | **ファイル / File** |
+|-------------------------|----------------------|
+| NN-PID制御器（PyTorch）<br>Neural PID controller in PyTorch | [`nn_pid_control.py`](./simulation/nn_pid_control.py) |
+| NN制御の学習・可視化<br>Training & visualizing NN controller | [`train_nn_pid.ipynb`](./notebooks/train_nn_pid.ipynb) |
+| 逆モデル制御の学習<br>Inverse model learning for control | [`inverse_model_train.py`](./simulation/inverse_model_train.py) |
+| PID vs NN 比較<br>PID vs NN simulation comparison | [`ai_vs_pid_sim.py`](./simulation/ai_vs_pid_sim.py) |
 
 ---
 
- ## 🔜 今後の展開（Next Steps）
+## 🧠 **理論資料 / Theory Files** [`theory/`](./theory/)
 
-- LSTMやTransformerによる時系列制御への応用  
-- 強化学習ベース制御への接続（→ [`part07_rl_control/`](../part07_rl_control/)）  
-- AITL構想との統合：PID + NN + LLMによる三層制御アーキテクチャ（→ [`part09_llm_control/`](../part09_llm_control/)）
-
----
-
-## 📚 参考文献・リンク
-
-- [PyTorch公式ドキュメント](https://pytorch.org/docs/)
-- Narendra & Parthasarathy, “Neural Networks for Control”, 1990
-- 本教材：[EduController](https://github.com/Samizo-AITL/EduController)
+| **タイトル / Topic** | **ファイル / File** |
+|------------------------|----------------------|
+| NN制御の概要と特徴<br>Overview of NN-based control | [`01_nn_control.md`](./theory/01_nn_control.md) |
+| NN-PID制御の構成と学習法<br>Structure & training of NN-PID | [`02_nn_pid.md`](./theory/02_nn_pid.md) |
+| 逆モデル制御の理論と実装<br>Inverse model theory & implementation | [`03_inverse_model.md`](./theory/03_inverse_model.md) |
+| AI制御と古典制御の比較と統合<br>AI vs classical control & hybrid strategy | [`04_ai_vs_classical.md`](./theory/04_ai_vs_classical.md) |
 
 ---
 
+## 🔜 **今後の展開 / Next Steps**
+
+- **LSTM / Transformer** による時系列制御への応用  
+  Application of **LSTM / Transformer** to time-series control  
+- **強化学習**ベース制御との連携 → [`part07_rl_control/`](../part07_rl_control/)  
+  Integration with **Reinforcement Learning** (Part 7)  
+- **AITL構想との統合**：PID + NN + LLM による**三層制御アーキテクチャ** → [`part09_llm_control/`](../part09_llm_control/)  
+  Unified **three-layer architecture**: PID + NN + LLM (**AITL**)
+
+---
+
+## 📚 **参考文献・リンク / References & Links**
+
+- [🔗 PyTorch公式ドキュメント / PyTorch Docs](https://pytorch.org/docs/)
+- **Narendra & Parthasarathy** (1990), *"Neural Networks for Control"*
+- 本教材プロジェクト / This project: [EduController (GitHub)](https://github.com/Samizo-AITL/EduController)
+
+---
+
+## 👤 **著者・ライセンス / Author & License**
+
+| **項目 / Item** | **内容 / Details** |
+|------------------|---------------------|
+| **著者 / Author** | 三溝 真一（**Shinichi Samizo**）<br>Shinshu University / Ex-Epson |
+| **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
+| **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
+| **ライセンス / License** | MIT License（**再配布・改変自由**）<br>**Redistribution and modification allowed** |
+
+---
+
+📎 **[トップに戻る / Back to Home](../README.md)**
