@@ -46,8 +46,8 @@ $$
 
 ### ① 前進差分（Forward Euler）
 
-- 微分：$\frac{de(t)}{dt} \approx \frac{e[k+1] - e[k]}{T_s}$
-- 積分：$\int e(t)\,dt \approx \sum e[k] T_s$
+- 微分： $\frac{de(t)}{dt} \approx \frac{e[k+1] - e[k]}{T_s}$
+- 積分： $\int e(t)\,dt \approx \sum e[k] T_s$
 
 ### ② 後退差分（Backward Euler）
 
