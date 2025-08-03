@@ -5,7 +5,7 @@ title: EduController トップページ
 
 # 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**
 
-[📂 **GitHubリポジトリはこちら → Samizo-AITL/EduController**](
+[📂 **GitHubリポジトリはこちら → Samizo-AITL/EduController**]
 
 **EduController** は、**古典制御**から**現代制御**、さらに**AIベースの次世代型制御**までを体系的に学べる、**段階的・実践的な制御教育教材プロジェクト**です。  
 **Python** を活用し、**制御理論の直感的理解**から、**HDL記述**や**LLM統合設計**まで幅広くサポートします。
