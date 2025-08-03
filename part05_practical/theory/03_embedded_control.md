@@ -1,20 +1,3 @@
----
-layout: default
-title: 03. 組み込み制御への展開
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 🔧 03. 組み込み制御への展開（Embedded Control）
 
 本節では、制御理論を **マイコン・組込み環境（C/Arduino等）** へ展開するための考え方と設計法を解説します。  
