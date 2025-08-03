@@ -42,9 +42,11 @@ $$
 
 ## 🔧 ブロック線図と伝達関数｜Block Diagram and Transfer Function
 
-### ▶ ブロック線図（例）｜Example Block Diagram
+<h3>▶ ブロック線図（例）｜Example Block Diagram</h3>
 
-![PID制御のブロック図](../figures/pid_block_diagram.png)
+<p align="center">
+  <img src="../figures/pid_block_diagram.png" alt="PID制御のブロック図" width="50%">
+</p>
 
 ### ▶ 伝達関数（ラプラス領域）｜Transfer Function (Laplace Domain)
 
