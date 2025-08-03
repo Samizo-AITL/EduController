@@ -1,8 +1,3 @@
----
-layout: default
-title: Part 2 現代制御理論 / Modern Control Theory
----
-
 # 🧠 Part 2: 現代制御理論 / Modern Control Theory
 
 本章では、**状態空間表現**を基盤としたモダン制御理論を学びます。  
