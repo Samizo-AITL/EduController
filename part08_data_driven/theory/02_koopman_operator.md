@@ -38,9 +38,7 @@ Koopman理論は、非線形系を「関数空間上の線形作用素」とし�
 - 観測関数（可視化・計測可能な量） $\psi(x)$ を定義し、
   Koopman演算子 $\mathcal{K}$ により以下を満たす：
 
-  $$
-  \psi(x_{t+1}) = \mathcal{K} \psi(x_t)
-  $$
+  $\psi(x_{t+1}) = \mathcal{K} \psi(x_t)$
 
 つまり、**非線形な状態遷移 $f$ を、$\psi$ を介して線形作用素 $\mathcal{K}$ で記述**。
 
