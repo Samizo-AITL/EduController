@@ -1,20 +1,3 @@
----
-layout: default
-title: 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Control）
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 🎯 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Control）
 
 **MRAC**は、制御対象（Plant）に対して、**理想的な動作をする「参照モデル」**を設定し、  
