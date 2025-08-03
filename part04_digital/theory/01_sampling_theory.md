@@ -1,20 +1,3 @@
----
-layout: default
-title: 01. サンプリングとディジタル制御の基礎（Sampling Theory for Digital Control）
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # ⏱️ 01. サンプリングとディジタル制御の基礎（Sampling Theory for Digital Control）
 
 現代の制御系は、マイコン・DSP・FPGAなどの**ディジタル装置**を通じて実装されます。  
