@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 04. ロバスト制御（Robust Control）
 ---
 
 <!-- MathJax support for both inline and block math -->
