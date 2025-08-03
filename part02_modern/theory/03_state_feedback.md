@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 03. 状態フィードバックと極配置（Pole Placement）
 ---
 
 <!-- MathJax support for both inline and block math -->
