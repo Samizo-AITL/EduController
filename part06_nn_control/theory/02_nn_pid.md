@@ -37,22 +37,22 @@ PIDの堅牢性とNNの柔軟性を組み合わせることで、非線形系や
 
 ### ベース：標準PID制御
 
-\[
+$$
 u(t) = K_p e(t) + K_i \int e(t) dt + K_d \frac{de(t)}{dt}
-\]
+$$
 
 ### NN-PID構成例①：NNによる誤差補正項
 
-\[
+$$
 u(t) = u_{\text{PID}}(t) + f_\theta(e(t), \dot{e}(t), \int e(t) dt)
-\]
+$$
 
 ### NN-PID構成例②：NNがPIDゲインを動的生成
 
-\[
+$$
 K_p(t), K_i(t), K_d(t) = f_\theta(x(t))  
 \quad \Rightarrow \quad u(t) = K_p(t)e(t) + ...
-\]
+$$
 
 > 📌 いずれの方式も、NNは**非線形性や時変性の補償**に強みを発揮します。
 
