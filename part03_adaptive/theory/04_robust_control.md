@@ -49,7 +49,7 @@ title: 04. ロバスト制御（Robust Control）
   $S(s) = \frac{1}{1 + G(s)K(s)}$
 
 - **補償関数 $T(s)$（Complementary Sensitivity）**  
-　　$T(s) = \frac{G(s)K(s)}{1 + G(s)K(s)} = 1 - S(s)$
+  $T(s) = \frac{G(s)K(s)}{1 + G(s)K(s)} = 1 - S(s)$
 
 ---
 
