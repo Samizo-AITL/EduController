@@ -1,20 +1,3 @@
----
-layout: default
-title:  04. FIR/IIR フィルタ設計と応答特性
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 📡 04. FIR/IIR フィルタ設計と応答特性（Digital Filters: FIR & IIR）
 
 ディジタル信号処理の中心的技術である **FIR/IIRフィルタ**は、  
