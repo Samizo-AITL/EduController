@@ -84,3 +84,4 @@ def gain_schedule(rho):
 - Takagi-Sugeno系のファジィ推論（非線形GSの拡張）
 
 ---
+
