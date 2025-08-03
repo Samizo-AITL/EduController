@@ -1,3 +1,20 @@
+---
+layout: default
+title: 01. PID制御の基礎
+---
+
+<!-- MathJax support for both inline and block math -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script type="text/javascript"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # 🧠 02. NN-PID制御：ニューラルネットによるPID補完制御
 
 本章では、従来のPID制御にニューラルネット（NN）を組み合わせた  
