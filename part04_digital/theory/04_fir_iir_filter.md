@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 04. FIR/IIR フィルタ設計と応答特性（Digital Filters: FIR & IIR）
+title:  04. FIR/IIR フィルタ設計と応答特性
 ---
 
 <!-- MathJax support for both inline and block math -->
