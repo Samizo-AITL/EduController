@@ -1,20 +1,3 @@
----
-layout: default
-title: 05. 安定余裕とロバスト性の評価
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 🛡️ 05. 安定余裕とロバスト性の評価
 
 現実の制御系は、モデル誤差・外乱・遅延などによる不確かさを常に抱えています。安定性を保証しつつ、こうした変動に耐える性能 ― それが「ロバスト性」です。本節では、**ゲイン余裕・位相余裕** による定量評価法とその設計指針を学びます。
