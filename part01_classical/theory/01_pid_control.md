@@ -82,4 +82,5 @@ $$
 
 - 「制御工学入門」森北出版  
 - *Feedback Control of Dynamic Systems* by Franklin, Powell, Emami-Naeini  
-- Python: `scipy.signal`, `control`, `matplotlib` ライブラリ  
+- Python: `scipy.signal`, `control`, `matplotlib` ライブラリ
+- 
