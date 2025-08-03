@@ -1,3 +1,20 @@
+---
+layout: default
+title: 01. PID制御の基礎
+---
+
+<!-- MathJax support for both inline and block math -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script type="text/javascript"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # 🧠 01. 強化学習の基本構造（RL Basics）
 
 本節では、強化学習（Reinforcement Learning, RL）の基本構造と主要な用語・概念について解説します。  
