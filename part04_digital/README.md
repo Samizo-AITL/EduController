@@ -1,4 +1,3 @@
-```markdown
 # 💻 Part 04: デジタル制御と信号処理  
 # 💻 Part 04: Digital Control & Signal Processing
 
@@ -92,4 +91,4 @@ including **Z-transform, discrete PID, digital filters, and FFT analysis**—all
 ---
 
 📎 **[トップに戻る / Back to Home](../README.md)**
-```
+
