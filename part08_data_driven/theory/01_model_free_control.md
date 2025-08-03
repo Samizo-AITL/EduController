@@ -50,9 +50,9 @@ title: 01. PID制御の基礎
 モデルフリー制御は、「入力 $u(t)$ と出力 $y(t)$ の観測対」に基づいて制御器を構築します：
 
 - モデルベース制御：
-  $$ \dot{x}(t) = f(x(t), u(t)) $$
+  $\dot{x}(t) = f(x(t), u(t))$
 - モデルフリー制御：
-  $$ y(t+1) = \mathcal{F}(y(t), y(t-1), \ldots, u(t), u(t-1), \ldots) $$
+  $y(t+1) = \mathcal{F}(y(t), y(t-1), \ldots, u(t), u(t-1), \ldots)$
 
 ここで $\mathcal{F}$ はデータから構成される関数（NNや線形予測など）です。
 
