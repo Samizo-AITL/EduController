@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 02. 可制御性と可観測性の基礎
 ---
 
 <!-- MathJax support for both inline and block math -->
