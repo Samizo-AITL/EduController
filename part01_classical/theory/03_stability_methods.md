@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 03. 安定性判別法（Routh, 根軌跡, ナイキスト）
 ---
 
 <!-- MathJax support for both inline and block math -->
