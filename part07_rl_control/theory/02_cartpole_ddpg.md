@@ -25,9 +25,9 @@ title: 01. PID制御の基礎
 ## 🎯 CartPole 環境の概要
 
 - 目標：振子を立てたまま台車を左右に移動させ、倒れないように制御する  
-- 状態ベクトル（$s$）：  
+- 状態ベクトル（ $s$ ）：  
   $[x, \dot{x}, \theta, \dot{\theta}]$（位置・速度・角度・角速度）
-- 行動ベクトル（$a$）：  
+- 行動ベクトル（ $a$ ）：  
   台車に加える連続的な力（連続アクション環境を使用）
 
 > 使用環境：`Pendulum-v1` または連続版の `CartPoleContinuous-v0`
@@ -39,8 +39,8 @@ title: 01. PID制御の基礎
 DDPG（Deep Deterministic Policy Gradient）は、  
 **Actor-Critic構造に基づく連続制御向けアルゴリズム**です。
 
-- Actor：状態 $s$ に対して行動 $a$ を決定（$\mu(s|\theta^\mu)$）  
-- Critic：行動の良さ（$Q(s,a)$）を評価（$Q(s,a|\theta^Q)$）  
+- Actor：状態 $s$ に対して行動 $a$ を決定（ $\mu(s|\theta^\mu)$ ）  
+- Critic：行動の良さ（ $Q(s,a)$ ）を評価（ $Q(s,a|\theta^Q)$ ）  
 - ターゲットネットによる安定化  
 - 経験再生バッファ（Replay Buffer）によるデータ効率向上
 
