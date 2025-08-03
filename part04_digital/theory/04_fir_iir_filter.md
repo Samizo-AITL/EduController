@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 04. FIR/IIR フィルタ設計と応答特性（Digital Filters: FIR & IIR）
 ---
 
 <!-- MathJax support for both inline and block math -->
