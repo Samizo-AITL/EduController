@@ -1,20 +1,3 @@
----
-layout: default
-title: 04. 周波数応答とボード線図の基礎
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 📉 04. 周波数応答とボード線図の基礎
 
 ボード線図（Bode plot）は、制御系の周波数応答特性を視覚的に評価するための基本的なツールです。本節では、ボード線図の読み方・描き方、およびゲイン交差周波数・位相余裕と安定性との関係について学びます。
