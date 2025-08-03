@@ -1,20 +1,3 @@
----
-layout: default
-title: 04. ロバスト制御（Robust Control）
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 🛡️ 04. ロバスト制御（Robust Control）
 
 制御対象には、**モデル誤差**や**外乱・ノイズ**が必ず存在します。  
