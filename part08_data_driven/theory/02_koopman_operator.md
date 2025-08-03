@@ -1,3 +1,20 @@
+---
+layout: default
+title: 01. PID制御の基礎
+---
+
+<!-- MathJax support for both inline and block math -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script type="text/javascript"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # 📈 02. Koopman演算子と線形化（Koopman Operator Theory）
 
 本節では、非線形力学系を**高次元空間上で線形系として扱う**という発想に基づく  
