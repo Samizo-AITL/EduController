@@ -1,28 +1,22 @@
-<details>
-<summary>▶️ <strong>default.html の中身（クリックで表示）</strong></summary>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 
-  <!-- MathJax設定 -->
-  <script type="text/javascript">
+  <!-- MathJax -->
+  <script>
     window.MathJax = {
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$','$$'], ['\\[','\\]']]
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
       },
       svg: { fontCache: 'global' }
     };
   </script>
-  <script type="text/javascript"
-    async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -42,4 +36,3 @@
 
 </body>
 </html>
-</details>
