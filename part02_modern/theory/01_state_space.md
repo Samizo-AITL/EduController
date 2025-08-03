@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 01. 状態空間表現の基礎
 ---
 
 <!-- MathJax support for both inline and block math -->
