@@ -1,21 +1,4 @@
----
-layout: default
-title: 02. 可制御性と可観測性の基礎
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
-# 🔍 02. 可制御性と可観測性の基礎
+# 🔍 02. 可制御性と可観測性の基本
 
 状態空間モデルを使って制御系を設計するためには、「その状態を操作できるか？」「状態を外部から観測できるか？」という2つの性質が極めて重要です。本節では、**可制御性（controllability）** と **可観測性（observability）** の定義・数学的検査法・物理的な意味を解説します。
 
