@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Control）
 ---
 
 <!-- MathJax support for both inline and block math -->
