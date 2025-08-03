@@ -1,20 +1,3 @@
----
-layout: default
-title: 05. FFTによる周波数解析とノイズ除去
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 🔍 05. FFTによる周波数解析とノイズ除去（Frequency Analysis with FFT）
 
 制御対象の振動や信号の周期性を解析するには、**周波数領域の理解**が重要です。  
