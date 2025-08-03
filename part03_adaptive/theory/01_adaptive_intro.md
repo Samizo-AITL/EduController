@@ -1,3 +1,20 @@
+---
+layout: default
+title: 01. PID制御の基礎
+---
+
+<!-- MathJax support for both inline and block math -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script type="text/javascript"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # 🔄 01. 適応制御の概要（Introduction to Adaptive Control）
 
 制御対象が**時間とともに変化**したり、**事前に正確なモデルが得られない**状況では、固定された制御器（PIDやLQRなど）では対応が困難です。  
