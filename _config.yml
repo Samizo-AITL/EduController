@@ -1,0 +1,10 @@
+title: EduController
+description: 教育用制御教材ポータル
+markdown: kramdown
+theme: null        # GitHub標準テーマを無効化（自作レイアウト使用）
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+permalink: pretty  # 拡張子 .html をURLから省略
