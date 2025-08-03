@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 03. 離散PID制御の設計（Digital PID Controller Design）
 ---
 
 <!-- MathJax support for both inline and block math -->
@@ -51,8 +51,8 @@ $$
 
 ### ② 後退差分（Backward Euler）
 
-- 微分：$\frac{e[k] - e[k-1]}{T_s}$  
-- 積分：$I[k] = I[k-1] + e[k] T_s$
+- 微分： $\frac{e[k] - e[k-1]}{T_s}$  
+- 積分： $I[k] = I[k-1] + e[k] T_s$
 
 ### ③ 双一次変換（Tustin法）
 
