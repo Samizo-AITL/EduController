@@ -45,15 +45,15 @@ title: 04. ロバスト制御（Robust Control）
 
 - **内部安定性（Internal Stability）**  
     → 全信号が有界入力で有界（Bounded Input - Bounded Output）になる  
-- **感度関数 $S(s)$**  
-    $$
-    S(s) = \frac{1}{1 + G(s)K(s)}
-    $$
+- **感度関数 $S(s)$**
+$$
+S(s) = \frac{1}{1 + G(s)K(s)}
+$$
 
 - **補償関数 $T(s)$（Complementary Sensitivity）**  
-    $$
-    T(s) = \frac{G(s)K(s)}{1 + G(s)K(s)} = 1 - S(s)
-    $$
+$$
+T(s) = \frac{G(s)K(s)}{1 + G(s)K(s)} = 1 - S(s)
+$$
 
 ---
 
