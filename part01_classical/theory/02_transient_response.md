@@ -1,3 +1,20 @@
+---
+layout: default
+title: 02. 過渡応答と定常偏差の基礎
+---
+
+<!-- MathJax support for inline and block math -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script type="text/javascript"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # ⚡️ 02. 過渡応答と定常偏差の基礎
 
 制御系の性能を評価する上で、「どれだけ速く」「どれだけ正確に」目標値に到達するかは重要な指標です。本節では、時間領域での応答特性を中心に、過渡応答と定常誤差について学びます。
