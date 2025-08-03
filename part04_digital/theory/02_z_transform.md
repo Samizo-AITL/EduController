@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 02. Z変換と離散時間制御系（Z-Transform & Discrete Control Representation）
 ---
 
 <!-- MathJax support for both inline and block math -->
@@ -39,8 +39,8 @@ $$
 X(z) = \mathcal{Z}\{x[k]\} = \sum_{k=0}^\infty x[k] z^{-k}
 $$
 
-- $z$ は複素数変数（$z = re^{j\omega}$）  
-- $z^{-1}$ は1ステップの遅れに相当：$x[k-1] = z^{-1}x[k]$
+- $z$ は複素数変数（ $z = re^{j\omega}$ ）  
+- $z^{-1}$ は1ステップの遅れに相当： $x[k-1] = z^{-1}x[k]$
 
 ---
 
@@ -56,8 +56,8 @@ $$
 
 ## 🏗️ 離散時間伝達関数
 
-- 連続系：$G(s) = \frac{Y(s)}{U(s)}$  
-- 離散系：$G(z) = \frac{Y(z)}{U(z)}$
+- 連続系： $G(s) = \frac{Y(s)}{U(s)}$  
+- 離散系： $G(z) = \frac{Y(z)}{U(z)}$
 
 $$
 G(z) = \frac{b_0 + b_1 z^{-1} + \dots + b_m z^{-m}}{1 + a_1 z^{-1} + \dots + a_n z^{-n}}
