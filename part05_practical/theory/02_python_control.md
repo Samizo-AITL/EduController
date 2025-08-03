@@ -1,20 +1,3 @@
----
-layout: default
-title: 02. Pythonによる制御設計の基本
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 🐍 02. Pythonによる制御設計の基本（Control System Design in Python）
 
 本節では、Python制御ライブラリ（`control`, `scipy`）を用いた  
