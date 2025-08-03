@@ -1,20 +1,3 @@
----
-layout: default
-title: 01. 状態空間表現の基礎
----
-
-<!-- MathJax support for both inline and block math -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-    svg: { fontCache: 'global' }
-  };
-</script>
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 # 🧮 01. 状態空間表現の基礎
 
 状態空間表現は、システムの動的挙動を**ベクトルと行列**で表すモダン制御理論の基礎です。本節では、状態方程式の構成、入出力との関係、連立微分方程式との対応を学びます。
