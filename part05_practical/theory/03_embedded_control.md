@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01. PID制御の基礎
+title: 03. 組み込み制御への展開
 ---
 
 <!-- MathJax support for both inline and block math -->
