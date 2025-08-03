@@ -1,3 +1,20 @@
+---
+layout: default
+title: 01. PID制御の基礎
+---
+
+<!-- MathJax support for both inline and block math -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script type="text/javascript"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # 🎛️ 03. 状態フィードバックと極配置（Pole Placement）
 
 状態空間モデルを使うことで、システムの応答特性（安定性、速度、減衰など）を**極の配置によって設計**できます。本節では、**状態フィードバック制御**と**極配置法（pole placement）**の理論と設計手法を学びます。
