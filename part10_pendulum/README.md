@@ -79,6 +79,68 @@
 
 ---
 
+## 🚀 **今後の展開 / Future Expansions**
+
+本章で扱う倒立振子制御教材は、以下の方向に拡張・応用される予定です：  
+This inverted pendulum control module will be expanded and applied in the following directions:
+
+### 🔸 HDL・FPGA実装の強化 / Enhanced HDL & FPGA Implementation
+
+- ✅ FSM×PIDの完全RTL化（状態遷移 + アクチュエータ制御）  
+  Full RTL implementation of FSM×PID (state transitions and actuator control)
+- ✅ Verilog/SystemVerilogによる2自由度倒立振子制御回路の記述  
+  Verilog/SystemVerilog implementation of 2DOF pendulum controller
+- ✅ テストベンチ/GTKWでの波形評価と形式検証  
+  Testbench and waveform validation with GTKWave
+- ✅ FPGA（Intel/AMD/OSS）でのリアルタイム制御検証  
+  Real-time FPGA control implementation
+
+### 🔸 AI × HDL の統合演習 / AI-Driven HDL Design
+
+- ✅ ChatGPTによるFSM状態遷移表の自動生成支援  
+  LLM-supported FSM state table generation
+- ✅ FSM-PID連携のVerilogコード自動生成プロンプト拡充  
+  Prompt engineering for FSM-PID Verilog code generation
+- ✅ SamizoGPTとの設計演習フロー整備  
+  Design exercises integrated with SamizoGPT
+
+### 🔸 組込み・ロボット制御連携 / Embedded & Robotics Integration
+
+- ✅ ROS2/Gazeboとの物理シミュレーション連携（予定）  
+  Physical simulation with ROS2/Gazebo (planned)
+- ✅ Jetson/ラズパイ/FPGA搭載制御ボードへの展開  
+  Implementation on Jetson / Raspberry Pi / FPGA boards
+- ✅ 外部センサ（IMU/Encoder）との連携制御実装  
+  Sensor fusion control with IMU and encoders
+
+### 🔸 SystemDKとの接続 / Integration with SystemDK
+
+- ✅ AITL制御 → FSM×PID RTL → SystemDKブロック設計への拡張  
+  From AITL control to FSM×PID RTL to SystemDK block-level design
+- ✅ 物理制約（熱/ノイズ/応力）を考慮した制御SoC演習へ  
+  SoC-level control design with physical constraint feedback
+
+### 🔸 国際教材展開 / Global Educational Deployment
+
+- ✅ 英日併記教材の維持とGitHub Pages化  
+  Maintain bilingual structure with GitHub Pages support
+- ✅ GitBook・PDF・API連携を通じた教材変換  
+  Export to GitBook, PDF, and API-accessible formats
+- ✅ MITライセンスによる国際連携・教材再利用支援  
+  Support for international reuse and collaboration (MIT License)
+
+---
+
+### 💡 **目指す姿 / Vision**
+
+> **制御 × デジタル設計 × AI支援**を統合し、次世代型教育と実装演習を実現する。  
+> Integrating control, digital design, and AI support to enable next-generation education and prototyping.
+
+倒立振子は、単なる制御課題ではなく、**教育・研究・SoC設計の連結軸**として活用されることを想定しています。  
+The inverted pendulum serves not just as a control problem, but as a central model linking education, research, and SoC design.
+
+---
+
 ## 🔗 **関連リンク / Related Links**
 
 - 📚 [EduController トップへ戻る / Back to EduController Home](../README.md)  
