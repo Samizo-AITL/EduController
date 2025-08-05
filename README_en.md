@@ -9,17 +9,20 @@ It uses **Python-based simulation and visualization** to support **intuitive und
 
 ---
 
-## 🧭 Curriculum Structure: Two Main Tracks
+## 🧭 **Overview: Three Tracks – Classical, AI-based, and Hybrid Control**
 
-The **EduController** curriculum consists of 9 parts, divided into the following two tracks:
+EduController consists of 10 chapters, organized into the following three tracks:
 
-- 🎓 **Control Theory Track (Part 01–05)**  
-  Covers **classical to modern control theory**, **digital implementation**, and **hands-on practice**
+- 🎓 **Classical & Modern Control (Part 01–05)**  
+  Systematic study of classical control, state-space modeling, digital control, and practical implementation
 
-- 🤖 **AI-based Control Track (Part 06–10)**  
-  Covers **neural networks**, **reinforcement learning**, **data-driven control**, **LLM-integrated control**, and a **hybrid inverted pendulum example**
+- 🤖 **AI-based Control (Part 06–08)**  
+  Step-by-step learning of neural networks, reinforcement learning, and data-driven control methods
 
-> Each chapter is independently accessible, but AI-based control assumes **basic knowledge of control theory**
+- 🧠 **Hybrid & Applied Control (Part 09–10)**  
+  Comprehensive integration using LLMs and real-world applications like inverted pendulum control
+
+> ※ Each chapter can be studied independently. However, AI-based and hybrid control parts assume prior knowledge of classical control theory.
 
 ---
 
