@@ -23,29 +23,32 @@ The **EduController** curriculum consists of 9 parts, divided into the following
 
 ---
 
-## 📚 Chapter List (with links)
+## 📚 **Chapter Structure (with Links)**
 
-### 🎓 Control Theory Track
-
-| Part | Directory | Overview |
-|------|-----------|----------|
-| Part 01 | [part01_classical](./part01_classical/) | **Classical Control** (PID, frequency response, stability) |
-| Part 02 | [part02_modern](./part02_modern/) | **Modern Control** (State-space, LQR, Kalman filter) |
-| Part 03 | [part03_adaptive](./part03_adaptive/) | **Adaptive and Robust Control** (MRAC, H∞, L1) |
-| Part 04 | [part04_digital](./part04_digital/) | **Digital Control and DSP** (Z-transform, FFT, implementation) |
-| Part 05 | [part05_practical](./part05_practical/) | **Hands-on Practice** (Python, ROS, FPGA examples) |
-
----
-
-### 🤖 AI-based Control Track
+### 🎓 **Classical & Modern Control**
 
 | Part | Directory | Overview |
 |------|-----------|----------|
-| Part 06 | [part06_nn_control](./part06_nn_control/) | **Neural Network Control** (NN-PID, inverse modeling) |
-| Part 07 | [part07_rl_control](./part07_rl_control/) | **Reinforcement Learning Control** (Q-learning, DDPG, PPO) |
-| Part 08 | [part08_data_driven](./part08_data_driven/) | **Data-Driven Control** (Koopman, matrix identification) |
-| Part 09 | [part09_llm_hybrid](./part09_llm_hybrid/) | **LLM-Integrated Hybrid Control** (FSM × PID × LLM) |
-| **Part 10** | [part10_pendulum](./part10_pendulum/) | **Hybrid Control of Inverted Pendulum (PID / LQR / DDPG / HDL)** |
+| **Part 01** | [part01_classical](./part01_classical/) | **PID control, Bode plot, stability analysis** |
+| **Part 02** | [part02_modern](./part02_modern/) | **State-space modeling, LQR, Kalman filter** |
+| **Part 03** | [part03_adaptive](./part03_adaptive/) | **Adaptive & robust control (MRAC, H∞, L1)** |
+| **Part 04** | [part04_digital](./part04_digital/) | **Digital control, Z-transform, DSP implementation** |
+| **Part 05** | [part05_practical](./part05_practical/) | **Python coding, ROS practice, FPGA-based control** |
+
+### 🤖 **AI-based Control**
+
+| Part | Directory | Overview |
+|------|-----------|----------|
+| **Part 06** | [part06_nn_control](./part06_nn_control/) | **Neural network control (NN-PID, inverse models)** |
+| **Part 07** | [part07_rl_control](./part07_rl_control/) | **Reinforcement learning (Q-learning, DDPG, PPO)** |
+| **Part 08** | [part08_data_driven](./part08_data_driven/) | **Data-driven control (Koopman, system identification)** |
+
+### 🧠 **Hybrid & Applied Control**
+
+| Part | Directory | Overview |
+|------|-----------|----------|
+| **Part 09** | [part09_llm_hybrid](./part09_llm_hybrid/) | **LLM-integrated hybrid control (FSM × PID × LLM)** |
+| **Part 10** | [part10_pendulum](./part10_pendulum/) | **Comprehensive inverted pendulum control (PID / LQR / DDPG / HDL)** |
 
 ---
 
