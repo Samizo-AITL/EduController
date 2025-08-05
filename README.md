@@ -23,29 +23,32 @@ EduController は、全9章から構成され、以下の2系統に分類され�
 
 ---
 
-## 📚 **章構成一覧（リンク付き）**
+## 📚 **章構成一覧（リンク付き）｜Chapter Structure (with Links)**
 
-### 🎓 **制御理論系**
+### 🎓 **制御理論系｜Classical & Modern Control**
 
-| 章 | ディレクトリ | 内容概要 |
-|----|----------------|----------|
-| **Part 01** | [part01_classical](./part01_classical/) | **PID制御、ボード線図、安定性** |
-| **Part 02** | [part02_modern](./part02_modern/) | **状態空間、LQR、カルマンフィルタ** |
-| **Part 03** | [part03_adaptive](./part03_adaptive/) | **適応・ロバスト制御（MRAC、H∞、L1）** |
-| **Part 04** | [part04_digital](./part04_digital/) | **デジタル制御、Z変換、DSP実装** |
-| **Part 05** | [part05_practical](./part05_practical/) | **Python実装、ROS演習、FPGA制御** |
+| 章 | ディレクトリ | 内容概要｜Overview |
+|----|----------------|--------------------|
+| **Part 01** | [part01_classical](./part01_classical/) | **PID制御、ボード線図、安定性**<br>PID control, Bode plot, Stability |
+| **Part 02** | [part02_modern](./part02_modern/) | **状態空間、LQR、カルマンフィルタ**<br>State-space, LQR, Kalman Filter |
+| **Part 03** | [part03_adaptive](./part03_adaptive/) | **適応・ロバスト制御（MRAC、H∞、L1）**<br>Adaptive & Robust Control (MRAC, H∞, L1) |
+| **Part 04** | [part04_digital](./part04_digital/) | **デジタル制御、Z変換、DSP実装**<br>Digital Control, Z-Transform, DSP Implementation |
+| **Part 05** | [part05_practical](./part05_practical/) | **Python実装、ROS演習、FPGA制御**<br>Python, ROS Practice, FPGA-based Control |
 
----
+### 🤖 **AI制御系｜AI-based Control**
 
-### 🤖 **AI制御系**
+| 章 | ディレクトリ | 内容概要｜Overview |
+|----|----------------|--------------------|
+| **Part 06** | [part06_nn_control](./part06_nn_control/) | **ニューラルネット制御（NN-PID、逆モデル）**<br>Neural Network Control (NN-PID, Inverse Model) |
+| **Part 07** | [part07_rl_control](./part07_rl_control/) | **強化学習制御（Q学習、DDPG、PPO）**<br>Reinforcement Learning Control (Q-learning, DDPG, PPO) |
+| **Part 08** | [part08_data_driven](./part08_data_driven/) | **データ駆動制御（Koopman、行列識別）**<br>Data-driven Control (Koopman, System Identification) |
 
-| 章 | ディレクトリ | 内容概要 |
-|----|----------------|----------|
-| **Part 06** | [part06_nn_control](./part06_nn_control/) | **ニューラルネット制御（NN-PID、逆モデル）** |
-| **Part 07** | [part07_rl_control](./part07_rl_control/) | **強化学習制御（Q学習、DDPG、PPO）** |
-| **Part 08** | [part08_data_driven](./part08_data_driven/) | **データ駆動制御（Koopman、行列識別）** |
-| **Part 09** | [part09_llm_hybrid](./part09_llm_hybrid/) | **LLM統合・ハイブリッド制御（FSM×PID×LLM）** |
-| **Part 10** | [part10_pendulum](./part10_pendulum/) | **倒立振子の総合制御（PID / LQR / DDPG / HDL）** |
+### 🧠 **統合・応用制御系｜Hybrid & Applied Control**
+
+| 章 | ディレクトリ | 内容概要｜Overview |
+|----|----------------|--------------------|
+| **Part 09** | [part09_llm_hybrid](./part09_llm_hybrid/) | **LLM統合・ハイブリッド制御（FSM×PID×LLM）**<br>LLM-integrated Hybrid Control (FSM×PID×LLM) |
+| **Part 10** | [part10_pendulum](./part10_pendulum/) | **倒立振子の総合制御（PID / LQR / DDPG / HDL）**<br>Integrated Control of Inverted Pendulum (PID / LQR / DDPG / HDL) |
 
 ---
 
