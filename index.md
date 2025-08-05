@@ -16,17 +16,26 @@ title: EduController トップページ
 
 ---
 
-## 🧭 **構成概要：制御理論とAI制御の2系統**
+## 🧭 **構成概要：制御理論・AI制御・統合制御の3系統**  
+## 🧭 **Overview: Three Tracks – Classical, AI-based, and Hybrid Control**
 
-EduController は、全9章から構成され、以下の2系統に分類されます：
+EduController は、全10章から構成され、以下の3系統に分類されます：  
+EduController consists of 10 chapters, categorized into the following three tracks:
 
-- 🎓 **制御理論系（Part 01〜05）**  
-  **古典制御、状態空間、デジタル制御、実装演習**を体系的に学習
+- 🎓 **制御理論系（Part 01〜05）｜Classical & Modern Control**  
+  古典制御、状態空間、デジタル制御、実装演習を体系的に学習  
+  Systematic learning of classical control, state-space methods, digital control, and practical implementation
 
-- 🤖 **AI制御系（Part 06〜10）**  
-  **ニューラルネット、強化学習、データ駆動制御、LLM統合、倒立振子制御**を段階的に習得
+- 🤖 **AI制御系（Part 06〜08）｜AI-based Control**  
+  ニューラルネット、強化学習、データ駆動制御を段階的に習得  
+  Step-by-step mastery of neural networks, reinforcement learning, and data-driven control
 
-> ※ 各章は独立して学習可能ですが、AI制御系は制御理論の基礎を前提としています。
+- 🧠 **統合・応用制御系（Part 09〜10）｜Hybrid & Applied Control**  
+  LLM統合や倒立振子を通じて制御の総合実装力を強化  
+  Comprehensive application of control theory through LLM integration and inverted pendulum control
+
+> ※ 各章は独立して学習可能ですが、AI制御・統合制御パートは制御理論の基礎を前提としています。  
+> ※ Each chapter can be studied independently, but AI and hybrid control parts assume prior understanding of classical control theory.
 
 ---
 
