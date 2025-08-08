@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EduController/index
+title: EduController/index.md
 ---
 
 ---
