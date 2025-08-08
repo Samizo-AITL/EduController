@@ -168,3 +168,56 @@ kbd{
 @media (max-width: 420px){
   :root{ --pad-x: 1rem; }
 }
+
+/* ===== Reset-ish extras ===== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+@media (prefers-reduced-motion: reduce){
+  * { animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+      transition-duration: .001ms !important; scroll-behavior: auto !important; }
+}
+
+/* 見出しの先頭余白を詰める */
+.container > h1:first-child,
+.container > h2:first-child { margin-top: 0; }
+
+/* フォーカスの視認性 */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible{
+  outline: 2px solid color-mix(in lab, var(--accent) 70%, transparent);
+  outline-offset: 2px;
+}
+
+/* 画像の行間ズレ防止 */
+img, svg, video { display: block; }
+
+/* コードの見やすさ強化 */
+pre { -webkit-overflow-scrolling: touch; tab-size: 2; }
+code, pre code { word-wrap: normal; word-break: normal; white-space: pre; }
+
+/* MathJax（長式のはみ出し対策） */
+.mjx-container { overflow-y: hidden; overflow-x: auto; }
+
+/* 表の横スクロール（狭幅時） */
+@media (max-width: 640px){
+  table{ display: block; width: 100%; overflow-x: auto; white-space: nowrap; }
+}
+
+/* ダークモードのリンク強調を少し強める */
+@media (prefers-color-scheme: dark){
+  a:focus-visible{
+    outline-color: color-mix(in lab, var(--accent) 85%, white 15%);
+  }
+}
+
+/* SR向け：画面には出さないが読み上げる */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0;
+  white-space: nowrap; clip-path: inset(50%);
+  clip: rect(0 0 0 0); overflow: hidden;
+}
