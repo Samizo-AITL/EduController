@@ -15,7 +15,7 @@ title: EduController/README.md
 ---
 
 ## 🧭 **構成概要：制御理論・AI制御・統合制御の3系統**  
-## 🧭 **Overview: Three Tracks – Classical, AI-based, and Hybrid Control**
+**🧭 Overview: Three Tracks – Classical, AI-based, and Hybrid Control**
 
 EduController は、全10章から構成され、以下の3系統に分類されます：  
 EduController consists of 10 chapters, categorized into the following three tracks:
