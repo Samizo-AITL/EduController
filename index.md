@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EduController トップページ
+title: EduController/index
 ---
 
 # 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**
