@@ -10,7 +10,7 @@ It uses **Python-based simulation and visualization** to support **intuitive und
 
 ---
 
-🇯🇵 [日本語版 READMEはこちら](./README.md)
+🇯🇵 [日本語版 READMEはこちら](https://github.com/Samizo-AITL/EduController/blob/main/README.md)
 
 ---
 
