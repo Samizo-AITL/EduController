@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,30 +9,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 
-  <!-- MathJax -->
+  <!-- MathJax (CHTMLで統一) -->
   <script>
     window.MathJax = {
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']]
       },
-      svg: { fontCache: 'global' }
+      chtml: { scale: 1 }  // ← CHTML設定に揃える
     };
   </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
 
-  <header>
-    <h1><a href="{{ "/" | relative_url }}">EduController</a></h1>
-    <hr>
-  </header>
+  <!-- 画面には出さないサイトタイトル（文書アウトラインは維持） -->
+  <h1 class="visually-hidden">{{ site.title | default: "EduController" }}</h1>
 
-  <main>
+  <main class="container">
     {{ content }}
   </main>
 
-  <footer>
+  <footer class="container">
     <hr>
     <p>&copy; 2025 <a href="https://github.com/Samizo-AITL">Samizo Shinichi</a></p>
   </footer>
