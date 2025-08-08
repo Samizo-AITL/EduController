@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Part 1: 古典制御理論 / Classical Control Theory 
+title: Part 1 古典制御理論 / Classical Control Theory 
 ---
 
 ---
