@@ -1,4 +1,14 @@
+---
+layout: default
+title: Part 2: 現代制御理論 / Modern Control Theory
+permalink: /part02_modern/
+---
+
+---
+
 # 🧠 Part 2: 現代制御理論 / Modern Control Theory
+
+---
 
 本章では、**状態空間表現**を基盤としたモダン制御理論を学びます。  
 **可制御性・可観測性**を前提とし、**極配置**による状態フィードバック、**オブザーバ（状態推定器）**設計までを扱います。
