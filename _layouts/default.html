@@ -4,10 +4,13 @@ layout: null
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
+
+  {%- comment -%} SEO（入れてなければ削ってOK） {%- endcomment -%}
+  {% if site.plugins contains "jekyll-seo-tag" %}{% seo %}{% endif %}
 
   <!-- MathJax (CHTMLで統一) -->
   <script>
@@ -16,24 +19,22 @@ layout: null
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']]
       },
-      chtml: { scale: 1 }  // ← CHTML設定に揃える
+      chtml: { scale: 1 }
     };
   </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
 
-  <!-- 画面には出さないサイトタイトル（文書アウトラインは維持） -->
-  <h1 class="visually-hidden">{{ site.title | default: "EduController" }}</h1>
+  <!-- ※ ここに見出しやロゴは一切出さない -->
 
   <main class="container">
     {{ content }}
   </main>
 
   <footer class="container">
-    <hr>
+    <hr />
     <p>&copy; 2025 <a href="https://github.com/Samizo-AITL">Samizo Shinichi</a></p>
   </footer>
-
 </body>
 </html>
