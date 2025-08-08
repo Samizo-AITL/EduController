@@ -10,7 +10,7 @@ title: EduController/README.md
 
 ---
 
-🇺🇸 [**English README here**](./README_en.md)
+🇺🇸 [**English README here**](https://github.com/Samizo-AITL/EduController/blob/main/README_en.md)
 
 ---
 
