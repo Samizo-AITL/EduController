@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EduController/index
+title: Part 1: 古典制御理論 / Classical Control Theory 
 ---
 
 ---
