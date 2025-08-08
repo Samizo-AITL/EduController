@@ -109,4 +109,9 @@ pip install control matplotlib numpy
 
 ---
 
-📎 **[トップに戻る / Back to Home](../README.md)**
+<div class="nav-links">
+  <a class="nav-btn prev" href="./part00_intro/">⬅ 前章へ / Previous</a>
+  <a class="nav-btn home" href="./README.md">🏠 トップへ / Back to Home</a>
+  <a class="nav-btn next" href="./part02_modern/">次章へ / Next ➡</a>
+</div>
+
