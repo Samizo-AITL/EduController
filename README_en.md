@@ -3,6 +3,8 @@ layout: default
 title: EduController/README_en.md
 ---
 
+---
+
 # 🎛️ **EduController**: Educational Framework for Control Theory and AI-based Control
 
 **EduController** is a **progressive** and **practical learning project** that systematically covers **classical control theory**, **modern control**, and **next-generation AI-based control**.  
