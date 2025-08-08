@@ -68,7 +68,7 @@ EduController consists of 10 chapters, categorized into the following three trac
 
 ---
 
-## 🔩 **実装支援ツールキット（目玉モジュール）**
+## 🔩 **実装支援ツールキット**
 
 ### 🔹 [**matlab_tools/**](./matlab_tools/)
 
