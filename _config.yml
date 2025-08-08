@@ -1,10 +1,51 @@
+# --- Site basics ---
 title: EduController
 description: 教育用制御教材ポータル
+lang: ja
+timezone: Asia/Tokyo
+
+# --- Build & routing ---
 markdown: kramdown
-theme: null        # GitHub標準テーマを無効化（自作レイアウト使用）
+theme: null              # 自作レイアウトを使う
+permalink: pretty        # /page/ 形式にする
+
+# 公開URL設定：
+# 1) user.github.io 直下 → url を自分のURL、baseurl は空 "" にする
+# 2) リポジトリ配下 → url は自分のURL、baseurl は "/リポジトリ名"
+url: "https://samizo-aitl.github.io"   # 例
+baseurl: "/Edusemi-v4x"                # 例（直下公開なら "" に）
+
+# --- Markdown (kramdown) ---
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  math_engine: mathjax   # MathJax v3 を使う（レイアウトのscriptと揃える）
+
+# --- Sass/SCSS ---
+sass:
+  style: compressed
+  sourcemap: never
+
+# --- Plugins (GitHub Pagesで使えるもののみ) ---
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# --- Defaults（レイアウト未指定ページの保険）---
+defaults:
+  - scope:
+      path: ""           # すべてのファイル
+    values:
+      layout: base       # _layouts/base.html を既定に
+
+# --- Excludes ---
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-permalink: pretty  # 拡張子 .html をURLから省略
+  - README.md
+  - package.json
+  - package-lock.json
