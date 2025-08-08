@@ -1,3 +1,8 @@
+---
+layout: default
+title: EduController/README.md
+---
+
 # 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**
 
 **EduController** は、**古典制御**から**現代制御**、さらに**AIベースの次世代型制御**までを体系的に学べる、**段階的・実践的な制御教育教材プロジェクト**です。  
