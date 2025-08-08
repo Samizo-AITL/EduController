@@ -221,3 +221,14 @@ code, pre code { word-wrap: normal; word-break: normal; white-space: pre; }
   white-space: nowrap; clip-path: inset(50%);
   clip: rect(0 0 0 0); overflow: hidden;
 }
+
+/* --- Kill the stray top H1 ('EduController') ----------------------- */
+main.container > h1:first-of-type,
+.container > h1:first-of-type,
+main > h1:first-of-type {
+  display: none !important;
+}
+
+/* 先頭見出しが消えた分の余白調整（任意） */
+main.container > h2:first-of-type,
+.container > h2:first-of-type { margin-top: 0; }
