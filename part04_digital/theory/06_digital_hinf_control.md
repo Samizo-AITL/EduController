@@ -50,13 +50,13 @@ $$
 ### H∞ 最適化条件 / H∞ Optimization Objective
 
 $$
-\| T_{zw}(s) \|_\infty < \gamma
+\lVert T_{zw}(s) \rVert_\infty < \gamma
 $$
 
 - $T_{zw}(s)$：外乱 $w$ から性能出力 $z$ への伝達関数  
   $T_{zw}(s)$: Transfer function from disturbance $w$ to performance output $z$  
-- $\| \cdot \|_\infty$ ：全周波数帯域での最大ゲイン（無限ノルム）  
-  $\| \cdot \|_\infty$ : Maximum gain over all frequencies (infinity norm)  
+- $\lVert \cdot \rVert_\infty$ ：全周波数帯域での最大ゲイン（無限ノルム）  
+  $\lVert \cdot \rVert_\infty$ : Maximum gain over all frequencies (infinity norm)  
 
 ---
 
@@ -123,14 +123,14 @@ Kd = c2d(K, Ts, 'tustin');  % デジタル制御器 / Digital controller
 
 ## 📊 ロバスト性評価 / Robustness Metrics
 
-| 指標 / Metric        | 説明 / Description | 目安 / Guideline | 評価 / Rating |
-|----------------------|--------------------|------------------|---------------|
-| ゲイン余裕 GM        | 増幅許容量 / Gain tolerance | > 6 dB | ○ |
-| 位相余裕 PM          | 遅延許容量 / Phase tolerance | > 30° | ○ |
-| $\|S\|_\infty$       | 感度関数の無限ノルム / Infinity norm of sensitivity | < 2.0 | ◎ |
+| 指標 / Metric            | 説明 / Description                                   | 目安 / Guideline | 評価 / Rating |
+|--------------------------|------------------------------------------------------|------------------|---------------|
+| ゲイン余裕 GM            | 増幅許容量 / Gain tolerance                          | > 6 dB           | ○             |
+| 位相余裕 PM              | 遅延許容量 / Phase tolerance                         | > 30°            | ○             |
+| $\lVert S \rVert_\infty$ | 感度関数の無限ノルム / Infinity norm of sensitivity | < 2.0            | ◎             |
 
-> **Note:** $\|S\|_\infty$ が小さいほど外乱に強い。2.0 は約 6 dB に相当。  
-> **Note:** The smaller $\|S\|_\infty$, the stronger the disturbance rejection. 2.0 ≈ 6 dB.
+> **Note:** $\lVert S \rVert_\infty$ が小さいほど外乱に強い。2.0 は約 6 dB に相当。  
+> **Note:** The smaller $\lVert S \rVert_\infty$, the stronger the disturbance rejection. 2.0 ≈ 6 dB.
 
 ---
 
@@ -141,7 +141,7 @@ Kd = c2d(K, Ts, 'tustin');  % デジタル制御器 / Digital controller
 - 演算遅延の位相余裕への影響評価  
   Evaluate the impact of computational delay on phase margin  
 - Simulink Coder による C コード生成 → FPGA実装（`SoC_DesignKit_by_ChatGPT/c_to_hdl/`）  
-  Generate C code using Simulink Coder → Implement on FPGA (`SoC_DesignKit_by_ChatGPT/c_to_hdl/`)
+  Generate C code using Simulink Coder → FPGA implementation (`SoC_DesignKit_by_ChatGPT/c_to_hdl/`)
 
 ---
 
