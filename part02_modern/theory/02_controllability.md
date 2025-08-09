@@ -38,6 +38,7 @@ This section explains the **definitions**, **mathematical tests**, and **enginee
 The property that any initial state $x(0)$ can be driven to any desired state $x(t)$ in **finite time**.
 
 **Kalman 可制御性行列 / Controllability Matrix**  
+> ※GitHubでは数式表示が崩れる場合があります。正しい表示は[Webサイト（GitHub Pages）](https://samizo-aitl.github.io/EduController/part02_modern/theory/01_state_space.html)でご確認ください。
 
 $$
 \mathcal{C} =
