@@ -59,7 +59,6 @@ $$
   $$
   f[k] = \frac{k \cdot f_s}{N}
   $$
-
 - 対称性：実数信号なら **スペクトルは左右対称**
 
 ---
@@ -82,4 +81,8 @@ x_filtered = np.fft.ifft(X_filtered).real
 
 ---
 
+**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part04_digital/theory/04_fir_iir_filter.html)**  
+FIR/IIRフィルタの設計と実装手法を学び、周波数解析への基礎を築きます。
 
+**🏠 [Part 04 トップ / Back to Part 04 Top](https://samizo-aitl.github.io/EduController/part04_digital/)**  
+Part 04全体の概要と教材一覧に戻ります。
