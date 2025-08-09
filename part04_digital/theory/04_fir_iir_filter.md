@@ -4,8 +4,6 @@ title: "📡 04. FIR/IIR フィルタ設計と応答特性（Digital Filters: FI
 permalink: /part04_digital/theory/04_fir_iir_filter.html
 ---
 
-> ℹ️ **Webで数式が正しく表示されない場合はこちら** → [GitHub版を見る](https://github.com/Samizo-AITL/EduController/blob/main/part04_digital/theory/04_fir_iir_filter.md)
-
 ---
 
 # 📡 04. FIR/IIR フィルタ設計と応答特性（Digital Filters: FIR & IIR）
