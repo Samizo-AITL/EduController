@@ -9,6 +9,8 @@ permalink: /part01_classical/theory/05_stability_margins.html
 # 🛡️ 05. 安定余裕とロバスト性の評価  
 **05. Stability Margins & Robustness Evaluation**
 
+> **Note:** 数式が正しく表示されない場合は [GitHub版](https://github.com/Samizo-AITL/EduController/blob/main/part01_classical/theory/05_stability_margins.md) を参照してください。
+
 ---
 
 現実の制御系は、モデル誤差・外乱・遅延などによる不確かさを常に抱えています。安定性を保証しつつ、こうした変動に耐える性能 ― それが「ロバスト性」です。本節では、**ゲイン余裕（Gain Margin）**・**位相余裕（Phase Margin）** による定量評価法と、その設計指針を学びます。  
