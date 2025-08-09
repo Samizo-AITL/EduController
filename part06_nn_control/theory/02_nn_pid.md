@@ -105,11 +105,11 @@ $$
 
 ---
 
-**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/01_nn_control/01_nn_control.html)**  
+**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/01_nn_control.html)**  
 ニューラルネットによる制御設計の基本概念と学習戦略を解説。  
 Covers fundamentals and learning strategies of NN-based control.
 
-**➡️➡️ [次節 / Next](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/03_inverse_model/03_inverse_model.html)**  
+**➡️➡️ [次節 / Next](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/03_inverse_model.html)**  
 逆モデル制御の理論と実装方法を解説。  
 Covers theory and implementation of inverse model control.
 
