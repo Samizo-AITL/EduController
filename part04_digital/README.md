@@ -4,12 +4,8 @@ title: Part 04 デジタル制御と信号処理
 permalink: /part04_digital/
 ---
 
----
-
 # 💻 Part 04: デジタル制御と信号処理  
 **💻 Part 04: Digital Control & Signal Processing**
-
----
 
 本章では、**ディジタル実装**を意識した制御設計と信号処理技術を体系的に学びます。  
 **Z変換、離散PID、デジタルフィルタ、FFT解析**など、実機マイコン制御にも直結する内容を扱います。
@@ -34,34 +30,34 @@ including **Z-transform, discrete PID, digital filters, and FFT analysis**—all
 
 ---
 
-## 📘 **教材ファイル / Theory Materials** [`theory/`](theory/)
+## 📘 **教材ファイル / Theory Materials** [`theory/`](https://samizo-aitl.github.io/EduController/part04_digital/theory/)
 
 | **ファイル名 / File** | **内容 / Description** |
 |------------------------|-------------------------|
-| [`01_sampling_theory.md`](theory/01_sampling_theory.md) | サンプリング定理とZOHの基礎<br>Sampling theorem and ZOH |
-| [`02_z_transform.md`](theory/02_z_transform.md) | Z変換と離散時間伝達関数<br>Z-transform and discrete-time transfer functions |
-| [`03_digital_pid.md`](theory/03_digital_pid.md) | 離散PID制御器の設計と比較<br>Design and comparison of discrete PID |
-| [`04_fir_iir_filter.md`](theory/04_fir_iir_filter.md) | FIR/IIRフィルタの構造と設計法<br>FIR/IIR structure and design |
-| [`05_fft_analysis.md`](theory/05_fft_analysis.md) | FFTによる信号の周波数分析と雑音除去<br>FFT for spectrum analysis and noise removal |
+| [`01_sampling_theory.md`](https://samizo-aitl.github.io/EduController/part04_digital/theory/01_sampling_theory.html) | サンプリング定理とZOHの基礎<br>Sampling theorem and ZOH |
+| [`02_z_transform.md`](https://samizo-aitl.github.io/EduController/part04_digital/theory/02_z_transform.html) | Z変換と離散時間伝達関数<br>Z-transform and discrete-time transfer functions |
+| [`03_digital_pid.md`](https://samizo-aitl.github.io/EduController/part04_digital/theory/03_digital_pid.html) | 離散PID制御器の設計と比較<br>Design and comparison of discrete PID |
+| [`04_fir_iir_filter.md`](https://samizo-aitl.github.io/EduController/part04_digital/theory/04_fir_iir_filter.html) | FIR/IIRフィルタの構造と設計法<br>FIR/IIR structure and design |
+| [`05_fft_analysis.md`](https://samizo-aitl.github.io/EduController/part04_digital/theory/05_fft_analysis.html) | FFTによる信号の周波数分析と雑音除去<br>FFT for spectrum analysis and noise removal |
 
 ---
 
-## 🧪 **シミュレーション / Simulation Scripts** [`simulation/`](simulation/)
+## 🧪 **シミュレーション / Simulation Scripts** [`simulation/`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/)
 
 | **スクリプト名 / Script** | **内容 / Description** |
 |----------------------------|-------------------------|
-| [`digital_pid.py`](simulation/digital_pid.py) | 離散PIDと連続PIDの比較シミュレーション<br>Simulate and compare digital vs. continuous PID |
-| [`iir_fir_filter_demo.py`](simulation/iir_fir_filter_demo.py) (*) | FIR/IIRフィルタの通過特性比較（予定）<br>Planned: FIR/IIR filter response demo |
-| [`fft_noise_removal.py`](simulation/fft_noise_removal.py) | FFTによる雑音除去と信号再構成<br>Noise removal and reconstruction using FFT |
+| [`digital_pid.py`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/digital_pid.py) | 離散PIDと連続PIDの比較シミュレーション<br>Simulate and compare digital vs. continuous PID |
+| [`iir_fir_filter_demo.py`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/iir_fir_filter_demo.py) (*) | FIR/IIRフィルタの通過特性比較（予定）<br>Planned: FIR/IIR filter response demo |
+| [`fft_noise_removal.py`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/fft_noise_removal.py) | FFTによる雑音除去と信号再構成<br>Noise removal and reconstruction using FFT |
 
 ---
 
-## 🖼️ **図・可視化 / Figures** [`figures/`](figures/)
+## 🖼️ **図・可視化 / Figures** [`figures/`](https://samizo-aitl.github.io/EduController/part04_digital/figures/)
 
 | **ファイル名 / Figure** | **内容 / Description** |
 |--------------------------|-------------------------|
-| [`digital_pid_response.png`](figures/digital_pid_response.png) | 離散PIDと連続PIDのステップ応答比較<br>Step response: discrete vs. continuous PID |
-| [`fft_spectrum.png`](figures/fft_spectrum.png) | FFTによるスペクトル解析と除去後波形<br>FFT spectrum and filtered waveform |
+| [`digital_pid_response.png`](https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_pid_response.png) | 離散PIDと連続PIDのステップ応答比較<br>Step response: discrete vs. continuous PID |
+| [`fft_spectrum.png`](https://samizo-aitl.github.io/EduController/part04_digital/figures/fft_spectrum.png) | FFTによるスペクトル解析と除去後波形<br>FFT spectrum and filtered waveform |
 
 ---
 
@@ -78,9 +74,9 @@ including **Z-transform, discrete PID, digital filters, and FFT analysis**—all
 
 ## 🚧 **今後の予定 / Upcoming Tasks**
 
-- [`iir_fir_filter_demo.py`](simulation/iir_fir_filter_demo.py) の補完とプロット整備  
+- [`iir_fir_filter_demo.py`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/iir_fir_filter_demo.py) の補完とプロット整備  
   **Complete FIR/IIR simulation and plotting**  
-- [`notebooks/`](./notebooks/) ディレクトリに Jupyter Notebook 版を追加  
+- [`notebooks/`](https://samizo-aitl.github.io/EduController/part04_digital/notebooks/) ディレクトリに Jupyter Notebook 版を追加  
   **Add interactive Jupyter Notebook versions**  
 - `README_jp.md` の英日切替対応（GitHub Pages対応構想）  
   **Add EN/JP toggle-ready structure for public view**  
@@ -98,14 +94,12 @@ including **Z-transform, discrete PID, digital filters, and FFT analysis**—all
 
 ---
 
-**⬅️ [前章 / Previous Chapter](../part03_adaptive/)**  
+**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part03_adaptive/)**  
 適応制御（MRAC）、ロバスト制御（H∞、L1）など、パラメータ変動や外乱に強い制御法を扱います。  
 Covers adaptive control (MRAC) and robust control methods (H∞, L1) designed to handle parameter variations and disturbances.
 
-**[次章 / Next Chapter ➡️➡️](../part05_practical/)**  
+**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part05_practical/)**  
 Pythonによる制御系実装、ROSを用いたロボット制御演習、FPGAによる制御ハードウェア化を学びます。  
 Covers control system implementation in Python, robot control exercises using ROS, and FPGA-based hardware realization.
 
-**🏠 [トップページ / Back to Home](../README.md)**
-
----
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
