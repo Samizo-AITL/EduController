@@ -8,7 +8,8 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 
 # 🤖 01. ニューラルネットによる制御設計（Neural Network-based Control）
 
-> 💡 **Note:** 数式がWebで正しく表示されない場合は、[GitHub版ページはこちら](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/01_nn_control.md) を参照してください。
+> 💡 **Note:** 数式やMermaid図がWebで正しく表示されない場合は、  
+> **[GitHub版ページはこちら](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/01_nn_control.md)** を参照してください。
 
 ---
 
@@ -40,20 +41,18 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 
 ## 📐 **2. 制御器としてのNNアーキテクチャ**
 
-以下は、制御対象 $P$ に対するNN制御器 $f_\theta(\cdot)$ の一般構成です：
-
-```plaintext
-[ reference r(t) ]
-        ↓
-+----------------+
-|   NN f_θ       |  ← 入力：r(t), y(t), e(t) など
-+----------------+
-        ↓
-[ u(t) ] → [ Plant P ] → [ y(t) ]
+### 🌐 一般構成（General NN Controller）
+```mermaid
+flowchart LR
+    R[r(t)] --> NN["NN Controller<br/>f_θ(·)"]
+    Y[y(t)] -.-> E["e(t)=r(t)-y(t)"]
+    R -.-> NN
+    Y -.-> NN
+    E -.-> NN
+    NN --> U[u(t)]
+    U --> P[Plant P]
+    P --> Y
 ```
-
-- 教師あり学習では $u_{\text{true}}$ を教師信号とし、NNを回帰学習  
-- 教師なし学習や強化学習と組み合わせることで、自律制御へ発展可能  
 
 ---
 
@@ -65,6 +64,48 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 | **Direct NN Control** | NN出力をそのまま制御指令に使用               | 汎用性が高いが学習が難しい     |
 | **NN-PID**          | PID出力にNN補正を加える                       | 安定性と柔軟性の両立           |
 | **Hybrid（LLM含む）** | ルール＋NN制御、AITL構想など                  | 状況依存の判断に強み           |
+
+---
+
+### 🟦 逆モデル制御（Inverse Model Control）
+```mermaid
+flowchart LR
+    Y[y(t)] --> NN["Inverse Model NN<br/>f_θ(y) ≈ u"]
+    R[r(t)] -.-> NN
+    NN --> U[u(t)]
+    U --> P[Plant P]
+    P --> Y
+```
+
+---
+
+### 🟩 直接NN制御（Direct NN Control）
+```mermaid
+flowchart LR
+    R[r(t)] --> NN["Direct NN Control<br/>f_θ(r,y) → u"]
+    Y[y(t)] -.-> NN
+    NN --> U[u(t)]
+    U --> P[Plant P]
+    P --> Y
+```
+
+---
+
+### 🟪 NN-PID制御（PID補償付き）
+```mermaid
+flowchart LR
+    R[r(t)] --> PID[PID]
+    Y[y(t)] -.-> PID
+    R -.-> NN["NN Compensator"]
+    Y -.-> NN
+    PID --> U1[u_pid]
+    NN --> U2[u_nn]
+    U1 --> SUM((+))
+    U2 --> SUM
+    SUM --> U[u(t)]
+    U --> P[Plant P]
+    P --> Y
+```
 
 ---
 
@@ -108,4 +149,3 @@ Design and training method of Neural PID controller.
 **🏠 [Part 06 トップ / Back to Part 06 Top](https://samizo-aitl.github.io/EduController/part06_nn_control/)**  
 全体概要と各章リンクを掲載。  
 Provides full overview and links to all sections.
-
