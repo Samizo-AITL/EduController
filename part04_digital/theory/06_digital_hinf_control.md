@@ -51,8 +51,8 @@ S(s) = \frac{1}{1 + G(s)K(s)}, \quad T(s) = 1 - S(s)
 ```
 - $T_{zw}(s)$：外乱 $w$ から性能出力 $z$ への伝達関数  
   $T_{zw}(s)$: Transfer function from disturbance $w$ to performance output $z$  
-- $\| \cdot \|_\infty$：全周波数帯域での最大ゲイン（無限ノルム）  
-  $\| \cdot \|_\infty$: Maximum gain over all frequencies (infinity norm)  
+- $\| \cdot \|_\infty$ ：全周波数帯域での最大ゲイン（無限ノルム）  
+  $\| \cdot \|_\infty$ : Maximum gain over all frequencies (infinity norm)  
 
 ---
 
