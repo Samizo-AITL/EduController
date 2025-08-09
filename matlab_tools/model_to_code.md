@@ -35,7 +35,6 @@ permalink: /matlab_tools/model_to_code.html
 
 ## 💬 ChatGPT連携プロンプト例
 
-```markdown
 # タスク: 以下のCコードをVerilogに変換
 ## 条件:
 - 固定小数点（Q4.4形式）
@@ -43,7 +42,6 @@ permalink: /matlab_tools/model_to_code.html
 - 出力は `ctrl_out`
 ```c
 output = Kp * error + Ki * integral;
-```
 ```
 
 💡 HDL変換には [`c_to_hdl/conversion_prompt.md`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/conversion_prompt.html) を活用してください。
