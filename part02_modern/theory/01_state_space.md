@@ -46,7 +46,7 @@ $$
 ---
 
 ## 🧠 各行列の意味｜Meaning of Each Matrix  
-> ※GitHubでの数式はプレーン表示になります。Webサイト（GitHub Pages）ではMathJaxで綺麗に表示されます。
+> ※GitHubでは数式表示が崩れる場合があります。正しい表示はWebサイト（GitHub Pages）でご確認ください。
 
 | 行列 | 次元 / Dimension | 役割 / Role |
 |---|---|---|
