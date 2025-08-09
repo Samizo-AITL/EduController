@@ -46,10 +46,11 @@ $$
 ## 📊 ボード線図の構成｜Bode Plot Structure
 
 - **横軸 / X-axis**：周波数（対数スケール, [rad/s]）  
-- **縦軸（上段） / Upper Y-axis**：ゲイン（dB）  
-  → $20 \log_{10} \lvert G(j\omega) \rvert$  
-- **縦軸（下段） / Lower Y-axis**：位相（deg）  
-  → $\arg G(j\omega)$
+- **縦軸（上段） / Upper Y-axis**：ゲイン（dB） →  $20 \log_{10} \lvert G(j\omega) \rvert$  
+- **縦軸（下段） / Lower Y-axis**：位相（deg） →  $\arg G(j\omega)$  
+
+ボード線図は、ゲイン特性と位相特性を上下2つのグラフで表示します。  
+A Bode plot displays magnitude and phase characteristics in two separate graphs.
 
 ボード線図は、ゲイン特性と位相特性を上下2つのグラフで表示します。  
 A Bode plot displays magnitude and phase characteristics in two separate graphs.
