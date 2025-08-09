@@ -46,7 +46,7 @@ $$
 ---
 
 ## 🧠 各行列の意味｜Meaning of Each Matrix  
-> ※GitHubでは数式表示が崩れる場合があります。正しい表示はWebサイト（GitHub Pages）でご確認ください。
+※GitHubでは数式表示が崩れる場合があります。正しい表示は[Webサイト（GitHub Pages）](https://samizo-aitl.github.io/EduController/part02_modern/theory/01_state_space.html)でご確認ください。
 
 | 行列 | 次元 / Dimension | 役割 / Role |
 |---|---|---|
