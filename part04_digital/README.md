@@ -1,5 +1,15 @@
+---
+layout: default
+title: Part 04: デジタル制御と信号処理
+permalink: /part04_digital/
+---
+
+---
+
 # 💻 Part 04: デジタル制御と信号処理  
-# 💻 Part 04: Digital Control & Signal Processing
+**💻 Part 04: Digital Control & Signal Processing**
+
+---
 
 本章では、**ディジタル実装**を意識した制御設計と信号処理技術を体系的に学びます。  
 **Z変換、離散PID、デジタルフィルタ、FFT解析**など、実機マイコン制御にも直結する内容を扱います。
@@ -74,7 +84,19 @@ including **Z-transform, discrete PID, digital filters, and FFT analysis**—all
   **Add interactive Jupyter Notebook versions**  
 - `README_jp.md` の英日切替対応（GitHub Pages対応構想）  
   **Add EN/JP toggle-ready structure for public view**  
-- 次章 [`part05_implementation/`](../part05_implementation/) との連携準備  
-  **Connect with next section: Implementation on real systems**
+
+---
+
+---
+
+**⬅️ [前章 / Previous Chapter](../part03_adaptive/)**  
+適応制御（MRAC）、ロバスト制御（H∞、L1）など、パラメータ変動や外乱に強い制御法を扱います。  
+Covers adaptive control (MRAC) and robust control methods (H∞, L1) designed to handle parameter variations and disturbances.
+
+**[次章 / Next Chapter ➡️➡️](../part05_practical/)**  
+Pythonによる制御系実装、ROSを用いたロボット制御演習、FPGAによる制御ハードウェア化を学びます。  
+Covers control system implementation in Python, robot control exercises using ROS, and FPGA-based hardware realization.
+
+**🏠 [トップページ / Back to Home](../README.md)**
 
 ---
