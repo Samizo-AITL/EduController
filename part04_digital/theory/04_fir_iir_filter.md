@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "📡 04. FIR/IIR フィルタ設計と応答特性（Digital Filters: FIR & IIR）"
-permalink: /part04_digital/theory/04_fir_iir_filter.html
+permalink: /part04_digital/theory/04_fir_iir_filter.html 
 ---
 
 ---
