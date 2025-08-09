@@ -8,7 +8,7 @@ permalink: /part03_adaptive/theory/01_adaptive_intro/
 
 # 🔄 3.1 適応制御の概要 / Introduction to Adaptive Control
 
-> ℹ️ **数式が正しく表示されない場合**は、[GitHub版はこちら](https://github.com/Samizo-AITL/EduController/blob/main/part03_adaptive/theory/01_adaptive_intro.md) をご参照ください。
+> ℹ️ 数式が正しく表示されない場合 / If equations do not display correctly: [GitHub版 / GitHub version](https://github.com/Samizo-AITL/EduController/blob/main/part03_adaptive/theory/01_adaptive_intro.md)
 
 ---
 
