@@ -1,9 +1,7 @@
 ---
 layout: default
 title: 02. 可制御性と可観測性の基本 / Controllability & Observability
-permalink: /part02_modern/theory/02_controllability/
----
-
+permalink: /part02_modern/theory/02_controllability.html
 ---
 
 # 🔍 02. 可制御性と可観測性の基本 / Basics of Controllability & Observability
@@ -149,14 +147,14 @@ print("Rank:", np.linalg.matrix_rank(Obsv))
 
 ---
 
-**⬅️ [前節 / Previous Section](./01_state_space.md)**  
+**⬅️ [前節 / Previous Section](/part02_modern/theory/01_state_space.html)**  
 状態空間表現の基礎を解説します。  
 Covers the basics of state-space representation.
 
-**➡️ [次節 / Next Section](./03_state_feedback.md)**  
+**➡️ [次節 / Next Section](/part02_modern/theory/03_state_feedback.html)**  
 状態フィードバックと極配置を解説します。  
 Covers state feedback and pole placement.
 
-**📚 [この章のREADMEへ / Back to Part 2 README](../README.md)**  
+**📚 [この章のREADMEへ / Back to Part 2 README](/part02_modern/theory/)**  
 現代制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 2 structure and materials list.
