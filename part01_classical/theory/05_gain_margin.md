@@ -141,10 +141,10 @@ print(f"Gain Margin: {gm}, Phase Margin: {pm}")
 
 ---
 
-**⬅️ [前節 / Previous Section](./04_frequency_response.html)**  
+**⬅️ [前節 / Previous Section](https://samizo-aitl.github.io/EduController/part01_classical/theory/04_frequency_response.html)**  
 周波数応答とボード線図の基礎を学びます。  
 Covers basics of frequency response and Bode plots.
 
-**📚 [この章のREADMEへ / Back to Part 1 README](../README.md)**  
+**📚 [この章のREADMEへ / Back to Part 1 README](https://samizo-aitl.github.io/EduController/part01_classical/)**  
 古典制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 1 structure and materials list.
