@@ -4,6 +4,8 @@ title: 03. 状態フィードバックと極配置 / State Feedback & Pole Place
 permalink: /part02_modern/theory/03_state_feedback.html
 ---
 
+---
+
 # 🎛️ 03. 状態フィードバックと極配置 / State Feedback & Pole Placement
 
 ---
