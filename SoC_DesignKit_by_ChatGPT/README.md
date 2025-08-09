@@ -114,10 +114,16 @@ output = Kp * error + Ki * integral;
 
 ---
 
-## 🔖 ライセンス / License
+## 👤 **著者・ライセンス / Author & License**
 
-MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
-本テンプレートは教育・演習・個人開発用途で自由に使用可能です。  
-This template set is free to use for education, prototyping, and personal development.
+| **項目 / Item** | **内容 / Details** |
+|-----------------|--------------------|
+| **著者 / Author** | 三溝 真一（Shinichi Samizo） |
+| **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
+| **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
+| **ライセンス / License** | MIT License（再配布・改変自由）<br>Redistribution and modification allowed |
 
 ---
+
+**🏠 [トップページ / Back to Home](../README.md)**
+
