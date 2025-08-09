@@ -8,6 +8,8 @@ permalink: /part02_modern/theory/04_observer_design.html
 
 # 👁️ 04. オブザーバ設計と状態推定 / Observer Design & State Estimation
 
+> **Note:** 数式が正しく表示されない場合は [GitHub版](https://github.com/Samizo-AITL/EduController/blob/main/part02_modern/theory/04_observer_design.md) を参照してください。
+
 ---
 
 **状態フィードバック制御**を行うには、すべての状態 $x(t)$ を把握する必要があります。  
