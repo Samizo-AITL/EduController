@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Part 1 古典制御理論 / Classical Control Theory 
-permalink: /part01_classical/theory/
+permalink: /part01_classical/theory/01_pid_control.md
 ---
 
 # 🧩 01. PID制御の基礎  
