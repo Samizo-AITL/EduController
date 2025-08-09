@@ -1,4 +1,18 @@
+---
+layout: default
+title: "📡 04. FIR/IIR フィルタ設計と応答特性（Digital Filters: FIR & IIR）"
+permalink: /part04_digital/theory/04_fir_iir_filter.html
+---
+
+> ℹ️ **Webで数式が正しく表示されない場合はこちら** → [GitHub版を見る](https://github.com/Samizo-AITL/EduController/blob/main/part04_digital/theory/04_fir_iir_filter.md)
+
+---
+
 # 📡 04. FIR/IIR フィルタ設計と応答特性（Digital Filters: FIR & IIR）
+
+> ℹ️ **Webで数式が正しく表示されない場合はこちら** → [GitHub版を見る](https://github.com/Samizo-AITL/EduController/blob/main/part04_digital/theory/04_fir_iir_filter.md)
+
+---
 
 ディジタル信号処理の中心的技術である **FIR/IIRフィルタ**は、  
 制御系でも**ノイズ除去**や**信号平滑化**、**前処理**などに広く応用されます。
