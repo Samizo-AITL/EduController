@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 02. NN-PID制御：ニューラルネットによるPID補完制御
-permalink: /EduController/part06_nn_control/theory/02_nn_pid/
+permalink: /EduController/part06_nn_control/theory/02_nn_pid.html
 ---
 
 ---
@@ -32,16 +32,19 @@ PIDの**堅牢性**とNNの**柔軟性**を組み合わせることで、**非�
 ## 🔧 **1. NN-PIDの構成**
 
 ### 📌 ベース：標準PID制御
+
 $$
 u(t) = K_p e(t) + K_i \int e(t) dt + K_d \frac{de(t)}{dt}
 $$
 
 ### 🧩 NN-PID構成例①：NNによる誤差補正項
+
 $$
 u(t) = u_{\text{PID}}(t) + f_\theta(e(t), \dot{e}(t), \int e(t) dt)
 $$
 
 ### 🧩 NN-PID構成例②：NNがPIDゲインを動的生成
+
 $$
 K_p(t), K_i(t), K_d(t) = f_\theta(x(t))
 \quad \Rightarrow \quad
