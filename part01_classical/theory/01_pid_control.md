@@ -4,8 +4,12 @@ title: 🧩 PID制御の基礎 / Introduction to PID Control
 permalink: /part01_classical/theory/01_pid_control.html
 ---
 
+---
+
 # 🧩 01. PID制御の基礎  
 **01. Introduction to PID Control**
+
+---
 
 PID（比例・積分・微分）制御は、最も基本的かつ広く使われているフィードバック制御の一種です。本節では、PID制御の原理と、それぞれの要素が制御系に与える影響を理解し、動作と設計の基本を習得します。  
 PID (Proportional–Integral–Derivative) control is one of the most fundamental and widely used feedback control methods. This section explains the principles and effects of each term, and introduces basic design techniques.
