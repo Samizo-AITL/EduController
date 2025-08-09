@@ -4,8 +4,6 @@ title: Part08
 permalink: /part08_data_driven/
 ---
 
-> 💡 **Note:** 数式や表が正しく表示されない場合は、[GitHub版はこちら](https://github.com/Samizo-AITL/EduController/blob/main/part08_data_driven/README.md) を参照してください。
-
 ---
 
 # 📊 Part 8: データ駆動型制御 / Data-Driven Control
