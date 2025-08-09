@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Part06
-permalink: /part06_nn_control/
+permalink: /EduController/part06_nn_control/
 ---
 
 ---
@@ -58,21 +58,21 @@ part06_nn_control/
 
 | **内容 / Description** | **ファイル / File** |
 |-------------------------|----------------------|
-| NN-PID制御器（PyTorch）<br>Neural PID controller in PyTorch | [`nn_pid_control.py`](./simulation/nn_pid_control.py) |
-| NN制御の学習・可視化<br>Training & visualizing NN controller | [`train_nn_pid.ipynb`](./notebooks/train_nn_pid.ipynb) |
-| 逆モデル制御の学習<br>Inverse model learning for control | [`inverse_model_train.py`](./simulation/inverse_model_train.py) |
-| PID vs NN 比較<br>PID vs NN simulation comparison | [`ai_vs_pid_sim.py`](./simulation/ai_vs_pid_sim.py) |
+| NN-PID制御器（PyTorch）<br>Neural PID controller in PyTorch | [`nn_pid_control.py`](https://samizo-aitl.github.io/EduController/part06_nn_control/simulation/nn_pid_control.py) |
+| NN制御の学習・可視化<br>Training & visualizing NN controller | [`train_nn_pid.ipynb`](https://samizo-aitl.github.io/EduController/part06_nn_control/notebooks/train_nn_pid.ipynb) |
+| 逆モデル制御の学習<br>Inverse model learning for control | [`inverse_model_train.py`](https://samizo-aitl.github.io/EduController/part06_nn_control/simulation/inverse_model_train.py) |
+| PID vs NN 比較<br>PID vs NN simulation comparison | [`ai_vs_pid_sim.py`](https://samizo-aitl.github.io/EduController/part06_nn_control/simulation/ai_vs_pid_sim.py) |
 
 ---
 
-## 🧠 **理論資料 / Theory Files** [`theory/`](./theory/)
+## 🧠 **理論資料 / Theory Files** [`theory/`](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/)
 
 | **タイトル / Topic** | **ファイル / File** |
 |------------------------|----------------------|
-| NN制御の概要と特徴<br>Overview of NN-based control | [`01_nn_control.md`](./theory/01_nn_control.md) |
-| NN-PID制御の構成と学習法<br>Structure & training of NN-PID | [`02_nn_pid.md`](./theory/02_nn_pid.md) |
-| 逆モデル制御の理論と実装<br>Inverse model theory & implementation | [`03_inverse_model.md`](./theory/03_inverse_model.md) |
-| AI制御と古典制御の比較と統合<br>AI vs classical control & hybrid strategy | [`04_ai_vs_classical.md`](./theory/04_ai_vs_classical.md) |
+| NN制御の概要と特徴<br>Overview of NN-based control | [`01_nn_control.md`](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/01_nn_control.html) |
+| NN-PID制御の構成と学習法<br>Structure & training of NN-PID | [`02_nn_pid.md`](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/02_nn_pid.html) |
+| 逆モデル制御の理論と実装<br>Inverse model theory & implementation | [`03_inverse_model.md`](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/03_inverse_model.html) |
+| AI制御と古典制御の比較と統合<br>AI vs classical control & hybrid strategy | [`04_ai_vs_classical.md`](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/04_ai_vs_classical.html) |
 
 ---
 
@@ -80,17 +80,17 @@ part06_nn_control/
 
 - **LSTM / Transformer** による時系列制御への応用  
   Application of **LSTM / Transformer** to time-series control  
-- **強化学習**ベース制御との連携 → [`part07_rl_control/`](../part07_rl_control/)  
+- **強化学習**ベース制御との連携 → [`part07_rl_control/`](https://samizo-aitl.github.io/EduController/part07_rl_control/)  
   Integration with **Reinforcement Learning** (Part 7)  
-- **AITL構想との統合**：PID + NN + LLM による**三層制御アーキテクチャ** → [`part09_llm_control/`](../part09_llm_control/)  
+- **AITL構想との統合**：PID + NN + LLM による**三層制御アーキテクチャ** → [`part09_llm_control/`](https://samizo-aitl.github.io/EduController/part09_llm_control/)  
   Unified **three-layer architecture**: PID + NN + LLM (**AITL**)
 
 ---
 
 ## 📚 **参考文献・リンク / References & Links**
 
-- [🔗 PyTorch公式ドキュメント / PyTorch Docs](https://pytorch.org/docs/)
-- **Narendra & Parthasarathy** (1990), *"Neural Networks for Control"*
+- [🔗 PyTorch公式ドキュメント / PyTorch Docs](https://pytorch.org/docs/)  
+- **Narendra & Parthasarathy** (1990), *"Neural Networks for Control"*  
 - 本教材プロジェクト / This project: [EduController (GitHub)](https://github.com/Samizo-AITL/EduController)
 
 ---
@@ -106,14 +106,12 @@ part06_nn_control/
 
 ---
 
-**⬅️ [前章 / Previous Chapter](../part05_practical/)**  
+**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part05_practical/)**  
 Pythonによる制御系実装、ROSを用いたロボット制御演習、FPGAによる制御ハードウェア化を学びます。  
 Covers control system implementation in Python, robot control exercises using ROS, and FPGA-based hardware realization.
 
-**[次章 / Next Chapter ➡️➡️](../part07_rl_control/)**  
+**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part07_rl_control/)**  
 強化学習による制御（Q学習、DDPG、PPOなど）を扱います。  
 Covers reinforcement learning control methods including Q-learning, DDPG, and PPO.
 
-**🏠 [トップページ / Back to Home](../README.md)**
-
----
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
