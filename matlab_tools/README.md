@@ -8,6 +8,12 @@ permalink: /matlab_tools/
 
 # 🧰 matlab_tools/
 
+[![GitHub](https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github)](https://github.com/Samizo-AITL/matlab_tools)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+💡 **このページは概要です。実際のコードやモデルは [GitHubリポジトリ](https://github.com/Samizo-AITL/matlab_tools) 上で直接操作できます。**  
+ブラウザでファイルを開く／ダウンロードする／履歴を確認するなどの操作が可能です。
+
 このディレクトリは、**SimulinkやMATLABコードによる制御設計の演習**を支援する補助モジュール群です。  
 設計モデルからCコードへの変換や、将来的なVerilog連携（C→HDL）に向けた教材基盤としても活用されます。
 
