@@ -9,6 +9,8 @@ permalink: /part02_modern/theory/01_state_space.html
 # 🧮 01. 状態空間表現の基礎  
 **01. Basics of State-Space Representation**
 
+> **Note:** 数式が正しく表示されない場合は [GitHub版](https://github.com/Samizo-AITL/EduController/blob/main/part02_modern/theory/01_state_space.md) を参照してください。
+
 ---
 
 状態空間表現は、システムの動的挙動を**ベクトルと行列**で表すモダン制御理論の基礎です。本節では、状態方程式の構成、入出力との関係、伝達関数との対応、そしてPythonによる実装までを学びます。  
@@ -46,7 +48,6 @@ $$
 ---
 
 ## 🧠 各行列の意味｜Meaning of Each Matrix  
-※Webサイトでは数式表示されません。正しい表示は[GitHubリポジトリ](https://github.com/Samizo-AITL/EduController/blob/main/part02_modern/theory/01_state_space.md)でご確認ください。
 
 | 行列 | 次元 / Dimension | 役割 / Role |
 |---|---|---|
