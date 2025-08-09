@@ -4,6 +4,8 @@ title: 02_scenario_control
 permalink: /part09_llm_hybrid/theory/02_scenario_control.html
 ---
 
+---
+
 # 🎭 02. シナリオ制御とLLMの活用  
 **Scenario-Based Control with LLM Integration**
 
