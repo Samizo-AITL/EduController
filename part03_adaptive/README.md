@@ -1,4 +1,14 @@
+---
+layout: default
+title: Part 03: 適応制御・ロバスト制御 / Adaptive & Robust Control
+permalink: /part03_adaptive/
+---
+
+---
+
 # 🔄 Part 03: 適応制御・ロバスト制御 / Adaptive & Robust Control
+
+---
 
 本章では、制御対象のパラメータ変動・モデリング誤差に対応する  
 **適応制御**と**ロバスト制御**について、**理論と実装の両面**から学びます。  
@@ -91,11 +101,21 @@ These are also positioned as flexible technologies for the "**rational layer**" 
 
 | **項目 / Item** | **内容 / Details** |
 |-----------------|--------------------|
-| **著者 / Author** | 三溝 真一（Shinichi Samizo）<br>Shinshu University / Ex-Epson |
+| **著者 / Author** | 三溝 真一（Shinichi Samizo）|
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
 | **ライセンス / License** | MIT License（再配布・改変自由）<br>Redistribution and modification allowed |
 
 ---
 
-📎 **[トップに戻る / Back to Home](../README.md)**
+**⬅️ [前章 / Previous Chapter](../part02_modern/)**  
+状態空間モデル、最適レギュレータ（LQR）、カルマンフィルタによる推定手法を扱います。  
+Covers state-space modeling, optimal regulator (LQR), and estimation techniques using the Kalman filter.
+
+**[次章 / Next Chapter ➡️➡️](../part04_digital/)**  
+デジタル制御の基礎、Z変換、DSP実装など、離散時間系の制御と実装方法を学びます。  
+Covers the basics of digital control, Z-transform, and DSP implementation for discrete-time systems.
+
+**🏠 [トップページ / Back to Home](../README.md)**
+
+---
