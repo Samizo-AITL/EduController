@@ -1,30 +1,44 @@
-# 🎯 04. 目的推論と対話型制御
+---
+layout: default
+title: 04_goal_reasoning
+permalink: /part09_llm_hybrid/theory/04_goal_reasoning.html
+---
 
-本節では、LLMの自然言語理解能力を活用して、  
-「目的そのものの認識・修正・計画分解」を行う**知能的制御戦略**について解説します。
+# 🎯 04. 目的推論と対話型制御  
+**Goal Reasoning and Dialogue-based Control**
 
 ---
 
-## 🤔 目的推論とは？
+本節では、LLMの自然言語理解能力を活用し、  
+**目的の認識・修正・分解** を行う知能的制御戦略について解説します。  
 
-- 単なる命令実行ではなく、「何を目指すべきか」を推論・理解する過程
-- 状況や対話に応じて目標そのものが変化する可能性がある
-- プランニングや意図理解とも関連が深い
-
----
-
-## 🧠 LLMによる目的推論の役割
-
-| 機能 | 内容 |
-|------|------|
-| 意図理解 | 「充電せよ」の裏にある目的（バッテリー低下）を推定 |
-| ゴール再構成 | 環境変化やユーザ指示で目的そのものを更新 |
-| サブゴール生成 | 「探索 → 発見 → 運搬 → 充電」などのステップ提案 |
-| 対話制御 | ユーザとの言語的インタラクションを通じた目標確認 |
+This section explains an intelligent control strategy that leverages the natural language understanding capabilities of LLMs to **recognize, modify, and decompose goals**.
 
 ---
 
-## 💬 例：LLMによるゴール判断のプロンプト
+## 🤔 **目的推論とは？ / What is Goal Reasoning?**
+
+- 単なる命令実行ではなく、「何を目指すべきか」を推論・理解するプロセス  
+  Not just executing commands, but reasoning and understanding **what should be achieved**  
+- 状況や対話に応じて目標そのものが変化する可能性がある  
+  Goals may change according to situations or dialogue  
+- プランニングや意図理解とも密接に関連  
+  Closely related to planning and intent recognition
+
+---
+
+## 🧠 **LLMによる目的推論の役割 / Role of LLMs in Goal Reasoning**
+
+| **機能 / Function** | **内容 / Description** |
+|------|--------------|
+| **意図理解 / Intent Understanding** | 命令の背後にある目的を推定（例：「充電せよ」→ バッテリー低下） |
+| **ゴール再構成 / Goal Reconstruction** | 環境変化やユーザ指示による目標更新 |
+| **サブゴール生成 / Subgoal Generation** | 「探索 → 発見 → 運搬 → 充電」などのステップ提案 |
+| **対話制御 / Dialogue Control** | ユーザとの言語的インタラクションによる目標確認 |
+
+---
+
+## 💬 **例：LLMによるゴール判断プロンプト / Example Prompt for Goal Reasoning**
 
 ```python
 prompt = '''
@@ -34,12 +48,13 @@ prompt = '''
 最適な行動は？
 '''
 response = chatgpt_respond(prompt)
-→ 返答：「障害物を回避し、最短経路を再計算して移動してください。」
+# 例 / Example:
+# 「障害物を回避し、最短経路を再計算して移動してください。」
 ```
 
 ---
 
-## 📘 実装概要（agent構造）
+## 📘 **実装概要（エージェント構造） / Implementation Overview (Agent Structure)**
 
 ```python
 class GoalReasoningAgent:
@@ -52,26 +67,39 @@ class GoalReasoningAgent:
 
 ---
 
-## 🔄 FSMとの接続
+## 🔄 **FSMとの接続 / Connection with FSM**
 
-- FSMの遷移先状態や目標条件をLLMが柔軟に切り替える
-- 状態遷移ではなく「目的の変更」に対応するアーキテクチャへ拡張可能
-
----
-
-## 🧠 AITL構想における知性層の展開
-
-- 本能層（FSM）… 状態の切り替え
-- 理性層（PID）… 実時間制御
-- **知性層（LLM）… 目的生成・修正・多段階判断**
+- FSMの遷移先や目標条件を、LLMが柔軟に切り替える  
+  LLM can flexibly change FSM target states and goal conditions  
+- 状態遷移ではなく「目的の変更」に直接対応可能  
+  Can directly handle **goal changes** instead of just state transitions
 
 ---
 
-## 🔚 まとめ
+## 🧠 **AITL構想における知性層の展開 / Role of the Intelligence Layer in AITL**
 
-- ゴールベース制御は、**柔軟性・汎化性・自律性**を大きく向上させる
-- LLMとの統合により「対話的・文脈的な制御」が現実的に可能となる
-
-📁 次は：[`fsm_pid_llm_sim.py`](../simulation/fsm_pid_llm_sim.py) にて3層統合制御を実装します。
+| **層 / Layer** | **役割 / Role** |
+|------|----------|
+| 本能層（FSM） / Instinct Layer (FSM) | 状態の切り替え |
+| 理性層（PID） / Rational Layer (PID) | 実時間制御 |
+| 知性層（LLM） / Intelligence Layer (LLM) | 目的生成・修正・多段階判断 |
 
 ---
+
+## 🔚 **まとめ / Summary**
+
+- ゴールベース制御は **柔軟性・汎化性・自律性** を大幅に向上  
+  Goal-based control greatly improves **flexibility, generalization, and autonomy**  
+- LLM統合により「対話的・文脈的な制御」が現実的に可能  
+  Integration with LLMs enables **interactive and context-aware control**
+
+---
+
+## 📁 **次へ / Next**
+
+📄 [fsm_pid_llm_sim.py（3層統合制御の実装）](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/simulation/fsm_pid_llm_sim.py)
+
+---
+
+**⬅️ [03_exception_handling.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/03_exception_handling.html)**  
+**🏠 [Part 9 トップに戻る / Back to Part 9 Top](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/)**
