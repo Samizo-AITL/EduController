@@ -1,4 +1,14 @@
+---
+layout: default
+title:　Part 5  実装・応用編 / Implementation and Applications
+permalink: /part0５_practical/
+---
+
+---
+
 # 🧪 Part 5: 実装・応用編 / Implementation and Applications
+
+---
 
 この章では、制御理論を実際のシステムに適用するための  
 **Python実装・マイコン展開・ROS連携** などの実践的な応用手法を学びます。
