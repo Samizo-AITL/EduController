@@ -8,6 +8,8 @@ permalink: /part02_modern/theory/03_state_feedback.html
 
 # 🎛️ 03. 状態フィードバックと極配置 / State Feedback & Pole Placement
 
+> **Note:** 数式が正しく表示されない場合は [GitHub版](https://github.com/Samizo-AITL/EduController/blob/main/part02_modern/theory/03_state_feedback.md) を参照してください。
+
 ---
 
 **状態空間モデル**を使うことで、システムの応答特性（安定性・速度・減衰など）を**極の配置**で設計できます。  
