@@ -39,10 +39,10 @@ It is based on the **AITL framework (FSM × PID × LLM)**, aiming to build adapt
 
 | **ファイル / File** | **内容 / Description** |
 |---------------------|-------------------------|
-| [`01_fsm_pid_llm.md`](./theory/01_fsm_pid_llm.md) | FSM・PID・LLMによる三層制御構造の全体像<br>Three-layer control architecture |
-| [`02_scenario_control.md`](./theory/02_scenario_control.md) | シナリオ制御と状態モード切替の設計<br>Scenario-driven control design |
-| [`03_exception_handling.md`](./theory/03_exception_handling.md) | LLMを用いた異常検出と例外対応<br>LLM-based exception handling |
-| [`04_goal_reasoning.md`](./theory/04_goal_reasoning.md) | 目的推論と対話型制御の導入<br>Goal reasoning and dialog-driven control |
+| [01_fsm_pid_llm.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/01_fsm_pid_llm.html) | FSM・PID・LLMによる三層制御構造の全体像<br>Three-layer control architecture |
+| [02_scenario_control.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/02_scenario_control.html) | シナリオ制御と状態モード切替の設計<br>Scenario-driven control design |
+| [03_exception_handling.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/03_exception_handling.html) | LLMを用いた異常検出と例外対応<br>LLM-based exception handling |
+| [04_goal_reasoning.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/04_goal_reasoning.html) | 目的推論と対話型制御の導入<br>Goal reasoning and dialog-driven control |
 
 ---
 
@@ -50,9 +50,9 @@ It is based on the **AITL framework (FSM × PID × LLM)**, aiming to build adapt
 
 | **ファイル / File** | **役割 / Function** |
 |----------------------|----------------------|
-| [`fsm_pid_llm_sim.py`](./simulation/fsm_pid_llm_sim.py) | 三層制御統合シミュレーション（FSM × PID × LLM） |
-| [`goal_reasoning_agent.py`](./simulation/goal_reasoning_agent.py) | LLMベースの目的推論エージェントクラス |
-| [`hybrid_control_demo.ipynb`](./notebooks/hybrid_control_demo.ipynb) | 統合制御のNotebook可視化デモ（予定） |
+| [fsm_pid_llm_sim.py](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/simulation/fsm_pid_llm_sim.py) | 三層制御統合シミュレーション（FSM × PID × LLM） |
+| [goal_reasoning_agent.py](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/simulation/goal_reasoning_agent.py) | LLMベースの目的推論エージェントクラス |
+| [hybrid_control_demo.ipynb](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/notebooks/hybrid_control_demo.ipynb) | 統合制御のNotebook可視化デモ（予定） |
 
 > 💡 **特長 / Highlights**  
 > - 各スクリプトは教育用に設計されており、センサ入力、PID制御、FSM遷移、LLM出力を可視化可能  
@@ -65,10 +65,10 @@ It is based on the **AITL framework (FSM × PID × LLM)**, aiming to build adapt
 
 | **教材章 / Section** | **内容 / Topic** | **実装ファイル / Script** | **備考 / Notes** |
 |------------------|------------------|-----------------------------|------------------|
-| 第1章            | FSM・PID・LLM統合 | `fsm_pid_llm_sim.py`        | 統合制御PoC、状態遷移＋PID＋LLM |
-| 第2章            | シナリオ制御      | `fsm_pid_llm_sim.py`        | FSMに基づくモード管理 |
-| 第3章            | 例外処理          | LLMログ出力部               | 状況判断・切替ロジック含む |
-| 第4章            | 目的推論制御      | `goal_reasoning_agent.py`   | 自律的意思決定のシミュレーション |
+| 第1章 | FSM・PID・LLM統合 | `fsm_pid_llm_sim.py` | 統合制御PoC、状態遷移＋PID＋LLM |
+| 第2章 | シナリオ制御 | `fsm_pid_llm_sim.py` | FSMに基づくモード管理 |
+| 第3章 | 例外処理 | LLMログ出力部 | 状況判断・切替ロジック含む |
+| 第4章 | 目的推論制御 | `goal_reasoning_agent.py` | 自律的意思決定のシミュレーション |
 
 ---
 
@@ -83,7 +83,7 @@ It is based on the **AITL framework (FSM × PID × LLM)**, aiming to build adapt
 ## 📚 **参考資料 / References**
 
 - OpenAI ChatGPT: [https://platform.openai.com/](https://platform.openai.com/)  
-- 本教材：[EduController (GitHub)](https://github.com/Samizo-AITL/EduController)  
+- 本教材: [EduController (GitHub)](https://github.com/Samizo-AITL/EduController)  
 - FSM/PID/LLMの統合構想：AITL構想（AITL-H）
 
 ---
@@ -99,13 +99,12 @@ It is based on the **AITL framework (FSM × PID × LLM)**, aiming to build adapt
 
 ---
 
-**⬅️ [前章 / Previous Chapter](../part08_data_driven/)**  
+**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part08_data_driven/)**  
 データ駆動型制御（Koopman演算子、行列識別など）を扱います。  
 Covers data-driven control methods including the Koopman operator and system identification.
 
-**[次章 / Next Chapter ➡️➡️](../part10_pendulum/)**  
+**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part10_pendulum/)**  
 倒立振子の総合制御（PID / LQR / DDPG / HDLなど）を扱います。  
 Covers integrated control of inverted pendulum systems including PID, LQR, DDPG, and HDL implementation.
 
-**🏠 [トップページ / Back to Home](../README.md)**
-
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
