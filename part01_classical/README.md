@@ -18,15 +18,15 @@ It builds a step-by-step understanding from **control structure to robustness**,
 
 ---
 
-## 🧭 **構成（章別教材） / Chapter Breakdown** [`theory/`](theory/)
+## 🧭 **構成（章別教材） / Chapter Breakdown**
 
 | No | **章タイトル / Chapter** | **内容概要 / Description** |
 |----|---------------------------|-----------------------------|
-| 01 | [`PID制御の基礎`](theory/01_pid_control.md) / PID Basics | PID各成分の働き、ブロック線図、伝達関数の理解<br>Function of each term, block diagrams, transfer functions |
-| 02 | [`過渡応答と定常偏差`](theory/02_transient_response.md) / Transient Response & Steady-State Error | ステップ応答、時間定数、定常偏差の評価法<br>Step response, time constant, steady-state error |
-| 03 | [`安定性判別法`](theory/03_stability_methods.md) / Stability Criteria | Routh表、根軌跡、ナイキスト法による安定判定<br>Routh table, root locus, Nyquist criterion |
-| 04 | [`周波数応答とボード線図`](theory/04_freq_analysis.md) / Frequency Response & Bode Plot | ゲイン・位相プロット、交差周波数、周波数特性<br>Gain/phase plots, crossover frequency |
-| 05 | [`安定余裕とロバスト性`](theory/05_gain_margin.md) / Stability Margin & Robustness | ゲイン余裕・位相余裕によるロバスト性評価<br>PM/GM based robustness assessment |
+| 01 | [PID制御の基礎]({{ "/part01_classical/theory/01_pid_control.html" | relative_url }}) / PID Basics | PID各成分の働き、ブロック線図、伝達関数の理解<br>Function of each term, block diagrams, transfer functions |
+| 02 | [過渡応答と定常偏差]({{ "/part01_classical/theory/02_transient_response.html" | relative_url }}) / Transient Response & Steady-State Error | ステップ応答、時間定数、定常偏差の評価法<br>Step response, time constant, steady-state error |
+| 03 | [安定性判別法]({{ "/part01_classical/theory/03_stability_methods.html" | relative_url }}) / Stability Criteria | Routh表、根軌跡、ナイキスト法による安定判定<br>Routh table, root locus, Nyquist criterion |
+| 04 | [周波数応答とボード線図]({{ "/part01_classical/theory/04_freq_analysis.html" | relative_url }}) / Frequency Response & Bode Plot | ゲイン・位相プロット、交差周波数、周波数特性<br>Gain/phase plots, crossover frequency |
+| 05 | [安定余裕とロバスト性]({{ "/part01_classical/theory/05_gain_margin.html" | relative_url }}) / Stability Margin & Robustness | ゲイン余裕・位相余裕によるロバスト性評価<br>PM/GM based robustness assessment |
 
 ---
 
@@ -109,8 +109,8 @@ pip install control matplotlib numpy
 
 ---
 
-**[次章 / Next Chapter ➡️➡️](../part02_modern/)**  
+**[次章 / Next Chapter ➡️➡️]({{ "/part02_modern/" | relative_url }})**  
 状態空間モデル、最適レギュレータ（LQR）、カルマンフィルタによる推定手法を扱います。  
 Covers state-space modeling, optimal regulator (LQR), and estimation techniques using the Kalman filter.
 
-**🏠 [トップページ / Back to Home](../README.md)**
+**🏠 [トップページ / Back to Home]({{ "/" | relative_url }})**
