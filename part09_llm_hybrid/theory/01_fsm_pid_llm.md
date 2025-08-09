@@ -4,6 +4,8 @@ title: 01_fsm_pid_llm
 permalink: /part09_llm_hybrid/theory/01_fsm_pid_llm.html
 ---
 
+---
+
 # 🤖 01. FSM・PID・LLMによるハイブリッド制御（AITL構想）  
 **Hybrid Control with FSM, PID, and LLM (AITL Framework)**
 
