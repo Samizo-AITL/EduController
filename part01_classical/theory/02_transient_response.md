@@ -48,11 +48,13 @@ Transient response refers to the short-term behavior before the output settles i
 ## 📉 1次遅れ系の応答｜First-Order Response
 
 **システム / System:**
+
 $$
 G(s) = \frac{1}{\tau s + 1}
 $$
 
 **ステップ応答 / Step Response:**
+
 $$
 y(t) = 1 - e^{-t/\tau}
 $$
@@ -66,6 +68,7 @@ $$
 ## 🎯 2次系の応答（減衰あり）｜Second-Order Response (Damped)
 
 **システム / System:**
+
 $$
 G(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2}
 $$
@@ -77,6 +80,7 @@ $$
 - $\zeta > 1$：オーバーダンプ（遅い・無振動） / Overdamped (slow, no overshoot)
 
 **オーバーシュートと減衰比の関係 / Overshoot vs Damping Ratio:**
+
 $$
 M_p = e^{\left( -\frac{\pi \zeta}{\sqrt{1 - \zeta^2}} \right)} \times 100[\%]
 $$
@@ -86,10 +90,13 @@ $$
 ## 🎯 定常偏差 $e_{ss}$ の計算｜Calculating Steady-State Error
 
 閉ループ系:
+
 $$
 T(s) = \frac{G(s)C(s)}{1 + G(s)C(s)}
 $$
+
 単位ステップ入力 $R(s) = 1/s$ に対して:
+
 $$
 e_{ss} = \lim_{s \to 0} \left[ \frac{1}{1 + G(s)C(s)} \right]
 $$
