@@ -9,6 +9,8 @@ permalink: /part01_classical/theory/03_stability_methods.html
 # 🧮 03. 安定性判別法（Routh, 根軌跡, ナイキスト）  
 **03. Stability Determination Methods (Routh, Root Locus, Nyquist)**
 
+> **Note:** 数式が正しく表示されない場合は [GitHub版](https://github.com/Samizo-AITL/EduController/blob/main/part01_classical/theory/03_stability_methods.md) を参照してください。
+
 ---
 
 制御系の最も基本的な要件は **「安定であること」** です。本節では、古典制御理論における安定性の定義と、主要な判別法である **Routh-Hurwitz判別法**, **根軌跡法（Root Locus）**, **ナイキスト法（Nyquist）** を学びます。  
