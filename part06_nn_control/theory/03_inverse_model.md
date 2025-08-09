@@ -100,11 +100,11 @@ $$
 
 ---
 
-**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/02_nn_pid/)**  
+**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/02_nn_pid.html)**  
 NN-PID制御の構造と学習方法、利点・課題を解説。  
 Covers NN-aided PID structure, training, advantages, and limitations.
 
-**➡️➡️ [次節 / Next](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/04_ai_vs_classical/)**  
+**➡️➡️ [次節 / Next](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/04_ai_vs_classical.html)**  
 AI制御と古典制御の比較と統合戦略を解説。  
 Covers comparison and hybrid strategies of AI-based and classical control.
 
