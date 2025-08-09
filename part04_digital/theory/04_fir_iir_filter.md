@@ -6,89 +6,100 @@ permalink: /part04_digital/theory/04_fir_iir_filter.html
 
 ---
 
-# 📡 04. FIR/IIR フィルタ設計と応答特性（Digital Filters: FIR & IIR）
+# 📡 04. FIR/IIR フィルタ設計と応答特性  
+**Digital Filters: FIR & IIR**
 
-> ℹ️ **Webで数式が正しく表示されない場合 / If equations don't render:** [GitHub版はこちら](https://github.com/Samizo-AITL/EduController/blob/main/part04_digital/theory/04_fir_iir_filter.md)
-
----
-
-ディジタル信号処理の中心的技術である **FIR/IIRフィルタ**は、  
-制御系でも **ノイズ除去** や **信号平滑化**、**前処理** などに広く応用されます。
+> ℹ️ **Webで数式が表示されない場合 / If equations don't render:** [GitHub版はこちら](https://github.com/Samizo-AITL/EduController/blob/main/part04_digital/theory/04_fir_iir_filter.md)
 
 ---
 
-## 🎯 学習目標
-
-- **FIR（有限インパルス応答）** と **IIR（無限インパルス応答）** の違いを理解する  
-- 離散時間でのフィルタ構造と数式表現を習得  
-- PythonでFIR/IIRを設計・可視化できる  
-- 雑音除去や帯域制限の実例を体験する
+ディジタル信号処理の要である **FIR/IIRフィルタ** は、  
+制御系でも **ノイズ除去**・**信号平滑化**・**前処理** に広く応用されます。
 
 ---
 
-## 🔁 FIR vs IIR フィルタの比較
+## 🎯 学習目標 / Learning Goals
 
-| 項目        | FIRフィルタ | IIRフィルタ |
-|-------------|-------------|-------------|
-| 応答        | 有限インパルス応答 | 無限インパルス応答 |
-| 構造        | 遅延と加算のみ | 遅延・加算 + フィードバック |
-| 安定性      | 常に安定 | 極が単位円内なら安定 |
-| 計算負荷    | 多め（高次数） | 少なめ（低次数でも急峻） |
-| 設計容易性  | 線形位相が容易 | 位相特性が複雑 |
+- **FIR** と **IIR** の構造・特性を理解する  
+- 離散時間フィルタの数式表現を習得する  
+- Pythonで設計・応答可視化を行える  
+- 制御系における応用例を挙げられる
 
 ---
 
-## 🧮 離散時間フィルタの数式表現
+## 🔁 FIR vs IIR の比較表
 
-**FIRフィルタ：**
+| **項目 / Item**   | **FIRフィルタ** | **IIRフィルタ** |
+|------------------|----------------|----------------|
+| 応答 / Response  | 有限インパルス応答 | 無限インパルス応答 |
+| 構造 / Structure | 遅延+加算のみ     | 遅延+加算+FB（フィードバック） |
+| 安定性 / Stability | 常に安定         | 極が単位円内で安定 |
+| 計算負荷 / Load   | 高（高次数必要）  | 低（低次数でも急峻） |
+| 位相特性 / Phase  | 線形位相が容易    | 位相が複雑         |
+
+---
+
+## 🧮 数式表現 / Mathematical Formulation
+
+**FIR:**
+
 $$
 y[k] = b_0 x[k] + b_1 x[k-1] + \dots + b_N x[k-N]
 $$
 
-**IIRフィルタ：**
+**IIR:**
+
 $$
 y[k] = b_0 x[k] + \dots + b_N x[k-N] - a_1 y[k-1] - \dots - a_M y[k-M]
 $$
 
 ---
 
-## 🧩 Z変換での表現
+## 🧩 Z変換表現 / Z-domain Representation
 
-- **FIR:**  
-  $$
-  H(z) = \sum_{i=0}^N b_i z^{-i}
-  $$
+- **FIR:**
+  
+$$
+H(z) = \sum_{i=0}^N b_i z^{-i}
+$$
 
-- **IIR:**  
-  $$
-  H(z) = \frac{b_0 + \dots + b_N z^{-N}}{1 + a_1 z^{-1} + \dots + a_M z^{-M}}
-  $$
+- **IIR:**
+
+$$
+H(z) = \frac{b_0 + \dots + b_N z^{-N}}{1 + a_1 z^{-1} + \dots + a_M z^{-M}}
+$$
 
 ---
 
-## 🧪 Pythonによる設計例
+## 🧪 Python実装例 / Python Example
 
 ```python
 from scipy.signal import firwin, lfilter
+import numpy as np
 
-# FIRフィルタ設計（窓関数法）
-b = firwin(numtaps=51, cutoff=0.2)  # カットオフ正規化0.2
-y = lfilter(b, 1.0, x)  # 信号xに適用
+# サンプル信号
+fs = 1000
+t = np.linspace(0, 1, fs, endpoint=False)
+x = np.sin(2*np.pi*50*t) + 0.5*np.sin(2*np.pi*300*t)
+
+# FIR設計（カットオフ200Hz）
+b = firwin(numtaps=51, cutoff=200, fs=fs)
+y = lfilter(b, 1.0, x)
 ```
 
 ---
 
-## 🧠 制御用途での選択目安
+## 🧠 制御系での選択指針 / Filter Selection Guide
 
-| 目的 | 推奨 | 理由 |
-|------|------|------|
+| **目的 / Purpose**   | **推奨 / Recommendation** | **理由 / Reason** |
+|----------------------|---------------------------|-------------------|
 | センサノイズ除去 | FIRまたはIIR-LPF | 高周波成分除去 |
-| スパイク除去 | 移動平均FIR | 簡易平滑化 |
-| 位相遅れ低減 | FIR（線形位相） | 波形維持 |
+| スパイク除去     | 移動平均FIR | 平滑化が効く |
+| 位相遅れ低減     | FIR（線形位相） | 波形を忠実に保持 |
 
 ---
 
-## 📚 参考資料
+## 📚 参考文献 / References
 
 - Proakis, *Digital Signal Processing*  
 - Oppenheim & Schafer, *Discrete-Time Signal Processing*  
