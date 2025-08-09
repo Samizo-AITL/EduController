@@ -41,6 +41,7 @@ including **Z-transform, discrete PID, digital filters, and FFT analysis**—all
 | [`03_digital_pid.md`](https://samizo-aitl.github.io/EduController/part04_digital/theory/03_digital_pid.html) | 離散PID制御器の設計と比較<br>Design and comparison of discrete PID |
 | [`04_fir_iir_filter.md`](https://samizo-aitl.github.io/EduController/part04_digital/theory/04_fir_iir_filter.html) | FIR/IIRフィルタの構造と設計法<br>FIR/IIR structure and design |
 | [`05_fft_analysis.md`](https://samizo-aitl.github.io/EduController/part04_digital/theory/05_fft_analysis.html) | FFTによる信号の周波数分析と雑音除去<br>FFT for spectrum analysis and noise removal |
+| [`06_digital_hinf_control.md`](https://samizo-aitl.github.io/EduController/part04_digital/theory/06_digital_hinf_control.html) | デジタルH∞制御の理論とMATLAB/Simulink実装例<br>Digital H∞ control theory with MATLAB/Simulink implementation |
 
 ---
 
@@ -51,6 +52,8 @@ including **Z-transform, discrete PID, digital filters, and FFT analysis**—all
 | [`digital_pid.py`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/digital_pid.py) | 離散PIDと連続PIDの比較シミュレーション<br>Simulate and compare digital vs. continuous PID |
 | [`iir_fir_filter_demo.py`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/iir_fir_filter_demo.py) (*) | FIR/IIRフィルタの通過特性比較（予定）<br>Planned: FIR/IIR filter response demo |
 | [`fft_noise_removal.py`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/fft_noise_removal.py) | FFTによる雑音除去と信号再構成<br>Noise removal and reconstruction using FFT |
+| [`digital_hinf_matlab.m`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/digital_hinf_matlab.m) | MATLABによる離散H∞制御設計と周波数応答評価<br>Digital H∞ control design in MATLAB with frequency response evaluation |
+| [`digital_hinf_simulink.slx`](https://samizo-aitl.github.io/EduController/part04_digital/simulation/digital_hinf_simulink.slx) | Simulinkモデルによる離散H∞制御検証<br>Validation of digital H∞ control using Simulink model |
 
 ---
 
@@ -60,6 +63,8 @@ including **Z-transform, discrete PID, digital filters, and FFT analysis**—all
 |--------------------------|-------------------------|
 | [`digital_pid_response.png`](https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_pid_response.png) | 離散PIDと連続PIDのステップ応答比較<br>Step response: discrete vs. continuous PID |
 | [`fft_spectrum.png`](https://samizo-aitl.github.io/EduController/part04_digital/figures/fft_spectrum.png) | FFTによるスペクトル解析と除去後波形<br>FFT spectrum and filtered waveform |
+| [`digital_hinf_step.png`](https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_step.png) | 離散H∞制御のステップ応答<br>Step response of digital H∞ control |
+| [`digital_hinf_bode.png`](https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_bode.png) | 離散H∞制御のBode線図<br>Bode plot of digital H∞ control |
 
 ---
 
