@@ -4,11 +4,11 @@ title: Part08
 permalink: /part08_data_driven/
 ---
 
+> 💡 **Note:** 数式や表が正しく表示されない場合は、[GitHub版はこちら](https://github.com/Samizo-AITL/EduController/blob/main/part08_data_driven/README.md) を参照してください。
+
 ---
 
 # 📊 Part 8: データ駆動型制御 / Data-Driven Control
-
----
 
 本章では、**数式モデルを用いずに観測データから制御器や予測モデルを構築**する  
 データ駆動型制御（Data-Driven Control）の基本から応用までを学びます。  
@@ -61,11 +61,11 @@ part08_data_driven/
 
 | **タイトル / Title** | **ファイル / File** |
 |------------------------|----------------------|
-| モデルフリー制御の基礎<br>Basics of Model-Free Control | [`01_model_free_control.md`](./theory/01_model_free_control.md) |
-| Koopman演算子と線形化<br>Koopman Operator & Linearization | [`02_koopman_operator.md`](./theory/02_koopman_operator.md) |
-| 動的モード分解（DMD）<br>Dynamic Mode Decomposition | [`03_dmd.md`](./theory/03_dmd.md) |
-| サブスペース同定法<br>Subspace Identification | [`04_subspace_id.md`](./theory/04_subspace_id.md) |
-| モデルベース制御との比較<br>Comparison with Model-Based Control | [`05_data_vs_model.md`](./theory/05_data_vs_model.md) |
+| モデルフリー制御の基礎<br>Basics of Model-Free Control | [01_model_free_control.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/01_model_free_control/) |
+| Koopman演算子と線形化<br>Koopman Operator & Linearization | [02_koopman_operator.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/02_koopman_operator/) |
+| 動的モード分解（DMD）<br>Dynamic Mode Decomposition | [03_dmd.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/03_dmd/) |
+| サブスペース同定法<br>Subspace Identification | [04_subspace_id.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/04_subspace_id/) |
+| モデルベース制御との比較<br>Comparison with Model-Based Control | [05_data_vs_model.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/05_data_vs_model/) |
 
 ---
 
@@ -73,15 +73,15 @@ part08_data_driven/
 
 | **内容 / Description** | **ファイル / File** |
 |------------------------|----------------------|
-| Koopmanによる線形化<br>Koopman-based linearization | [`koopman_linearization.py`](./simulation/koopman_linearization.py) |
-| DMDによるモード解析<br>DMD-based mode analysis | [`dmd_analysis.py`](./simulation/dmd_analysis.py) |
-| サブスペース同定<br>Subspace system identification | [`subspace_identification.py`](./simulation/subspace_identification.py) |
+| Koopmanによる線形化<br>Koopman-based linearization | [koopman_linearization.py](https://samizo-aitl.github.io/EduController/part08_data_driven/simulation/koopman_linearization.py) |
+| DMDによるモード解析<br>DMD-based mode analysis | [dmd_analysis.py](https://samizo-aitl.github.io/EduController/part08_data_driven/simulation/dmd_analysis.py) |
+| サブスペース同定<br>Subspace system identification | [subspace_identification.py](https://samizo-aitl.github.io/EduController/part08_data_driven/simulation/subspace_identification.py) |
 
 ---
 
 ## 📊 **可視化Notebook / Visualization Notebook**
 
-- [`koopman_vs_dmd_visual.ipynb`](./notebooks/koopman_vs_dmd_visual.ipynb)：  
+- [koopman_vs_dmd_visual.ipynb](https://samizo-aitl.github.io/EduController/part08_data_driven/notebooks/koopman_vs_dmd_visual.ipynb)  
   **KoopmanとDMDの比較と可視化**  
   *Visualization comparing Koopman and DMD approaches*
 
@@ -109,13 +109,12 @@ part08_data_driven/
 
 ---
 
-**⬅️ [前章 / Previous Chapter](../part07_rl_control/)**  
+**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part07_rl_control/)**  
 強化学習による制御（Q学習、DDPG、PPOなど）を扱います。  
 Covers reinforcement learning control methods including Q-learning, DDPG, and PPO.
 
-**[次章 / Next Chapter ➡️➡️](../part09_llm_hybrid/)**  
+**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/)**  
 LLM統合・ハイブリッド制御（FSM×PID×LLMなど）を扱います。  
 Covers LLM-integrated hybrid control such as FSM×PID×LLM.
 
-**🏠 [トップページ / Back to Home](../README.md)**
-
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
