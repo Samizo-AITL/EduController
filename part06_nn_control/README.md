@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Part06
-permalink: /EduController/part06_nn_control/
+permalink: /part06_nn_control/
 ---
 
 ---
