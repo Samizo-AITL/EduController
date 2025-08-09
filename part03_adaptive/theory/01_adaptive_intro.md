@@ -46,6 +46,12 @@ When parameters vary over time, **controller parameters must be updated in real 
 
 ## 🧩 **基本構造 / Basic Structure**
 
+```mermaid
+flowchart TB
+    UPDATER["適応律 (Updater)<br/><sub>パラメータ推定 / Parameter estimation</sub>"] --> CTRL["制御器 (Controller)"]
+    CTRL --> PLANT["[ Plant ]"]
+    PLANT -->|y(t)| UPDATER
+```
 ```text
   +----------------+
   | 適応律 (Updater)| ← パラメータ推定 / Parameter estimation
