@@ -1,4 +1,17 @@
+---
+layout: default
+title: "🔍 05. FFTによる周波数解析とノイズ除去（Frequency Analysis with FFT）"
+permalink: /part04_digital/theory/05_fft_analysis.html
+---
+
+---
+
 # 🔍 05. FFTによる周波数解析とノイズ除去（Frequency Analysis with FFT）
+
+> 💡 **Webで数式が正しく表示されない場合はこちら**：  
+> [GitHub版を開く](https://github.com/Samizo-AITL/EduController/blob/main/part04_digital/theory/05_fft_analysis.md)
+
+---
 
 制御対象の振動や信号の周期性を解析するには、**周波数領域の理解**が重要です。  
 この章では、**高速フーリエ変換（FFT）**を用いた信号解析・ノイズ除去の方法を学びます。
