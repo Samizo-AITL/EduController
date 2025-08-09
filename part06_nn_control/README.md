@@ -1,6 +1,6 @@
 ---
 layout: default
-title:　Part 6 ニューラルネットによる制御
+title:
 permalink: /part06_nn_control/
 ---
 
