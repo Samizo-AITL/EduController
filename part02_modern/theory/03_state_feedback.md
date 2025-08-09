@@ -4,8 +4,6 @@ title: 03. 状態フィードバックと極配置 / State Feedback & Pole Place
 permalink: /part02_modern/theory/03_state_feedback.html
 ---
 
----
-
 # 🎛️ 03. 状態フィードバックと極配置 / State Feedback & Pole Placement
 
 ---
@@ -166,6 +164,6 @@ Covers the basics of controllability & observability.
 オブザーバ設計と推定器の理論を解説します。  
 Covers observer design and estimation theory.
 
-**📚 [この章のREADMEへ / Back to Part 2 README](https://samizo-aitl.github.io/EduController/part02_modern/)**  
+**📚 [この章のREADMEへ / Back to Part 2 README](https://samizo-aitl.github.io/EduController/part02_modern/README.html)**  
 現代制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 2 structure and materials list.
