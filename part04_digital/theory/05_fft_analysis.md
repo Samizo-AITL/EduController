@@ -2,7 +2,7 @@
 layout: default
 title: "🔍 05. FFTによる周波数解析とノイズ除去（Frequency Analysis with FFT）"
 permalink: /part04_digital/theory/05_fft_analysis.html
----
+--- 
 
 ---
 
