@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 
+title: Part05
 permalink: /part0５_practical/
 ---
 
