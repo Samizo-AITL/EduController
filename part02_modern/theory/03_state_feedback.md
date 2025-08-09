@@ -1,9 +1,7 @@
 ---
 layout: default
 title: 03. 状態フィードバックと極配置 / State Feedback & Pole Placement
-permalink: /part02_modern/theory/03_state_feedback/
----
-
+permalink: /part02_modern/theory/03_state_feedback.html
 ---
 
 # 🎛️ 03. 状態フィードバックと極配置 / State Feedback & Pole Placement
@@ -158,14 +156,14 @@ plt.show()
 
 ---
 
-**⬅️ [前節 / Previous Section](./02_controllability.md)**  
+**⬅️ [前節 / Previous Section](https://samizo-aitl.github.io/EduController/part02_modern/theory/02_controllability.html)**  
 可制御性と可観測性の基礎を解説します。  
 Covers the basics of controllability & observability.
 
-**➡️ [次節 / Next Section](./04_observer_design.md)**  
+**➡️ [次節 / Next Section](https://samizo-aitl.github.io/EduController/part02_modern/theory/04_observer_design.html)**  
 オブザーバ設計と推定器の理論を解説します。  
 Covers observer design and estimation theory.
 
-**📚 [この章のREADMEへ / Back to Part 2 README](../README.md)**  
+**📚 [この章のREADMEへ / Back to Part 2 README](https://samizo-aitl.github.io/EduController/part02_modern/)**  
 現代制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 2 structure and materials list.
