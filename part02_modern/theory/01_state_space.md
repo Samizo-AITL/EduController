@@ -4,8 +4,12 @@ title: 🧮 状態空間表現の基礎 / Basics of State-Space Representation
 permalink: /part02_modern/theory/01_state_space.html
 ---
 
+---
+
 # 🧮 01. 状態空間表現の基礎  
 **01. Basics of State-Space Representation**
+
+---
 
 状態空間表現は、システムの動的挙動を**ベクトルと行列**で表すモダン制御理論の基礎です。本節では、状態方程式の構成、入出力との関係、伝達関数との対応、そしてPythonによる実装までを学びます。  
 State-space representation expresses dynamics with **vectors and matrices**. This section covers the structure of state equations, the relation to inputs/outputs, the correspondence to transfer functions, and a short Python implementation.
