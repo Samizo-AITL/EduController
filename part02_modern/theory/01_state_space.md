@@ -145,10 +145,6 @@ plt.show()
 
 ---
 
-**⬅️ [前節 / Previous Section](https://samizo-aitl.github.io/EduController/part02_modern/)**  
-第2章トップ（現代制御の章構成）に戻ります。  
-Back to Part 2 chapter top.
-
 **➡️➡️ [次節 / Next Section](https://samizo-aitl.github.io/EduController/part02_modern/theory/02_controllability.html)**  
 可制御性と可観測性、Kalmanランク条件を学びます。  
 Learn controllability, observability, and the Kalman rank conditions.
