@@ -1,95 +1,91 @@
 ---
 layout: default
-title: Part 2 現代制御理論 / Modern Control Theory
-permalink: /part02_modern/
+title: Part 03 適応制御・ロバスト制御 / Adaptive & Robust Control
+permalink: /part03_adaptive/
 ---
 
----
+# 🔄 Part 03: 適応制御・ロバスト制御 / Adaptive & Robust Control
 
-# 🧠 Part 2: 現代制御理論 / Modern Control Theory
+本章では、制御対象のパラメータ変動・モデリング誤差に対応する  
+**適応制御**と**ロバスト制御**について、**理論と実装の両面**から学びます。  
+また、FSM×PID×LLMで構成される **AITL-H** における「**理性層**」の柔軟化技術としても位置づけられます。
 
----
-
-本章では、**状態空間表現**を基盤としたモダン制御理論を学びます。  
-**可制御性・可観測性**を前提とし、**極配置**による状態フィードバック、**オブザーバ（状態推定器）**設計までを扱います。
-
-This chapter introduces **modern control theory** based on **state-space representation**.  
-It covers **controllability**, **observability**, **state feedback** via **pole placement**, and the design of **observers** (state estimators).
-
----
-
-## 🧭 **章構成と教材一覧 / Chapter Breakdown**
-
-| No | **章タイトル / Title** | **内容概要 / Description** |
-|----|-------------------------|-----------------------------|
-| 01 | [状態空間表現の基礎](https://samizo-aitl.github.io/EduController/part02_modern/theory/01_state_space.html) / Basics of State-Space | $Ax\!+\!Bu$, $Cx\!+\!Du$ の構造と意味、行列モデル化<br>Structure and meaning of $Ax\!+\!Bu$, $Cx\!+\!Du$ |
-| 02 | [可制御性と可観測性](https://samizo-aitl.github.io/EduController/part02_modern/theory/02_controllability.html) / Controllability & Observability | Kalmanのランク条件、状態操作・推定の可否判定<br>Kalman rank condition for state control/observation |
-| 03 | [状態フィードバックと極配置](https://samizo-aitl.github.io/EduController/part02_modern/theory/03_state_feedback.html) / State Feedback & Pole Placement | 極配置による閉ループ極の設計、可制御性の役割<br>Closed-loop pole design using pole placement |
-| 04 | [オブザーバ設計と状態推定](https://samizo-aitl.github.io/EduController/part02_modern/theory/04_observer_design.html) / Observer Design & Estimation | $L$ゲイン設計と $A\!-\!LC$ の安定化、推定誤差の収束<br>Gain design for observer and estimation convergence |
+In this chapter, we learn both the **theory and implementation** of **adaptive** and **robust** control techniques,  
+which are essential for dealing with **system parameter variations and modeling uncertainties**.  
+These are also positioned as flexible technologies for the "**rational layer**" in the **AITL-H** architecture (FSM × PID × LLM).
 
 ---
 
-## 💻 **実行スクリプト一覧 / Simulation Scripts**
+## 🎯 **学習目標 / Learning Objectives**
+
+- モデル変動・外乱に強い制御器の設計方法を理解する  
+  **Understand how to design controllers** that are robust to plant variations and disturbances  
+- MRACやゲインスケジューリングなどの適応戦略を体験する  
+  **Learn adaptive strategies** like MRAC and gain scheduling  
+- H∞制御の基本概念と感度関数・補償関数を理解する  
+  **Grasp the fundamentals of H-infinity control**, sensitivity and complementary functions  
+- FSM/LLMと連携した適応的な制御判断の構造を設計できる  
+  **Design adaptive decision-making structures** using FSM and LLM
+
+---
+
+## 🧩 **構成一覧 / Chapter Structure**
+
+### 📘 Theory
+
+| **ファイル名 / File** | **内容 / Description** |
+|------------------------|-------------------------|
+| [01_adaptive_intro.md](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/01_adaptive_intro.html) | 適応制御の概要と必要性<br>Overview and necessity of adaptive control |
+| [02_mrac_design.md](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/02_mrac_design.html) | MRAC（モデル参照型適応制御）の理論<br>Theory of Model Reference Adaptive Control |
+| [03_gain_scheduling.md](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/03_gain_scheduling.html) | ゲインスケジューリング制御の仕組み<br>Gain scheduling mechanism |
+| [04_robust_control.md](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/04_robust_control.html) | ロバスト制御とH∞制御の基礎<br>Robust control and H-infinity fundamentals |
+
+---
+
+### 🧪 Simulation
 
 | **スクリプト名 / Script** | **内容 / Description** |
 |----------------------------|-------------------------|
-| [state_feedback.py](https://samizo-aitl.github.io/EduController/part02_modern/simulation/state_feedback.py) | フィードバックゲイン $K$ の設計と応答可視化（予定）<br>Design of gain $K$ and response visualization |
-| [observer_design.py](https://samizo-aitl.github.io/EduController/part02_modern/simulation/observer_design.py) | オブザーバゲイン $L$ 設計と拡張系の応答確認<br>Observer gain $L$ design and extended system simulation |
+| [mrac_simulation.py](https://samizo-aitl.github.io/EduController/part03_adaptive/simulation/mrac_simulation.py) | MITルールによるMRACのステップ追従<br>MRAC step tracking using MIT rule |
+| [gain_schedule_demo.py](https://samizo-aitl.github.io/EduController/part03_adaptive/simulation/gain_schedule_demo.py) | スケジューリングによる比例制御の補間<br>Gain scheduling for interpolated P control |
+| [hinf_synthesis_demo.py](https://samizo-aitl.github.io/EduController/part03_adaptive/simulation/hinf_synthesis_demo.py) | 感度・補償関数のボード解析によるH∞デモ<br>H-infinity demo using Bode plots of sensitivity functions |
 
 ---
 
-## 🧪 **Jupyterノートブック（予定）/ Notebooks (Planned)**
+### 🖼️ Figures
 
-| **ノートブック名** | **内容 / Description** |
-|--------------------|-------------------------|
-| state_feedback_demo.ipynb | 状態フィードバックの対話可視化（未作成）<br>Interactive demo of state feedback (TBD) |
-| observer_design_demo.ipynb | オブザーバの推定精度と制御応答（未作成）<br>Observer estimation accuracy and response (TBD) |
-
----
-
-## 🖼️ **教材図・シミュレーション出力 / Figures**
-
-| **図ファイル** | **内容 / Description** |
-|----------------|-------------------------|
-| observer_response.png | オブザーバ付き制御系のステップ応答グラフ<br>Step response of system with observer |
-| その他 / Others | 状態空間モデル図、極配置概念図（今後追加予定）<br>State-space diagrams, pole placement illustrations (TBD) |
+| **図ファイル / Figure** | **内容 / Description** |
+|---------------------------|-------------------------|
+| [mrac_response.png](https://samizo-aitl.github.io/EduController/part03_adaptive/figures/mrac_response.png) | MRAC応答曲線<br>MRAC response curve |
+| [gain_schedule_response.png](https://samizo-aitl.github.io/EduController/part03_adaptive/figures/gain_schedule_response.png) | GS制御の動的応答<br>Dynamic response with gain scheduling |
+| [hinf_sensitivity_response.png](https://samizo-aitl.github.io/EduController/part03_adaptive/figures/hinf_sensitivity_response.png) | H∞制御における $S$/$T$ の周波数応答<br>Sensitivity and complementary response in H∞ control |
 
 ---
 
-## ⚙️ **実行環境と依存ライブラリ / Environment & Dependencies**
+## 🔗 **AITL-Hとの連携 / AITL-H Integration**
 
-```bash
-pip install control matplotlib numpy
-```
-
-- **対応Pythonバージョン**：3.8〜3.12  
-  Compatible with Python 3.8–3.12  
-- **使用モジュール**：`control.place`, `control.ctrb`, `control.obsv` など  
-  Includes `control.place`, `control.ctrb`, `control.obsv`  
-- **推奨環境**：VSCode + Python または Jupyter Lab  
-  Recommended: VSCode + Python, or Jupyter Lab
+| **AITL層 / Layer** | **制御役割 / Role** | **本章との関係 / Relevance** |
+|--------------------|---------------------|-------------------------------|
+| **本能（FSM） / Instinct** | 状態遷移制御<br>Mode switching | モードごとのゲインスケジューリング<br>Gain scheduling per mode |
+| **理性（PID） / Rational** | 汎用的物理制御<br>Generic control | MRACでチューニング、H∞で保証強化<br>MRAC for tuning, H∞ for robustness |
+| **知性（LLM） / Intelligence** | 状況予測・判断<br>Context-aware decisions | 制御戦略選択・制御パラメータ提案支援<br>Strategy selection, parameter recommendation |
 
 ---
 
-## 🧠 **学習の流れとポイント / Learning Flow & Key Concepts**
+## 🚧 **今後の展開予定 / Future Extensions**
 
-1. **状態空間表現**：行列で動的システムをモデル化  
-   *Model systems using state-space matrices*  
-2. **可制御性 / 可観測性**：制御・推定の可能性を数学的に判別  
-   *Evaluate controllability and observability using rank tests*  
-3. **状態フィードバック**：希望する閉ループ極配置のためのゲイン設計  
-   *Design gain $K$ to place closed-loop poles*  
-4. **オブザーバ設計**：観測できない状態を推定して制御に活用  
-   *Estimate unmeasured states using observer gain $L$*
+- [05_l1_adaptive.md](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/05_l1_adaptive.html)：**L1適応制御の設計原理（予定）**  
+- [robust_block_diagram.png](https://samizo-aitl.github.io/EduController/part03_adaptive/figures/robust_block_diagram.png)：**H∞制御構成図（予定）**  
+- [notebooks/](https://samizo-aitl.github.io/EduController/part03_adaptive/notebooks/)：**MRAC・GSのインタラクティブ実験ノート（予定）**  
+- [AITL全体構造図](https://samizo-aitl.github.io/EduController/figures/aitl_structure.png)：**Part03を含むAITL-H構造図を更新予定**
 
 ---
 
-## 📚 **参考資料 / References**
+## 📎 **関連リンク / Related Links**
 
-- 「現代制御理論入門」森北出版  
-  *Introduction to Modern Control Theory* – Morikita Publishing  
-- *Modern Control Engineering* – K. Ogata  
-- Pythonライブラリ：`control`, `numpy`, `matplotlib`
+- 🔁 [Part 02: 現代制御理論 / Modern Control Theory](https://samizo-aitl.github.io/EduController/part02_modern/)  
+- 🧠 [AITL-H 概要](https://samizo-aitl.github.io/EduController/aitl_h/)  
+- 📦 [制御教材トップページ](https://samizo-aitl.github.io/EduController/)
 
 ---
 
@@ -104,12 +100,12 @@ pip install control matplotlib numpy
 
 ---
 
-**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part01_classical/)**  
-PID制御の基本、ボード線図による周波数応答解析、システムの安定性評価を解説します。  
-Covers the basics of PID control, frequency response analysis using Bode plots, and system stability evaluation.
+**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part02_modern/)**  
+状態空間モデル、最適レギュレータ（LQR）、カルマンフィルタによる推定手法を扱います。  
+Covers state-space modeling, optimal regulator (LQR), and estimation techniques using the Kalman filter.
 
-**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part03_adaptive/)**  
-適応制御（MRAC）、ロバスト制御（H∞、L1）など、パラメータ変動や外乱に強い制御法を扱います。  
-Covers adaptive control (MRAC) and robust control methods (H∞, L1) designed to handle parameter variations and disturbances.
+**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part04_digital/)**  
+デジタル制御の基礎、Z変換、DSP実装など、離散時間系の制御と実装方法を学びます。  
+Covers the basics of digital control, Z-transform, and DSP implementation for discrete-time systems.
 
 **🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
