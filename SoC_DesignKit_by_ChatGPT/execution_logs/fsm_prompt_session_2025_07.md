@@ -1,23 +1,48 @@
+---
+layout: default
+title: FSM構成プロンプト実行ログ（2025年7月）
+permalink: /SoC_DesignKit_by_ChatGPT/execution_logs/fsm_prompt_202507.html
+---
+
+---
+
 # 📝 テンプレート実行ログ：FSM構成プロンプトセッション（2025年7月）
 
-## 🎯 目的
+---
 
-- FSMテンプレートを使い、ChatGPTへVerilogコード生成を依頼
-- Mermaid.js可視化と照合し、生成コードの構造整合性を確認
-- SamizoGPTによるプロンプトテンプレートの検証記録
+**JP:**  
+この記録は、`fsm_prompt.md` を用いて **ChatGPTにFSMのVerilogコード生成を依頼**し、**Mermaid.jsによる可視化結果との整合性を確認**した実行ログです。  
+SamizoGPT によるプロンプトテンプレートの有効性を評価し、再現性確保のためにモデル・条件を明記しています。
+
+**EN:**  
+This log documents a session where the `fsm_prompt.md` template was used to **request Verilog FSM code generation from ChatGPT** and **verify its structural consistency with Mermaid.js visualization**.  
+It evaluates the effectiveness of the SamizoGPT prompt template and records model/conditions for reproducibility.
 
 ---
 
-## 🗂️ 使用リソース
+## 🎯 目的 / Purpose
 
-- プロンプト：`fsm_prompt.md`（ver. 2025.07）
-- YAML：`fsm_example_counter.yaml`
-- スクリプト：`fsm_to_mermaid.py`（状態遷移確認）
-- GPTモデル：ChatGPT-4o
+- FSMテンプレートを使い、ChatGPTへVerilogコード生成を依頼  
+  Generate Verilog FSM code using ChatGPT based on a predefined template
+- Mermaid.js可視化と照合し、構造整合性を確認  
+  Verify structural consistency with Mermaid.js visualization
+- SamizoGPTプロンプトテンプレートの検証記録  
+  Document validation results of SamizoGPT prompt template
 
 ---
 
-## 📤 入力プロンプト
+## 🗂️ 使用リソース / Resources
+
+| 項目 / Item | 詳細 / Details |
+|-------------|----------------|
+| **プロンプト / Prompt** | [`fsm_prompt.md`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/prompts/control_templates/fsm_prompt.md)（ver. 2025.07） |
+| **YAML** | `fsm_example_counter.yaml` |
+| **スクリプト / Script** | [`fsm_to_mermaid.py`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/fsm/fsm_to_mermaid.py)（状態遷移確認用） |
+| **モデル / Model** | ChatGPT-4o |
+
+---
+
+## 📤 入力プロンプト / Input Prompt
 
 ```markdown
 # タスク: このFSMをVerilogで実装して
@@ -55,13 +80,14 @@ fsm:
 ```
 
 条件:
-	•	同期式FSM（クロック駆動）
-	•	状態に応じた出力制御
-	•	コメント付きVerilog記述でお願いします
+- 同期式FSM（クロック駆動）  
+- 状態に応じた出力制御  
+- コメント付きVerilog記述でお願いします  
+```
 
 ---
 
-## 🤖 ChatGPT応答要約（抜粋）
+## 🤖 ChatGPT応答要約（抜粋） / ChatGPT Output Summary (Excerpt)
 
 ```verilog
 module counter_fsm (...);
@@ -83,26 +109,29 @@ endmodule
 
 ---
 
+## ✅ 評価 / Evaluation
+
+| 項目 / Item | 評価 / Assessment |
+|-------------|-------------------|
+| 構造一致性 / Structural Consistency | ✅ YAML定義に忠実なVerilog構造 |
+| 出力信号設定 / Output Signal Mapping | ✅ `assign` 文で状態別に正しく設定 |
+| コメント付与 / Comment Quality | ✅ 読みやすく教育的 |
+| 改善点 / Improvement Point | ⚠️ `clk` を遷移トリガとして明記する際は非同期イベントとの混同防止が必要 |
+
 ---
 
-## ✅ 評価
+## 📎 備考 / Notes
 
-- ✅ YAML定義に忠実なVerilog構造が出力された  
-- ✅ 出力信号も `assign` 文により正しく状態に応じて設定  
-- ✅ コメント付きで可読性も高い  
-- ⚠️ `clk` をトリガとした遷移表現は若干曖昧（要明示）
-
----
-
-## 📎 備考
-
-- Mermaid変換による状態遷移図との整合性：完全一致  
+- Mermaid変換結果との比較：**完全一致**  
 - 教材への反映候補：Part09（FSM演習）、`fsm_template.md` への統合案あり  
-- モデル依存性（GPT-4o）を記録：再現性のために明示  
+- モデル依存性（GPT-4o）を記録し、将来の再現性を確保
 
 ---
 
-## 🔖 ライセンス
+## 🔖 ライセンス / License
 
 MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)
 
+---
+
+**🏠 [戻る / Back to Execution Logs](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/execution_logs/)**
