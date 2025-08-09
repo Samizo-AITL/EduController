@@ -105,7 +105,7 @@ $$
 
 ---
 
-**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/01_nn_control/)**  
+**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/01_nn_control/01_nn_control.html)**  
 ニューラルネットによる制御設計の基本概念と学習戦略を解説。  
 Covers fundamentals and learning strategies of NN-based control.
 
