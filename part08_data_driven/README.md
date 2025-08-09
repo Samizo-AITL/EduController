@@ -1,4 +1,14 @@
+---
+layout: default
+title: Part08
+permalink: /part08_data_driven/
+---
+
+---
+
 # 📊 Part 8: データ駆動型制御 / Data-Driven Control
+
+---
 
 本章では、**数式モデルを用いずに観測データから制御器や予測モデルを構築**する  
 データ駆動型制御（Data-Driven Control）の基本から応用までを学びます。  
@@ -92,11 +102,20 @@ part08_data_driven/
 
 | **項目 / Item** | **内容 / Details** |
 |------------------|---------------------|
-| **著者 / Author** | 三溝 真一（**Shinichi Samizo**）<br>Shinshu University / Ex-Epson |
+| **著者 / Author** | 三溝 真一（**Shinichi Samizo**） |
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
 | **ライセンス / License** | MIT License（**再配布・改変自由**）<br>**Redistribution and modification allowed** |
 
 ---
 
-📎 **[トップに戻る / Back to Home](../README.md)**
+**⬅️ [前章 / Previous Chapter](../part07_rl_control/)**  
+強化学習による制御（Q学習、DDPG、PPOなど）を扱います。  
+Covers reinforcement learning control methods including Q-learning, DDPG, and PPO.
+
+**[次章 / Next Chapter ➡️➡️](../part09_llm_hybrid/)**  
+LLM統合・ハイブリッド制御（FSM×PID×LLMなど）を扱います。  
+Covers LLM-integrated hybrid control such as FSM×PID×LLM.
+
+**🏠 [トップページ / Back to Home](../README.md)**
+
