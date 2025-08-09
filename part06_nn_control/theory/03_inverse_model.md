@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 03. 逆モデル制御とニューラルネット（Inverse Model Control）
-permalink: /EduController/part06_nn_control/theory/03_inverse_model.html
+permalink: /part06_nn_control/theory/03_inverse_model.html
 ---
 
 ---
