@@ -79,11 +79,18 @@ Minimize the infinity norm to prepare for the worst-case error.
 
 ## 📈 ロバスト性評価指標 / Robustness Metrics
 
-| 指標 / Metric | 内容 / Description | 目安 / Guideline | ロバスト性 / Robustness |
-|---|---|---|---|
-| ゲイン余裕 GM | 増幅許容量 / Gain tolerance | > 6 dB | ○ |
-| 位相余裕 PM | 遅延許容量 / Phase tolerance | > 30° | ○ |
-| $||S||_\infty$ | $S(j\omega)$ ピーク値 | < 2.0 | ◎ |
+ロバスト性を定量的に評価する代表的な指標を以下に示します。  
+ここで $\|S\|_\infty$ は、感度関数 $S(j\omega)$ の無限ノルム（全周波数帯での最大値）を意味します。
+
+| 指標 / Metric        | 内容 / Description                                      | 目安 / Guideline | ロバスト性 / Robustness |
+|----------------------|----------------------------------------------------------|------------------|--------------------------|
+| ゲイン余裕 GM        | 増幅許容量 / Gain tolerance                              | > 6 dB           | ○                        |
+| 位相余裕 PM          | 遅延許容量 / Phase tolerance                            | > 30°            | ○                        |
+| $\|S\|_\infty$       | 感度関数 $S(j\omega)$ の最大値（無限ノルム） / Infinity norm of sensitivity function | < 2.0            | ◎                        |
+
+> **補足 / Note**  
+> - $\|S\|_\infty$ が小さいほど、外乱やモデル誤差に対する感度が低く、ロバスト性が高い。  
+> - 目安値 2.0 は $6 \ \mathrm{dB}$ に相当し、一般的な設計基準として用いられる。  
 
 ---
 
