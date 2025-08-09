@@ -48,14 +48,17 @@ The goal is to **maintain performance while guaranteeing stability**.
 
 - **内部安定性 (Internal Stability)**  
   全信号が有界入力で有界出力（BIBO）  
-- **感度関数 $S(s)$**  
-  $$
-  S(s) = \frac{1}{1 + G(s)K(s)}
-  $$
-- **補償関数 $T(s)$**  
-  $$
-  T(s) = \frac{G(s)K(s)}{1 + G(s)K(s)} = 1 - S(s)
-  $$
+- **感度関数 $S(s)$**
+
+$$
+S(s) = \frac{1}{1 + G(s)K(s)}
+$$
+
+- **補償関数 $T(s)$**
+    
+$$
+T(s) = \frac{G(s)K(s)}{1 + G(s)K(s)} = 1 - S(s)
+$$
 
 ---
 
@@ -65,9 +68,11 @@ The goal is to **maintain performance while guaranteeing stability**.
 Minimize the infinity norm to prepare for the worst-case error.
 
 **目的関数 / Objective function**:
+
 $$
 \| T_{zw}(s) \|_\infty < \gamma
 $$
+
 - $T_{zw}(s)$：外乱 $w$ から性能出力 $z$ への伝達関数  
 - $\| \cdot \|_\infty$：全周波数帯での最大ゲイン  
 
