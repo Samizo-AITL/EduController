@@ -9,6 +9,8 @@ permalink: /part01_classical/theory/04_frequency_response.html
 # 📉 04. 周波数応答とボード線図の基礎  
 **04. Basics of Frequency Response & Bode Plot**
 
+> **Note:** 数式が正しく表示されない場合は [GitHub版](https://github.com/Samizo-AITL/EduController/blob/main/part01_classical/theory/04_frequency_response.md) を参照してください。
+
 ---
 
 **ボード線図（Bode plot）** は、制御系の周波数応答特性を視覚的に評価するための基本ツールです。本節では、ボード線図の読み方・描き方、ゲイン交差周波数・位相余裕の意味、安定性やロバスト性との関係を学びます。  
