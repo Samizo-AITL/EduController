@@ -56,19 +56,19 @@ part07_rl_control/
 
 | **内容 / Description** | **ファイル / File** |
 |------------------------|---------------------|
-| 倒立振子 DDPG実装<br>DDPG for cartpole | [`cartpole_ddpg.py`](./simulation/cartpole_ddpg.py) |
-| PendulumへのPPO適用<br>PPO on Pendulum | [`ppo_pendulum.py`](./simulation/ppo_pendulum.py) |
-| 学習ログの可視化<br>RL training visualization | [`ddpg_training_log.ipynb`](./notebooks/ddpg_training_log.ipynb) |
+| 倒立振子 DDPG実装<br>DDPG for cartpole | [`cartpole_ddpg.py`](https://samizo-aitl.github.io/EduController/part07_rl_control/simulation/cartpole_ddpg.py) |
+| PendulumへのPPO適用<br>PPO on Pendulum | [`ppo_pendulum.py`](https://samizo-aitl.github.io/EduController/part07_rl_control/simulation/ppo_pendulum.py) |
+| 学習ログの可視化<br>RL training visualization | [`ddpg_training_log.ipynb`](https://samizo-aitl.github.io/EduController/part07_rl_control/notebooks/ddpg_training_log.ipynb) |
 
 ---
 
-## 🧠 **理論資料 / Theory Notes** [`theory/`](./theory/)
+## 🧠 **理論資料 / Theory Notes** [`theory/`](https://samizo-aitl.github.io/EduController/part07_rl_control/theory/)
 
 | **タイトル / Title** | **ファイル / File** |
 |------------------------|----------------------|
-| 強化学習の基本構造と用語解説<br>RL foundations and terminology | [`01_rl_basics.md`](./theory/01_rl_basics.md) |
-| 倒立振子制御へのRL応用<br>RL applied to cartpole control | [`02_cartpole_ddpg.md`](./theory/02_cartpole_ddpg.md) |
-| 古典制御との違いとハイブリッド展開<br>Comparison with classical control & hybridization | [`03_rl_vs_classical.md`](./theory/03_rl_vs_classical.md) |
+| 強化学習の基本構造と用語解説<br>RL foundations and terminology | [`01_rl_basics.md`](https://samizo-aitl.github.io/EduController/part07_rl_control/theory/01_rl_basics.html) |
+| 倒立振子制御へのRL応用<br>RL applied to cartpole control | [`02_cartpole_ddpg.md`](https://samizo-aitl.github.io/EduController/part07_rl_control/theory/02_cartpole_ddpg.html) |
+| 古典制御との違いとハイブリッド展開<br>Comparison with classical control & hybridization | [`03_rl_vs_classical.md`](https://samizo-aitl.github.io/EduController/part07_rl_control/theory/03_rl_vs_classical.html) |
 
 ---
 
@@ -103,13 +103,12 @@ part07_rl_control/
 
 ---
 
-**⬅️ [前章 / Previous Chapter](../part06_nn_control/)**  
+**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part06_nn_control/)**  
 ニューラルネットワークを利用した制御（NN-PID、逆モデル制御など）を扱います。  
 Covers neural network-based control methods such as NN-PID and inverse model control.
 
-**[次章 / Next Chapter ➡️➡️](../part08_data_driven/)**  
+**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part08_data_driven/)**  
 データ駆動型制御（Koopman演算子、行列識別など）を扱います。  
 Covers data-driven control methods including the Koopman operator and system identification.
 
-**🏠 [トップページ / Back to Home](../README.md)**
-
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
