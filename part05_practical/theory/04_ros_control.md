@@ -10,6 +10,7 @@ permalink: /part05_practical/theory/04_ros_control_node.html
 
 > ℹ️ **Webで数式やコードが正しく表示されない場合はこちら** → [GitHub版を見る](https://github.com/Samizo-AITL/EduController/blob/main/part05_practical/theory/04_ros_control.md)
 
+---
 
 本章では、**ROS（Robot Operating System）** を用いた制御構成の基本を解説します。  
 センサ情報を購読し、制御演算を行ってアクチュエータに指令を送る「**制御ノード**」の設計を行います。
