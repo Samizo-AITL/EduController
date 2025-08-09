@@ -8,7 +8,7 @@ permalink: /part05_practical/theory/04_ros_control_node.html
 
 # 🤖 04. ROS制御ノードの設計とトピック通信（ROS Control Node Design）
 
-> ℹ️ **Webで数式やコードが正しく表示されない場合はこちら** → [GitHub版を見る](https://github.com/Samizo-AITL/EduController/blob/main/part05_practical/theory/04_ros_control_node.md)
+> ℹ️ **Webで数式やコードが正しく表示されない場合はこちら** → [GitHub版を見る](https://github.com/Samizo-AITL/EduController/blob/main/part05_practical/theory/04_ros_control.md)
 
 
 本章では、**ROS（Robot Operating System）** を用いた制御構成の基本を解説します。  
