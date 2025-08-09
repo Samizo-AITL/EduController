@@ -4,6 +4,8 @@ title: SoC_DesignKit_by_ChatGPT
 permalink: /SoC_DesignKit_by_ChatGPT/
 ---
 
+---
+
 # 🧩 SoC_DesignKit_by_ChatGPT
 
 MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)
