@@ -4,6 +4,8 @@ title: 06. デジタル H∞ 制御 / Digital H∞ Control
 permalink: /part04_digital/theory/06_digital_hinf_control.html
 ---
 
+---
+
 # 🎯 06. デジタル H∞ 制御 / Digital H∞ Control
 
 > ℹ️ **数式が正しく表示されない場合はGitHub版をご確認ください**  
