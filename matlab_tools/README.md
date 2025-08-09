@@ -86,4 +86,4 @@ permalink: /matlab_tools/
 
 ---
 
-**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/README.html)**
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
