@@ -22,11 +22,11 @@ It builds a step-by-step understanding from **control structure to robustness**,
 
 | No | **章タイトル / Chapter** | **内容概要 / Description** |
 |----|---------------------------|-----------------------------|
-| 01 | [PID制御の基礎](/part01_classical/theory/01_pid_control.html) / PID Basics | PID各成分の働き、ブロック線図、伝達関数の理解<br>Function of each term, block diagrams, transfer functions |
-| 02 | [過渡応答と定常偏差](/part01_classical/theory/02_transient_response.html) / Transient Response & Steady-State Error | ステップ応答、時間定数、定常偏差の評価法<br>Step response, time constant, steady-state error |
-| 03 | [安定性判別法](/part01_classical/theory/03_stability_methods.html) / Stability Criteria | Routh表、根軌跡、ナイキスト法による安定判定<br>Routh table, root locus, Nyquist criterion |
-| 04 | [周波数応答とボード線図](/part01_classical/theory/04_freq_analysis.html) / Frequency Response & Bode Plot | ゲイン・位相プロット、交差周波数、周波数特性<br>Gain/phase plots, crossover frequency |
-| 05 | [安定余裕とロバスト性](/part01_classical/theory/05_gain_margin.html) / Stability Margin & Robustness | ゲイン余裕・位相余裕によるロバスト性評価<br>PM/GM based robustness assessment |
+| 01 | [PID制御の基礎](https://samizo-aitl.github.io/EduController/part01_classical/theory/01_pid_control.html) / PID Basics | PID各成分の働き、ブロック線図、伝達関数の理解<br>Function of each term, block diagrams, transfer functions |
+| 02 | [過渡応答と定常偏差](https://samizo-aitl.github.io/EduController/part01_classical/theory/02_transient_response.html) / Transient Response & Steady-State Error | ステップ応答、時間定数、定常偏差の評価法<br>Step response, time constant, steady-state error |
+| 03 | [安定性判別法](https://samizo-aitl.github.io/EduController/part01_classical/theory/03_stability_methods.html) / Stability Criteria | Routh表、根軌跡、ナイキスト法による安定判定<br>Routh table, root locus, Nyquist criterion |
+| 04 | [周波数応答とボード線図](https://samizo-aitl.github.io/EduController/part01_classical/theory/04_frequency_response.html) / Frequency Response & Bode Plot | ゲイン・位相プロット、交差周波数、周波数特性<br>Gain/phase plots, crossover frequency |
+| 05 | [安定余裕とロバスト性](https://samizo-aitl.github.io/EduController/part01_classical/theory/05_stability_margins.html) / Stability Margin & Robustness | ゲイン余裕・位相余裕によるロバスト性評価<br>PM/GM based robustness assessment |
 
 ---
 
