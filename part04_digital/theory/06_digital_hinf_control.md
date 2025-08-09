@@ -100,7 +100,7 @@ Kd = c2d(K, Ts, 'tustin');  % デジタル制御器 / Digital controller
 
 - Simulinkモデル `digital_hinf_simulink.slx` で閉ループを構成  
   Build a closed-loop system in Simulink using `digital_hinf_simulink.slx`  
-- 外乱入力、測定ノイズを加えて $S(z)$、$T(z)$ の挙動を確認  
+- 外乱入力、測定ノイズを加えて $S(z)$ 、 $T(z)$ の挙動を確認  
   Add disturbance input and measurement noise to observe $S(z)$ and $T(z)$ behavior  
 - ステップ応答と周波数応答を比較  
   Compare step response and frequency response  
@@ -126,7 +126,7 @@ Kd = c2d(K, Ts, 'tustin');  % デジタル制御器 / Digital controller
 | $\|S\|_\infty$       | 感度関数の無限ノルム / Infinity norm of sensitivity | < 2.0 | ◎ |
 
 > **Note:** $\|S\|_\infty$ が小さいほど外乱に強い。2.0 は約 6 dB に相当。  
-> **Note:** The smaller $\|S\|_\infty$, the stronger the disturbance rejection. 2.0 corresponds to about 6 dB.
+> **Note:** The smaller $\|S\|_\infty$ , the stronger the disturbance rejection. 2.0 corresponds to about 6 dB.
 
 ---
 
