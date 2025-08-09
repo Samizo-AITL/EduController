@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Verilog HDL: PID制御器（Q8.8固定小数点形式）
+title: Verilog HDL PID制御器（Q8.8固定小数点形式）
 permalink: /hdl/pid_q8_8/
 ---
 
