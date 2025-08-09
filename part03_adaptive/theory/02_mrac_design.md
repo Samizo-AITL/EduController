@@ -8,8 +8,7 @@ permalink: /part03_adaptive/theory/02_mrac_design.html
 
 # 🎯 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Control）
 
-> ℹ️ 数式が正しく表示されない場合は、GitHub版をご確認ください / If equations don’t render, see GitHub:  
-> https://github.com/Samizo-AITL/EduController/blob/main/part03_adaptive/theory/02_mrac_design.md
+> ℹ️ 数式が正しく表示されない場合は、GitHub版をご確認ください / If equations don’t render, see GitHub:  (https://github.com/Samizo-AITL/EduController/blob/main/part03_adaptive/theory/02_mrac_design.md)
 
 ---
 
