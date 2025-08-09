@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 04. オブザーバ設計と状態推定 / Observer Design & State Estimation
-permalink: /part02_modern/theory/04_observer_design/
+permalink: /part02_modern/theory/04_observer_design.html
 ---
 
 ---
@@ -135,10 +135,10 @@ r ───►│  -Kx̂ + r │     │ Observer │
 
 ---
 
-**⬅️ [前節 / Previous Section](./03_state_feedback.md)**  
+**⬅️ [前節 / Previous Section](https://samizo-aitl.github.io/EduController/part02_modern/theory/03_state_feedback.html)**  
 状態フィードバックと極配置の理論を解説します。  
 Covers state feedback and pole placement theory.
 
-**📚 [この章のREADMEへ / Back to Part 2 README](../README.md)**  
+**📚 [この章のREADMEへ / Back to Part 2 README](https://samizo-aitl.github.io/EduController/part02_modern/)**  
 現代制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 2 structure and materials list.
