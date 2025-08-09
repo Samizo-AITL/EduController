@@ -1,11 +1,21 @@
-# 🎯 FSM設計プロンプトテンプレート（SamizoGPT連携用）
-
-このプロンプトテンプレートは、ChatGPTに対してFSM（有限状態機械）の構造を指示し、  
-**VerilogなどのHDL記述**や**Mermaid図**などを自動生成させるためのものです。
+---
+layout: default
+title: 🎯 FSM設計プロンプトテンプレート（SamizoGPT連携用）
+permalink: /SoC_DesignKit_by_ChatGPT/prompts/fsm_prompt.html
+---
 
 ---
 
-## 📌 テンプレート形式
+# 🎯 FSM設計プロンプトテンプレート（SamizoGPT連携用）  
+*FSM Design Prompt Template for ChatGPT Integration*
+
+このテンプレートは、**有限状態機械（Finite State Machine: FSM）** の設計仕様を  
+ChatGPT等の生成AIに指示し、**Verilog HDL記述**や**Mermaid.jsによる可視化**を  
+自動生成させるためのプロンプト例です。
+
+---
+
+## 📌 基本テンプレート形式 / Basic Template Format
 
 ```markdown
 # タスク: FSM制御の設計テンプレートを生成して
@@ -19,10 +29,11 @@
 
 ---
 
-## 🔁 バリエーション例
+## 🔁 バリエーション例 / Variations
 
-🧩 YAMLベースのFSMを渡す場合
+🧩 **YAMLベースのFSMを渡す場合**
 
+```markdown
 # タスク: このFSM定義をVerilogで実装して
 ## 入力形式: YAML
 ```yaml
@@ -58,36 +69,33 @@ fsm:
 ```
 
 条件:
-	•	クロック同期の同期式FSMとして
-	•	状態出力を assign 文で定義
-	•	コメント付きで設計方針を説明
-
- ---
-
-## ✅ ChatGPT出力の例（概要）
-
-- `always @(posedge clk)` による状態遷移
-- `case (state)` による状態処理
-- 状態出力の `assign` 文
-- `reg [1:0] state` などの型宣言
-- コメント例：`// idle状態では出力を00に設定`
+- **クロック同期**の同期式FSMとして  
+- 状態出力を `assign` 文で定義  
+- 設計方針をコメント付きで説明
 
 ---
 
-## 🔗 関連教材と接続
+## ✅ ChatGPT出力例（概要） / Expected ChatGPT Output (Overview)
+
+- `always @(posedge clk)` による状態遷移制御  
+- `case (state)` 構文による状態処理分岐  
+- 状態ごとの出力を `assign` 文で定義  
+- 型宣言例：`reg [1:0] state;`  
+- コメント例：`// idle状態では出力を00に設定`  
+
+---
+
+## 🔗 関連教材 / Related Resources
 
 | リソース | 用途 |
 |----------|------|
-| `fsm_example_counter.yaml` | YAML構造のFSM定義入力 |
-| `fsm_to_mermaid.py` | 状態遷移図の可視化用補助 |
-| `fsm_template.md` | YAML形式FSMの設計指針テンプレート |
-| `execution_logs/` | プロンプトの使用結果と応答記録を保存可能 |
+| [`fsm_example_counter.yaml`](../fsm_example_counter.yaml) | YAML構造のFSM定義例 |
+| [`fsm_to_mermaid.py`](../fsm_to_mermaid.py) | YAML→Mermaid.js変換スクリプト |
+| [`fsm_template.md`](../fsm_template.md) | FSM設計ガイドラインテンプレート |
+| [`execution_logs/`](../execution_logs/) | プロンプト実行結果の記録用ディレクトリ |
 
 ---
 
-## 📄 ライセンス
-
+## 📄 ライセンス / License
 MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
-本プロンプトテンプレートは教育・設計支援目的で自由に利用・改変可能です。
-
-
+本テンプレートは**教育・設計支援目的で自由に利用・改変可能**です。
