@@ -8,7 +8,9 @@ permalink: /part03_adaptive/theory/02_mrac_design.html
 
 # 🎯 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Control）
 
-*数式が正しく表示されない場合は、[GitHub版はこちら](https://github.com/Samizo-AITL/EduController/blob/main/part03_adaptive/theory/02_mrac_design.md) をご覧ください / If equations don't render, see GitHub version.*
+> ⚠️ **Mermaid図について**  
+> Website版ではMermaid図が表示されない場合があります。  
+> 正しく表示したい場合は **[GitHub版はこちら](https://github.com/Samizo-AITL/EduController/blob/main/part03_adaptive/theory/02_mrac_design.md)** をご覧ください。
 
 ---
 
@@ -33,14 +35,22 @@ permalink: /part03_adaptive/theory/02_mrac_design.html
 
 ```mermaid
 flowchart TB
-    R["r(t)"] --> M["参照モデル M<br/>Reference Model M"]
-    M --> YM["y_m(t)"]
-    YM --> E["e(t) = y_m(t) - y(t)"]
-    E --> CTRL["可変制御器（θ）<br/>Variable Controller (θ)<br/>θ: 適応パラメータ"]
-    CTRL --> U["u(t)"]
-    U --> P["プラント P<br/>Plant P"]
-    P --> Y["y(t)"]
+    R["r(t)"]:::input --> M["参照モデル M<br/>Reference Model M"]:::model
+    M --> YM["y_m(t)"]:::signal
+    YM --> E["e(t) = y_m(t) - y(t)"]:::error
+    E --> CTRL["可変制御器（θ）<br/>Variable Controller (θ)<br/>θ: 適応パラメータ"]:::controller
+    CTRL --> U["u(t)"]:::signal
+    U --> P["プラント P<br/>Plant P"]:::plant
+    P --> Y["y(t)"]:::output
     Y -.-> E
+
+    classDef input fill:#FFF3B0,stroke:#333,stroke-width:1px;
+    classDef model fill:#A0C4FF,stroke:#333,stroke-width:1px;
+    classDef controller fill:#BDB2FF,stroke:#333,stroke-width:1px;
+    classDef plant fill:#FFADAD,stroke:#333,stroke-width:1px;
+    classDef error fill:#FFD6A5,stroke:#333,stroke-width:1px;
+    classDef signal fill:#E0E0E0,stroke:#333,stroke-width:1px;
+    classDef output fill:#CAFFBF,stroke:#333,stroke-width:1px;
 ```
 
 - **適応律（Updater）** がパラメータ $\theta$ を更新  
