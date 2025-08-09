@@ -8,15 +8,17 @@ permalink: /SoC_DesignKit_by_ChatGPT/
 
 # 🧩 SoC_DesignKit_by_ChatGPT
 
+---
+
 **JP:**  
-**SoC_DesignKit_by_ChatGPT** は、[EduController](../) における制御実装演習のためのテンプレート集です。  
+**SoC_DesignKit_by_ChatGPT** は、[EduController](https://samizo-aitl.github.io/EduController/) における制御実装演習のためのテンプレート集です。  
 FSM、PID、LLM統合制御などの構成要素を、**HDL記述ベースで学ぶためのテンプレート・プロンプト・テストベンチ**を提供します。
 
 **EN:**  
-**SoC_DesignKit_by_ChatGPT** is a collection of design templates used in [EduController](../) to support hands-on control system implementation.  
+**SoC_DesignKit_by_ChatGPT** is a collection of design templates used in [EduController](https://samizo-aitl.github.io/EduController/) to support hands-on control system implementation.  
 It provides reusable HDL-based templates, prompt examples, and testbenches for FSM, PID, and LLM-integrated control structures.
 
-本モジュールは、[**SamizoGPT**](https://github.com/Samizo-AITL/SamizoGPT) のプロンプト支援と連携し、ChatGPT等を用いた構造設計・コード生成・設計進化の記録（[`execution_logs/`](execution_logs/)）とも連動します。  
+本モジュールは、[**SamizoGPT**](https://github.com/Samizo-AITL/SamizoGPT) のプロンプト支援と連携し、ChatGPT等を用いた構造設計・コード生成・設計進化の記録（[`execution_logs/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/execution_logs/)）とも連動します。  
 This module integrates with [**SamizoGPT**](https://github.com/Samizo-AITL/SamizoGPT), enabling prompt-based structured design, code generation, and logging of design evolution using ChatGPT.  
 
 ---
@@ -32,8 +34,8 @@ This module integrates with [**SamizoGPT**](https://github.com/Samizo-AITL/Samiz
 - 🤖 ChatGPTを活用した C → Verilog 変換や制御構造生成の**プロンプト演習に対応**  
   🤖 Support prompt-driven exercises such as converting C to Verilog using ChatGPT.
 
-- 🔗 [EduController](../) の **Part05（実装編）・Part09（LLM制御）**と連動  
-  🔗 Linked with **Part05 (Implementation)** and **Part09 (LLM-based Control)** in [EduController](../).
+- 🔗 [EduController](https://samizo-aitl.github.io/EduController/) の **Part05（実装編）・Part09（LLM制御）**と連動  
+  🔗 Linked with **Part05 (Implementation)** and **Part09 (LLM-based Control)** in [EduController](https://samizo-aitl.github.io/EduController/).
 
 ---
 
@@ -41,11 +43,11 @@ This module integrates with [**SamizoGPT**](https://github.com/Samizo-AITL/Samiz
 
 | ディレクトリ / Directory | 内容 / Description |
 |--------------------------|--------------------|
-| [`fsm/`](fsm/) | 有限状態機械テンプレート（YAML記述・Mermaid.js変換支援）<br> FSM templates with YAML + Mermaid.js support |
-| [`pid/`](pid/) | PID制御器のVerilog実装（固定小数点対応）<br> Verilog PID controller with fixed-point arithmetic |
-| [`llm/`](llm/) | FSM×LLMの統合制御テンプレ<br> Templates for FSM × LLM hybrid control |
-| [`c_to_hdl/`](c_to_hdl/) | C→Verilog変換支援テンプレ（プロンプト付き）<br> Prompt-based support for C to Verilog conversion |
-| [`testbench/`](testbench/) | テストベンチ例、波形出力、RTLシミュレーション補助<br> Example testbenches for simulation and waveform viewing |
+| [`fsm/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/fsm/) | 有限状態機械テンプレート（YAML記述・Mermaid.js変換支援）<br> FSM templates with YAML + Mermaid.js support |
+| [`pid/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/pid/) | PID制御器のVerilog実装（固定小数点対応）<br> Verilog PID controller with fixed-point arithmetic |
+| [`llm/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/llm/) | FSM×LLMの統合制御テンプレ<br> Templates for FSM × LLM hybrid control |
+| [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) | C→Verilog変換支援テンプレ（プロンプト付き）<br> Prompt-based support for C to Verilog conversion |
+| [`testbench/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/testbench/) | テストベンチ例、波形出力、RTLシミュレーション補助<br> Example testbenches for simulation and waveform viewing |
 
 ---
 
@@ -56,13 +58,13 @@ The following prompt templates are integrated:
 
 | テンプレート名 / Template | 対応ディレクトリ | 内容 / Description |
 |---------------------------|------------------|---------------------|
-| [`fsm_prompt.md`](./prompts/control_templates/fsm_prompt.md) | [`fsm/`](fsm/) | FSM構成を記述し、テンプレを自動生成 / Generate FSM templates from state & trigger descriptions |
-| `conversion_prompt.md` ※近日追加予定 / coming soon | [`c_to_hdl/`](c_to_hdl/) | CコードをVerilogに変換 / Convert C control logic to Verilog |
+| [`fsm_prompt.md`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/prompts/control_templates/fsm_prompt.md) | [`fsm/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/fsm/) | FSM構成を記述し、テンプレを自動生成 / Generate FSM templates from state & trigger descriptions |
+| `conversion_prompt.md` ※近日追加予定 / coming soon | [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) | CコードをVerilogに変換 / Convert C control logic to Verilog |
 | `choose_template_prompt.md` ※近日追加予定 / coming soon | 全体 / general | テンプレ選択を支援 / Recommend templates based on needs |
-| `llm_control_prompt.md` ※近日追加予定 / coming soon | [`llm/`](llm/) | FSM×LLM制御の構造設計補助 / Support hybrid FSM × LLM control design |
+| `llm_control_prompt.md` ※近日追加予定 / coming soon | [`llm/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/llm/) | FSM×LLM制御の構造設計補助 / Support hybrid FSM × LLM control design |
 
-💬 実行ログは [`execution_logs/`](execution_logs/) に記録可能です。  
-💬 Execution results and prompt history can be saved under [`execution_logs/`](execution_logs/).
+💬 実行ログは [`execution_logs/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/execution_logs/) に記録可能です。  
+💬 Execution results and prompt history can be saved under [`execution_logs/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/execution_logs/).
 
 ---
 
@@ -81,8 +83,8 @@ transitions:
     trigger: start
 ```
 
-→ `fsm_to_mermaid.py` により状態遷移図を自動生成  
-→ Visualize FSM transitions using `fsm_to_mermaid.py`
+→ [`fsm_to_mermaid.py`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/fsm/fsm_to_mermaid.py) により状態遷移図を自動生成  
+→ Visualize FSM transitions using [`fsm_to_mermaid.py`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/fsm/fsm_to_mermaid.py)
 
 ---
 
@@ -94,8 +96,8 @@ error = ref - meas;
 output = Kp * error + Ki * integral;
 ```
 
-→ `conversion_prompt.md` によるVerilog変換 → `testbench/` にてシミュレーション  
-→ Use `conversion_prompt.md` to generate Verilog, simulate with `testbench/`
+→ [`conversion_prompt.md`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/conversion_prompt.md) によるVerilog変換 → [`testbench/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/testbench/) にてシミュレーション  
+→ Use [`conversion_prompt.md`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/conversion_prompt.md) to generate Verilog, simulate with [`testbench/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/testbench/)
 
 ---
 
@@ -103,16 +105,16 @@ output = Kp * error + Ki * integral;
 
 | 教材 / Material | 内容 / Details |
 |----------------|----------------|
-| [EduController](../) | 本体教材。Part05/09と連携 / Main curriculum (Part05/09) |
+| [EduController](https://samizo-aitl.github.io/EduController/) | 本体教材。Part05/09と連携 / Main curriculum (Part05/09) |
 | [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT) | プロンプトテンプレート支援 / Prompt template generator |
-| [`execution_logs/`](execution_logs/) | 実行記録や設計ログの保存先 / Logs of prompt execution and design outputs |
+| [`execution_logs/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/execution_logs/) | 実行記録や設計ログの保存先 / Logs of prompt execution and design outputs |
 
 ---
 
 ## 🛠️ 今後の拡張予定 / Future Extensions
 
-- Simulink→C→HDL変換対応（[`matlab_tools/`](../matlab_tools/) との連携）  
-  Simulink to C to Verilog support (via [`matlab_tools/`](../matlab_tools/))
+- Simulink→C→HDL変換対応（[`matlab_tools/`](https://samizo-aitl.github.io/EduController/matlab_tools/) との連携）  
+  Simulink to C to Verilog support (via [`matlab_tools/`](https://samizo-aitl.github.io/EduController/matlab_tools/))
 
 - VHDLテンプレート対応  
   VHDL template generation
@@ -133,5 +135,4 @@ output = Kp * error + Ki * integral;
 
 ---
 
-**🏠 [トップページ / Back to Home](../README.md)**
-
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/README.html)**
