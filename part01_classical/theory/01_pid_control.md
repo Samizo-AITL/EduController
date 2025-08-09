@@ -1,3 +1,9 @@
+---
+layout: default
+title: Part 1 古典制御理論 / Classical Control Theory 
+permalink: /part01_classical/theory/
+---
+
 # 🧩 01. PID制御の基礎  
 ## 🧩 01. Introduction to PID Control
 
@@ -85,4 +91,4 @@ $$
 - 「制御工学入門」森北出版  
 - *Feedback Control of Dynamic Systems* by Franklin, Powell, Emami-Naeini  
 - Python: `scipy.signal`, `control`, `matplotlib` ライブラリ
-- 
+
