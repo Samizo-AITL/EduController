@@ -8,7 +8,8 @@ permalink: /SoC_DesignKit_by_ChatGPT/
 
 # 🧩 SoC_DesignKit_by_ChatGPT
 
-MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/Samizo-AITL/SoC_DesignKit_by_ChatGPT/actions/workflows/test.yml/badge.svg)](../../actions)
 
 ---
 
