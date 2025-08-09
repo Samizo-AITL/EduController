@@ -149,6 +149,6 @@ plt.show()
 可制御性と可観測性、Kalmanランク条件を学びます。  
 Learn controllability, observability, and the Kalman rank conditions.
 
-**📚 [この章のREADMEへ / Back to Part 2 README](https://samizo-aitl.github.io/EduController/part02_modern/README.html)**  
+**📚 [この章のREADMEへ / Back to Part 2 README](https://samizo-aitl.github.io/EduController/part02_modern/)**  
 章の概要・教材一覧に戻ります。  
 Return to the Part 2 overview and materials list.
