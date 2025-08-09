@@ -96,8 +96,22 @@ Kd = c2d(K, Ts, 'tustin');  % デジタル制御器
 - 外乱入力、測定ノイズを加えて $S(z)$、$T(z)$ の挙動を確認  
 - ステップ応答と周波数応答を比較
 
-![Step Response](../figures/digital_hinf_step.png)  
-![Bode Plot](../figures/digital_hinf_bode.png)  
+<figure>
+  <img src="../figures/digital_hinf_step.png" alt="Step Response: Continuous vs Digital H-infinity" />
+  <figcaption>
+    **図1 / Fig.1 — ステップ応答（連続 vs 離散H∞）**  
+    連続設計と離散実装の応答を比較。離散側はわずかに帯域が低く、減衰が大きい。  
+    *Step responses of continuous design and digital implementation. The digital one shows slightly lower bandwidth and higher damping.*
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="../figures/digital_hinf_bode.png" alt="Bode Plot: Continuous vs Digital H-infinity" />
+  <figcaption>
+    **図2 / Fig.2 — ボード線図（連続 vs 離散H∞）**  
+    中高周波でのゲイン差を可視化し、離散化の影響を確認。  
+    *Bode magnitude comparison highlighting mid–high frequency differences due to discretization.*
+  </figcaption>
 
 ---
 
