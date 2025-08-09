@@ -136,7 +136,7 @@ Example output: `/figures/bode_example.png`
 安定性判別法（Routh・根軌跡・ナイキスト）を学びます。  
 Covers stability determination methods (Routh, Root Locus, Nyquist).
 
-**➡️➡️ [次節 / Next Section](https://samizo-aitl.github.io/EduController/part01_classical/theory/05_gain_margin.html)**  
+**➡️➡️ [次節 / Next Section](https://samizo-aitl.github.io/EduController/part01_classical/theory/05_stability_margins.html)**  
 PID設計のパラメータ調整と実装方法を解説します。  
 Explains PID tuning methods and implementation.
 
