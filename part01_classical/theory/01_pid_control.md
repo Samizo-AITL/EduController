@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Part 1 古典制御理論 / Classical Control Theory 
+title: PID制御の基礎
 permalink: /part01_classical/theory/01_pid_control.md
 ---
 
