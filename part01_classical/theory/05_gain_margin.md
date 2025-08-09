@@ -145,10 +145,6 @@ print(f"Gain Margin: {gm}, Phase Margin: {pm}")
 周波数応答とボード線図の基礎を学びます。  
 Covers basics of frequency response and Bode plots.
 
-**➡️➡️ [次節 / Next Section](./06_pid_design.html)**  
-PID設計のパラメータ調整と実装方法を解説します。  
-Explains PID tuning methods and implementation.
-
 **📚 [この章のREADMEへ / Back to Part 1 README](../README.md)**  
 古典制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 1 structure and materials list.
