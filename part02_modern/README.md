@@ -97,11 +97,19 @@ pip install control matplotlib numpy
 
 | **項目 / Item** | **内容 / Details** |
 |-----------------|--------------------|
-| **著者 / Author** | 三溝 真一（Shinichi Samizo）<br>Shinshu University / Ex-Epson |
+| **著者 / Author** | 三溝 真一（Shinichi Samizo） |
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
 | **ライセンス / License** | MIT License（再配布・改変自由）<br>Redistribution and modification allowed |
 
 ---
 
-📎 **[トップに戻る / Back to Home](../README.md)**
+**⬅️ [前章 / Previous Chapter](./part01_classical/)**  
+PID制御の基本、ボード線図による周波数応答解析、システムの安定性評価を解説します。  
+Covers the basics of PID control, frequency response analysis using Bode plots, and system stability evaluation.
+
+**[次章 / Next Chapter ➡️➡️](./part03_adaptive/)**  
+適応制御（MRAC）、ロバスト制御（H∞、L1）など、パラメータ変動や外乱に強い制御法を扱います。  
+Covers adaptive control (MRAC) and robust control methods (H∞, L1) designed to handle parameter variations and disturbances.
+
+**🏠 [トップページ / Back to Home](./README.md)**
