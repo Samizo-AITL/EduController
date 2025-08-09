@@ -107,3 +107,8 @@ Covers NN-aided PID structure, training, advantages, and limitations.
 **➡️➡️ [次節 / Next](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/04_ai_vs_classical/)**  
 AI制御と古典制御の比較と統合戦略を解説。  
 Covers comparison and hybrid strategies of AI-based and classical control.
+
+**🏠 [Part 06 トップ / Back to Part 06 Top](https://samizo-aitl.github.io/EduController/part06_nn_control/)**  
+全体概要と各章リンクを掲載。  
+Provides full overview and links to all sections.
+
