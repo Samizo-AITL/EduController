@@ -7,7 +7,7 @@ permalink: /part04_digital/theory/06_digital_hinf_control.html
 # 🎯 06. デジタル H∞ 制御 / Digital H∞ Control
 
 > ℹ️ **数式が正しく表示されない場合はGitHub版をご確認ください**  
-> ℹ️ **If equations do not render properly, see the [GitHub version](https://github.com/Samizo-AITL/EduController/blob/main/part04_digital/theory/06_digital_hinf_control.md)**
+> If equations do not render properly, see the [GitHub version](https://github.com/Samizo-AITL/EduController/blob/main/part04_digital/theory/06_digital_hinf_control.md)
 
 ---
 
@@ -37,18 +37,22 @@ This material covers the flow from **continuous-time H∞ design → discretizat
 ## 📐 制御問題の定義 / Problem Formulation
 
 ### 感度関数と補償関数 / Sensitivity and Complementary Sensitivity
-```math
+
+$$
 S(s) = \frac{1}{1 + G(s)K(s)}, \quad T(s) = 1 - S(s)
-```
+$$
+
 - $S(s)$：外乱抑制性能（低周波域で小さく）  
-  $S(s)$: Disturbance suppression performance (small at low frequency)  
+  $S(s)$: Disturbance rejection (small at low frequencies)  
 - $T(s)$：ノイズ抑制性能（高周波域で小さく）  
-  $T(s)$: Noise suppression performance (small at high frequency)  
+  $T(s)$: Noise attenuation (small at high frequencies)  
 
 ### H∞ 最適化条件 / H∞ Optimization Objective
-```math
+
+$$
 \| T_{zw}(s) \|_\infty < \gamma
-```
+$$
+
 - $T_{zw}(s)$：外乱 $w$ から性能出力 $z$ への伝達関数  
   $T_{zw}(s)$: Transfer function from disturbance $w$ to performance output $z$  
 - $\| \cdot \|_\infty$ ：全周波数帯域での最大ゲイン（無限ノルム）  
@@ -100,19 +104,17 @@ Kd = c2d(K, Ts, 'tustin');  % デジタル制御器 / Digital controller
 
 - Simulinkモデル `digital_hinf_simulink.slx` で閉ループを構成  
   Build a closed-loop system in Simulink using `digital_hinf_simulink.slx`  
-- 外乱入力、測定ノイズを加えて $S(z)$ 、 $T(z)$ の挙動を確認  
+- 外乱入力、測定ノイズを加えて $S(z)$、$T(z)$ の挙動を確認  
   Add disturbance input and measurement noise to observe $S(z)$ and $T(z)$ behavior  
 - ステップ応答と周波数応答を比較  
   Compare step response and frequency response  
 
-![Step Response: Continuous vs Digital H∞](https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_step.png)
-
+![Step Response: Continuous vs Digital H∞](https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_step.png)  
 **図1 / Fig.1 — ステップ応答（連続 vs 離散H∞）**  
 連続設計と離散実装の応答を比較。離散側はわずかに帯域が低く、減衰が大きい。  
 *Step responses of continuous design and digital implementation. The digital one shows slightly lower bandwidth and higher damping.*
 
-![Bode Plot: Continuous vs Digital H∞](https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_bode.png)
-
+![Bode Plot: Continuous vs Digital H∞](https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_bode.png)  
 **図2 / Fig.2 — ボード線図（連続 vs 離散H∞）**  
 中高周波でのゲイン差を可視化し、離散化の影響を確認。  
 *Bode magnitude comparison highlighting mid–high frequency differences due to discretization.*
@@ -127,8 +129,8 @@ Kd = c2d(K, Ts, 'tustin');  % デジタル制御器 / Digital controller
 | 位相余裕 PM          | 遅延許容量 / Phase tolerance | > 30° | ○ |
 | $\|S\|_\infty$       | 感度関数の無限ノルム / Infinity norm of sensitivity | < 2.0 | ◎ |
 
-> **Note:**  $\|S\|_\infty$ が小さいほど外乱に強い。2.0 は約 6 dB に相当。  
-> **Note:** The smaller  $\|S\|_\infty$ , the stronger the disturbance rejection. 2.0 corresponds to about 6 dB.
+> **Note:** $\|S\|_\infty$ が小さいほど外乱に強い。2.0 は約 6 dB に相当。  
+> **Note:** The smaller $\|S\|_\infty$, the stronger the disturbance rejection. 2.0 ≈ 6 dB.
 
 ---
 
