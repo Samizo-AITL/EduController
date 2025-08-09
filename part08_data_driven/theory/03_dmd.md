@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 03. 動的モード分解（DMD）
-permalink: /part08_data_driven/theory/03_dmd.htmi
+permalink: /part08_data_driven/theory/03_dmd.html
 ---
 
 ---
