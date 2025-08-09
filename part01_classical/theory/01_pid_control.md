@@ -9,11 +9,7 @@ permalink: /part01_classical/theory/01_pid_control.html
 # 🧩 01. PID制御の基礎  
 **01. Introduction to PID Control**
 
-> **ℹ️ 数式が正しく表示されない場合があります**  
-> Website (GitHub Pages) では数式が崩れる場合があります。  
-> 正しい表示はGitHubのソースをご確認ください。  
-> If math formulas do not display correctly on the Website, please check the source on GitHub:  
-> [📄 View on GitHub](https://github.com/Samizo-AITL/EduController/blob/main/part01_classical/theory/01_pid_control.md)
+> **Note:** 数式が正しく表示されない場合は [GitHub版](https://github.com/Samizo-AITL/EduController/blob/main/part01_classical/theory/01_pid_control.md) を参照してください。
 
 ---
 
