@@ -54,10 +54,10 @@ DDPG（Deep Deterministic Policy Gradient）は、
 
 ## ⚙️ 学習の流れ / Training Loop
 
-1. **環境初期化 / Initialize environment** → $s_0$ を取得  
-2. **Actorネットで行動選択 / Action selection**：$a_t = \mu(s_t) + \text{noise}$  
-3. **環境ステップ / Environment step**：$(r_t, s_{t+1})$ を取得  
-4. **経験保存 / Store experience**：$(s_t, a_t, r_t, s_{t+1})$  
+1. **環境初期化 / Initialize environment** →  $s_0$ を取得  
+2. **Actorネットで行動選択 / Action selection**： $a_t = \mu(s_t) + \text{noise}$  
+3. **環境ステップ / Environment step**： $(r_t, s_{t+1})$ を取得  
+4. **経験保存 / Store experience**： $(s_t, a_t, r_t, s_{t+1})$  
 5. **バッチ学習 / Batch update**：Actor & Critic を更新  
 6. **ターゲットネット更新 / Soft update target networks**  
 7. 上記を繰り返し、**最適ポリシー**を獲得
