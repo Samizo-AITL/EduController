@@ -4,6 +4,8 @@ title: Part 04 デジタル制御と信号処理
 permalink: /part04_digital/
 ---
 
+---
+
 # 💻 Part 04: デジタル制御と信号処理  
 **💻 Part 04: Digital Control & Signal Processing**
 
