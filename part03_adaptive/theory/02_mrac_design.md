@@ -31,6 +31,19 @@ permalink: /part03_adaptive/theory/02_mrac_design.html
 
 ## ⚙️ MRACの基本構成 / Basic Structure
 
+```mermaid
+flowchart TB
+    R["r(t)"] --> M["参照モデル M<br/>Reference Model M"]
+    M --> YM["y_m(t)"]
+    YM --> E["e(t) = y_m(t) - y(t)"]
+    E --> CTRL["可変制御器（θ）<br/>Variable Controller (θ)<br/>θ: 適応パラメータ"]
+    CTRL --> U["u(t)"]
+    U --> P["プラント P<br/>Plant P"]
+    P --> Y["y(t)"]
+    Y -.-> E
+```
+
+
 ```
             +----------------+
    r(t) ──▶ | 参照モデル M   | ───▶ y_m(t)
