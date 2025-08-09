@@ -61,11 +61,11 @@ part08_data_driven/
 
 | **タイトル / Title** | **ファイル / File** |
 |------------------------|----------------------|
-| モデルフリー制御の基礎<br>Basics of Model-Free Control | [01_model_free_control.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/01_model_free_control/) |
-| Koopman演算子と線形化<br>Koopman Operator & Linearization | [02_koopman_operator.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/02_koopman_operator/) |
-| 動的モード分解（DMD）<br>Dynamic Mode Decomposition | [03_dmd.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/03_dmd/) |
-| サブスペース同定法<br>Subspace Identification | [04_subspace_id.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/04_subspace_id/) |
-| モデルベース制御との比較<br>Comparison with Model-Based Control | [05_data_vs_model.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/05_data_vs_model/) |
+| モデルフリー制御の基礎<br>Basics of Model-Free Control | [01_model_free_control.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/01_model_free_control.html) |
+| Koopman演算子と線形化<br>Koopman Operator & Linearization | [02_koopman_operator.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/02_koopman_operator.html) |
+| 動的モード分解（DMD）<br>Dynamic Mode Decomposition | [03_dmd.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/03_dmd.html) |
+| サブスペース同定法<br>Subspace Identification | [04_subspace_id.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/04_subspace_id.html) |
+| モデルベース制御との比較<br>Comparison with Model-Based Control | [05_data_vs_model.md](https://samizo-aitl.github.io/EduController/part08_data_driven/theory/05_data_vs_model.html) |
 
 ---
 
