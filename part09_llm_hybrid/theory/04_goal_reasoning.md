@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 04_goal_reasoning
-permalink: /part09_llm_hybrid/theory/04_goal_reasoning.html
+permalink: /part09_llm_hybrid/theory/04_goal_reasoning.html 
 ---
 
 ---
