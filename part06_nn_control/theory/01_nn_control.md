@@ -101,10 +101,6 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 
 ---
 
-**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part06_nn_control/)**  
-本章の概要とディレクトリ構成を解説。  
-Overview and directory structure of this chapter.
-
 **➡️➡️ [次節 / Next](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/02_nn_pid.html)**  
 ニューラルPID制御器の設計と学習法を解説。  
 Design and training method of Neural PID controller.
