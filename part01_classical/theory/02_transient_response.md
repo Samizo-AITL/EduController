@@ -1,3 +1,11 @@
+---
+layout: default
+title: Part 1 古典制御理論 / Classical Control Theory 
+permalink: /part01_classical/theory/02_transient_response.md
+---
+
+---
+
 # ⚡️ 02. 過渡応答と定常偏差の基礎
 
 制御系の性能を評価する上で、「どれだけ速く」「どれだけ正確に」目標値に到達するかは重要な指標です。本節では、時間領域での応答特性を中心に、過渡応答と定常誤差について学びます。
