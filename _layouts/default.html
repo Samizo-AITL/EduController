@@ -12,22 +12,31 @@ layout: null
   {%- comment -%} SEO（入れてなければ削ってOK） {%- endcomment -%}
   {% if site.plugins contains "jekyll-seo-tag" %}{% seo %}{% endif %}
 
-  <!-- MathJax (CHTMLで統一) -->
+  <!-- MathJax (CHTML / インラインは \( ... \) のみに統一) -->
   <script>
     window.MathJax = {
       tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        inlineMath: [['\\(', '\\)']],               // ← $...$ は使わない
         displayMath: [['$$', '$$'], ['\\[', '\\]']]
       },
       chtml: { scale: 1 }
     };
   </script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <!-- 表内の数式の崩れ/はみ出し対策（任意） -->
+  <style>
+    /* テーブル内の数式は折り返さない＆横スクロール可 */
+    table { overflow-x: auto; }
+    td .mjx-container, th .mjx-container {
+      display: inline-block;
+      white-space: nowrap;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- ※ ここに見出しやロゴは一切出さない -->
-
+  <!-- ここに見出しやロゴは一切出さない -->
   <main class="container">
     {{ content }}
   </main>
