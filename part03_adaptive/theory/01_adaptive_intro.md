@@ -8,7 +8,9 @@ permalink: /part03_adaptive/theory/01_adaptive_intro.html
 
 # 🔄 3.1 適応制御の概要 / Introduction to Adaptive Control
 
-> ℹ️ 数式が正しく表示されない場合 / If equations do not display correctly: [GitHub版 / GitHub version](https://github.com/Samizo-AITL/EduController/blob/main/part03_adaptive/theory/01_adaptive_intro.md)
+> ℹ️ 数式が正しく表示されない場合 / If equations do not display correctly: [GitHub版 / GitHub version](https://github.com/Samizo-AITL/EduController/blob/main/part03_adaptive/theory/01_adaptive_intro.md)  
+> 📊 Mermaid図は一部ブラウザやサイトでは表示されません。正しく表示されない場合は、上記GitHub版でご確認ください。  
+> Some Mermaid diagrams may not render on this site. Please view the GitHub version above for correct rendering.
 
 ---
 
@@ -51,28 +53,6 @@ flowchart TB
     UPDATER["適応律 (Updater)\nパラメータ推定 / Parameter estimation"] --> CTRL["制御器 (Controller)"]
     CTRL --> PLANT["[ Plant ]"]
     PLANT -->|"y(t)"| UPDATER
-```
-
-
-
-```mermaid
-flowchart TB
-    UPDATER["適応律 (Updater)<br/><sub>パラメータ推定 / Parameter estimation</sub>"] --> CTRL["制御器 (Controller)"]
-    CTRL --> PLANT["[ Plant ]"]
-    PLANT -->|y(t)| UPDATER
-```
-```text
-  +----------------+
-  | 適応律 (Updater)| ← パラメータ推定 / Parameter estimation
-  +----------------+
-            ↓
-  +----------------+
-  | 制御器 (Controller) |
-  +----------------+
-            ↓
-       [ Plant ]
-            ↑
-          y(t)
 ```
 
 - 適応律が制御器パラメータを計算・更新  
