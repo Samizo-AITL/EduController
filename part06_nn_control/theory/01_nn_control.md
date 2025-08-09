@@ -8,8 +8,7 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 
 # 🤖 01. ニューラルネットによる制御設計（Neural Network-based Control）
 
-> 💡 **Note:** 数式やMermaid図がWebで正しく表示されない場合は、  
-> **[GitHub版ページはこちら](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/01_nn_control.md)** を参照してください。
+> 💡 **Note:** 数式やMermaidがWebで正しく表示されない場合は、[GitHub版ページはこちら](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/01_nn_control.md) を参照してください。
 
 ---
 
@@ -41,16 +40,17 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 
 ## 📐 **2. 制御器としてのNNアーキテクチャ**
 
-### 🌐 一般構成（General NN Controller）
+### 一般構成（General NN Controller）
+
 ```mermaid
 flowchart LR
-    R[r(t)] --> NN["NN Controller<br/>f_θ(·)"]
-    Y[y(t)] -.-> E["e(t)=r(t)-y(t)"]
+    R(r(t)) --> NN[NN Controller f_theta(.)]
+    Y(y(t)) -.-> E(e(t)=r(t)-y(t))
     R -.-> NN
     Y -.-> NN
     E -.-> NN
-    NN --> U[u(t)]
-    U --> P[Plant P]
+    NN --> U(u(t))
+    U --> P(Plant P)
     P --> Y
 ```
 
@@ -67,43 +67,46 @@ flowchart LR
 
 ---
 
-### 🟦 逆モデル制御（Inverse Model Control）
+### 📐 逆モデル制御（Inverse Model）
+
 ```mermaid
 flowchart LR
-    Y[y(t)] --> NN["Inverse Model NN<br/>f_θ(y) ≈ u"]
-    R[r(t)] -.-> NN
-    NN --> U[u(t)]
-    U --> P[Plant P]
+    Y(y(t)) --> NN[Inverse Model NN f_theta(y) -> u]
+    R(r(t)) -.-> NN
+    NN --> U(u(t))
+    U --> P(Plant P)
     P --> Y
 ```
 
 ---
 
-### 🟩 直接NN制御（Direct NN Control）
+### 📐 直接NN制御（Direct NN Control）
+
 ```mermaid
 flowchart LR
-    R[r(t)] --> NN["Direct NN Control<br/>f_θ(r,y) → u"]
-    Y[y(t)] -.-> NN
-    NN --> U[u(t)]
-    U --> P[Plant P]
+    R(r(t)) --> NN[Direct NN Control f_theta(r,y) -> u]
+    Y(y(t)) -.-> NN
+    NN --> U(u(t))
+    U --> P(Plant P)
     P --> Y
 ```
 
 ---
 
-### 🟪 NN-PID制御（PID補償付き）
+### 📐 NN-PID（PID補償付き）
+
 ```mermaid
 flowchart LR
-    R[r(t)] --> PID[PID]
-    Y[y(t)] -.-> PID
-    R -.-> NN["NN Compensator"]
+    R(r(t)) --> PID[PID]
+    Y(y(t)) -.-> PID
+    R -.-> NN[NN Compensator]
     Y -.-> NN
-    PID --> U1[u_pid]
-    NN --> U2[u_nn]
+    PID --> U1(u_pid)
+    NN --> U2(u_nn)
     U1 --> SUM((+))
     U2 --> SUM
-    SUM --> U[u(t)]
-    U --> P[Plant P]
+    SUM --> U(u(t))
+    U --> P(Plant P)
     P --> Y
 ```
 
