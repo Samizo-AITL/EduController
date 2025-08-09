@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Part 03: 適応制御・ロバスト制御 / Adaptive & Robust Control
+title: Part 03  適応制御・ロバスト制御 / Adaptive & Robust Control
 permalink: /part03_adaptive/
 ---
 
