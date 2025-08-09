@@ -4,6 +4,8 @@ title: ⚡️ 過渡応答と定常偏差の基礎 / Transient Response & Steady
 permalink: /part01_classical/theory/02_transient_response.html
 ---
 
+---
+
 # ⚡️ 02. 過渡応答と定常偏差の基礎  
 **02. Fundamentals of Transient Response & Steady-State Error**
 
