@@ -4,8 +4,6 @@ title: 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Cont
 permalink: /part03_adaptive/theory/02_mrac_design.html
 ---
 
----
-
 # 🎯 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Control）
 
 > ⚠️ **Mermaid図について**  
@@ -31,25 +29,38 @@ permalink: /part03_adaptive/theory/02_mrac_design.html
 
 ---
 
+## 🎨 色分類ルール / Color Classification Rules
+
+| 分類 / Category | 色 / Color | 用途 / Usage |
+|-----------------|------------|--------------|
+| **入力信号 / Input** | `#FFF3B0` （黄系） | 参照入力などの外部入力信号 |
+| **モデル / Model** | `#A0C4FF` （青系） | 参照モデルなど理想挙動を定義するブロック |
+| **誤差信号 / Error** | `#FFD6A5` （オレンジ系） | 出力とモデルとの差分 |
+| **制御器 / Controller** | `#BDB2FF` （紫系） | パラメータ可変の制御ブロック |
+| **プラント / Plant** | `#FFADAD` （赤系） | 制御対象の物理システム |
+| **出力信号 / Output** | `#CAFFBF` （緑系） | 実際の出力やモデル出力 |
+
+---
+
 ## ⚙️ MRACの基本構成 / Basic Structure
 
 ```mermaid
 flowchart TB
     R["r(t)"]:::input --> M["参照モデル M<br/>Reference Model M"]:::model
-    M --> YM["y_m(t)"]:::signal
+    M --> YM["y_m(t)"]:::output
     YM --> E["e(t) = y_m(t) - y(t)"]:::error
     E --> CTRL["可変制御器（θ）<br/>Variable Controller (θ)<br/>θ: 適応パラメータ"]:::controller
-    CTRL --> U["u(t)"]:::signal
+    CTRL --> U["u(t)"]:::input
     U --> P["プラント P<br/>Plant P"]:::plant
     P --> Y["y(t)"]:::output
     Y -.-> E
 
+    %% Color definitions
     classDef input fill:#FFF3B0,stroke:#333,stroke-width:1px;
     classDef model fill:#A0C4FF,stroke:#333,stroke-width:1px;
     classDef controller fill:#BDB2FF,stroke:#333,stroke-width:1px;
     classDef plant fill:#FFADAD,stroke:#333,stroke-width:1px;
     classDef error fill:#FFD6A5,stroke:#333,stroke-width:1px;
-    classDef signal fill:#E0E0E0,stroke:#333,stroke-width:1px;
     classDef output fill:#CAFFBF,stroke:#333,stroke-width:1px;
 ```
 
