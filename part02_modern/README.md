@@ -104,12 +104,12 @@ pip install control matplotlib numpy
 
 ---
 
-**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part01_classical/README.html)**  
+**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part01_classical/)**  
 PID制御の基本、ボード線図による周波数応答解析、システムの安定性評価を解説します。  
 Covers the basics of PID control, frequency response analysis using Bode plots, and system stability evaluation.
 
-**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part03_adaptive/README.html)**  
+**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part03_adaptive/)**  
 適応制御（MRAC）、ロバスト制御（H∞、L1）など、パラメータ変動や外乱に強い制御法を扱います。  
 Covers adaptive control (MRAC) and robust control methods (H∞, L1) designed to handle parameter variations and disturbances.
 
-**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/README.html)**
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
