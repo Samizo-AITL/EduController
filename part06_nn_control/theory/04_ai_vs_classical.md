@@ -95,7 +95,7 @@ AITL（Adaptive Intelligent Three-Layered）構想では、以下の**三層ア�
 
 ---
 
-**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/03_inverse_model/)**  
+**⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/03_inverse_model.html)**  
 逆モデル制御の構造と学習方法を解説。  
 Covers inverse model control structure and learning methods.
 
