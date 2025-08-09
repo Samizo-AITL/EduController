@@ -139,10 +139,6 @@ r ───►│  -Kx̂ + r │     │ Observer │
 状態フィードバックと極配置の理論を解説します。  
 Covers state feedback and pole placement theory.
 
-**➡️ [次節 / Next Section](./05_lqr_design.md)**  
-最適レギュレータ設計（LQR）の理論と実装を解説します。  
-Covers optimal regulator design (LQR).
-
 **📚 [この章のREADMEへ / Back to Part 2 README](../README.md)**  
 現代制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 2 structure and materials list.
