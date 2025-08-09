@@ -9,6 +9,10 @@ permalink: /part01_classical/theory/02_transient_response.html
 # ⚡️ 02. 過渡応答と定常偏差の基礎  
 **02. Fundamentals of Transient Response & Steady-State Error**
 
+> **Note:** 数式が正しく表示されない場合は [GitHub版](https://github.com/Samizo-AITL/EduController/blob/main/part01_classical/theory/02_transient_response.md) を参照してください。
+
+---
+
 制御系の性能を評価する上で、「どれだけ速く」「どれだけ正確に」目標値に到達するかは重要な指標です。本節では、時間領域での応答特性を中心に、過渡応答と定常誤差について学びます。  
 In control system performance evaluation, *how fast* and *how accurately* the system reaches its target are key indicators. This section focuses on transient response and steady-state error in the time domain.
 
