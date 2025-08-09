@@ -32,17 +32,17 @@ permalink: /matlab_tools/
 
 | ファイル名 | 内容 |
 |------------|------|
-| `getting_started.md` | Simulink利用手順ガイド（基本操作〜モデル開発） |
-| `model_to_code.md` | SimulinkモデルからCコードを生成する手順 |
-| `pid_simulink_example.slx` | PID制御のSimulinkモデル（連続制御の基本） |
-| `state_space_example.slx` | 状態空間モデル（離散系設計の導入例） |
+| [`getting_started.md`](https://samizo-aitl.github.io/EduController/matlab_tools/getting_started.html) | Simulink利用手順ガイド（基本操作〜モデル開発） |
+| [`model_to_code.md`](https://samizo-aitl.github.io/EduController/matlab_tools/model_to_code.html) | SimulinkモデルからCコードを生成する手順 |
+| [`pid_simulink_example.slx`](https://samizo-aitl.github.io/EduController/matlab_tools/pid_simulink_example.slx) | PID制御のSimulinkモデル（連続制御の基本） |
+| [`state_space_example.slx`](https://samizo-aitl.github.io/EduController/matlab_tools/state_space_example.slx) | 状態空間モデル（離散系設計の導入例） |
 
 ---
 
 ## 🎯 目的 / 活用意図
 
 - **EduController** の **前段フェーズ**（制御モデル設計）におけるSimulink活用
-- **Cコード生成後**、[`c_to_hdl/`](../SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化の導入ステップ
+- **Cコード生成後**、[`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化の導入ステップ
 - 離散時間制御、状態空間制御、PID制御などの設計検証
 - **MATLAB/Simulinkの教育的導入**から自動化・HDL連携までの一貫教材化
 
@@ -52,9 +52,9 @@ permalink: /matlab_tools/
 
 | 関連ディレクトリ | 役割 |
 |------------------|------|
-| [`c_to_hdl/`](../SoC_DesignKit_by_ChatGPT/c_to_hdl/) | CコードをVerilog HDLに変換（今後の展開） |
-| [`testbench/`](../SoC_DesignKit_by_ChatGPT/testbench/) | HDL化後のシミュレーション検証 |
-| [`EduController`](../) | 教材本体との統合設計演習（Part04, Part05など） |
+| [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) | CコードをVerilog HDLに変換（今後の展開） |
+| [`testbench/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/testbench/) | HDL化後のシミュレーション検証 |
+| [`EduController`](https://samizo-aitl.github.io/EduController/) | 教材本体との統合設計演習（Part04, Part05など） |
 
 ---
 
@@ -86,4 +86,4 @@ permalink: /matlab_tools/
 
 ---
 
-**🏠 [トップページ / Back to Home](../README.md)**
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/README.html)**
