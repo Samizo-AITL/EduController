@@ -1,4 +1,14 @@
+---
+layout: default
+title: Part09
+permalink: /part09_llm_hybrid/
+---
+
+---
+
 # 🤖 Part 9: ハイブリッド制御とLLM統合 / Hybrid Control with LLM Integration
+
+---
 
 本章では、**状態機械（FSM）・物理制御（PID）・大規模言語モデル（LLM）** を組み合わせた  
 柔軟かつ適応的な**三層統合型制御アーキテクチャ**を設計・実装します。  
@@ -82,11 +92,20 @@ It is based on the **AITL framework (FSM × PID × LLM)**, aiming to build adapt
 
 | **項目 / Item** | **内容 / Details** |
 |------------------|---------------------|
-| **著者 / Author** | 三溝 真一（**Shinichi Samizo**）<br>Shinshu University / Ex-Epson |
+| **著者 / Author** | 三溝 真一（**Shinichi Samizo**） |
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
 | **ライセンス / License** | MIT License（**再配布・改変自由**）<br>**Redistribution and modification allowed** |
 
 ---
 
-📎 **[トップに戻る / Back to Home](../README.md)**
+**⬅️ [前章 / Previous Chapter](../part08_data_driven/)**  
+データ駆動型制御（Koopman演算子、行列識別など）を扱います。  
+Covers data-driven control methods including the Koopman operator and system identification.
+
+**[次章 / Next Chapter ➡️➡️](../part10_pendulum/)**  
+倒立振子の総合制御（PID / LQR / DDPG / HDLなど）を扱います。  
+Covers integrated control of inverted pendulum systems including PID, LQR, DDPG, and HDL implementation.
+
+**🏠 [トップページ / Back to Home](../README.md)**
+
