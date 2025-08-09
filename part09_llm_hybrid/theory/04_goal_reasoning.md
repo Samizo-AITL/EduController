@@ -4,6 +4,8 @@ title: 04_goal_reasoning
 permalink: /part09_llm_hybrid/theory/04_goal_reasoning.html
 ---
 
+---
+
 # 🎯 04. 目的推論と対話型制御  
 **Goal Reasoning and Dialogue-based Control**
 
