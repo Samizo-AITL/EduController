@@ -4,7 +4,11 @@ title: 02. 可制御性と可観測性の基本 / Controllability & Observabilit
 permalink: /part02_modern/theory/02_controllability/
 ---
 
+---
+
 # 🔍 02. 可制御性と可観測性の基本 / Basics of Controllability & Observability
+
+---
 
 **状態空間モデル**を使って制御系を設計する際には、  
 「**その状態を操作できるか？**」と「**外部から推定できるか？**」という2つの性質が極めて重要です。  
