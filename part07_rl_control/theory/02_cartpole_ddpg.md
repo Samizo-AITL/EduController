@@ -24,12 +24,14 @@ training a controller to stabilize the pole in a continuous action setting.
 
 - **目標 / Goal**：振子を立てたまま台車を左右に移動させ、倒れないよう制御する  
   Keep the pole upright by moving the cart left or right.
-- **状態ベクトル / State vector** $(s)$：  
-  $$
-  s = [x, \dot{x}, \theta, \dot{\theta}]
-  $$
+- **状態ベクトル / State vector**  $(s)$ ：
+
+$$
+s = [x, \dot{x}, \theta, \dot{\theta}]
+$$
+  
   （位置・速度・角度・角速度 / position, velocity, angle, angular velocity）
-- **行動ベクトル / Action vector** $(a)$：  
+- **行動ベクトル / Action vector**  $(a)$ ：  
   台車に加える連続的な力 / Continuous force applied to the cart
 
 > 使用環境 / Environment: `Pendulum-v1` または連続版 `CartPoleContinuous-v0`
