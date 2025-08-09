@@ -155,6 +155,6 @@ Covers the basics of state-space representation.
 状態フィードバックと極配置を解説します。  
 Covers state feedback and pole placement.
 
-**📚 [この章のREADMEへ / Back to Part 2 README](https://samizo-aitl.github.io/EduController/part02_modern/)**  
+**📚 [この章のREADMEへ / Back to Part 2 README](https://samizo-aitl.github.io/EduController/part02_modern/README.html)**  
 現代制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 2 structure and materials list.
