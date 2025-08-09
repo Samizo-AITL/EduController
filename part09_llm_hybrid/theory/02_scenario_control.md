@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 02_scenario_control
-permalink: /part09_llm_hybrid/theory/02_scenario_control.html
+permalink: /part09_llm_hybrid/theory/02_scenario_control.html 
 ---
 
 ---
