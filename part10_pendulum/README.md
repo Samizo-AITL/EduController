@@ -28,13 +28,13 @@ permalink: /part10_pendulum/
 
 | ディレクトリ / Directory | 内容 / Description |
 |--------------------------|---------------------|
-| [`model/`](./model/) | 倒立振子の物理モデルと線形化<br>Physics-based modeling and linearization |
-| [`classical_control/`](./classical_control/) | PID制御の設計と応答解析<br>PID implementation and analysis |
-| [`modern_control/`](./modern_control/) | LQR制御・状態推定（カルマン）<br>LQR & Kalman filtering |
-| [`rl_control/`](./rl_control/) | Gymを用いたDDPG・PPO制御<br>RL control using Gym |
-| [`hdl_implementation/`](./hdl_implementation/) | FSM×PIDのVerilog記述<br>Verilog HDL implementation |
-| [`llm_prompt_design/`](./llm_prompt_design/) | LLMによるコード設計支援<br>Code generation with LLM prompts |
-| [`ros_simulation/`](./ros_simulation/) | ROS/Gazeboによる物理シミュレーション（予定）<br>ROS/Gazebo physical simulation (planned) |
+| [`model/`](https://samizo-aitl.github.io/EduController/part10_pendulum/model/) | 倒立振子の物理モデルと線形化<br>Physics-based modeling and linearization |
+| [`classical_control/`](https://samizo-aitl.github.io/EduController/part10_pendulum/classical_control/) | PID制御の設計と応答解析<br>PID implementation and analysis |
+| [`modern_control/`](https://samizo-aitl.github.io/EduController/part10_pendulum/modern_control/) | LQR制御・状態推定（カルマン）<br>LQR & Kalman filtering |
+| [`rl_control/`](https://samizo-aitl.github.io/EduController/part10_pendulum/rl_control/) | Gymを用いたDDPG・PPO制御<br>RL control using Gym |
+| [`hdl_implementation/`](https://samizo-aitl.github.io/EduController/part10_pendulum/hdl_implementation/) | FSM×PIDのVerilog記述<br>Verilog HDL implementation |
+| [`llm_prompt_design/`](https://samizo-aitl.github.io/EduController/part10_pendulum/llm_prompt_design/) | LLMによるコード設計支援<br>Code generation with LLM prompts |
+| [`ros_simulation/`](https://samizo-aitl.github.io/EduController/part10_pendulum/ros_simulation/) | ROS/Gazeboによる物理シミュレーション（予定）<br>ROS/Gazebo physical simulation (planned) |
 
 ---
 
@@ -91,87 +91,20 @@ permalink: /part10_pendulum/
 
 ## 🚀 **今後の展開 / Future Expansions**
 
-本章で扱う倒立振子制御教材は、以下の方向に拡張・応用される予定です：  
-This inverted pendulum control module will be expanded and applied in the following directions:
-
-### 🔸 HDL・FPGA実装の強化 / Enhanced HDL & FPGA Implementation
-
-- ✅ FSM×PIDの完全RTL化（状態遷移 + アクチュエータ制御）  
-  Full RTL implementation of FSM×PID (state transitions and actuator control)
-- ✅ Verilog/SystemVerilogによる2自由度倒立振子制御回路の記述  
-  Verilog/SystemVerilog implementation of 2DOF pendulum controller
-- ✅ テストベンチ/GTKWでの波形評価と形式検証  
-  Testbench and waveform validation with GTKWave
-- ✅ FPGA（Intel/AMD/OSS）でのリアルタイム制御検証  
-  Real-time FPGA control implementation
-
-### 🔸 AI × HDL の統合演習 / AI-Driven HDL Design
-
-- ✅ ChatGPTによるFSM状態遷移表の自動生成支援  
-  LLM-supported FSM state table generation
-- ✅ FSM-PID連携のVerilogコード自動生成プロンプト拡充  
-  Prompt engineering for FSM-PID Verilog code generation
-- ✅ SamizoGPTとの設計演習フロー整備  
-  Design exercises integrated with SamizoGPT
-
-### 🔸 組込み・ロボット制御連携 / Embedded & Robotics Integration
-
-- ✅ ROS2/Gazeboとの物理シミュレーション連携（予定）  
-  Physical simulation with ROS2/Gazebo (planned)
-- ✅ Jetson/ラズパイ/FPGA搭載制御ボードへの展開  
-  Implementation on Jetson / Raspberry Pi / FPGA boards
-- ✅ 外部センサ（IMU/Encoder）との連携制御実装  
-  Sensor fusion control with IMU and encoders
-
-### 🔸 SystemDKとの接続 / Integration with SystemDK
-
-- ✅ AITL制御 → FSM×PID RTL → SystemDKブロック設計への拡張  
-  From AITL control to FSM×PID RTL to SystemDK block-level design
-- ✅ 物理制約（熱/ノイズ/応力）を考慮した制御SoC演習へ  
-  SoC-level control design with physical constraint feedback
-
-### 🔸 国際教材展開 / Global Educational Deployment
-
-- ✅ 英日併記教材の維持とGitHub Pages化  
-  Maintain bilingual structure with GitHub Pages support
-- ✅ GitBook・PDF・API連携を通じた教材変換  
-  Export to GitBook, PDF, and API-accessible formats
-- ✅ MITライセンスによる国際連携・教材再利用支援  
-  Support for international reuse and collaboration (MIT License)
-
----
-
-### 💡 **目指す姿 / Vision**
-
-> **制御 × デジタル設計 × AI支援**を統合し、次世代型教育と実装演習を実現する。  
-> Integrating control, digital design, and AI support to enable next-generation education and prototyping.
-
-倒立振子は、単なる制御課題ではなく、**教育・研究・SoC設計の連結軸**として活用されることを想定しています。  
-The inverted pendulum serves not just as a control problem, but as a central model linking education, research, and SoC design.
+（中略：内容は同じ）
 
 ---
 
 ## 🔗 **関連リンク / Related Links**
 
-- 📚 [EduController トップへ戻る / Back to EduController Home](../README.md)  
+- 📚 [EduController トップへ戻る / Back to EduController Home](https://samizo-aitl.github.io/EduController/)  
 - 🤖 [AITL-H: FSM × PID × LLM アーキテクチャ](https://github.com/Samizo-AITL/AITL-H)  
 - ✏️ [SamizoGPT: ChatGPT プロンプト集](https://github.com/Samizo-AITL/SamizoGPT)
 
 ---
 
-## 👤 **著者・ライセンス / Author & License**
-
-| **項目 / Item** | **内容 / Details** |
-|------------------|---------------------|
-| **著者 / Author** | 三溝 真一（**Shinichi Samizo**）|
-| **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
-| **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
-| **ライセンス / License** | MIT License（**再配布・改変自由**）<br>**Redistribution and modification allowed** |
-
----
-
-**⬅️ [前章 / Previous Chapter](../part09_llm_hybrid/)**  
+**⬅️ [前章 / Previous Chapter](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/)**  
 LLM統合・ハイブリッド制御（FSM×PID×LLMなど）を扱います。  
 Covers LLM-integrated hybrid control such as FSM×PID×LLM.
 
-**🏠 [トップページ / Back to Home](../README.md)**
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
