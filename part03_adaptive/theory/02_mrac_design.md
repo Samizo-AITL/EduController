@@ -110,11 +110,11 @@ $$
 
 ---
 
-**⬅️ 前節 / Previous:**  
-https://samizo-aitl.github.io/EduController/part03_adaptive/theory/01_adaptive_intro.html
+**⬅️ 前節 / Previous:** [01. 適応制御の概要](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/01_adaptive_intro.html)  
+適応制御の基本概念と必要性を解説 / Introduction and necessity of adaptive control
 
-**➡️➡️ 次節 / Next:**  
-https://samizo-aitl.github.io/EduController/part03_adaptive/theory/03_gain_scheduling.html
+**➡️➡️ 次節 / Next:** [03. ゲインスケジューリング](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/03_gain_scheduling.html)  
+状態に応じたゲイン切替の手法 / Method of switching gains based on system state
 
-**📚 第3章 README / Chapter Top:**  
-https://samizo-aitl.github.io/EduController/part03_adaptive/
+**📚 第3章 README / Chapter Top:** [適応制御とロバスト制御](https://samizo-aitl.github.io/EduController/part03_adaptive/)  
+第3章の全体構成と教材一覧 / Overview and chapter contents
