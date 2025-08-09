@@ -1,4 +1,14 @@
+---
+layout: default
+title:　Part 6 ニューラルネットによる制御
+permalink: /part06_nn_control/
+---
+
+---
+
 # 🤖 Part 6: ニューラルネットによる制御 / Neural Network-based Control
+
+---
 
 本章では、**ニューラルネットワーク（NN）を用いた制御手法**を学びます。  
 従来の**PID制御との比較**や、**NNによる補正・逆モデル制御**、**強化学習との接続可能性**についても扱います。
@@ -89,11 +99,21 @@ part06_nn_control/
 
 | **項目 / Item** | **内容 / Details** |
 |------------------|---------------------|
-| **著者 / Author** | 三溝 真一（**Shinichi Samizo**）<br>Shinshu University / Ex-Epson |
+| **著者 / Author** | 三溝 真一（**Shinichi Samizo**） |
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
 | **ライセンス / License** | MIT License（**再配布・改変自由**）<br>**Redistribution and modification allowed** |
 
 ---
 
-📎 **[トップに戻る / Back to Home](../README.md)**
+**⬅️ [前章 / Previous Chapter](../part05_practical/)**  
+Pythonによる制御系実装、ROSを用いたロボット制御演習、FPGAによる制御ハードウェア化を学びます。  
+Covers control system implementation in Python, robot control exercises using ROS, and FPGA-based hardware realization.
+
+**[次章 / Next Chapter ➡️➡️](../part07_rl_control/)**  
+強化学習による制御（Q学習、DDPG、PPOなど）を扱います。  
+Covers reinforcement learning control methods including Q-learning, DDPG, and PPO.
+
+**🏠 [トップページ / Back to Home](../README.md)**
+
+---
