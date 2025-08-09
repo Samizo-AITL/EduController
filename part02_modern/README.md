@@ -4,8 +4,6 @@ title: Part 2 現代制御理論 / Modern Control Theory
 permalink: /part02_modern/
 ---
 
----
-
 # 🧠 Part 2: 現代制御理論 / Modern Control Theory
 
 ---
@@ -18,27 +16,27 @@ It covers **controllability**, **observability**, **state feedback** via **pole 
 
 ---
 
-## 🧭 **章構成と教材一覧 / Chapter Breakdown** [`theory/`](theory/)
+## 🧭 **章構成と教材一覧 / Chapter Breakdown** [`theory/`](/EduController/part02_modern/theory/)
 
 | No | **章タイトル / Title** | **内容概要 / Description** |
 |----|-------------------------|-----------------------------|
-| 01 | [`状態空間表現の基礎`](theory/01_state_space.md) / Basics of State-Space | $Ax+Bu$, $Cx+Du$ の構造と意味、行列モデル化<br>Structure and meaning of $Ax+Bu$, $Cx+Du$ |
-| 02 | [`可制御性と可観測性`](theory/02_controllability.md) / Controllability & Observability | Kalmanのランク条件、状態操作・推定の可否判定<br>Kalman rank condition for state control/observation |
-| 03 | [`状態フィードバックと極配置`](theory/03_state_feedback.md) / State Feedback & Pole Placement | 極配置による閉ループ極の設計、可制御性の役割<br>Closed-loop pole design using pole placement |
-| 04 | [`オブザーバ設計と状態推定`](theory/04_observer_design.md) / Observer Design & Estimation | $L$ゲイン設計と $A-LC$ の安定化、推定誤差の収束<br>Gain design for observer and estimation convergence |
+| 01 | [`状態空間表現の基礎`](/EduController/part02_modern/theory/01_state_space.html) / Basics of State-Space | $Ax+Bu$, $Cx+Du$ の構造と意味、行列モデル化<br>Structure and meaning of $Ax+Bu$, $Cx+Du$ |
+| 02 | [`可制御性と可観測性`](/EduController/part02_modern/theory/02_controllability.html) / Controllability & Observability | Kalmanのランク条件、状態操作・推定の可否判定<br>Kalman rank condition for state control/observation |
+| 03 | [`状態フィードバックと極配置`](/EduController/part02_modern/theory/03_state_feedback.html) / State Feedback & Pole Placement | 極配置による閉ループ極の設計、可制御性の役割<br>Closed-loop pole design using pole placement |
+| 04 | [`オブザーバ設計と状態推定`](/EduController/part02_modern/theory/04_observer_design.html) / Observer Design & Estimation | $L$ゲイン設計と $A-LC$ の安定化、推定誤差の収束<br>Gain design for observer and estimation convergence |
 
 ---
 
-## 💻 **実行スクリプト一覧 / Simulation Scripts** [`simulation/`](simulation/)
+## 💻 **実行スクリプト一覧 / Simulation Scripts** [`simulation/`](/EduController/part02_modern/simulation/)
 
 | **スクリプト名 / Script** | **内容 / Description** |
 |----------------------------|-------------------------|
-| [`state_feedback.py`](simulation/state_feedback.py) | フィードバックゲイン $K$ の設計と応答可視化（予定）<br>Design of gain $K$ and response visualization |
-| [`observer_design.py`](simulation/observer_design.py) | オブザーバゲイン $L$ 設計と拡張系の応答確認<br>Observer gain $L$ design and extended system simulation |
+| [`state_feedback.py`](/EduController/part02_modern/simulation/state_feedback.py) | フィードバックゲイン $K$ の設計と応答可視化（予定）<br>Design of gain $K$ and response visualization |
+| [`observer_design.py`](/EduController/part02_modern/simulation/observer_design.py) | オブザーバゲイン $L$ 設計と拡張系の応答確認<br>Observer gain $L$ design and extended system simulation |
 
 ---
 
-## 🧪 **Jupyterノートブック（予定）/ Notebooks (Planned)** [`notebooks/`](notebooks/)
+## 🧪 **Jupyterノートブック（予定）/ Notebooks (Planned)** [`notebooks/`](/EduController/part02_modern/notebooks/)
 
 | **ノートブック名** | **内容 / Description** |
 |--------------------|-------------------------|
@@ -47,7 +45,7 @@ It covers **controllability**, **observability**, **state feedback** via **pole 
 
 ---
 
-## 🖼️ **教材図・シミュレーション出力 / Figures** [`figures/`](figures/)
+## 🖼️ **教材図・シミュレーション出力 / Figures** [`figures/`](/EduController/part02_modern/figures/)
 
 | **図ファイル** | **内容 / Description** |
 |----------------|-------------------------|
@@ -104,12 +102,12 @@ pip install control matplotlib numpy
 
 ---
 
-**⬅️ [前章 / Previous Chapter](../part01_classical/)**  
+**⬅️ [前章 / Previous Chapter](/EduController/part01_classical/)**  
 PID制御の基本、ボード線図による周波数応答解析、システムの安定性評価を解説します。  
 Covers the basics of PID control, frequency response analysis using Bode plots, and system stability evaluation.
 
-**[次章 / Next Chapter ➡️➡️](../part03_adaptive/)**  
+**[次章 / Next Chapter ➡️➡️](/EduController/part03_adaptive/)**  
 適応制御（MRAC）、ロバスト制御（H∞、L1）など、パラメータ変動や外乱に強い制御法を扱います。  
 Covers adaptive control (MRAC) and robust control methods (H∞, L1) designed to handle parameter variations and disturbances.
 
-**🏠 [トップページ / Back to Home](../README.md)**
+**🏠 [トップページ / Back to Home](/EduController/)**
