@@ -1,20 +1,36 @@
+---
+layout: default
+title: 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Control）
+permalink: /part03_adaptive/theory/02_mrac_design.html
+---
+
+---
+
 # 🎯 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Control）
 
-**MRAC**は、制御対象（Plant）に対して、**理想的な動作をする「参照モデル」**を設定し、  
-そのモデルに近づくように制御器のパラメータを**リアルタイムに調整**する適応制御の代表的手法です。
+> ℹ️ 数式が正しく表示されない場合は、GitHub版をご確認ください / If equations don’t render, see GitHub:  
+> https://github.com/Samizo-AITL/EduController/blob/main/part03_adaptive/theory/02_mrac_design.md
 
 ---
 
-## 🎯 学習目標
-
-- MRACの基本構造と考え方を理解する  
-- MITルールによる適応律の導出手順を説明できる  
-- 状態・出力誤差を使ってゲイン更新ができる意味を理解する  
-- PythonでMRACのシンプルな実装ができる
+**MRAC**は、制御対象（Plant）に対して**理想的な動作をする「参照モデル」**を設定し、  
+そのモデルに近づくように制御器のパラメータを**リアルタイムに調整**する、代表的な適応制御手法です。  
+**MRAC** sets an **ideal “reference model”** for the plant and **updates controller parameters online** so the plant follows the model.
 
 ---
 
-## ⚙️ MRACの基本構成
+## 🎯 学習目標 / Learning Goals
+
+| # | 日本語 / Japanese | English |
+|---|-------------------|---------|
+| 1 | MRACの基本構造と考え方を理解 | Understand MRAC structure & idea |
+| 2 | MITルールによる適応律の導出を説明 | Explain update law via MIT rule |
+| 3 | 誤差を用いたゲイン更新の意味を理解 | Understand error-driven gain updates |
+| 4 | Pythonで簡単なMRAC実装 | Implement a simple MRAC in Python |
+
+---
+
+## ⚙️ MRACの基本構成 / Basic Structure
 
 ```
             +----------------+
@@ -42,80 +58,52 @@
                    y(t)
 ```
 
----
-
-## 📘 例：1次系へのMRAC適用
-
-### 📌 対象プラント（未知）
-
-$$
-P(s) = \frac{k}{\tau s + 1}
-$$
-
-- $k$ や $\tau$ が未知だが、**正の安定系**とする
-
-### 📌 参照モデル
-
-$$
-M(s) = \frac{1}{T_m s + 1}
-$$
-
-- 目標の応答特性を示す安定なモデル
+- **適応律（Updater）** がパラメータ $\theta$ を更新  
+- **可変制御器** は更新後パラメータで制御
 
 ---
 
-## 🧠 可変制御器の構成（例）
+## 📘 例：1次系への適用 / Example to 1st-Order Plant
 
-$$
-u(t) = \theta_1 r(t) + \theta_2 y(t)
-$$
-
-- $\theta_1$, $\theta_2$ は**リアルタイムに学習**されるパラメータ
-
----
-
-## 🔁 MITルールによるパラメータ更新（例）
-
-### 誤差：
-
-$$
-e(t) = y(t) - y_m(t)
-$$
-
-### コスト関数：
-
-$$
-J(\theta) = \frac{1}{2} e(t)^2
-$$
-
-### パラメータ更新則（勾配法）：
-
-$$
-\dot{\theta}_i = -\gamma_i \frac{\partial J}{\partial \theta_i} = -\gamma_i e(t) \frac{\partial e(t)}{\partial \theta_i}
-$$
-
-- $\gamma_i$：適応ゲイン（学習率）
-- $e$ の $\theta_i$ に対する感度を使う
+| 項目 / Item | 数式 / Equation | 説明 / Description |
+|---|---|---|
+| 対象プラント / Plant | $P(s)=\dfrac{k}{\tau s+1}$ | $k,\tau$ 未知（安定・正系） |
+| 参照モデル / Ref. model | $M(s)=\dfrac{1}{T_m s+1}$ | 目標応答を規定 |
 
 ---
 
-## 📐 実装上の注意点
+## 🧠 可変制御器（例） / Controller (example)
 
-- **$\gamma_i$ が大きすぎると発散、小さすぎると学習しない**  
-- ノイズに敏感なため、フィルタ処理やロバスト化が必要  
-- Lyapunov安定性理論による更新則もよく使われる（後述）
+$$
+u(t)=\theta_1\,r(t)+\theta_2\,y(t)
+$$
 
----
-
-## 🧪 シミュレーション要素（次章にて）
-
-- 1次プラント + MRAC適応器（ $\theta_1$, $\theta_2$ ）  
-- ステップ入力に対し、$y(t)$ が $y_m(t)$ に近づくか確認  
-- $\theta_i(t)$ の時間変化も可視化
+- $\theta_1,\theta_2$ は**オンライン更新** / updated online.
 
 ---
 
-## 📚 参考資料
+## 🔁 MITルール / MIT Rule
+
+| 項目 / Item | 数式 / Equation |
+|---|---|
+| 誤差 / Error | $e(t)=y(t)-y_m(t)$ |
+| コスト / Cost | $J(\theta)=\tfrac12 e(t)^2$ |
+| 更新 / Update | $\dot{\theta}_i=-\gamma_i\,e(t)\,\dfrac{\partial e(t)}{\partial \theta_i}$ |
+
+- $\gamma_i$: 適応ゲイン（学習率） / adaptation gain (learning rate)  
+- 感度 $\partial e/\partial\theta_i$ を用いて更新
+
+---
+
+## 📐 実装の注意 / Implementation Notes
+
+- $\gamma$ が**大**→ 発散リスク、**小**→ 収束遅い / Large → divergence, small → slow  
+- ノイズに敏感 → **フィルタ/ロバスト化**が有効 / filtering & robustification help  
+- Lyapunov安定化型の更新則も一般的 / Lyapunov-based laws are common
+
+---
+
+## 📚 参考資料 / References
 
 - Ioannou & Sun, *Robust Adaptive Control*  
 - Åström & Wittenmark, *Adaptive Control*  
@@ -123,3 +111,11 @@ $$
 
 ---
 
+**⬅️ 前節 / Previous:**  
+https://samizo-aitl.github.io/EduController/part03_adaptive/theory/01_adaptive_intro.html
+
+**➡️➡️ 次節 / Next:**  
+https://samizo-aitl.github.io/EduController/part03_adaptive/theory/03_gain_scheduling.html
+
+**📚 第3章 README / Chapter Top:**  
+https://samizo-aitl.github.io/EduController/part03_adaptive/
