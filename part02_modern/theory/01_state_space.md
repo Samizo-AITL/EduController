@@ -48,11 +48,35 @@ $$
 ## 🧠 各行列の意味｜Meaning of Each Matrix
 
 <table>
-<tr><th>行列</th><th>次元 / Dimension</th><th>役割 / Role</th></tr>
-<tr><td><b>$A$</b></td><td>$(n \times n)$</td><td>状態の自己遷移（システム行列） / State transition (system matrix)</td></tr>
-<tr><td><b>$B$</b></td><td>$(n \times m)$</td><td>入力が状態に与える影響 / How inputs affect states</td></tr>
-<tr><td><b>$C$</b></td><td>$(p \times n)$</td><td>状態が出力に与える影響 / How states affect outputs</td></tr>
-<tr><td><b>$D$</b></td><td>$(p \times m)$</td><td>入力の直接通過（フィードスルー） / Direct feedthrough</td></tr>
+  <thead>
+    <tr>
+      <th>行列</th>
+      <th>次元 / Dimension</th>
+      <th>役割 / Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>$begin:math:text$A$end:math:text$</b></td>
+      <td>$begin:math:text$(n \\times n)$end:math:text$</td>
+      <td>状態の自己遷移（システム行列） / State transition (system matrix)</td>
+    </tr>
+    <tr>
+      <td><b>$begin:math:text$B$end:math:text$</b></td>
+      <td>$begin:math:text$(n \\times m)$end:math:text$</td>
+      <td>入力が状態に与える影響 / How inputs affect states</td>
+    </tr>
+    <tr>
+      <td><b>$begin:math:text$C$end:math:text$</b></td>
+      <td>$begin:math:text$(p \\times n)$end:math:text$</td>
+      <td>状態が出力に与える影響 / How states affect outputs</td>
+    </tr>
+    <tr>
+      <td><b>$begin:math:text$D$end:math:text$</b></td>
+      <td>$begin:math:text$(p \\times m)$end:math:text$</td>
+      <td>入力の直接通過（フィードスルー） / Direct feedthrough</td>
+    </tr>
+  </tbody>
 </table>
 
 ---
