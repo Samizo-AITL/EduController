@@ -1,0 +1,104 @@
+%% build_digital_hinf_simulink.m
+% Build Simulink model "digital_hinf_simulink.slx"
+% Prereq: run digital_hinf_matlab.m first (creates Kd, Ts, and plant P)
+% If P is not in workspace, this script will create an example plant.
+
+clearvars -except Kd Ts P
+clc
+
+%% Check prerequisites
+if ~exist('Ts','var');  Ts = 1e-3; end
+if ~exist('Kd','var')
+    % Fallback: simple discrete state-space controller (placeholder)
+    % Users should run digital_hinf_matlab.m to obtain real Kd
+    Ad = [0.98 0; 0 0.95]; Bd = [0.01; 0.05]; Cd = [1 0]; Dd = 0;
+    Kd = ss(Ad,Bd,Cd,Dd,Ts);
+    warning('Kd not found. Using a placeholder discrete controller.');
+end
+if ~exist('P','var')
+    % Example continuous plant (2nd-order)
+    A = [0 1; -100 -20];
+    B = [0; 100];
+    C = [1 0];
+    D = 0;
+    P = ss(A,B,C,D);
+    warning('Plant P not found. Using an example 2nd-order plant.');
+end
+
+%% Model setup
+mdl = 'digital_hinf_simulink';
+mdl_path = fullfile('part04_digital','simulation', [mdl '.slx']);
+if bdIsLoaded(mdl); close_system(mdl,0); end
+new_system(mdl); open_system(mdl);
+
+% Configuration
+set_param(mdl, ...
+    'StopTime','5', ...
+    'Solver','ode45', ...            % variable-step works fine for mixed C/D
+    'SaveFormat','StructureWithTime', ...
+    'SignalLogging','on', ...
+    'ReturnWorkspaceOutputs','off');
+
+%% Library paths
+lib = struct();
+lib.Step     = 'simulink/Sources/Step';
+lib.Sum      = 'simulink/Math Operations/Sum';
+lib.Scope    = 'simulink/Sinks/Scope';
+lib.StateSp  = 'simulink/Continuous/State-Space';           % Plant (continuous)
+lib.ZOH      = 'simulink/Discrete/Zero-Order Hold';         % DAC & Sampler
+lib.DStateSp = 'simulink/Discrete/Discrete State-Space';    % Controller
+
+%% Canvas positions
+x0=30; y0=50; dx=120; dy=70;
+
+% Blocks
+add_block(lib.Step,    [mdl '/Step'],    'Position',[x0 y0 x0+30 y0+30], 'Time','0','After','0','Before','1');
+add_block(lib.Sum,     [mdl '/Sum e=r-y'], 'Position',[x0+dx y0 x0+dx+30 y0+30], 'Inputs','|+-');
+add_block(lib.ZOH,     [mdl '/ZOH (hold u)'], 'Position',[x0+2*dx y0 x0+2*dx+80 y0+30], 'SampleTime',num2str(Ts));
+add_block(lib.StateSp, [mdl '/Plant (continuous)'], 'Position',[x0+3*dx y0-20 x0+3*dx+150 y0+50]);
+add_block(lib.Scope,   [mdl '/Scope y'], 'Position',[x0+5*dx y0-10 x0+5*dx+60 y0+40]);
+
+% Feedback path (measurement)
+add_block(lib.ZOH,     [mdl '/Sampler (y->k)'], 'Position',[x0+4*dx y0+60 x0+4*dx+100 y0+90], 'SampleTime',num2str(Ts));
+
+% Discrete controller
+add_block(lib.DStateSp,[mdl '/K_d (discrete)'], 'Position',[x0+2*dx y0+60 x0+2*dx+120 y0+110], ...
+    'A', 'Kd.A', 'B','Kd.B', 'C','Kd.C', 'D','Kd.D', 'SampleTime', 'Ts');
+
+% Second scope for control signal (optional)
+add_block(lib.Scope,   [mdl '/Scope u'], 'Position',[x0+3*dx y0+120 x0+3*dx+60 y0+170]);
+
+%% Set Plant matrices
+set_param([mdl '/Plant (continuous)'], ...
+    'A','P.A','B','P.B','C','P.C','D','P.D');
+
+%% Lines (signals)
+% r -> Sum(+)
+add_line(mdl,'Step/1','Sum e=r-y/1','autorouting','on');
+% e -> Kd
+add_line(mdl,'Sum e=r-y/1','K_d (discrete)/1','autorouting','on');
+% u(k) -> Scope u
+add_line(mdl,'K_d (discrete)/1','Scope u/1','autorouting','on');
+% u(k) -> ZOH
+add_line(mdl,'K_d (discrete)/1','ZOH (hold u)/1','autorouting','on');
+% ZOH -> Plant
+add_line(mdl,'ZOH (hold u)/1','Plant (continuous)/1','autorouting','on');
+% y -> Scope y
+add_line(mdl,'Plant (continuous)/1','Scope y/1','autorouting','on');
+% y -> Sampler
+add_line(mdl,'Plant (continuous)/1','Sampler (y->k)/1','autorouting','on');
+% Sampler -> Sum(-)
+add_line(mdl,'Sampler (y->k)/1','Sum e=r-y/2','autorouting','on');
+
+%% Annotations
+annotation_text = sprintf('Digital H-infinity Control Demo\\nController: Kd (discrete SS) @ Ts=%.6g s\\nPlant: continuous SS (P)', Ts);
+add_block('simulink/Notes/Note',[mdl '/Note'], 'Position',[x0 y0+160 x0+260 y0+230], 'FontSize','12', 'Note',annotation_text);
+
+%% Save to target folder
+outdir = fullfile('part04_digital','simulation');
+if ~exist(outdir,'dir'); mkdir(outdir); end
+save_system(mdl, mdl_path);
+fprintf('Saved: %s\n', mdl_path);
+
+% Optional: run simulation from script
+% sim(mdl);
