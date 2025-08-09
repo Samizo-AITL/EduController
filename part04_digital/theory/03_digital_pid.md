@@ -118,9 +118,13 @@ $$
 ---
 
 **⬅️ [前節 / Previous](https://samizo-aitl.github.io/EduController/part04_digital/theory/02_z_transform.html)**  
-Covers the Z-transform and discrete transfer functions.
+Z変換の定義・性質・安定性判定を解説し、離散時間制御の基礎数学を整理しています。  
+Covers the Z-transform definition, properties, and stability criteria — the mathematical foundation for discrete-time control.
 
 **➡️➡️ [次節 / Next](https://samizo-aitl.github.io/EduController/part04_digital/theory/04_fir_iir_filter.html)**  
-Covers FIR/IIR filter structures and design methods.
+FIR/IIRフィルタの構造と設計法を学び、離散制御器や信号処理との接続に発展します。  
+Covers FIR/IIR filter structures and design methods, extending toward discrete controllers and signal processing.
 
-**🏠 [Part 04 トップ / Back to Part 04 Top](https://samizo-aitl.github.io/EduController/part04_digital/)**
+**🏠 [Part 04 トップ / Back to Part 04 Top](https://samizo-aitl.github.io/EduController/part04_digital/)**  
+本章全体の目次と概要に戻ります。  
+Returns to the table of contents and overview of Part 04.
