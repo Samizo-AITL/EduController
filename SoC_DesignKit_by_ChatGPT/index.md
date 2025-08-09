@@ -4,6 +4,8 @@ title: SoC_DesignKit_by_ChatGPT
 permalink: /SoC_DesignKit_by_ChatGPT/
 ---
 
+---
+
 # 🧩 SoC_DesignKit_by_ChatGPT
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
