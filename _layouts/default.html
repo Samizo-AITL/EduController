@@ -5,45 +5,72 @@ layout: null
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }}</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>{{ page.title | escape }}</title>
+
+  <!-- Base stylesheet (GitHub Pages / Jekyll) -->
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
 
-  {%- comment -%} SEO（入れてなければ削ってOK） {%- endcomment -%}
+  {%- comment -%} SEO（未使用なら削除可） {%- endcomment -%}
   {% if site.plugins contains "jekyll-seo-tag" %}{% seo %}{% endif %}
 
-  <!-- MathJax (CHTML / インラインは \( ... \) のみに統一) -->
+  <!-- MathJax v3 (CHTML). 既存記事との互換のため \( \) と $ $ の両方を許可 -->
   <script>
     window.MathJax = {
       tex: {
-        inlineMath: [['\\(', '\\)']],               // ← $...$ は使わない
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        inlineMath: [['$', '$'], ['\\(', '\\)']],   // どちらでもOK（推奨: \( ... \)）
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,                       // \$ を文字として扱えるように
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'style', 'textarea', 'pre', 'code'] // コードブロック内は無視
       },
       chtml: { scale: 1 }
     };
   </script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-  <!-- 表内の数式の崩れ/はみ出し対策（任意） -->
+  <!-- レイアウト微調整（表・数式・画像・コードの崩れ対策） -->
   <style>
-    /* テーブル内の数式は折り返さない＆横スクロール可 */
-    table { overflow-x: auto; }
-    td .mjx-container, th .mjx-container {
-      display: inline-block;
-      white-space: nowrap;
-      max-width: 100%;
+    :root {
+      --content-max: 1080px;
     }
+    main.container, footer.container {
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    /* 画像・表・コードの横はみ出し対策 */
+    img, svg, canvas, video { max-width: 100%; height: auto; }
+    pre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    code { word-break: break-word; }
+
+    /* 表の横スクロールと数式の折返し抑止 */
+    table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; }
+    td .mjx-container, th .mjx-container {
+      display: inline-block; white-space: nowrap; max-width: 100%;
+    }
+
+    /* 余白・可読性 */
+    h1, h2, h3 { scroll-margin-top: 80px; }
+    hr { margin: 2rem 0; }
   </style>
 </head>
 <body>
-  <!-- ここに見出しやロゴは一切出さない -->
+  <!-- 余計な装飾は出さず、コンテンツをそのまま描画 -->
   <main class="container">
     {{ content }}
   </main>
 
-  <footer class="container">
+  <footer class="container" role="contentinfo" aria-label="Site footer">
     <hr />
-    <p>&copy; 2025 <a href="https://github.com/Samizo-AITL">Samizo Shinichi</a></p>
+    <p>
+      &copy; 2025
+      <a href="https://github.com/Samizo-AITL" target="_blank" rel="noopener">Samizo Shinichi</a>
+    </p>
   </footer>
 </body>
 </html>
