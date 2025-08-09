@@ -132,14 +132,14 @@ Example output: `/figures/bode_example.png`
 
 ---
 
-**⬅️ [前節 / Previous Section](./03_stability_methods.html)**  
+**⬅️ [前節 / Previous Section](https://samizo-aitl.github.io/EduController/part01_classical/theory/03_stability_methods.html)**  
 安定性判別法（Routh・根軌跡・ナイキスト）を学びます。  
 Covers stability determination methods (Routh, Root Locus, Nyquist).
 
-**➡️➡️ [次節 / Next Section](./05_pid_design.html)**  
+**➡️➡️ [次節 / Next Section](https://samizo-aitl.github.io/EduController/part01_classical/theory/05_pid_design.html)**  
 PID設計のパラメータ調整と実装方法を解説します。  
 Explains PID tuning methods and implementation.
 
-**📚 [この章のREADMEへ / Back to Part 1 README](../README.md)**  
+**📚 [この章のREADMEへ / Back to Part 1 README](https://samizo-aitl.github.io/EduController/part01_classical/)**  
 古典制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 1 structure and materials list.
