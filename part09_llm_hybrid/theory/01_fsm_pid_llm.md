@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 01_fsm_pid_llm
-permalink: /part09_llm_hybrid/theory/01_fsm_pid_llm/
+permalink: /part09_llm_hybrid/theory/01_fsm_pid_llm.html
 ---
 
 # 🤖 01. FSM・PID・LLMによるハイブリッド制御（AITL構想）  
@@ -107,7 +107,7 @@ flowchart TB
 次節では、具体的な「シナリオ制御とLLM活用」について解説します。  
 In the next section, we will discuss **scenario-based control and LLM utilization**.
 
-📄 [02_scenario_control.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/02_scenario_control/)
+📄 [02_scenario_control.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/02_scenario_control.html)
 
 ---
 
