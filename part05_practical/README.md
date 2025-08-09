@@ -76,11 +76,20 @@ This chapter focuses on **practical implementation methods** such as
 
 | **項目 / Item** | **内容 / Details** |
 |------------------|---------------------|
-| **著者 / Author** | 三溝 真一（Shinichi Samizo）<br>Shinshu University / Ex-Epson |
+| **著者 / Author** | 三溝 真一（Shinichi Samizo）
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
 | **ライセンス / License** | MIT License（再配布・改変自由）<br>Redistribution and modification allowed |
 
 ---
 
-📎 **[トップに戻る / Back to Home](../README.md)**
+**⬅️ [前章 / Previous Chapter](../part04_digital/)**  
+デジタル制御の基礎、Z変換、DSP実装など、離散時間系の制御と実装方法を学びます。  
+Covers the basics of digital control, Z-transform, and DSP implementation for discrete-time systems.
+
+**[次章 / Next Chapter ➡️➡️](../part06_nn_control/)**  
+ニューラルネットワークを利用した制御（NN-PID、逆モデル制御など）を扱います。  
+Covers neural network-based control methods such as NN-PID and inverse model control.
+
+**🏠 [トップページ / Back to Home](../README.md)**
+
