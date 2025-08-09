@@ -123,8 +123,5 @@ $$
 **⬅️ 前節 / Previous:** [03. ゲインスケジューリング制御](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/03_gain_scheduling.html)  
 状態に応じたゲイン切替・補間の設計手法 / Gain switching & interpolation
 
-**➡️➡️ 次節 / Next:** [05. μ解析](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/05_mu_analysis.html)  
-構造的不確かさ評価のための手法 / Structured uncertainty analysis
-
 **📚 第3章 README / Chapter Top:** [適応制御とロバスト制御](https://samizo-aitl.github.io/EduController/part03_adaptive/)  
 第3章全体構成と教材一覧 / Overview & chapter contents
