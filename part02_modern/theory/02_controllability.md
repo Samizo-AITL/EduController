@@ -8,6 +8,8 @@ permalink: /part02_modern/theory/02_controllability.html
 
 # 🔍 02. 可制御性と可観測性の基本 / Basics of Controllability & Observability
 
+> **Note:** 数式が正しく表示されない場合は [GitHub版](https://github.com/Samizo-AITL/EduController/blob/main/part02_modern/theory/02_controllability.md) を参照してください。
+
 ---
 
 **状態空間モデル**を使って制御系を設計する際には、  
@@ -48,8 +50,6 @@ $$
 
 - **$\mathrm{rank}(\mathcal{C}) = n$** → 完全可制御 / Fully controllable  
 - **$\mathrm{rank}(\mathcal{C}) < n$** → 不可制御状態あり / Not all states controllable
-
->  ※Webサイトでは数式表示されません。正しい表示は[GitHubリポジトリ](https://github.com/Samizo-AITL/EduController/blob/main/part02_modern/theory/02_controllability.md)でご確認ください。
 
 ---
 
