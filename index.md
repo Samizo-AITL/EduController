@@ -4,6 +4,8 @@ title: EduController
 permalink: /
 ---
 
+---
+
 # 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**
 
 [📂 **GitHubリポジトリはこちら → Samizo-AITL/EduController**](https://github.com/Samizo-AITL/EduController)
