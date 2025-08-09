@@ -107,10 +107,10 @@ See [`/simulation/pid_simulation.py`](../simulation/pid_simulation.py) for imple
 
 ---
 
-**➡️➡️ [次節 / Next Section](./02_transient_response.md)**  
+**➡️➡️ [次節 / Next Section](https://samizo-aitl.github.io/EduController/part01_classical/theory/02_transient_response.html)**  
 ステップ応答・時間定数・定常偏差の評価方法を学びます。  
 Learn step response, time constant, and steady-state error evaluation.
 
-**📚 [この章のREADMEへ / Back to Part 1 README](../README.md)**  
+**📚 [この章のREADMEへ / Back to Part 1 README](https://samizo-aitl.github.io/EduController/part01_classical/)**  
 古典制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 1 structure and materials list.
