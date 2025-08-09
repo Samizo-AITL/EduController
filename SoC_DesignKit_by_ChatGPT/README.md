@@ -8,8 +8,14 @@ permalink: /SoC_DesignKit_by_ChatGPT/
 
 # 🧩 SoC_DesignKit_by_ChatGPT
 
+[![GitHub](https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![CI](https://github.com/Samizo-AITL/SoC_DesignKit_by_ChatGPT/actions/workflows/test.yml/badge.svg)](https://github.com/Samizo-AITL/SoC_DesignKit_by_ChatGPT/actions)
+
+💡 **このページは概要です。実際のコードやテンプレートは [GitHubリポジトリ](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) 上で直接操作できます。**  
+ブラウザでファイルを開く／ダウンロードする／更新履歴を確認するなどの操作が可能です。
+
+SoC_DesignKit_by_ChatGPT は、FSM・PID・LLM統合制御などの **HDL実装テンプレート** と、ChatGPT用プロンプトをまとめた教材・開発キットです。  
+C→HDL変換やFSM状態遷移の自動生成など、AI支援でSoC制御設計を加速します。
 
 ---
 
