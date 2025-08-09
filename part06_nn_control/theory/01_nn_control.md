@@ -44,13 +44,13 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 
 ```mermaid
 flowchart LR
-    R(r(t)) --> NN[NN Controller f_theta(.)]
-    Y(y(t)) -.-> E(e(t)=r(t)-y(t))
+    R(r(t)) --> NN[NN Controller]
+    Y(y(t)) -.-> E(e(t) = r(t) - y(t))
     R -.-> NN
     Y -.-> NN
     E -.-> NN
     NN --> U(u(t))
-    U --> P(Plant P)
+    U --> P(Plant)
     P --> Y
 ```
 
@@ -60,7 +60,7 @@ flowchart LR
 
 | **手法 / Method**   | **概要 / Overview**                          | **特徴 / Features**          |
 |---------------------|----------------------------------------------|------------------------------|
-| **Inverse Model**   | 出力 → 入力の関係をNNで学習（制御器そのもの） | シンプルだが精度に依存         |
+| **Inverse Model**   | 出力から入力を推定する制御器                 | シンプルだが精度に依存         |
 | **Direct NN Control** | NN出力をそのまま制御指令に使用               | 汎用性が高いが学習が難しい     |
 | **NN-PID**          | PID出力にNN補正を加える                       | 安定性と柔軟性の両立           |
 | **Hybrid（LLM含む）** | ルール＋NN制御、AITL構想など                  | 状況依存の判断に強み           |
@@ -71,10 +71,10 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    Y(y(t)) --> NN[Inverse Model NN f_theta(y) -> u]
-    R(r(t)) -.-> NN
-    NN --> U(u(t))
-    U --> P(Plant P)
+    Y(y(t)) --> NNI[Inverse Model NN]
+    R(r(t)) -.-> NNI
+    NNI --> U(u(t))
+    U --> P(Plant)
     P --> Y
 ```
 
@@ -84,10 +84,10 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    R(r(t)) --> NN[Direct NN Control f_theta(r,y) -> u]
-    Y(y(t)) -.-> NN
-    NN --> U(u(t))
-    U --> P(Plant P)
+    R(r(t)) --> NND[Direct NN Control]
+    Y(y(t)) -.-> NND
+    NND --> U(u(t))
+    U --> P(Plant)
     P --> Y
 ```
 
@@ -99,14 +99,14 @@ flowchart LR
 flowchart LR
     R(r(t)) --> PID[PID]
     Y(y(t)) -.-> PID
-    R -.-> NN[NN Compensator]
-    Y -.-> NN
+    R -.-> NNC[NN Compensator]
+    Y -.-> NNC
     PID --> U1(u_pid)
-    NN --> U2(u_nn)
+    NNC --> U2(u_nn)
     U1 --> SUM((+))
     U2 --> SUM
     SUM --> U(u(t))
-    U --> P(Plant P)
+    U --> P(Plant)
     P --> Y
 ```
 
