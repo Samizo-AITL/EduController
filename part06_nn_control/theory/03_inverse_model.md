@@ -51,10 +51,10 @@ $$
 
 ```mermaid
 flowchart LR
-    Yd[Target output yd(t)] --> NN[NN Inverse Model]
-    NN --> U[Control input u(t)]
-    U --> P[Plant P]
-    P --> Y[Actual output y(t)]
+    Yd["Target output yd(t)"] --> NN["NN Inverse Model"]
+    NN --> U["Control input u(t)"]
+    U --> P["Plant P"]
+    P --> Y["Actual output y(t)"]
     Yd -.->|Training data| NN
     Y -.->|Feedback| NN
 ```
