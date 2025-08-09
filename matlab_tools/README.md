@@ -1,3 +1,11 @@
+---
+layout: default
+title: matlab_tools/
+permalink: /matlab_tools/
+---
+
+---
+
 # 🧰 matlab_tools/
 
 このディレクトリは、**SimulinkやMATLABコードによる制御設計の演習**を支援する補助モジュール群です。  
@@ -71,3 +79,7 @@
 
 MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
 本ディレクトリ内の教材・モデルは**教育・研究目的で自由に使用可能**です。商用利用にはご留意ください。
+
+---
+
+**🏠 [トップページ / Back to Home](../README.md)**
