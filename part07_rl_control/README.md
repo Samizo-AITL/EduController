@@ -1,4 +1,14 @@
+---
+layout: default
+title:
+permalink: /part07_rl_control/
+---
+
+---
+
 # 🧠 Part 7: 強化学習による制御 / Reinforcement Learning Control
+
+---
 
 本章では、**強化学習（Reinforcement Learning, RL）**を用いた制御設計手法を学びます。  
 制御対象との**インタラクションを通じて最適な行動ポリシーを獲得**し、モデルフリーな自律制御を実現します。
@@ -86,11 +96,20 @@ part07_rl_control/
 
 | **項目 / Item** | **内容 / Details** |
 |------------------|---------------------|
-| **著者 / Author** | 三溝 真一（**Shinichi Samizo**）<br>Shinshu University / Ex-Epson |
+| **著者 / Author** | 三溝 真一（**Shinichi Samizo**） |
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
 | **ライセンス / License** | MIT License（**再配布・改変自由**）<br>**Redistribution and modification allowed** |
 
 ---
 
-📎 **[トップに戻る / Back to Home](../README.md)**
+**⬅️ [前章 / Previous Chapter](../part06_nn_control/)**  
+ニューラルネットワークを利用した制御（NN-PID、逆モデル制御など）を扱います。  
+Covers neural network-based control methods such as NN-PID and inverse model control.
+
+**[次章 / Next Chapter ➡️➡️](../part08_data_driven/)**  
+データ駆動型制御（Koopman演算子、行列識別など）を扱います。  
+Covers data-driven control methods including the Koopman operator and system identification.
+
+**🏠 [トップページ / Back to Home](../README.md)**
+
