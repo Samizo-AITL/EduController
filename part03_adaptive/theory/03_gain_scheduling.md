@@ -119,7 +119,7 @@ def gain_schedule(rho):
 **⬅️ 前節 / Previous:** [02. MRAC](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/02_mrac_design.html)  
 モデル参照型適応制御の構造とMITルールを解説 / Structure of MRAC and MIT rule
 
-**➡️➡️ 次節 / Next:** [04. L1適応制御](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/04_l1_adaptive.html)  
+**➡️➡️ 次節 / Next:** [04. ロバスト制御](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/04_robust_control.html)  
 高速かつ安定なパラメータ適応法 / Fast and stable parameter adaptation
 
 **📚 第3章 README / Chapter Top:** [適応制御とロバスト制御](https://samizo-aitl.github.io/EduController/part03_adaptive/)  
