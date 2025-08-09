@@ -109,7 +109,7 @@ pip install control matplotlib numpy
 
 ---
 
-**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part02_modern/README.html)**  
+**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part02_modern/)**  
 状態空間モデル、最適レギュレータ（LQR）、カルマンフィルタによる推定手法を扱います。  
 Covers state-space modeling, optimal regulator (LQR), and estimation techniques using the Kalman filter.
 
