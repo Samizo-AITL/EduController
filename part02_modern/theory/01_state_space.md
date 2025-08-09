@@ -31,6 +31,7 @@ State-space representation expresses dynamics with **vectors and matrices**. Thi
 ## 📘 状態空間モデルとは？｜What is a State-Space Model?
 連続時間の線形時不変（LTI）系は、次で表されます：  
 An LTI continuous-time system is written as:
+
 $$
 \begin{aligned}
 \dot{x}(t) &= A\,x(t) + B\,u(t) \\
@@ -56,12 +57,14 @@ $$
 
 ## 📦 例：2次系の状態空間化｜Example: 2nd-Order System
 伝達関数：
+
 $$
 G(s)=\frac{1}{s^2+3s+2}
 $$
 
 可制御正準形の一例：  
 One possible controllable canonical form:
+
 $$
 \begin{aligned}
 \dot{x}_1 &= x_2 \\
@@ -72,6 +75,7 @@ $$
 
 行列表記：  
 Matrix form:
+
 $$
 A=\begin{bmatrix}0&1\\-2&-3\end{bmatrix},\quad
 B=\begin{bmatrix}0\\1\end{bmatrix},\quad
@@ -84,6 +88,7 @@ $$
 ## 🔁 伝達関数との対応｜Relation to Transfer Function
 状態空間 $\rightarrow$ 伝達関数：  
 From state-space to transfer function:
+
 $$
 G(s)=C\,(sI-A)^{-1}B + D.
 $$
