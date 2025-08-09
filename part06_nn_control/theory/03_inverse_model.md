@@ -9,7 +9,7 @@ permalink: /part06_nn_control/theory/03_inverse_model.html
 # 🔁 03. 逆モデル制御とニューラルネット  
 **Inverse Model Control with Neural Networks**
 
-> 💡 **Note:** 数式がWebで正しく表示されない場合は、[GitHub版ページはこちら](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/03_inverse_model.md) を参照してください。
+> 💡 **Note:** 数式やMermaid図がWebで正しく表示されない場合は、[GitHub版ページはこちら](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/03_inverse_model.md) を参照してください。
 
 ---
 
@@ -44,12 +44,19 @@ $$
 
 ---
 
-## 🧠 **2. 構成図と信号の流れ**
+## 🧠 **2. 構成図と信号の流れ（Mermaid版）**
 
-```plaintext
-[ y_d(t) ]  →  [ NN (逆モデル) ]  →  [ u(t) ]  →  [ Plant P ]  →  [ y(t) ]
-↑                                 ↓
-学習データ: (y_d, u)                 フィードバック
+> 🌐 **Mermaid図が表示されない場合は**  
+> [GitHubで直接確認してください](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/03_inverse_model.md)
+
+```mermaid
+flowchart LR
+    Yd[Target output yd(t)] --> NN[NN Inverse Model]
+    NN --> U[Control input u(t)]
+    U --> P[Plant P]
+    P --> Y[Actual output y(t)]
+    Yd -.->|Training data| NN
+    Y -.->|Feedback| NN
 ```
 
 - NNは**目標値と現在の状態**から必要な操作量を推定  
@@ -111,4 +118,3 @@ Covers comparison and hybrid strategies of AI-based and classical control.
 **🏠 [Part 06 トップ / Back to Part 06 Top](https://samizo-aitl.github.io/EduController/part06_nn_control/)**  
 全体概要と各章リンクを掲載。  
 Provides full overview and links to all sections.
-
