@@ -53,6 +53,13 @@ $$
 | **$C$** | $(p \times n)$ | **状態が出力に与える影響** / How states affect outputs |
 | **$D$** | $(p \times m)$ | **入力の直接通過（フィードスルー）** / Direct feedthrough |
 
+| 行列 | 次元 / Dimension | 役割 / Role |
+|---|---|---|
+| **\(A\)** | \((n \times n)\) | **状態の自己遷移（システム行列）** / State transition (system matrix) |
+| **\(B\)** | \((n \times m)\) | **入力が状態に与える影響** / How inputs affect states |
+| **\(C\)** | \((p \times n)\) | **状態が出力に与える影響** / How states affect outputs |
+| **\(D\)** | \((p \times m)\) | **入力の直接通過（フィードスルー）** / Direct feedthrough |
+
 ---
 
 ## 📦 例：2次系の状態空間化｜Example: 2nd-Order System
