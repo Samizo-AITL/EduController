@@ -37,8 +37,8 @@ This section explains the **definitions**, **mathematical tests**, and **enginee
 ある初期状態 $x(0)$ から任意の状態 $x(t)$ に、**有限時間で到達できる**性質。  
 The property that any initial state $x(0)$ can be driven to any desired state $x(t)$ in **finite time**.
 
-**Kalman 可制御性行列 / Controllability Matrix**  
-> ※GitHubでは数式表示が崩れる場合があります。正しい表示は[Webサイト（GitHub Pages）](https://samizo-aitl.github.io/EduController/part02_modern/theory/01_state_space.html)でご確認ください。
+**Kalman 可制御性行列 / Controllability Matrix** 
+※Webサイトでは数式表示されません。正しい表示は[GitHubリポジトリ](https://github.com/Samizo-AITL/EduController/blob/main/part02_modern/theory/02_controllability.md)でご確認ください。
 
 $$
 \mathcal{C} =
