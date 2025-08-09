@@ -46,8 +46,8 @@ $$
 ## 📊 ボード線図の構成｜Bode Plot Structure
 
 - **横軸 / X-axis**：周波数（対数スケール, [rad/s]）  
-- **縦軸（上段） / Upper Y-axis**：ゲイン（dB） → $20 \log_{10} |G(j\omega)|$  
-- **縦軸（下段） / Lower Y-axis**：位相（deg） → $\arg G(j\omega)$  
+- **縦軸（上段） / Upper Y-axis**：ゲイン（dB） →  $20 \log_{10} |G(j\omega)|$  
+- **縦軸（下段） / Lower Y-axis**：位相（deg） →  $\arg G(j\omega)$  
 
 ボード線図は、ゲイン特性と位相特性を上下2つのグラフで表示します。  
 A Bode plot displays magnitude and phase characteristics in two separate graphs.
@@ -57,11 +57,11 @@ A Bode plot displays magnitude and phase characteristics in two separate graphs.
 ## 🧠 重要な周波数点｜Key Frequency Points
 
 ### ✅ ゲイン交差周波数 / Gain Crossover Frequency $\omega_g$
-- ゲインが $|G(j\omega)| = 1$（0 dB）になる周波数  
+- ゲインが $|G(j\omega)| = 1$（0 dB）　になる周波数  
 - Frequency at which the magnitude is 1 (0 dB)
 
 ### ✅ 位相交差周波数 / Phase Crossover Frequency $\omega_p$
-- 位相が $\angle G(j\omega) = -180^\circ$ となる周波数  
+- 位相が $\angle G(j\omega) = -180^\circ$  となる周波数  
 - Frequency at which the phase is $-180^\circ$
 
 ---
