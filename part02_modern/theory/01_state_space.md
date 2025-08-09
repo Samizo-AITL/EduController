@@ -46,15 +46,14 @@ $$
 ---
 
 ## 🧠 各行列の意味｜Meaning of Each Matrix  
-> ※GitHubでは数式表示が崩れる場合があります。正しい表示はWebサイト（GitHub Pages）でご確認ください。
+> ※GitHubでの数式はプレーン表示になります。Webサイト（GitHub Pages）ではMathJaxで綺麗に表示されます。
 
-<table>
-<tr><th>行列</th><th>次元 / Dimension</th><th>役割 / Role</th></tr>
-<tr><td><b>$A$</b></td><td>$(n \times n)$</td><td>状態の自己遷移（システム行列） / State transition (system matrix)</td></tr>
-<tr><td><b>$B$</b></td><td>$(n \times m)$</td><td>入力が状態に与える影響 / How inputs affect states</td></tr>
-<tr><td><b>$C$</b></td><td>$(p \times n)$</td><td>状態が出力に与える影響 / How states affect outputs</td></tr>
-<tr><td><b>$D$</b></td><td>$(p \times m)$</td><td>入力の直接通過（フィードスルー） / Direct feedthrough</td></tr>
-</table>
+| 行列 | 次元 / Dimension | 役割 / Role |
+|---|---|---|
+| **$A$** | **$(n \times n)$** | 状態の自己遷移（システム行列） / State transition (system matrix) |
+| **$B$** | **$(n \times m)$** | 入力が状態に与える影響 / How inputs affect states |
+| **$C$** | **$(p \times n)$** | 状態が出力に与える影響 / How states affect outputs |
+| **$D$** | **$(p \times m)$** | 入力の直接通過（フィードスルー） / Direct feedthrough |
 
 ---
 
