@@ -8,8 +8,8 @@ permalink: /SoC_DesignKit_by_ChatGPT/
 
 # 🧩 SoC_DesignKit_by_ChatGPT
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![CI](https://github.com/Samizo-AITL/SoC_DesignKit_by_ChatGPT/actions/workflows/test.yml/badge.svg)](../../actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/Samizo-AITL/SoC_DesignKit_by_ChatGPT/actions/workflows/test.yml/badge.svg)](https://github.com/Samizo-AITL/SoC_DesignKit_by_ChatGPT/actions)
 
 ---
 
