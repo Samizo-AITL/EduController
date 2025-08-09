@@ -181,6 +181,12 @@ Kd = c2d(K, Ts, 'tustin');  % デジタル制御器
 
 ---
 
+**🔗 関連教材 / Related Material:**  
+💻 [Part 04 デジタル制御と信号処理 - 06. デジタル H∞ 制御](https://samizo-aitl.github.io/EduController/part04_digital/theory/06_digital_hinf_control.html)  
+→ デジタル実装に特化した H∞ 制御の詳細、MATLAB/Simulink モデル、周波数応答評価を解説しています。
+
+---
+
 ## 📚 参考文献 / References
 
 - Zhou & Doyle, *Essentials of Robust Control*  
