@@ -33,12 +33,13 @@ permalink: /part03_adaptive/theory/02_mrac_design.html
 
 | 分類 / Category | 色 / Color | 用途 / Usage |
 |-----------------|------------|--------------|
-| **入力信号 / Input** | <span style="background-color:#FFF3B0;">　　</span> （黄系） | 参照入力などの外部入力信号 |
-| **モデル / Model** | <span style="background-color:#A0C4FF;">　　</span> （青系） | 参照モデルなど理想挙動を定義するブロック |
-| **誤差信号 / Error** | <span style="background-color:#FFD6A5;">　　</span> （オレンジ系） | 出力とモデルとの差分 |
-| **制御器 / Controller** | <span style="background-color:#BDB2FF;">　　</span> （紫系） | パラメータ可変の制御ブロック |
-| **プラント / Plant** | <span style="background-color:#FFADAD;">　　</span> （赤系） | 制御対象の物理システム |
-| **出力信号 / Output** | <span style="background-color:#CAFFBF;">　　</span> （緑系） | 実際の出力やモデル出力 |
+| **入力信号 / Input** | 黄色（Yellow） | 参照入力などの外部入力信号 |
+| **モデル / Model** | 青色（Blue） | 参照モデルなど理想挙動を定義するブロック |
+| **誤差信号 / Error** | オレンジ色（Orange） | 出力とモデルとの差分 |
+| **制御器 / Controller** | 紫色（Purple） | パラメータ可変の制御ブロック |
+| **プラント / Plant** | 赤色（Red） | 制御対象の物理システム |
+| **出力信号 / Output** | 緑色（Green） | 実際の出力やモデル出力 |
+## 🎨 色分類ルール / Color Classification Rules
 
 ---
 
