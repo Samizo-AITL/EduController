@@ -18,7 +18,7 @@ It builds a step-by-step understanding from **control structure to robustness**,
 
 ---
 
-## 🧭 **構成（章別教材） / Chapter Breakdown** [`theory/`](theory/)
+## 🧭 **構成（章別教材） / Chapter Breakdown**
 
 | No | **章タイトル / Chapter** | **内容概要 / Description** |
 |----|---------------------------|-----------------------------|
@@ -30,36 +30,36 @@ It builds a step-by-step understanding from **control structure to robustness**,
 
 ---
 
-## 🧪 **実行スクリプト / Simulation Scripts** [`simulation/`](simulation/)
+## 🧪 **実行スクリプト / Simulation Scripts**
 
 | **ファイル / Script** | **内容 / Description** |
 |------------------------|-------------------------|
-| [`pid_simulation.py`](simulation/pid_simulation.py) | PID制御とステップ応答の比較<br>Step response comparison for various PID settings |
-| [`transient_response.py`](simulation/transient_response.py) | 1次・2次遅れ系の応答描画<br>Plotting first/second-order system responses |
-| [`stability_methods.py`](simulation/stability_methods.py) | Routh表, 根軌跡, ナイキスト線図の描画<br>Routh table, root locus, Nyquist plot |
-| [`bode_plot.py`](simulation/bode_plot.py) | ボード線図の自動描画<br>Automated Bode plot generation |
-| [`gain_margin.py`](simulation/gain_margin.py) | PM/GMの自動計算と可視化<br>Automated calculation and visualization of PM/GM |
+| [pid_simulation.py](https://samizo-aitl.github.io/EduController/part01_classical/simulation/pid_simulation.py) | PID制御とステップ応答の比較<br>Step response comparison for various PID settings |
+| [transient_response.py](https://samizo-aitl.github.io/EduController/part01_classical/simulation/transient_response.py) | 1次・2次遅れ系の応答描画<br>Plotting first/second-order system responses |
+| [stability_methods.py](https://samizo-aitl.github.io/EduController/part01_classical/simulation/stability_methods.py) | Routh表, 根軌跡, ナイキスト線図の描画<br>Routh table, root locus, Nyquist plot |
+| [bode_plot.py](https://samizo-aitl.github.io/EduController/part01_classical/simulation/bode_plot.py) | ボード線図の自動描画<br>Automated Bode plot generation |
+| [gain_margin.py](https://samizo-aitl.github.io/EduController/part01_classical/simulation/gain_margin.py) | PM/GMの自動計算と可視化<br>Automated calculation and visualization of PM/GM |
 
 ---
 
-## 📓 **Jupyterノートブック / Notebooks** [`notebooks/`](notebooks/)
+## 📓 **Jupyterノートブック / Notebooks**
 
 | **ノートブック** | **内容 / Description** |
 |------------------|-------------------------|
-| [`pm_gm_analysis.ipynb`](notebooks/pm_gm_analysis.ipynb) | PM/GMの計算とボード線図描画（対話形式）<br>Interactive Bode plot and stability margin analysis |
-| [`pid_design.ipynb`](notebooks/pid_design.ipynb) | PIDゲインと応答の関係（予定）<br>Planned: Relationship between PID gains and response |
+| [pm_gm_analysis.ipynb](https://samizo-aitl.github.io/EduController/part01_classical/notebooks/pm_gm_analysis.ipynb) | PM/GMの計算とボード線図描画（対話形式）<br>Interactive Bode plot and stability margin analysis |
+| [pid_design.ipynb](https://samizo-aitl.github.io/EduController/part01_classical/notebooks/pid_design.ipynb) | PIDゲインと応答の関係（予定）<br>Planned: Relationship between PID gains and response |
 
 ---
 
-## 🖼️ **教材図・グラフ / Figures** [`figures/`](figures/)
+## 🖼️ **教材図・グラフ / Figures**
 
 | **図ファイル** | **内容 / Description** |
 |----------------|-------------------------|
-| `pid_block_diagram.png` | PID制御のブロック線図<br>Block diagram of PID control |
-| `step_response.png` | 各PID構成による応答比較<br>Step response comparison |
-| `bode_example.png` | 周波数応答のボード線図<br>Example of Bode plot |
-| `nyquist_example.png` | ナイキスト線図例<br>Example of Nyquist plot |
-| `phase_gain_margin_example.png` | PM/GMの可視化付きボード線図<br>Bode plot with phase/gain margins |
+| pid_block_diagram.png | PID制御のブロック線図<br>Block diagram of PID control |
+| step_response.png | 各PID構成による応答比較<br>Step response comparison |
+| bode_example.png | 周波数応答のボード線図<br>Example of Bode plot |
+| nyquist_example.png | ナイキスト線図例<br>Example of Nyquist plot |
+| phase_gain_margin_example.png | PM/GMの可視化付きボード線図<br>Bode plot with phase/gain margins |
 
 ---
 
@@ -109,8 +109,8 @@ pip install control matplotlib numpy
 
 ---
 
-**[次章 / Next Chapter ➡️➡️]({{ "/part02_modern/" | relative_url }})**  
+**[次章 / Next Chapter ➡️➡️](https://samizo-aitl.github.io/EduController/part02_modern/)**  
 状態空間モデル、最適レギュレータ（LQR）、カルマンフィルタによる推定手法を扱います。  
 Covers state-space modeling, optimal regulator (LQR), and estimation techniques using the Kalman filter.
 
-**🏠 [トップページ / Back to Home]({{ "/" | relative_url }})**
+**🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
