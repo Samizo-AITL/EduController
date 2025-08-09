@@ -43,7 +43,7 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 ### 一般構成（General NN Controller）
 
 ```mermaid
-flowchart LR
+flowchart TB
     R[Reference r t] --> NN[NN Controller]
     Y[Output y t] -.-> E[Error e = r - y]
     R -.-> NN
@@ -70,7 +70,7 @@ flowchart LR
 ### 逆モデル制御（Inverse Model）
 
 ```mermaid
-flowchart LR
+flowchart TB
     Y[Output y t] --> NN[Inverse Model NN f_theta y to u]
     R[Reference r t] -.-> NN
     NN --> U[Control u t]
@@ -83,7 +83,7 @@ flowchart LR
 ### 直接NN制御（Direct NN Control）
 
 ```mermaid
-flowchart LR
+flowchart TB
     R[Reference r t] --> NN[Direct NN Control f_theta r y to u]
     Y[Output y t] -.-> NN
     NN --> U[Control u t]
@@ -96,7 +96,7 @@ flowchart LR
 ### NN-PID制御
 
 ```mermaid
-flowchart LR
+flowchart TB
     R[Reference r t] --> PID[PID Controller] --> SUM[Summation] --> U[Control u t]
     Y[Output y t] -.-> PID
     Y -.-> NN[NN Correction]
