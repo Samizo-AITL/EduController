@@ -1,6 +1,6 @@
 ---
 layout: default
-title:
+title: Part07
 permalink: /part07_rl_control/
 ---
 
