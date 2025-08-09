@@ -23,7 +23,7 @@ nmeas = 1; ncon = 1;
 [K,CL,gamma] = hinfsyn(Paug, nmeas, ncon);
 disp("H∞ gamma = " + gamma);
 
-%% 4. Continuous response
+%% 4. Continuous response (singular values)
 figure;
 sigma(CL); grid on; title('Continuous-time H∞ Closed-loop Singular Values');
 
@@ -37,9 +37,24 @@ Gcl_disc = c2d(Gcl_cont, Ts, 'tustin');
 
 figure;
 step(Gcl_cont, 'b', Gcl_disc, 'r--');
-legend('Continuous', 'Discrete');
+legend('Continuous', 'Discrete', 'Location','best');
 title('Step Response: Continuous vs Digital H∞');
 grid on;
 
-%% Save figures
-print('-dpng', '../figures/digital_hinf_step.png');
+%% Ensure figures directory exists (run from simulation/)
+figdir = fullfile('..','figures');
+if ~exist(figdir, 'dir'); mkdir(figdir); end
+
+%% Save step response figure
+print('-dpng', fullfile(figdir, 'digital_hinf_step.png'));
+
+%% 7. Bode plot: Continuous vs Digital H∞ (saved)
+figure;
+bode(Gcl_disc, 'r', Gcl_cont, 'b--');
+legend('Discrete', 'Continuous', 'Location','best');
+title('Bode Plot: Continuous vs Digital H∞');
+grid on;
+print('-dpng', fullfile(figdir, 'digital_hinf_bode.png'));
+
+% (optional) close figures after saving
+% close all
