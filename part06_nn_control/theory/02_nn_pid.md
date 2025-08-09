@@ -112,3 +112,8 @@ Covers fundamentals and learning strategies of NN-based control.
 **➡️➡️ [次節 / Next](https://samizo-aitl.github.io/EduController/part06_nn_control/theory/03_inverse_model/)**  
 逆モデル制御の理論と実装方法を解説。  
 Covers theory and implementation of inverse model control.
+
+**🏠 [Part 06 トップ / Back to Part 06 Top](https://samizo-aitl.github.io/EduController/part06_nn_control/)**  
+全体概要と各章リンクを掲載。  
+Provides full overview and links to all sections.
+
