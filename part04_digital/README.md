@@ -87,6 +87,15 @@ including **Z-transform, discrete PID, digital filters, and FFT analysis**—all
 
 ---
 
+## 👤 **著者・ライセンス / Author & License**
+
+| **項目 / Item** | **内容 / Details** |
+|-----------------|--------------------|
+| **著者 / Author** | 三溝 真一（Shinichi Samizo）|
+| **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
+| **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
+| **ライセンス / License** | MIT License（再配布・改変自由）<br>Redistribution and modification allowed |
+
 ---
 
 **⬅️ [前章 / Previous Chapter](../part03_adaptive/)**  
