@@ -1,4 +1,14 @@
+---
+layout: default
+title: Part10
+permalink: /part10_pendulum/
+---
+
+---
+
 # 🎯 Part 10：倒立振子の総合制御 / Hybrid Control of Inverted Pendulum
+
+---
 
 本章では、**倒立振子（Inverted Pendulum）** を題材として、  
 以下の制御手法を段階的に**実装・比較**しながら学びます：
@@ -153,11 +163,15 @@ The inverted pendulum serves not just as a control problem, but as a central mod
 
 | **項目 / Item** | **内容 / Details** |
 |------------------|---------------------|
-| **著者 / Author** | 三溝 真一（**Shinichi Samizo**）<br>Shinshu University / Ex-Epson |
+| **著者 / Author** | 三溝 真一（**Shinichi Samizo**）|
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
 | **ライセンス / License** | MIT License（**再配布・改変自由**）<br>**Redistribution and modification allowed** |
 
 ---
 
-📎 **[トップに戻る / Back to Home](../README.md)**
+**⬅️ [前章 / Previous Chapter](../part09_llm_hybrid/)**  
+LLM統合・ハイブリッド制御（FSM×PID×LLMなど）を扱います。  
+Covers LLM-integrated hybrid control such as FSM×PID×LLM.
+
+**🏠 [トップページ / Back to Home](../README.md)**
