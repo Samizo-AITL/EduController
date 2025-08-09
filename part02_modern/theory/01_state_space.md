@@ -77,10 +77,20 @@ $$
 Matrix form:
 
 $$
-A=\begin{bmatrix}0&1\\-2&-3\end{bmatrix},\quad
-B=\begin{bmatrix}0\\1\end{bmatrix},\quad
-C=\begin{bmatrix}1&0\end{bmatrix},\quad
-D=\begin{bmatrix}0\end{bmatrix}.
+A = \begin{bmatrix}
+0 & 1 \\
+-2 & -3
+\end{bmatrix}, \quad
+B = \begin{bmatrix}
+0 \\
+1
+\end{bmatrix}, \quad
+C = \begin{bmatrix}
+1 & 0
+\end{bmatrix}, \quad
+D = \begin{bmatrix}
+0
+\end{bmatrix}
 $$
 
 ---
