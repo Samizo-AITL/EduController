@@ -4,6 +4,8 @@ title: 03_exception_handling
 permalink: /part09_llm_hybrid/theory/03_exception_handling.html
 ---
 
+---
+
 # 🚨 03. 例外処理とLLMによる知識注入  
 **Exception Handling and Knowledge Injection with LLM**
 
