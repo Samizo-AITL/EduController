@@ -50,7 +50,7 @@ $$
 > [GitHubで直接確認してください](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/03_inverse_model.md)
 
 ```mermaid
-flowchart LR
+flowchart TB
     Yd["Target output yd(t)"] --> NN["NN Inverse Model"]
     NN --> U["Control input u(t)"]
     U --> P["Plant P"]
