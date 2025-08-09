@@ -1,6 +1,6 @@
 ---
 layout: default
-title:　Part 5  実装 応用編 / Implementation and Applications
+title:　Part 5  実装 応用編 
 permalink: /part0５_practical/
 ---
 
