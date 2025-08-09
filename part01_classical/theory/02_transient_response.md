@@ -144,14 +144,14 @@ Libraries: `control`, `matplotlib`, `numpy`
 
 ---
 
-**⬅️ [前節 / Previous Section](./01_pid_control.md)**  
+**⬅️ [前節 / Previous Section](https://samizo-aitl.github.io/EduController/part01_classical/theory/01_pid_control.html)**  
 PID制御の原理と各要素の役割を学びます。  
 Covers principles and effects of PID control.
 
-**➡️➡️ [次節 / Next Section](./03_stability_methods.md)**  
+**➡️➡️ [次節 / Next Section](https://samizo-aitl.github.io/EduController/part01_classical/theory/03_stability_methods.html)**  
 安定性の判別法（Routh表、根軌跡、ナイキスト法）を解説します。  
 Explains stability criteria (Routh table, root locus, Nyquist method).
 
-**📚 [この章のREADMEへ / Back to Part 1 README](../README.md)**  
+**📚 [この章のREADMEへ / Back to Part 1 README](https://samizo-aitl.github.io/EduController/part01_classical/)**  
 古典制御理論の全体構成と教材一覧に戻ります。  
 Return to the full Part 1 structure and materials list.
