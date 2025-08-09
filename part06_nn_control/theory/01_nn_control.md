@@ -8,7 +8,7 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 
 # 🤖 01. ニューラルネットによる制御設計（Neural Network-based Control）
 
-> 💡 **Note:** 数式やMermaidがWebで正しく表示されない場合は、[GitHub版ページはこちら](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/01_nn_control.md) を参照してください。
+> 💡 **Note:** 数式がWebで正しく表示されない場合は、[GitHub版ページはこちら](https://github.com/Samizo-AITL/EduController/blob/main/part06_nn_control/theory/01_nn_control.md) を参照してください。
 
 ---
 
@@ -44,13 +44,13 @@ permalink: /part06_nn_control/theory/01_nn_control.html
 
 ```mermaid
 flowchart LR
-    R(r(t)) --> NN[NN Controller]
-    Y(y(t)) -.-> E(e(t) = r(t) - y(t))
+    R[Reference r t] --> NN[NN Controller]
+    Y[Output y t] -.-> E[Error e = r - y]
     R -.-> NN
     Y -.-> NN
     E -.-> NN
-    NN --> U(u(t))
-    U --> P(Plant)
+    NN --> U[Control u t]
+    U --> P[Plant]
     P --> Y
 ```
 
@@ -60,53 +60,48 @@ flowchart LR
 
 | **手法 / Method**   | **概要 / Overview**                          | **特徴 / Features**          |
 |---------------------|----------------------------------------------|------------------------------|
-| **Inverse Model**   | 出力から入力を推定する制御器                 | シンプルだが精度に依存         |
+| **Inverse Model**   | 出力から入力の関係をNNで学習（制御器そのもの） | シンプルだが精度に依存         |
 | **Direct NN Control** | NN出力をそのまま制御指令に使用               | 汎用性が高いが学習が難しい     |
 | **NN-PID**          | PID出力にNN補正を加える                       | 安定性と柔軟性の両立           |
 | **Hybrid（LLM含む）** | ルール＋NN制御、AITL構想など                  | 状況依存の判断に強み           |
 
 ---
 
-### 📐 逆モデル制御（Inverse Model）
+### 逆モデル制御（Inverse Model）
 
 ```mermaid
 flowchart LR
-    Y(y(t)) --> NNI[Inverse Model NN]
-    R(r(t)) -.-> NNI
-    NNI --> U(u(t))
-    U --> P(Plant)
+    Y[Output y t] --> NN[Inverse Model NN f_theta y to u]
+    R[Reference r t] -.-> NN
+    NN --> U[Control u t]
+    U --> P[Plant]
     P --> Y
 ```
 
 ---
 
-### 📐 直接NN制御（Direct NN Control）
+### 直接NN制御（Direct NN Control）
 
 ```mermaid
 flowchart LR
-    R(r(t)) --> NND[Direct NN Control]
-    Y(y(t)) -.-> NND
-    NND --> U(u(t))
-    U --> P(Plant)
+    R[Reference r t] --> NN[Direct NN Control f_theta r y to u]
+    Y[Output y t] -.-> NN
+    NN --> U[Control u t]
+    U --> P[Plant]
     P --> Y
 ```
 
 ---
 
-### 📐 NN-PID（PID補償付き）
+### NN-PID制御
 
 ```mermaid
 flowchart LR
-    R(r(t)) --> PID[PID]
-    Y(y(t)) -.-> PID
-    R -.-> NNC[NN Compensator]
-    Y -.-> NNC
-    PID --> U1(u_pid)
-    NNC --> U2(u_nn)
-    U1 --> SUM((+))
-    U2 --> SUM
-    SUM --> U(u(t))
-    U --> P(Plant)
+    R[Reference r t] --> PID[PID Controller] --> SUM[Summation] --> U[Control u t]
+    Y[Output y t] -.-> PID
+    Y -.-> NN[NN Correction]
+    NN --> SUM
+    U --> P[Plant]
     P --> Y
 ```
 
