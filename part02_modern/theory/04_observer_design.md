@@ -4,6 +4,8 @@ title: 04. オブザーバ設計と状態推定 / Observer Design & State Estima
 permalink: /part02_modern/theory/04_observer_design.html
 ---
 
+---
+
 # 👁️ 04. オブザーバ設計と状態推定 / Observer Design & State Estimation
 
 ---
