@@ -1,11 +1,26 @@
-# 🧭 FSM設計テンプレート（YAML形式）
-
-このテンプレートは、**有限状態機械（Finite State Machine: FSM）** をYAML形式で記述するための基本構造です。  
-設計したYAMLは、ChatGPTプロンプト補助（SamizoGPT）や `fsm_to_mermaid.py` を使った可視化に活用できます。
+---
+layout: default
+title: FSM設計テンプレート（YAML形式）
+permalink: /SoC_DesignKit_by_ChatGPT/fsm/fsm_template.html
+---
 
 ---
 
-## ✅ 記述フォーマット
+# 🧭 FSM設計テンプレート（YAML形式）
+
+---
+
+**JP:**  
+このテンプレートは、**有限状態機械（Finite State Machine: FSM）** をYAML形式で記述するための基本構造です。  
+設計したYAMLは、ChatGPTプロンプト補助（[SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT)）や [`fsm_to_mermaid.py`](../fsm_to_mermaid.py) を使った**状態遷移図可視化**に活用できます。
+
+**EN:**  
+This template defines the basic structure for describing a **Finite State Machine (FSM)** in YAML format.  
+Designed YAML files can be used with ChatGPT prompt assistance ([SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT)) or [`fsm_to_mermaid.py`](../fsm_to_mermaid.py) for **state diagram visualization**.
+
+---
+
+## ✅ 記述フォーマット / Format
 
 ```yaml
 fsm:
@@ -35,44 +50,52 @@ fsm:
 
 ---
 
-## 🧩 各項目の説明
+## 🧩 各項目の説明 / Field Descriptions
 
-| キー | 内容 |
-|------|------|
-| `name` | FSMの名称（任意） |
-| `states` | 状態のリスト（状態名の列挙） |
-| `transitions` | 状態遷移の定義（from → to + trigger） |
-| `outputs`（任意） | 各状態で出力する信号など（状態依存出力） |
-
----
-
-## 🧪 使用方法（例）
-
-- このテンプレートをベースに `fsm_example_counter.yaml` などのFSMを定義
-- `fsm_to_mermaid.py` を使用し、Mermaid.jsに変換
-- ChatGPT（SamizoGPT）にプロンプトとして渡し、Verilog記述へ展開も可能
+| キー / Key | 説明 / Description |
+|------------|--------------------|
+| `name` | FSMの名称（任意） / FSM name (optional) |
+| `states` | 状態のリスト / List of states |
+| `transitions` | 状態遷移の定義（from → to + trigger） / State transitions (from → to + trigger) |
+| `outputs` *(optional)* | 各状態で出力する信号 / State-dependent output values |
 
 ---
 
-## 📘 関連ファイル
+## 🧪 使用方法 / How to Use
 
-| ファイル名 | 内容 |
-|------------|------|
-| `fsm_example_counter.yaml` | カウント用の簡易FSMサンプル |
-| `fsm_to_mermaid.py` | YAML→Mermaid.js変換スクリプト |
-| `fsm_prompt.md`（`prompts/`） | SamizoGPT用プロンプトテンプレート（FSM生成） |
-
----
-
-## 🔖 補足：YAML作法の注意点
-
-- インデントはスペース2つで統一（Tab不可）
-- 文字列はクォート無しでもOK（ただし記号含む場合は `""` 推奨）
+1. このテンプレートを基に、例：`fsm_example_counter.yaml` を作成  
+   Create your FSM definition file (e.g., `fsm_example_counter.yaml`) based on this template.
+2. [`fsm_to_mermaid.py`](../fsm_to_mermaid.py) でMermaid.jsコードへ変換  
+   Convert it to Mermaid.js code using [`fsm_to_mermaid.py`](../fsm_to_mermaid.py).
+3. [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT) の `fsm_prompt.md` を利用してVerilogコードへ展開  
+   Use `fsm_prompt.md` in [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT) to generate Verilog code.
 
 ---
 
-## 📝 著作・ライセンス
+## 📘 関連ファイル / Related Files
 
-本テンプレートは [Samizo-AITL/SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT) に準拠して提供され、MITライセンスのもとで自由に利用可能です。
+| ファイル / File | 説明 / Description |
+|-----------------|--------------------|
+| [`fsm_example_counter.yaml`](./fsm_example_counter.yaml) | カウンタ用の簡易FSMサンプル / Sample FSM for counter logic |
+| [`fsm_to_mermaid.py`](../fsm_to_mermaid.py) | YAML→Mermaid.js変換スクリプト / YAML to Mermaid.js converter |
+| [`fsm_prompt.md`](../prompts/control_templates/fsm_prompt.md) | SamizoGPT用FSM生成プロンプト / Prompt for FSM code generation |
 
 ---
+
+## 🔖 YAML作法の注意点 / YAML Syntax Notes
+
+- **インデントは半角スペース2つ**（Tabは使用不可）  
+  Use two spaces for indentation (no tabs).
+- 文字列はクォート不要（特殊文字含む場合は `""` 推奨）  
+  Strings can be unquoted unless they contain special characters.
+
+---
+
+## 📝 著作・ライセンス / Author & License
+
+MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
+This template is provided under the MIT License for educational and personal use.
+
+---
+
+**🏠 [戻る / Back to FSM Directory](../)**
