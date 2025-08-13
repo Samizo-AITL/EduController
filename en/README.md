@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EduController/README_en.md
+title: EduController/en/README_en.md
 ---
 
 ---
