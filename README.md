@@ -153,7 +153,7 @@ EduController/
 
 ## 🔗 **関連プロジェクト**
 
-- 🧩 [**Edusemi-v4x**](https://github.com/Samizo-AITL/Edusemi-v4x)  
+- 🎓 [**Edusemi-v4x**](https://github.com/Samizo-AITL/Edusemi-v4x)  
   **半導体設計・プロセス教育教材**（Python、sky130、OpenLane）
 
 - 🤖 [**AITL-H**](https://github.com/Samizo-AITL/AITL-H)  
