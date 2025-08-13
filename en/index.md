@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EduController/en/index.md (English)
+title: EduController/en/index.md (English) 
 ---
 
 ---
