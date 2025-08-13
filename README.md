@@ -153,14 +153,11 @@ EduController/
 
 ## 🔗 **関連プロジェクト**
 
-- 🎓 [**Edusemi-v4x**](https://github.com/Samizo-AITL/Edusemi-v4x)  
-  **半導体設計・プロセス教育教材**（Python、sky130、OpenLane）
-
-- 🤖 [**AITL-H**](https://github.com/Samizo-AITL/AITL-H)  
-  **FSM×PID×LLM**の三層制御フレームワーク（**Part09と連携**）
-
-- 🧠 [**SamizoGPT**](https://github.com/Samizo-AITL/SamizoGPT)  
-  **ChatGPTのプロンプト設計支援**テンプレート集（**設計支援と連携**）
+| Project | JP（概要） |
+|---|---|
+| 🎓 [**Edusemi-v4x**](https://samizo-aitl.github.io/Edusemi-v4x/) <br>💻 [GitHub](https://github.com/Samizo-AITL/Edusemi-v4x) | **半導体設計・プロセス教育教材**（Python、sky130、OpenLane） |
+| 🤖 [**AITL-H**](https://samizo-aitl.github.io/AITL-H/) <br>💻 [GitHub](https://github.com/Samizo-AITL/AITL-H) | **FSM×PID×LLM**の三層制御フレームワーク（**Part09と連携**） |
+| 🧠 [**SamizoGPT**](https://samizo-aitl.github.io/SamizoGPT/) <br>💻 [GitHub](https://github.com/Samizo-AITL/SamizoGPT) | **ChatGPTのプロンプト設計支援**テンプレート集（**設計支援と連携**） |
 
 ---
 
