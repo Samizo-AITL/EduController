@@ -5,185 +5,111 @@ title: EduController/README.md
 
 ---
 
-# 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**
+# 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**  
+**EduController: Educational Framework for Control Theory and AI Control**
 
 ---
 
-## 🔗 公式リンク | Official Links
+## 🔗 **公式リンク | Official Links**
 
-| 言語 | 種別 | リンク |
+| 言語 / Language | 種別 / Type | リンク / Link |
 |------|------|--------|
-| 🇯🇵 Japanese Version | 🌐 GitHub Pages | [https://samizo-aitl.github.io/EduController/](https://samizo-aitl.github.io/EduController/) |
-| 🇯🇵 Japanese Version | 💻 GitHub | [https://github.com/Samizo-AITL/EduController](https://github.com/Samizo-AITL/EduController) |
-| 🇺🇸 English Version | 🌐 GitHub Pages | [https://samizo-aitl.github.io/EduController/en/](https://samizo-aitl.github.io/EduController/en/) |
-| 🇺🇸 English Version | 💻 GitHub | [https://github.com/Samizo-AITL/EduController/tree/main/en](https://github.com/Samizo-AITL/EduController/tree/main/en) |
+| 🇯🇵 **Japanese Version** | 🌐 GitHub Pages | [https://samizo-aitl.github.io/EduController/](https://samizo-aitl.github.io/EduController/) |
+| 🇯🇵 **Japanese Version** | 💻 GitHub | [https://github.com/Samizo-AITL/EduController](https://github.com/Samizo-AITL/EduController) |
+| 🇺🇸 **English Version** | 🌐 GitHub Pages | [https://samizo-aitl.github.io/EduController/en/](https://samizo-aitl.github.io/EduController/en/) |
+| 🇺🇸 **English Version** | 💻 GitHub | [https://github.com/Samizo-AITL/EduController/tree/main/en](https://github.com/Samizo-AITL/EduController/tree/main/en) |
 
 ---
 
-**EduController** は、**古典制御**から**現代制御**、さらに**AIベースの次世代型制御**までを体系的に学べる、**段階的・実践的な制御教育教材プロジェクト**です。  
-**Python** を活用し、**制御理論の直感的理解**から、**HDL記述**や**LLM統合設計**まで幅広くサポートします。
+## 📘 **概要 | Overview**
+**JP:** EduController は、古典制御から現代制御、さらに AI ベースの次世代型制御までを体系的に学べる、段階的かつ実践的な教材プロジェクトです。Python による制御理論の直感的理解から HDL 記述、LLM 統合設計まで幅広くサポートします。  
+**EN:** EduController is a step-by-step, practical educational project covering classical, modern, and AI-based next-generation control. It supports a wide range of learning, from intuitive understanding of control theory using Python to HDL coding and LLM-integrated design.
 
 ---
 
-## 🧭 **構成概要：制御理論・AI制御・統合制御の3系統**  
-**🧭 Overview: Three Tracks – Classical, AI-based, and Hybrid Control**
+## 🧭 **構成概要 | Structure Overview**
+**JP:** EduController は全10章で構成され、以下の 3 系統に分類されます。  
+**EN:** EduController consists of 10 chapters, categorized into the following three tracks.
 
-EduController は、全10章から構成され、以下の3系統に分類されます：  
-EduController consists of 10 chapters, categorized into the following three tracks:
-
-- 🎓 **制御理論系（Part 01〜05）｜Classical & Modern Control**  
-  古典制御、状態空間、デジタル制御、実装演習を体系的に学習  
-  Systematic learning of classical control, state-space methods, digital control, and practical implementation
-
-- 🤖 **AI制御系（Part 06〜08）｜AI-based Control**  
-  ニューラルネット、強化学習、データ駆動制御を段階的に習得  
-  Step-by-step mastery of neural networks, reinforcement learning, and data-driven control
-
-- 🧠 **統合・応用制御系（Part 09〜10）｜Hybrid & Applied Control**  
-  LLM統合や倒立振子を通じて制御の総合実装力を強化  
-  Comprehensive application of control theory through LLM integration and inverted pendulum control
-
-> ※ 各章は独立して学習可能ですが、AI制御・統合制御パートは制御理論の基礎を前提としています。  
-> ※ Each chapter can be studied independently, but AI and hybrid control parts assume prior understanding of classical control theory.
+| 系統 / Track | 内容（JP） | Overview (EN) |
+|--------------|-----------|---------------|
+| 🎓 **制御理論系 (Part 01〜05)** | 古典制御、状態空間、デジタル制御、実装演習 | Classical control, state-space, digital control, practical implementation |
+| 🤖 **AI制御系 (Part 06〜08)** | ニューラルネット、強化学習、データ駆動制御 | Neural networks, reinforcement learning, data-driven control |
+| 🧠 **統合・応用制御系 (Part 09〜10)** | LLM統合制御、倒立振子総合制御 | LLM-integrated control, inverted pendulum control |
 
 ---
 
-## 📚 **章構成一覧（リンク付き）｜Chapter Structure (with Links)**
+## 📚 **章構成一覧 | Chapter Structure**
 
 ### 🎓 **制御理論系｜Classical & Modern Control**
-
-| 章 | ディレクトリ | 内容概要｜Overview |
-|----|----------------|--------------------|
-| **Part 01** | [part01_classical](./part01_classical/) | **PID制御、ボード線図、安定性**<br>PID control, Bode plot, Stability |
-| **Part 02** | [part02_modern](./part02_modern/) | **状態空間、LQR、カルマンフィルタ**<br>State-space, LQR, Kalman Filter |
-| **Part 03** | [part03_adaptive](./part03_adaptive/) | **適応・ロバスト制御（MRAC、H∞、L1）**<br>Adaptive & Robust Control (MRAC, H∞, L1) |
-| **Part 04** | [part04_digital](./part04_digital/) | **デジタル制御、Z変換、DSP実装**<br>Digital Control, Z-Transform, DSP Implementation |
-| **Part 05** | [part05_practical](./part05_practical/) | **Python実装、ROS演習、FPGA制御**<br>Python, ROS Practice, FPGA-based Control |
+| 章 / Chapter | ディレクトリ | 内容概要（JP） | Overview (EN) |
+|--------------|-------------|----------------|---------------|
+| **Part 01** | [part01_classical](./part01_classical/) | PID制御、ボード線図、安定性 | PID control, Bode plot, stability |
+| **Part 02** | [part02_modern](./part02_modern/) | 状態空間、LQR、カルマンフィルタ | State-space, LQR, Kalman filter |
+| **Part 03** | [part03_adaptive](./part03_adaptive/) | 適応・ロバスト制御（MRAC、H∞、L1） | Adaptive & robust control (MRAC, H∞, L1) |
+| **Part 04** | [part04_digital](./part04_digital/) | デジタル制御、Z変換、DSP実装 | Digital control, Z-transform, DSP implementation |
+| **Part 05** | [part05_practical](./part05_practical/) | Python実装、ROS演習、FPGA制御 | Python, ROS practice, FPGA-based control |
 
 ### 🤖 **AI制御系｜AI-based Control**
-
-| 章 | ディレクトリ | 内容概要｜Overview |
-|----|----------------|--------------------|
-| **Part 06** | [part06_nn_control](./part06_nn_control/) | **ニューラルネット制御（NN-PID、逆モデル）**<br>Neural Network Control (NN-PID, Inverse Model) |
-| **Part 07** | [part07_rl_control](./part07_rl_control/) | **強化学習制御（Q学習、DDPG、PPO）**<br>Reinforcement Learning Control (Q-learning, DDPG, PPO) |
-| **Part 08** | [part08_data_driven](./part08_data_driven/) | **データ駆動制御（Koopman、行列識別）**<br>Data-driven Control (Koopman, System Identification) |
+| 章 / Chapter | ディレクトリ | 内容概要（JP） | Overview (EN) |
+|--------------|-------------|----------------|---------------|
+| **Part 06** | [part06_nn_control](./part06_nn_control/) | ニューラルネット制御（NN-PID、逆モデル） | Neural network control (NN-PID, inverse model) |
+| **Part 07** | [part07_rl_control](./part07_rl_control/) | 強化学習制御（Q学習、DDPG、PPO） | Reinforcement learning control (Q-learning, DDPG, PPO) |
+| **Part 08** | [part08_data_driven](./part08_data_driven/) | データ駆動制御（Koopman、行列識別） | Data-driven control (Koopman, system identification) |
 
 ### 🧠 **統合・応用制御系｜Hybrid & Applied Control**
-
-| 章 | ディレクトリ | 内容概要｜Overview |
-|----|----------------|--------------------|
-| **Part 09** | [part09_llm_hybrid](./part09_llm_hybrid/) | **LLM統合・ハイブリッド制御（FSM×PID×LLM）**<br>LLM-integrated Hybrid Control (FSM×PID×LLM) |
-| **Part 10** | [part10_pendulum](./part10_pendulum/) | **倒立振子の総合制御（PID / LQR / DDPG / HDL）**<br>Integrated Control of Inverted Pendulum (PID / LQR / DDPG / HDL) |
-
----
-
-## 🔩 **実装支援ツールキット**
-
-### 🔹 [**matlab_tools/**](./matlab_tools/)
-
-- **Simulink** による **PID・状態空間制御の可視化**
-- **Simulink Coder** による **Cコード生成**
-- 生成Cコードは `c_to_hdl/` により **HDL設計へ展開可能**
-
-### 🔹 [**SoC_DesignKit_by_ChatGPT/**](./SoC_DesignKit_by_ChatGPT/)
-
-- **FSM、PID、LLM制御構成のテンプレート群**
-- **ChatGPTプロンプトによるVerilog自動生成**  
-- `testbench/` による **波形検証**も含む
-
-> 🧠 教材・Simulink・ChatGPTを接続した「**教育 × 実装 × AI**」の融合設計を支援
+| 章 / Chapter | ディレクトリ | 内容概要（JP） | Overview (EN) |
+|--------------|-------------|----------------|---------------|
+| **Part 09** | [part09_llm_hybrid](./part09_llm_hybrid/) | LLM統合制御（FSM×PID×LLM） | LLM-integrated hybrid control (FSM×PID×LLM) |
+| **Part 10** | [part10_pendulum](./part10_pendulum/) | 倒立振子の総合制御（PID / LQR / DDPG / HDL） | Integrated control of inverted pendulum (PID / LQR / DDPG / HDL) |
 
 ---
 
-## 🔧 **推奨ツール**
+## 🔩 **実装支援ツール | Implementation Toolkit**
 
-| 分類 | ツール群 | 主な用途 |
-|------|-----------|-----------|
-| 🐍 **Python系** | `control`, `scipy`, `matplotlib`, `torch`, `gymnasium` | **理論演習、AI制御実験** |
-| 📊 **GUI系** | **MATLAB / Simulink** | **ブロック図設計、Cコード生成** |
-| 🤖 **LLM系** | **ChatGPT / GPT-4o** | **設計支援、C→Verilog変換、対話設計** |
-| ⚙️ **実装系** | **ROS / Verilog / FPGA** | **ハードウェア制御実装、PoC展開** |
+| ディレクトリ | 内容概要（JP） | Overview (EN) |
+|--------------|----------------|---------------|
+| [**matlab_tools/**](./matlab_tools/) | Simulink による PID・状態空間制御の可視化、Cコード生成、HDL設計への展開 | Visualization of PID/state-space control in Simulink, C code generation, HDL design |
+| [**SoC_DesignKit_by_ChatGPT/**](./SoC_DesignKit_by_ChatGPT/) | FSM・PID・LLM制御のテンプレート、ChatGPTによるVerilog生成、テストベンチ検証 | Templates for FSM, PID, LLM control; Verilog generation via ChatGPT; testbench verification |
 
 ---
 
-## 🗂️ **ディレクトリ構成**
-
-```
-EduController/
-├── part01_classical/            # 古典制御理論（PID・ボード線図・安定性）
-├── part02_modern/               # 現代制御理論（状態空間・LQR・カルマン）
-├── part03_adaptive/             # 適応・ロバスト制御（MRAC・H∞・L1）
-├── part04_digital/              # デジタル制御（Z変換・離散時間系・DSP）
-├── part05_practical/            # 実装・ノイズ・ROS・FPGA制御演習
-├── part06_nn_control/           # ニューラルネット制御（NN-PID・逆モデル）
-├── part07_rl_control/           # 強化学習制御（Q学習・DDPG・PPO）
-├── part08_data_driven/          # データ駆動制御（Koopman・行列識別）
-├── part09_llm_hybrid/           # LLM統合制御（FSM×PID×LLMハイブリッド）
-├── part10_pendulum/             # 倒立振子の総合制御（PID・LQR・RL・HDL・LLM）
-│
-├── SoC_DesignKit_by_ChatGPT/    # ChatGPTベースの制御設計テンプレート群
-│   ├── fsm/                     # FSM（有限状態機械）のテンプレート
-│   ├── pid/                     # PID制御のVerilog記述例
-│   ├── llm/                     # LLM統合制御テンプレート（自然言語対応）
-│   ├── c_to_hdl/                # Cコード→Verilog変換プロンプト
-│   ├── testbench/               # テストベンチ・波形検証（Verilog用）
-│   ├── prompts/                 # ChatGPTプロンプトテンプレート（設計補助）
-│
-├── matlab_tools/                # Simulink設計とCコード生成支援モジュール
-│   ├── *.slx                    # Simulinkモデル（PID、状態空間）
-│   ├── *.md                     # Simulink操作ガイド・導入手順
-│
-├── README.md                    # 日本語トップREADME（本ファイル）
-└── README_en.md                 # 英語版トップREADME
-
-```
-
-> 📦 各ディレクトリ内の教材詳細は、それぞれの `README.md` をご覧ください。
+## 🔧 **推奨ツール | Recommended Tools**
+| 分類 / Category | ツール | 主な用途（JP） | Main Use (EN) |
+|------|---------|-----------|---------------|
+| 🐍 Python系 | `control`, `scipy`, `matplotlib`, `torch`, `gymnasium` | 理論演習、AI制御実験 | Theoretical exercises, AI control experiments |
+| 📊 GUI系 | MATLAB / Simulink | ブロック図設計、Cコード生成 | Block diagram design, C code generation |
+| 🤖 LLM系 | ChatGPT / GPT-4o | 設計支援、C→Verilog変換 | Design assistance, C→Verilog conversion |
+| ⚙️ 実装系 | ROS / Verilog / FPGA | ハードウェア制御実装、PoC展開 | Hardware control implementation, PoC |
 
 ---
 
-## 🚀 **特徴**
-
-- 🔁 **理論 → 実装 → AI応用** を一貫学習  
-- 🧠 **LLM（ChatGPT）と連携**した再利用設計  
-- 📊 **Simulink → HDL** の橋渡し設計  
-- 🛠️ **テンプレート中心設計**で高再現性
-
----
-
-## 🔗 **関連プロジェクト**
-
-| Project | JP（概要） |
-|---|---|
-| 🎓 [**Edusemi-v4x**](https://samizo-aitl.github.io/Edusemi-v4x/) <br>💻 [GitHub](https://github.com/Samizo-AITL/Edusemi-v4x) | **半導体設計・プロセス教育教材**（Python、sky130、OpenLane） |
-| 🤖 [**AITL-H**](https://samizo-aitl.github.io/AITL-H/) <br>💻 [GitHub](https://github.com/Samizo-AITL/AITL-H) | **FSM×PID×LLM**の三層制御フレームワーク（**Part09と連携**） |
-| 🧠 [**SamizoGPT**](https://samizo-aitl.github.io/SamizoGPT/) <br>💻 [GitHub](https://github.com/Samizo-AITL/SamizoGPT) | **ChatGPTのプロンプト設計支援**テンプレート集（**設計支援と連携**） |
+## 🔗 **関連プロジェクト | Related Projects**
+| Project | JP（概要） | EN (Summary) |
+|---|---|---|
+| 🎓 [**Edusemi-v4x**](https://samizo-aitl.github.io/Edusemi-v4x/) <br>💻 [GitHub](https://github.com/Samizo-AITL/Edusemi-v4x) | 半導体設計・プロセス教育教材（Python、sky130、OpenLane） | Semiconductor design & process education (Python, sky130, OpenLane) |
+| 🤖 [**AITL-H**](https://samizo-aitl.github.io/AITL-H/) <br>💻 [GitHub](https://github.com/Samizo-AITL/AITL-H) | FSM×PID×LLMの三層制御フレームワーク（Part09と連携） | Three-layer control framework (FSM×PID×LLM) |
+| 🧠 [**SamizoGPT**](https://samizo-aitl.github.io/SamizoGPT/) <br>💻 [GitHub](https://github.com/Samizo-AITL/SamizoGPT) | ChatGPTのプロンプト設計支援テンプレート集（設計支援と連携） | Prompt design templates for ChatGPT (design assistance) |
 
 ---
 
 ## 👤 **執筆者情報 | Author**
-> 本教材の企画・執筆者。半導体・インクジェット分野での実務経験を持ち、教育と実装を融合した教材開発を行う。  
-> *Author with professional background in semiconductors and inkjet actuators, creating materials integrating theory and practice.*
-
-| 📌 項目 / Item | 内容 / Details |
-|------|------|
-| **氏名 / Name** | 三溝 真一（Shinichi Samizo） |
-| **学歴 / Education** | 信州大学大学院 電気電子工学 修了 |
-| **経歴 / Career** | 元 セイコーエプソン株式会社 技術者（1997年〜） |
-| **経験領域 / Expertise** | 半導体デバイス（ロジック・メモリ・高耐圧混載）<br>インクジェット薄膜ピエゾアクチュエータ<br>PrecisionCoreプリントヘッド製品化・BOM管理・ISO教育 |
-| **連絡先 / Contact** | ✉️ [shin3t72@gmail.com](mailto:shin3t72@gmail.com)<br>🐦 [https://x.com/shin3t72](https://x.com/shin3t72)<br>💻 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/) |
+| 📌 項目 / Item | 内容（JP） | Details (EN) |
+|------|----------|------------|
+| **氏名 / Name** | 三溝 真一 | Shinichi Samizo |
+| **学歴 / Education** | 信州大学大学院 電気電子工学 修了 | M.Eng., Electrical & Electronic Engineering, Shinshu University |
+| **経歴 / Career** | 元 セイコーエプソン株式会社 技術者（1997年〜） | Former engineer, Seiko Epson Corp. (1997–) |
+| **経験領域 / Expertise** | 半導体デバイス（ロジック・メモリ・高耐圧混載）、インクジェット薄膜ピエゾアクチュエータ、PrecisionCore製品化・BOM管理・ISO教育 | Semiconductor devices (logic, memory, high-voltage mixed-signal), inkjet thin-film piezo actuators, PrecisionCore productization, BOM management, ISO training |
+| **連絡先 / Contact** | ✉️ [shin3t72@gmail.com](mailto:shin3t72@gmail.com)<br>🐦 [https://x.com/shin3t72](https://x.com/shin3t72)<br>💻 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/) | ✉️ [shin3t72@gmail.com](mailto:shin3t72@gmail.com)<br>🐦 [https://x.com/shin3t72](https://x.com/shin3t72)<br>💻 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/) |
 
 ---
 
 ## 📄 **ライセンス | License**
-> オープンライセンスにより、教育・研究・社内研修などへの自由な利用が可能。  
-> *Open license allowing free use for education, research, and corporate training.*
-
-| 📌 項目 / Item | 内容 / Details |
-|------|------|
-| **ライセンス種別 / Type** | MITライセンス |
-| **利用条件 / Usage** | 自由に使用・改変・再配布が可能 |
-| **推奨利用 / Recommended Uses** | 教育・研究・社内研修など |
+| 📌 項目 / Item | 内容（JP） | Details (EN) |
+|------|----------|------------|
+| **ライセンス種別 / Type** | MITライセンス | MIT License |
+| **利用条件 / Usage** | 自由に使用・改変・再配布可能 | Free to use, modify, and redistribute |
+| **推奨利用 / Recommended Uses** | 教育・研究・社内研修 | Education, research, corporate training |
 
 ---
 
@@ -191,4 +117,3 @@ EduController/
 💬 [**EduController教材の議論はこちら → Discussions**](https://github.com/Samizo-AITL/EduController/discussions)
 
 ---
-
