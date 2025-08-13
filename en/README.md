@@ -7,12 +7,21 @@ title: EduController/en/README.md
 
 # 🎛️ **EduController**: Educational Framework for Control Theory and AI-based Control
 
-**EduController** is a **progressive** and **practical learning project** that systematically covers **classical control theory**, **modern control**, and **next-generation AI-based control**.  
-It uses **Python-based simulation and visualization** to support **intuitive understanding** and **real-world control system design**, including **LLM-integrated architectures**.
+---
+
+## 🔗 Official Links
+
+| Language | Type | Link |
+|----------|------|------|
+| 🇺🇸 English Version | 🌐 GitHub Pages | [https://samizo-aitl.github.io/EduController/en/](https://samizo-aitl.github.io/EduController/en/) |
+| 🇺🇸 English Version | 💻 GitHub | [https://github.com/Samizo-AITL/EduController/tree/main/en](https://github.com/Samizo-AITL/EduController/tree/main/en) |
+| 🇯🇵 Japanese Version | 🌐 GitHub Pages | [https://samizo-aitl.github.io/EduController/](https://samizo-aitl.github.io/EduController/) |
+| 🇯🇵 Japanese Version | 💻 GitHub | [https://github.com/Samizo-AITL/EduController](https://github.com/Samizo-AITL/EduController) |
 
 ---
 
-🇯🇵 [日本語版 READMEはこちら](https://github.com/Samizo-AITL/EduController/blob/main/README.md)
+**EduController** is a **progressive** and **practical learning project** that systematically covers **classical control theory**, **modern control**, and **next-generation AI-based control**.  
+It uses **Python-based simulation and visualization** to support **intuitive understanding** and **real-world control system design**, including **LLM-integrated architectures**.
 
 ---
 
