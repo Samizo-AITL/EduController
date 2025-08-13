@@ -13,10 +13,10 @@ title: EduController/README.md (English)
 
 | Language | Type | Link |
 |------|------|--------|
-| 🇯🇵 Japanese Version | 🌐 GitHub Pages | [https://samizo-aitl.github.io/EduController/](https://samizo-aitl.github.io/EduController/) |
-| 🇯🇵 Japanese Version | 💻 GitHub | [https://github.com/Samizo-AITL/EduController](https://github.com/Samizo-AITL/EduController) |
 | 🇺🇸 English Version | 🌐 GitHub Pages | [https://samizo-aitl.github.io/EduController/en/](https://samizo-aitl.github.io/EduController/en/) |
 | 🇺🇸 English Version | 💻 GitHub | [https://github.com/Samizo-AITL/EduController/tree/main/en](https://github.com/Samizo-AITL/EduController/tree/main/en) |
+| 🇯🇵 Japanese Version | 🌐 GitHub Pages | [https://samizo-aitl.github.io/EduController/](https://samizo-aitl.github.io/EduController/) |
+| 🇯🇵 Japanese Version | 💻 GitHub | [https://github.com/Samizo-AITL/EduController](https://github.com/Samizo-AITL/EduController) |
 
 ---
 
