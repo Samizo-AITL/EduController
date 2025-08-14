@@ -7,8 +7,7 @@ title: EduController/en/README.md (English)
 
 # 🎛️ **EduController: Educational Framework for Control Theory and AI Control**
 
-[![license](https://img.shields.io/badge/license-MIT-blue)](../LICENSE)
-[![view](https://img.shields.io/badge/view-site-brightgreen)](https://samizo-aitl.github.io/en)
+[![Back to Samizo-AITL Portal](https://img.shields.io/badge/Back%20to%20Samizo--AITL%20Portal-brightgreen)](https://samizo-aitl.github.io/en) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](../LICENSE)
 
 ---
 
