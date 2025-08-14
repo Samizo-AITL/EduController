@@ -83,9 +83,9 @@ It supports a wide range of learning, from intuitive understanding of control th
 
 | Project | Summary |
 |---|---|
-| 🎓 [**Edusemi-v4x**](https://samizo-aitl.github.io/Edusemi-v4x/) <br>💻 [GitHub](https://github.com/Samizo-AITL/Edusemi-v4x) | Semiconductor design & process education (Python, sky130, OpenLane) |
-| 🤖 [**AITL-H**](https://samizo-aitl.github.io/AITL-H/) <br>💻 [GitHub](https://github.com/Samizo-AITL/AITL-H) | Three-layer control framework (FSM×PID×LLM) |
-| 🧠 [**SamizoGPT**](https://samizo-aitl.github.io/SamizoGPT/) <br>💻 [GitHub](https://github.com/Samizo-AITL/SamizoGPT) | Prompt design templates for ChatGPT (design assistance) |
+| 🎓 **Edusemi-v4x**<br>[![View Site](https://img.shields.io/badge/View%20Site-lightgrey?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/) [![View Repo](https://img.shields.io/badge/View%20Repo-lightgrey?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | Semiconductor design & process education (Python, sky130, OpenLane) |
+| 🤖 **AITL-H**<br>[![View Site](https://img.shields.io/badge/View%20Site-lightgrey?logo=github)](https://samizo-aitl.github.io/AITL-H/) [![View Repo](https://img.shields.io/badge/View%20Repo-lightgrey?logo=github)](https://github.com/Samizo-AITL/AITL-H) | Three-layer control framework (FSM×PID×LLM) |
+| 🧠 **SamizoGPT**<br>[![View Site](https://img.shields.io/badge/View%20Site-lightgrey?logo=github)](https://samizo-aitl.github.io/SamizoGPT/) [![View Repo](https://img.shields.io/badge/View%20Repo-lightgrey?logo=github)](https://github.com/Samizo-AITL/SamizoGPT) | Prompt design templates for ChatGPT (design assistance) |
 
 ---
 
