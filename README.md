@@ -72,10 +72,10 @@ title: EduController/README.md
 
 ---
 
-## 🔩 **Implementation Toolkit**
+## 🔩 **実装支援ツール | Implementation Toolkit**
 
-| Directory | JP（概要） | EN (Overview) |
-|-----------|-----------|---------------|
+| ディレクトリ | 内容概要（JP） | Overview (EN) |
+|--------------|----------------|---------------|
 | [**matlab_tools/**](./matlab_tools/) | Simulink による PID・状態空間制御の可視化、Cコード生成、HDL設計への展開 | Visualization of PID/state-space control in Simulink, C code generation, HDL design |
 | [**SoC_DesignKit_by_ChatGPT/**](./SoC_DesignKit_by_ChatGPT/) | FSM・PID・LLM制御のテンプレート、ChatGPTによる Verilog生成、テストベンチ検証 | Templates for FSM, PID, LLM control; Verilog generation via ChatGPT; testbench verification |
 
