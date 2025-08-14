@@ -81,7 +81,7 @@ title: EduController/README.md
 
 ---
 
-## 🔗 **Related Projects**
+## 🔗 **関連プロジェクト | Related Projects**
 
 | Project | JP（概要） | EN (Summary) |
 |---|---|---|
