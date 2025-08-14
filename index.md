@@ -8,8 +8,7 @@ title: EduController/index.md
 # 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**  
 **EduController: Educational Framework for Control Theory and AI Control**
 
-[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![view](https://img.shields.io/badge/view-site-brightgreen)](https://samizo-aitl.github.io)
+[![Samizo-AITLポータルサイトに戻る](https://img.shields.io/badge/Samizo--AITL%20ポータルサイトに戻る-brightgreen)](https://samizo-aitl.github.io/) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
 
