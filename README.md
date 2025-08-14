@@ -72,22 +72,22 @@ title: EduController/README.md
 
 ---
 
-## 🔩 **実装支援ツール | Implementation Toolkit**
+## 🔩 **Implementation Toolkit**
 
-| ディレクトリ | 内容概要（JP） | Overview (EN) |
-|--------------|----------------|---------------|
+| Directory | JP（概要） | EN (Overview) |
+|-----------|-----------|---------------|
 | [**matlab_tools/**](./matlab_tools/) | Simulink による PID・状態空間制御の可視化、Cコード生成、HDL設計への展開 | Visualization of PID/state-space control in Simulink, C code generation, HDL design |
 | [**SoC_DesignKit_by_ChatGPT/**](./SoC_DesignKit_by_ChatGPT/) | FSM・PID・LLM制御のテンプレート、ChatGPTによる Verilog生成、テストベンチ検証 | Templates for FSM, PID, LLM control; Verilog generation via ChatGPT; testbench verification |
 
 ---
 
-## 🔗 **関連プロジェクト | Related Projects**
+## 🔗 **Related Projects**
 
 | Project | JP（概要） | EN (Summary) |
 |---|---|---|
-| 🎓 [**Edusemi-v4x**](https://samizo-aitl.github.io/Edusemi-v4x/) <br>💻 [GitHub](https://github.com/Samizo-AITL/Edusemi-v4x) | 半導体設計・プロセス教育教材（Python、sky130、OpenLane） | Semiconductor design & process education (Python, sky130, OpenLane) |
-| 🤖 [**AITL-H**](https://samizo-aitl.github.io/AITL-H/) <br>💻 [GitHub](https://github.com/Samizo-AITL/AITL-H) | FSM×PID×LLMの三層制御フレームワーク（Part09と連携） | Three-layer control framework (FSM×PID×LLM) |
-| 🧠 [**SamizoGPT**](https://samizo-aitl.github.io/SamizoGPT/) <br>💻 [GitHub](https://github.com/Samizo-AITL/SamizoGPT) | ChatGPTのプロンプト設計支援テンプレート集（設計支援と連携） | Prompt design templates for ChatGPT (design assistance) |
+| 🎓 **Edusemi-v4x**<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | 半導体設計・プロセス教育教材（Python、sky130、OpenLane） | Semiconductor design & process education (Python, sky130, OpenLane) |
+| 🤖 **AITL-H**<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/AITL-H/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/AITL-H) | FSM×PID×LLMの三層制御フレームワーク（Part09と連携） | Three-layer control framework (FSM×PID×LLM) |
+| 🧠 **SamizoGPT**<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/SamizoGPT/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/SamizoGPT) | ChatGPTのプロンプト設計支援テンプレート集（設計支援と連携） | Prompt design templates for ChatGPT (design assistance) |
 
 ---
 
