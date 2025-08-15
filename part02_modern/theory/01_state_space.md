@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 🧮 状態空間表現の基礎 / Basics of State-Space Representation
 permalink: /part02_modern/theory/01_state_space.html
 ---
