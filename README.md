@@ -42,8 +42,6 @@ EduController is a step-by-step, practical educational project covering classica
 
 ## 📚 **章構成一覧 | Chapter Structure**
 
----
-
 ### 🎛️ 制御系 / Classical & Modern Control
 
 | 章 / Chapter | タイトル / Title | 概要 / Summary |
@@ -52,9 +50,7 @@ EduController is a step-by-step, practical educational project covering classica
 | **Part 02** | 現代制御理論 / Modern Control Theory<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part02_modern/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part02_modern/) | 状態空間表現を基盤とし、可制御性・可観測性・極配置・オブザーバ設計を学ぶ。<br>*Covers state-space representation, controllability, observability, pole placement, observer design.* |
 | **Part 03** | 適応制御・ロバスト制御 / Adaptive & Robust Control<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part03_adaptive/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part03_adaptive/) | MRAC、H∞制御、L1制御など、パラメータ変動や外乱に強い制御を学ぶ。<br>*MRAC, H∞, L1 control for robustness against parameter variations and disturbances.* |
 | **Part 04** | デジタル制御と信号処理 / Digital Control & Signal Processing<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part04_digital/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part04_digital/) | Z変換、離散PID、デジタルフィルタ設計など、デジタル実装向け制御技術を習得。<br>*Z-transform, discrete PID, digital filter design for implementation.* |
-| **Part 05** | 実装・応用編 / Implementation & Applications<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part05_practical/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part05_practical/)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | Python実装、ROS演習、FPGA制御の実システム適用を学ぶ。<br>*Python, ROS practice, FPGA-based control.* |
-
----
+| **Part 05** | 実装・応用編 / Implementation & Applications<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part05_practical/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part05_practical/) | Python実装、ROS演習、FPGA制御の実システム適用を学ぶ。<br>*Python, ROS practice, FPGA-based control.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
 
 ### 🤖 AI制御系 / AI-based Control
 
@@ -64,65 +60,19 @@ EduController is a step-by-step, practical educational project covering classica
 | **Part 07** | 強化学習による制御 / Reinforcement Learning Control<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part07_rl_control/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part07_rl_control/) | 倒立振子や車両制御にRLを適用、DDPGやPPOを実装。<br>*Applying RL to inverted pendulum & vehicle control; implementing DDPG, PPO.* |
 | **Part 08** | データ駆動型制御 / Data-Driven Control<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part08_data_driven/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part08_data_driven/) | Koopman演算子、システム同定を用いたモデルフリー制御を実装。<br>*Model-free control using Koopman operator, system identification.* |
 
----
-
 ### 🧠 統合編 / Integrated Control
 
 | 章 / Chapter | タイトル / Title | 概要 / Summary |
 |--------------|-----------------|----------------|
-| **Part 09** | ハイブリッド制御とLLM統合 / Hybrid Control with LLM Integration<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part09_llm_hybrid/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part09_llm_hybrid/)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | FSM×PID×LLMによる三層アーキテクチャで次世代制御設計を実装。<br>*Three-layer architecture (FSM×PID×LLM) for next-gen control.* |
-| **Part 10** | 倒立振子の総合制御 / Integrated Control of Inverted Pendulum<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part10_pendulum/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part10_pendulum/)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | PID、LQR、RL、HDL実装を統合した倒立振子制御。<br>*PID, LQR, RL, HDL implementation integrated for inverted pendulum control.* |
-
----
+| **Part 09** | ハイブリッド制御とLLM統合 / Hybrid Control with LLM Integration<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part09_llm_hybrid/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part09_llm_hybrid/) | FSM×PID×LLMによる三層アーキテクチャで次世代制御設計を実装。<br>*Three-layer architecture (FSM×PID×LLM) for next-gen control.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+| **Part 10** | 倒立振子の総合制御 / Integrated Control of Inverted Pendulum<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part10_pendulum/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./part10_pendulum/) | PID、LQR、RL、HDL実装を統合した倒立振子制御。<br>*PID, LQR, RL, HDL implementation integrated for inverted pendulum control.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
 
 ### 🔩 実装支援ツール / Implementation Toolkit
 
 | ディレクトリ | 概要 / Summary |
 |--------------|----------------|
-| **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./matlab_tools/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./matlab_tools/)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | Simulinkによる可視化、Cコード生成、HDL設計への展開。<br>*Visualization in Simulink, C code generation, HDL design.* |
-| **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./SoC_DesignKit_by_ChatGPT/)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | FSM・PID・LLM制御テンプレート、Verilog生成、テストベンチ検証。<br>*FSM, PID, LLM control templates, Verilog generation, testbench verification.* |
-
-
-
-## 📚 **章構成一覧 | Chapter Structure**
-
-### 🎛️ 制御理論系 / Classical & Modern Control
-
-| 章 / Chapter | 内容概要 |
-|--------------|----------|
-| **Part 01**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | PID制御、ボード線図、安定性<br>PID control, Bode plot, stability |
-| **Part 02**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | 状態空間、LQR、カルマンフィルタ<br>State-space, LQR, Kalman filter |
-| **Part 03**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | 適応・ロバスト制御（MRAC、H∞、L1）<br>Adaptive & robust control (MRAC, H∞, L1) |
-| **Part 04**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | デジタル制御、Z変換、DSP実装<br>Digital control, Z-transform, DSP implementation |
-| **Part 05**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | Python実装、ROS演習、FPGA制御<br>Python, ROS practice, FPGA-based control |
-
----
-
-### 🤖 AI制御系 / AI-based Control
-
-| 章 / Chapter | 内容概要 |
-|--------------|----------|
-| **Part 06**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | ニューラルネット制御（NN-PID、逆モデル）<br>Neural network control (NN-PID, inverse model) |
-| **Part 07**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | 強化学習制御（Q学習、DDPG、PPO）<br>Reinforcement learning control (Q-learning, DDPG, PPO) |
-| **Part 08**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | データ駆動制御（Koopman、行列識別）<br>Data-driven control (Koopman, system identification) |
-
----
-
-### 🧠 統合・応用制御系 / Hybrid & Applied Control
-
-| 章 / Chapter | 内容概要 |
-|--------------|----------|
-| **Part 09**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | LLM統合制御（FSM×PID×LLM）<br>LLM-integrated hybrid control (FSM×PID×LLM) |
-| **Part 10**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | 倒立振子の総合制御（PID / LQR / DDPG / HDL）<br>Integrated control of inverted pendulum (PID / LQR / DDPG / HDL) |
-
----
-
-## 🔩 **実装支援ツール | Implementation Toolkit**
-
-| ディレクトリ | リンク / Links | 内容概要（JP） | Overview (EN) |
-|--------------|---------------|----------------|---------------|
-| **matlab_tools/** <br> [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | [![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./matlab_tools/) <br> [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) | Simulink による PID・状態空間制御の可視化、Cコード生成、HDL設計への展開 | Visualization of PID/state-space control in Simulink, C code generation, HDL design |
-| **SoC_DesignKit_by_ChatGPT/** <br> [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | [![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./SoC_DesignKit_by_ChatGPT/) <br> [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) | FSM・PID・LLM制御のテンプレート、ChatGPTによる Verilog生成、テストベンチ検証 | Templates for FSM, PID, LLM control; Verilog generation via ChatGPT; testbench verification |
+| **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./matlab_tools/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./matlab_tools/) | Simulinkによる可視化、Cコード生成、HDL設計への展開。<br>*Visualization in Simulink, C code generation, HDL design.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+| **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](./SoC_DesignKit_by_ChatGPT/) | FSM・PID・LLM制御テンプレート、Verilog生成、テストベンチ検証。<br>*FSM, PID, LLM control templates, Verilog generation, testbench verification.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
 
 ---
 
