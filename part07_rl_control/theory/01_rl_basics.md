@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 01_rl_basics
 permalink: /part07_rl_control/theory/01_rl_basics.html
 ---
