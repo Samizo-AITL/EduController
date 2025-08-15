@@ -13,7 +13,8 @@
   --soft: #f6f8fa;
   --accent: #0366d6;
 
-  --maxw: 42rem;                /* 本文幅 */
+  /* 本文幅を広げて左右余白を縮小 */
+  --maxw: 72rem;                /* 例: 42rem → 72rem（約1152px） */
   --pad-x: clamp(1rem, 4vw, 2rem);
   --pad-y: clamp(1.25rem, 4vw, 2rem);
 
@@ -55,7 +56,7 @@ body{
 }
 
 /* 画像・埋め込みのはみ出し対策 */
-img, svg, video{ max-width:100%; height:auto; }
+img, svg, video{ max-width:100%; height:auto; display:block; }
 
 /* ========= Typography ========= */
 p{ margin: 0 0 1em; }
@@ -190,9 +191,6 @@ button:focus-visible,
   outline-offset: 2px;
 }
 
-/* 画像の行間ズレ防止 */
-img, svg, video { display: block; }
-
 /* コードの見やすさ強化 */
 pre { -webkit-overflow-scrolling: touch; tab-size: 2; }
 code, pre code { word-wrap: normal; word-break: normal; white-space: pre; }
@@ -258,22 +256,17 @@ a img[src*="shields.io"]{
 .badges-inline img:last-child{ margin-right: 0; }
 
 /* --- H1 を必ず表示＆見出し強調 ----------------------- */
-/* テーマや既存CSSが display:none を指定していても上書き */
 main h1, .container h1 { display: block !important; }
-
-/* 最初の H1 を大きめ＆下線で “タイトル感” を出す */
 main.container h1:first-of-type,
 .container h1:first-of-type {
   font-size: clamp(2rem, 4vw, 2.6rem);
   font-weight: 800;
   letter-spacing: -0.01em;
-  margin-top: .5rem;       /* 先頭に来た時の上余白を少し */
+  margin-top: .5rem;
   margin-bottom: .75rem;
   padding-bottom: .5rem;
   border-bottom: 2px solid var(--border);
 }
-
-/* ダークモード時、下線を少し明るめに */
 @media (prefers-color-scheme: dark){
   main.container h1:first-of-type,
   .container h1:first-of-type {
