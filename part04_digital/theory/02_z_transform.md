@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 02. Z変換と離散時間制御系
 permalink: /part04_digital/theory/02_z_transform.html
 ---
