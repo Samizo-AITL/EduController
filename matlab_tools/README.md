@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: matlab_tools/
 permalink: /matlab_tools/
 ---
