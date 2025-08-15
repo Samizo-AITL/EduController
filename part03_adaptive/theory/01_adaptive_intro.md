@@ -106,7 +106,7 @@ Update parameters based on error $e(t)$, using MIT rule or Lyapunov methods for 
 現代制御理論の基礎、状態空間モデル、可制御性・可観測性を解説。  
 Covers basics of modern control theory, state-space models, controllability, observability.
 
-**[次節 / Next Section ➡️➡️](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/02_mrac_design.hmlt)**  
+**[次節 / Next Section ➡️➡️](https://samizo-aitl.github.io/EduController/part03_adaptive/theory/02_mrac_design.html)**  
 MRAC（モデル参照適応制御）の設計方法を学ぶ。  
 Learn how to design Model Reference Adaptive Control.
 
