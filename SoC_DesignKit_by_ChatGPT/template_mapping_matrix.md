@@ -1,3 +1,11 @@
+---
+layout: clean
+title: テンプレート対応マトリクス（EduController × SoC_DesignKit_by_ChatGPT）
+permalink: /SoC_DesignKit_by_ChatGPT/
+---
+
+---
+
 # 🗺️ テンプレート対応マトリクス（EduController × SoC_DesignKit_by_ChatGPT）
 
 本資料は、EduControllerの各章（Part01〜09）に対し、  
