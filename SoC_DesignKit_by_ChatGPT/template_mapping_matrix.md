@@ -1,7 +1,7 @@
 ---
 layout: clean
 title: テンプレート対応マトリクス（EduController × SoC_DesignKit_by_ChatGPT）
-permalink: /SoC_DesignKit_by_ChatGPT/
+permalink: 
 ---
 
 ---
