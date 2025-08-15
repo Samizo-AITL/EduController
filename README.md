@@ -44,6 +44,37 @@ EduController is a step-by-step, practical educational project covering classica
 
 ### 🎛️ 制御理論系 / Classical & Modern Control
 
+| 章 / Chapter | 内容概要 |
+|--------------|----------|
+| **Part 01**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | PID制御、ボード線図、安定性<br>PID control, Bode plot, stability |
+| **Part 02**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | 状態空間、LQR、カルマンフィルタ<br>State-space, LQR, Kalman filter |
+| **Part 03**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | 適応・ロバスト制御（MRAC、H∞、L1）<br>Adaptive & robust control (MRAC, H∞, L1) |
+| **Part 04**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | デジタル制御、Z変換、DSP実装<br>Digital control, Z-transform, DSP implementation |
+| **Part 05**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | Python実装、ROS演習、FPGA制御<br>Python, ROS practice, FPGA-based control |
+
+---
+
+### 🤖 AI制御系 / AI-based Control
+
+| 章 / Chapter | 内容概要 |
+|--------------|----------|
+| **Part 06**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | ニューラルネット制御（NN-PID、逆モデル）<br>Neural network control (NN-PID, inverse model) |
+| **Part 07**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | 強化学習制御（Q学習、DDPG、PPO）<br>Reinforcement learning control (Q-learning, DDPG, PPO) |
+| **Part 08**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) | データ駆動制御（Koopman、行列識別）<br>Data-driven control (Koopman, system identification) |
+
+---
+
+### 🧠 統合・応用制御系 / Hybrid & Applied Control
+
+| 章 / Chapter | 内容概要 |
+|--------------|----------|
+| **Part 09**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | LLM統合制御（FSM×PID×LLM）<br>LLM-integrated hybrid control (FSM×PID×LLM) |
+| **Part 10**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](リンク) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](リンク) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | 倒立振子の総合制御（PID / LQR / DDPG / HDL）<br>Integrated control of inverted pendulum (PID / LQR / DDPG / HDL) |
+
+## 📚 **章構成一覧 | Chapter Structure**
+
+### 🎛️ 制御理論系 / Classical & Modern Control
+
 | 章 / Chapter | リンク / Links | 内容概要（JP） | Overview (EN) |
 |--------------|---------------|----------------|---------------|
 | **Part 01** | [![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](./part01_classical/) <br> [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part01_classical) | PID制御、ボード線図、安定性 | PID control, Bode plot, stability |
