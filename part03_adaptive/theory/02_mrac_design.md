@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 02. モデル参照型適応制御（MRAC：Model Reference Adaptive Control）
 permalink: /part03_adaptive/theory/02_mrac_design.html
 ---
