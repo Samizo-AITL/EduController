@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 01_fsm_pid_llm
 permalink: /part09_llm_hybrid/theory/01_fsm_pid_llm.html
 ---
