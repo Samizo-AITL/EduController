@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 🛡️ 安定余裕とロバスト性の評価 / Stability Margins & Robustness Evaluation
 permalink: /part01_classical/theory/05_stability_margins.html
 ---
