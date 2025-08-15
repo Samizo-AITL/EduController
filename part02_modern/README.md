@@ -4,6 +4,8 @@ title: Part 2 現代制御理論 / Modern Control Theory
 permalink: /part02_modern/
 ---
 
+---
+
 # 🧠 Part 2: 現代制御理論 / Modern Control Theory
 
 ---
