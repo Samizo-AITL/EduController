@@ -108,7 +108,7 @@ title: EduController/en/index.md
 | **Education** | M.S. in Electrical and Electronic Engineering, Shinshu University |
 | **Career** | Former Engineer at Seiko Epson Corporation (since 1997) |
 | **Expertise** | Semiconductor devices (logic, memory, high-voltage mixed integration); Inkjet thin-film piezo actuators; Productization of PrecisionCore printheads, BOM management, and ISO training |
-| **Contact** | ✉️ [shin3t72@gmail.com](mailto:shin3t72@gmail.com) · 🐦 [https://x.com/shin3t72](https://x.com/shin3t72) · 💻 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/) |
+| **Contact** | ✉️ [Email](mailto:shin3t72@gmail.com) / 🐦 [X](https://x.com/shin3t72) / 💻 [GitHub](https://samizo-aitl.github.io/) |
 
 ---
 
