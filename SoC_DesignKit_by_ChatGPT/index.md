@@ -1,7 +1,7 @@
 ---
 layout: clean
 title: SoC_DesignKit_by_ChatGPT
-permalink: /SoC_DesignKit_by_ChatGPT/  
+permalink: /SoC_DesignKit_by_ChatGPT/
 ---
 
 ---
@@ -17,6 +17,7 @@ permalink: /SoC_DesignKit_by_ChatGPT/
 ---
 
 ## 📖 概要 / Overview
+
 **JP:** FSM・PID・LLM統合制御の **HDL実装テンプレート** と、ChatGPT用プロンプト集をまとめた教材・開発キットです。  
 C→HDL変換やFSM状態遷移の自動生成など、AI支援によるSoC制御設計を加速します。
 
@@ -28,6 +29,7 @@ Includes tools for C→HDL conversion, FSM auto-generation, and AI-assisted SoC 
 ## 🚀 クイックアクセス / Quick Access
 
 ### 🎯 制御テンプレート / Control Templates
+
 | ディレクトリ | 説明 / Description |
 |--------------|--------------------|
 | [`fsm/`](fsm/) | 有限状態機械（FSM）テンプレート（YAML + Mermaid.js） |
@@ -37,6 +39,7 @@ Includes tools for C→HDL conversion, FSM auto-generation, and AI-assisted SoC 
 | [`testbench/`](testbench/) | テストベンチ例・波形出力補助 |
 
 ### 💬 プロンプトテンプレート / Prompt Templates
+
 | ファイル | 用途 / Purpose |
 |----------|---------------|
 | [`fsm_prompt.md`](prompts/control_templates/fsm_prompt.md) | 状態遷移表からFSMテンプレ生成 |
@@ -47,6 +50,7 @@ Includes tools for C→HDL conversion, FSM auto-generation, and AI-assisted SoC 
 ---
 
 ## 🧪 サンプル実行 / Example Run
+
 ```bash
 # 1. Clone
 git clone https://github.com/Samizo-AITL/SoC_DesignKit_by_ChatGPT.git
@@ -62,13 +66,15 @@ gtkwave wave.vcd
 ---
 
 ## 📘 関連リンク / Related Links
-- [EduController](https://samizo-aitl.github.io/EduController/) — 本体教材（Part05/09連動）
-- [SamizoGPT](https://samizo-aitl.github.io/SamizoGPT/) — プロンプト生成支援
-- [`execution_logs/`](execution_logs/) — 実行ログ
+
+- [EduController](https://samizo-aitl.github.io/EduController/) — 本体教材（Part05/09連動）  
+- [SamizoGPT](https://samizo-aitl.github.io/SamizoGPT/) — プロンプト生成支援  
+- [`execution_logs/`](execution_logs/) — 実行ログ  
 
 ---
 
 ## 👤 **著者 / Author**
+
 | 項目 / Item | 詳細 / Details |
 |-------------|----------------|
 | **著者 / Author** | 三溝 真一（Shinichi Samizo） |
@@ -78,6 +84,7 @@ gtkwave wave.vcd
 ---
 
 ## 📄 **ライセンス / License**
+
 > 教材・コード・図表の性質に応じたハイブリッドライセンスを採用  
 > *Hybrid licensing based on the nature of the materials, code, and diagrams.*
 
