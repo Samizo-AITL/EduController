@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 04. AI制御 vs 古典制御：特性比較と統合戦略
 permalink: /part06_nn_control/theory/04_ai_vs_classical.html
 ---
