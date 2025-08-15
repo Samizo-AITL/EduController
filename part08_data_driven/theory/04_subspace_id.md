@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 04. サブスペース同定法（Subspace Identification）
 permalink: /part08_data_driven/theory/04_subspace_id.html
 ---
