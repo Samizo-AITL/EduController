@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 02. NN-PID制御：ニューラルネットによるPID補完制御
 permalink: /part06_nn_control/theory/02_nn_pid.html
 ---
