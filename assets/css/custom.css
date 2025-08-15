@@ -160,11 +160,10 @@ kbd{
   box-shadow: var(--shadow);
 }
 
-/* ========= Title (layout側の自動H1を隠したい場合) ========= */
-/* Minima などで .page-title/.post-title が出る場合の抑止 */
+/* ========= Title（テーマ側の自動見出しだけ抑止） ========= */
 .page-title, .post-title{ display: none; }
 
-/* ========= レスポンシブ余白（狭幅時に詰めすぎないよう調整） ========= */
+/* ========= レスポンシブ余白 ========= */
 @media (max-width: 420px){
   :root{ --pad-x: 1rem; }
 }
@@ -222,13 +221,6 @@ code, pre code { word-wrap: normal; word-break: normal; white-space: pre; }
   clip: rect(0 0 0 0); overflow: hidden;
 }
 
-/* --- Kill the stray top H1 ('EduController') ----------------------- */
-main.container > h1:first-of-type,
-.container > h1:first-of-type,
-main > h1:first-of-type {
-  display: none !important;
-}
-
 /* 先頭見出しが消えた分の余白調整（任意） */
 main.container > h2:first-of-type,
 .container > h2:first-of-type { margin-top: 0; }
@@ -256,7 +248,7 @@ main.container > h2:first-of-type,
 .nav-btn.prev::before { content: "← "; }
 .nav-btn.next::after { content: " →"; }
 
-/* --- 追加：バッジの縦ズレ・間隔調整 ----------------------- */
+/* --- バッジの縦ズレ・間隔調整 ----------------------- */
 .badges-inline img,
 a img[src*="shields.io"]{
   display:inline-block;
