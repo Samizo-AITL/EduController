@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: Part09
 permalink: /part09_llm_hybrid/
 ---
