@@ -95,7 +95,7 @@ title: EduController/en/index.md
 
 - 🧠 **SamizoGPT**  
   [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/SamizoGPT/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/SamizoGPT)  
-  Prompt design templates for ChatGPT (design assistance)<br>　[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license)
+  Prompt design templates for ChatGPT (design assistance)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license)
 
 
 ---
