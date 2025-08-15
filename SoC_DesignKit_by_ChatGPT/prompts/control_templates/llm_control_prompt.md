@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 🤖 llm_control_prompt.md（FSM×LLM統合制御プロンプト）
 permalink: /SoC_DesignKit_by_ChatGPT/prompts/llm_control_prompt.html
 ---
