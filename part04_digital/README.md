@@ -1,6 +1,6 @@
 ---
 layout: clean
-title: Part 04 デジタル制御と信号処理
+title: Part 04 デジタル制御と信号処理 
 permalink: /part04_digital/
 ---
 
