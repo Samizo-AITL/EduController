@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 📊 波形確認ガイド（PID制御器）
 permalink: /SoC_DesignKit_by_ChatGPT/testbench/waveform_analysis.html
 ---
