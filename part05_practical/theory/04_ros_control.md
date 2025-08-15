@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: "🤖 04. ROS制御ノードの設計とトピック通信（ROS Control Node Design）"
 permalink: /part05_practical/theory/04_ros_control_node.html
 ---
