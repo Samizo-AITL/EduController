@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 03. 状態フィードバックと極配置 / State Feedback & Pole Placement
 permalink: /part02_modern/theory/03_state_feedback.html
 ---
