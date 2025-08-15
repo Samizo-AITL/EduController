@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: FSM設計テンプレート（YAML形式）
 permalink: /SoC_DesignKit_by_ChatGPT/fsm/fsm_template.html
 ---
