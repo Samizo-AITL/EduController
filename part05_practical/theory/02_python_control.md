@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: "🐍 02. Pythonによる制御設計の基本（Control System Design in Python）"
 permalink: /part05_practical/theory/02_python_control.html
 ---
