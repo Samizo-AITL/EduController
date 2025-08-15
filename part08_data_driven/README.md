@@ -8,6 +8,8 @@ permalink: /part08_data_driven/
 
 # 📊 Part 8: データ駆動型制御 / Data-Driven Control
 
+---
+
 本章では、**数式モデルを用いずに観測データから制御器や予測モデルを構築**する  
 データ駆動型制御（Data-Driven Control）の基本から応用までを学びます。  
 これは現代制御やAI制御とも親和性が高く、**産業界でも注目される実践技術**です。
