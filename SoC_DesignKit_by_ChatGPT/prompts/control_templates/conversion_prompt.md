@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: conversion_prompt.md（C→Verilog変換プロンプト）
 permalink: /SoC_DesignKit_by_ChatGPT/prompts/conversion_prompt.html
 ---
