@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: Part08
 permalink: /part08_data_driven/
 ---
