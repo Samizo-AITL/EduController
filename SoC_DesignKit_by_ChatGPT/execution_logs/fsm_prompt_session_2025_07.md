@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: FSM構成プロンプト実行ログ（2025年7月）
 permalink: /SoC_DesignKit_by_ChatGPT/execution_logs/fsm_prompt_202507.html
 ---
