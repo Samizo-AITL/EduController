@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 3.1 適応制御の概要 / Introduction to Adaptive Control
 permalink: /part03_adaptive/theory/01_adaptive_intro.html
 ---
