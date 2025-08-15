@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: EduController/en/README.md
 ---
 
