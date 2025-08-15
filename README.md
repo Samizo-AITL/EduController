@@ -72,3 +72,59 @@ title: EduController/README.md
 |-------------|-----------|-------------|
 | **Part 09** | **ハイブリッド制御とLLM統合 / Hybrid Control with LLM Integration**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part09_llm_hybrid) | **FSM×PID×LLM**による三層アーキテクチャで次世代制御設計を実装。<br>*Three-layer architecture (FSM×PID×LLM) for next-gen control.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
 | **Part 10** | **倒立振子の総合制御 / Integrated Control of Inverted Pendulum**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part10_pendulum/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part10_pendulum) | **PID**、**LQR**、**RL**、**HDL実装**を統合した倒立振子制御。<br>*PID, LQR, RL, HDL implementation integrated for inverted pendulum control.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+
+---
+
+---
+
+### 🔩 **実装支援ツール / Implementation Toolkit**
+
+| **ディレクトリ** | **概要 / Summary** |
+|------------------|--------------------|
+| **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/matlab_tools/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) | **Simulinkによる可視化**、**Cコード生成**、**HDL設計**への展開。<br>*Visualization in Simulink, C code generation, HDL design.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+| **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) | **FSM・PID・LLM制御テンプレート**、**Verilog生成**、**テストベンチ検証**。<br>*FSM, PID, LLM control templates, Verilog generation, testbench verification.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+
+---
+
+## 🔗 **関連プロジェクト | Related Projects**
+
+| **Project** | **概要 / Summary** |
+|-------------|--------------------|
+| 🎓 **Edusemi-v4x**<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | **半導体設計・プロセス教育教材**（Python、sky130、OpenLane）<br>*Semiconductor design & process education (Python, sky130, OpenLane)* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+| 🤖 **AITL-H**<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/AITL-H/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/AITL-H) | **FSM×PID×LLMの三層制御フレームワーク**（Part09と連携）<br>*Three-layer control framework (FSM×PID×LLM)* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+| 🧠 **SamizoGPT**<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/SamizoGPT/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/SamizoGPT) | **ChatGPTのプロンプト設計支援テンプレート集**（設計支援と連携）<br>*Prompt design templates for ChatGPT (design assistance)* |
+
+---
+
+## 👤 **執筆者情報 / Author**
+
+| **📌 項目 / Item** | **内容 / Details** |
+|--------------------|--------------------|
+| **氏名 / Name** | **三溝 真一（Shinichi Samizo）**<br>*Shinichi Samizo* |
+| **学歴 / Education** | **信州大学大学院 電気電子工学 修了**<br>*M.S. in Electrical and Electronic Engineering, Shinshu University* |
+| **経歴 / Career** | **元 セイコーエプソン株式会社 技術者（1997年〜）**<br>*Former Engineer at Seiko Epson Corporation (since 1997)* |
+| **経験領域 / Expertise** | **半導体デバイス**（ロジック・メモリ・高耐圧混載）<br>*Semiconductor devices (logic, memory, high-voltage mixed integration)*<br>**インクジェット薄膜ピエゾアクチュエータ**<br>*Inkjet thin-film piezo actuators*<br>**PrecisionCoreプリントヘッド製品化・BOM管理・ISO教育**<br>*Productization of PrecisionCore printheads, BOM management, and ISO training* |
+| **連絡先 / Contact** | ✉️ [shin3t72@gmail.com](mailto:shin3t72@gmail.com)<br>🐦 [https://x.com/shin3t72](https://x.com/shin3t72)<br>💻 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/) |
+
+---
+
+## 📄 **ライセンス | License**
+
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
+
+> **基本ライセンスは MIT** とし、以下の一部ディレクトリ・教材は **ハイブリッドライセンス** を採用します。  
+> *The default license is MIT, but specific directories/materials use a Hybrid License.*
+
+| **📌 項目 / Item** | **ライセンス / License** | **説明 / Description** |
+|--------------------|--------------------------|------------------------|
+| **基本 / Default** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布可能 |
+| **ハイブリッド対象 / Hybrid Scope** | [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) <br>Part05, Part09, Part10, matlab_tools, SoC_DesignKit_by_ChatGPT, Edusemi-v4x, AITL-H | 教材・コード・図表の性質に応じて **MIT / CC BY / CC BY-SA / CC BY-NC** を適用 |
+
+---
+
+## 💬 **フィードバック | Feedback**
+
+> 改善提案や議論は **GitHub Discussions** からお願いします。  
+> *Propose improvements or start discussions via GitHub Discussions.*
+
+[![💬 GitHub Discussions](https://img.shields.io/badge/💬%20GitHub-Discussions-brightgreen?logo=github)](https://github.com/Samizo-AITL/EduController/discussions)
