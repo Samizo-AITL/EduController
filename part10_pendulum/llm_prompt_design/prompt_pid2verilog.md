@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: clean
 title: ChatGPTプロンプトテンプレート：PID制御器の Verilog 変換
 permalink: /hdl/pid_prompt_template/
+---
+
 ---
 
 # 🤖 ChatGPTプロンプトテンプレート：PID制御器の Verilog 変換  
