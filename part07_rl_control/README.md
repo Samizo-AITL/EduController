@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: Part07
 permalink: /part07_rl_control/
 ---
