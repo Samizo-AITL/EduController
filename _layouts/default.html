@@ -13,54 +13,47 @@ layout: null
   <!-- Base stylesheet (GitHub Pages / Jekyll) -->
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
 
-  {%- comment -%} SEO（未使用なら削除可） {%- endcomment -%}
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}" />
+
   {% if site.plugins contains "jekyll-seo-tag" %}{% seo %}{% endif %}
 
-  <!-- MathJax v3 (CHTML). 既存記事との互換のため \( \) と $ $ の両方を許可 -->
+  <!-- MathJax v3 (CHTML) -->
   <script>
     window.MathJax = {
       tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],   // どちらでもOK（推奨: \( ... \)）
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true,                       // \$ を文字として扱えるように
+        processEscapes: true,
         tags: 'ams'
       },
       options: {
-        skipHtmlTags: ['script', 'style', 'textarea', 'pre', 'code'] // コードブロック内は無視
+        skipHtmlTags: ['script', 'style', 'textarea', 'pre', 'code']
       },
       chtml: { scale: 1 }
     };
   </script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-  <!-- レイアウト微調整（表・数式・画像・コードの崩れ対策） -->
   <style>
-    :root {
-      --content-max: 1080px;
-    }
+    :root { --content-max: 1080px; }
     main.container, footer.container {
       max-width: var(--content-max);
       margin: 0 auto;
       padding: 0 1rem;
     }
-    /* 画像・表・コードの横はみ出し対策 */
     img, svg, canvas, video { max-width: 100%; height: auto; }
     pre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     code { word-break: break-word; }
-
-    /* 表の横スクロールと数式の折返し抑止 */
     table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; }
     td .mjx-container, th .mjx-container {
       display: inline-block; white-space: nowrap; max-width: 100%;
     }
-
-    /* 余白・可読性 */
     h1, h2, h3 { scroll-margin-top: 80px; }
     hr { margin: 2rem 0; }
   </style>
 </head>
 <body>
-  <!-- 余計な装飾は出さず、コンテンツをそのまま描画 -->
   <main class="container">
     {{ content }}
   </main>
