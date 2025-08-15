@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: ⚡️ 過渡応答と定常偏差の基礎 / Transient Response & Steady-State Error
 permalink: /part01_classical/theory/02_transient_response.html
 ---
