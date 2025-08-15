@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 🎯 FSM設計プロンプトテンプレート（SamizoGPT連携用）
 permalink: /SoC_DesignKit_by_ChatGPT/prompts/fsm_prompt.html
 ---
