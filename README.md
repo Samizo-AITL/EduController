@@ -92,13 +92,15 @@ EduController is a step-by-step, practical educational project covering classica
 
 ---
 
-## 👤 **著者 / Author**
+## 👤 **執筆者情報 / Author**
 
-| 項目 / Item | 内容 / Details |
-|-------------|----------------|
-| **著者 / Author** | 三溝 真一（Shinichi Samizo） |
-| **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
-| **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
+| 📌 項目 / Item | 内容 / Details |
+|------|------|
+| **氏名 / Name** | 三溝 真一（Shinichi Samizo）<br>*Shinichi Samizo* |
+| **学歴 / Education** | 信州大学大学院 電気電子工学 修了<br>*M.S. in Electrical and Electronic Engineering, Shinshu University* |
+| **経歴 / Career** | 元 セイコーエプソン株式会社 技術者（1997年〜）<br>*Former Engineer at Seiko Epson Corporation (since 1997)* |
+| **経験領域 / Expertise** | 半導体デバイス（ロジック・メモリ・高耐圧混載）<br>*Semiconductor devices (logic, memory, high-voltage mixed integration)*<br>インクジェット薄膜ピエゾアクチュエータ<br>*Inkjet thin-film piezo actuators*<br>PrecisionCoreプリントヘッド製品化・BOM管理・ISO教育<br>*Productization of PrecisionCore printheads, BOM management, and ISO training* |
+| **連絡先 / Contact** | ✉️ [shin3t72@gmail.com](mailto:shin3t72@gmail.com)<br>🐦 [https://x.com/shin3t72](https://x.com/shin3t72)<br>💻 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/) |
 
 ---
 
@@ -114,3 +116,9 @@ EduController is a step-by-step, practical educational project covering classica
 | **ハイブリッド対象 / Hybrid Scope** | Part05, Part09, Part10, matlab_tools, SoC_DesignKit_by_ChatGPT, Edusemi-v4x, AITL-H | 教材・コード・図表の性質に応じて MIT / CC BY / CC BY-SA / CC BY-NC を適用 |
 
 ---
+
+## 💬 **フィードバック | Feedback**
+> 改善提案や議論はGitHub Discussionsからお願いします。  
+> *Propose improvements or start discussions via GitHub Discussions.*
+
+[![💬 GitHub Discussions](https://img.shields.io/badge/💬%20GitHub-Discussions-brightgreen?logo=github)](https://github.com/Samizo-AITL/EduController/discussions)
