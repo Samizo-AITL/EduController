@@ -126,8 +126,8 @@ title: EduController/README.md
 
 | **📌 項目 / Item** | **ライセンス / License** | **説明 / Description** |
 |--------------------|--------------------------|------------------------|
-| **基本 / Default** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布可能 |
-| **ハイブリッド対象 / Hybrid Scope** | [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) <br>Part05, Part09, Part10, matlab_tools, SoC_DesignKit_by_ChatGPT, Edusemi-v4x, AITL-H | 教材・コード・図表の性質に応じて **MIT / CC BY / CC BY-SA / CC BY-NC** を適用 |
+| **基本 / Default** | **[MIT License](https://opensource.org/licenses/MIT)** | 自由に使用・改変・再配布可能 |
+| **ハイブリッド対象 / Hybrid Scope** | **[Hybrid License](LICENSE_HYBRID.md)** <br>Part05, Part09, Part10, matlab_tools, SoC_DesignKit_by_ChatGPT, Edusemi-v4x, AITL-H | 教材・コード・図表の性質に応じて **[MIT License](https://opensource.org/licenses/MIT)** / **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** / **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)** / **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** を適用 |
 
 ---
 
