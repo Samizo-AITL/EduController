@@ -7,6 +7,7 @@ permalink: /part05_practical/
 ---
 
 # 🧪 Part 5: 実装・応用編 / Implementation and Applications
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
 
 ---
 
@@ -82,14 +83,28 @@ This chapter focuses on **practical implementation methods** such as
 
 ---
 
-## 👤 **著者・ライセンス / Author & License**
+## 👤 **著者 / Author**
 
 | **項目 / Item** | **内容 / Details** |
 |------------------|---------------------|
 | **著者 / Author** | 三溝 真一（Shinichi Samizo） |
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
-| **ライセンス / License** | MIT License（再配布・改変自由）<br>Redistribution and modification allowed |
+
+---
+
+## 📄 **ライセンス / License**
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)  
+
+> 教材・コード・図表の性質に応じたハイブリッドライセンスを採用。  
+> *Hybrid licensing based on the nature of the materials, code, and diagrams.*
+
+| 📌 項目 / Item | ライセンス / License | 説明 / Description |
+|------|------|------|
+| **コード（Code）** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布が可能<br>*Free to use, modify, and redistribute* |
+| **教材テキスト（Text materials）** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須<br>*Attribution required* |
+| **図表・イラスト（Figures & diagrams）** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ許可<br>*Non-commercial use only* |
+| **外部引用（External references）** | 元ライセンスに従う<br>*Follow the original license* | 引用元を明記<br>*Cite the original source* |
 
 ---
 
