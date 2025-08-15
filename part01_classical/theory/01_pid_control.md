@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 🧩 PID制御の基礎 / Introduction to PID Control
 permalink: /part01_classical/theory/01_pid_control.html
 ---
