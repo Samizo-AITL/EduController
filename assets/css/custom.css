@@ -256,3 +256,27 @@ a img[src*="shields.io"]{
   margin-right: .35rem;
 }
 .badges-inline img:last-child{ margin-right: 0; }
+
+/* --- H1 を必ず表示＆見出し強調 ----------------------- */
+/* テーマや既存CSSが display:none を指定していても上書き */
+main h1, .container h1 { display: block !important; }
+
+/* 最初の H1 を大きめ＆下線で “タイトル感” を出す */
+main.container h1:first-of-type,
+.container h1:first-of-type {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-top: .5rem;       /* 先頭に来た時の上余白を少し */
+  margin-bottom: .75rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+/* ダークモード時、下線を少し明るめに */
+@media (prefers-color-scheme: dark){
+  main.container h1:first-of-type,
+  .container h1:first-of-type {
+    border-bottom-color: color-mix(in lab, var(--border) 85%, white 15%);
+  }
+}
