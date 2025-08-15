@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: clean
 title: SimulinkモデルからCコードを生成する方法
 permalink: /matlab_tools/model_to_code.html
+---
+
 ---
 
 # 🛠️ SimulinkモデルからCコードを生成する方法
