@@ -4,8 +4,6 @@ title: matlab_tools/
 permalink: /matlab_tools/
 ---
 
----
-
 # 🧰 matlab_tools/  
 [![GitHub](https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools)  
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
@@ -34,6 +32,7 @@ permalink: /matlab_tools/
 ---
 
 ## 📁 内容構成
+
 | ファイル / ディレクトリ | 内容 / Description |
 |------------------------|---------------------|
 | [`getting_started.md`](https://samizo-aitl.github.io/EduController/matlab_tools/getting_started.html) | Simulink利用手順（基本操作〜モデル開発） |
@@ -44,6 +43,7 @@ permalink: /matlab_tools/
 ---
 
 ## 🎯 活用目的
+
 - **EduController** の前段フェーズ（制御モデル設計）でのSimulink活用
 - **Cコード生成後**、[`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化への導入
 - PID制御・状態空間制御などの設計検証
@@ -52,6 +52,7 @@ permalink: /matlab_tools/
 ---
 
 ## 🔗 関連リンク
+
 | ディレクトリ | 役割 |
 |--------------|------|
 | [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) | CコードをVerilog HDLに変換（今後の展開） |
@@ -61,6 +62,7 @@ permalink: /matlab_tools/
 ---
 
 ## 🛠️ 今後の拡張予定
+
 - Simulink + Embedded Coder による自動Cコード生成→HDL変換支援
 - `fsm_simulink_example.slx` の追加（状態遷移可視化設計）
 - `.m` ファイル形式での状態空間シミュレーションスクリプト追加
@@ -69,6 +71,7 @@ permalink: /matlab_tools/
 ---
 
 ## 📖 参考ドキュメント
+
 - [📘 MathWorks公式：Simulink入門](https://www.mathworks.com/learn/tutorials/simulink-onramp.html)  
 - [📘 Simulink Coder ドキュメント](https://www.mathworks.com/products/simulink-coder.html)  
 - [📘 Control System Toolbox](https://www.mathworks.com/products/control.html)
@@ -76,6 +79,7 @@ permalink: /matlab_tools/
 ---
 
 ## 👤 **著者 / Author**
+
 | 項目 / Item | 詳細 / Details |
 |-------------|----------------|
 | **著者 / Author** | 三溝 真一（Shinichi Samizo） |
@@ -85,6 +89,7 @@ permalink: /matlab_tools/
 ---
 
 ## 📄 **ライセンス / License**
+
 > 教材・コード・図表の性質に応じたハイブリッドライセンスを採用  
 > *Hybrid licensing based on the nature of the materials, code, and diagrams.*
 
