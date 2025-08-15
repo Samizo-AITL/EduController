@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 06. デジタル H∞ 制御 / Digital H∞ Control
 permalink: /part04_digital/theory/06_digital_hinf_control.html
 ---
