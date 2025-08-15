@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 04. ロバスト制御 / Robust Control
 permalink: /part03_adaptive/theory/04_robust_control.html
 ---
