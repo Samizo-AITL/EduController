@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: conversion_prompt.md
 permalink: /SoC_DesignKit_by_ChatGPT/c_to_hdl/prompt.html
 ---
