@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 01. ニューラルネットによる制御設計（Neural Network-based Control）
 permalink: /part06_nn_control/theory/01_nn_control.html
 ---
