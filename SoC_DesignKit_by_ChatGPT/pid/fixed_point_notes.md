@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 固定小数点演算に関する注意点（Q4.4）
 permalink: /SoC_DesignKit_by_ChatGPT/fixed_point/q4_4_notes.html
 ---
