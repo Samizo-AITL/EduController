@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 03. 逆モデル制御とニューラルネット（Inverse Model Control）
 permalink: /part06_nn_control/theory/03_inverse_model.html
 ---
