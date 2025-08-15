@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: "🔧 03. 組み込み制御への展開（Embedded Control）"
 permalink: /part05_practical/theory/03_embedded_control.html
 ---
