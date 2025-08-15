@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 🧮 安定性判別法 / Stability Determination Methods
 permalink: /part01_classical/theory/03_stability_methods.html
 ---
