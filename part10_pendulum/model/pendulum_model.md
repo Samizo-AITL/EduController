@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: clean
 title: 倒立振子の状態空間モデル（線形化）
 permalink: /pendulum/state_space_linearization/
 ---
 
+---
 # 📘 倒立振子の状態空間モデル（線形化）  
 Linearized State-Space Model of the Inverted Pendulum
 
