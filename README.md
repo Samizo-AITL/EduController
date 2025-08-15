@@ -3,16 +3,15 @@ layout: default
 title: EduController/README.md
 ---
 
----
-
 # 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**  
 **EduController: Educational Framework for Control Theory and AI Control**
 
-[![Samizo-AITLポータルサイトに戻る](https://img.shields.io/badge/Samizo--AITL%20ポータルサイトに戻る-brightgreen)](https://samizo-aitl.github.io/) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Samizo-AITLポータルサイトに戻る](https://img.shields.io/badge/Samizo--AITL%20ポータルサイトに戻る-brightgreen)](https://samizo-aitl.github.io/)  
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
 
-## 🔗 公式リンク | Official Links
+## 🔗 **公式リンク | Official Links**
 
 | 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
 |-----------------|----------------|-----------|
@@ -23,9 +22,11 @@ title: EduController/README.md
 
 ## 📘 **概要 | Overview**
 
-**JP:** EduController は、古典制御から現代制御、さらに AI ベースの次世代型制御までを体系的に学べる、段階的かつ実践的な教材プロジェクトです。Python による制御理論の直感的理解から HDL 記述、LLM 統合設計まで幅広くサポートします。  
+**JP:**  
+EduController は、古典制御から現代制御、さらに AI ベースの次世代型制御までを体系的に学べる、段階的かつ実践的な教材プロジェクトです。Python による制御理論の直感的理解から HDL 記述、LLM 統合設計まで幅広くサポートします。  
 
-**EN:** EduController is a step-by-step, practical educational project covering classical, modern, and AI-based next-generation control. It supports a wide range of learning, from intuitive understanding of control theory using Python to HDL coding and LLM-integrated design.
+**EN:**  
+EduController is a step-by-step, practical educational project covering classical, modern, and AI-based next-generation control. It supports a wide range of learning, from intuitive understanding of control theory using Python to HDL coding and LLM-integrated design.
 
 ---
 
@@ -33,7 +34,7 @@ title: EduController/README.md
 
 | 系統 / Track | 内容（JP） | Overview (EN) |
 |--------------|-----------|---------------|
-| 🎓 制御理論系 (Part 01〜05) | 古典制御、状態空間、デジタル制御、実装演習 | Classical control, state-space, digital control, practical implementation |
+| 🎛️ 制御理論系 (Part 01〜05) | 古典制御、状態空間、デジタル制御、実装演習 | Classical control, state-space, digital control, practical implementation |
 | 🤖 AI制御系 (Part 06〜08) | ニューラルネット、強化学習、データ駆動制御 | Neural networks, reinforcement learning, data-driven control |
 | 🧠 統合・応用制御系 (Part 09〜10) | LLM統合制御、倒立振子総合制御 | LLM-integrated control, inverted pendulum control |
 
@@ -41,7 +42,7 @@ title: EduController/README.md
 
 ## 📚 **章構成一覧 | Chapter Structure**
 
-### 🎓 制御理論系 / Classical & Modern Control
+### 🎛️ 制御理論系 / Classical & Modern Control
 
 | 章 / Chapter | ディレクトリ | 内容概要（JP） | Overview (EN) |
 |--------------|-------------|----------------|---------------|
@@ -49,7 +50,7 @@ title: EduController/README.md
 | **Part 02** | [part02_modern](./part02_modern/) | 状態空間、LQR、カルマンフィルタ | State-space, LQR, Kalman filter |
 | **Part 03** | [part03_adaptive](./part03_adaptive/) | 適応・ロバスト制御（MRAC、H∞、L1） | Adaptive & robust control (MRAC, H∞, L1) |
 | **Part 04** | [part04_digital](./part04_digital/) | デジタル制御、Z変換、DSP実装 | Digital control, Z-transform, DSP implementation |
-| **Part 05** | [part05_practical](./part05_practical/) | Python実装、ROS演習、FPGA制御 | Python, ROS practice, FPGA-based control |
+| **Part 05** | [part05_practical](./part05_practical/) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | Python実装、ROS演習、FPGA制御 | Python, ROS practice, FPGA-based control |
 
 ---
 
@@ -67,8 +68,8 @@ title: EduController/README.md
 
 | 章 / Chapter | ディレクトリ | 内容概要（JP） | Overview (EN) |
 |--------------|-------------|----------------|---------------|
-| **Part 09** | [part09_llm_hybrid](./part09_llm_hybrid/) | LLM統合制御（FSM×PID×LLM） | LLM-integrated hybrid control (FSM×PID×LLM) |
-| **Part 10** | [part10_pendulum](./part10_pendulum/) | 倒立振子の総合制御（PID / LQR / DDPG / HDL） | Integrated control of inverted pendulum (PID / LQR / DDPG / HDL) |
+| **Part 09** | [part09_llm_hybrid](./part09_llm_hybrid/) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | LLM統合制御（FSM×PID×LLM） | LLM-integrated hybrid control (FSM×PID×LLM) |
+| **Part 10** | [part10_pendulum](./part10_pendulum/) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | 倒立振子の総合制御（PID / LQR / DDPG / HDL） | Integrated control of inverted pendulum (PID / LQR / DDPG / HDL) |
 
 ---
 
@@ -76,8 +77,8 @@ title: EduController/README.md
 
 | ディレクトリ | 内容概要（JP） | Overview (EN) |
 |--------------|----------------|---------------|
-| [**matlab_tools/**](./matlab_tools/) | Simulink による PID・状態空間制御の可視化、Cコード生成、HDL設計への展開 | Visualization of PID/state-space control in Simulink, C code generation, HDL design |
-| [**SoC_DesignKit_by_ChatGPT/**](./SoC_DesignKit_by_ChatGPT/) | FSM・PID・LLM制御のテンプレート、ChatGPTによる Verilog生成、テストベンチ検証 | Templates for FSM, PID, LLM control; Verilog generation via ChatGPT; testbench verification |
+| [**matlab_tools/**](./matlab_tools/) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | Simulink による PID・状態空間制御の可視化、Cコード生成、HDL設計への展開 | Visualization of PID/state-space control in Simulink, C code generation, HDL design |
+| [**SoC_DesignKit_by_ChatGPT/**](./SoC_DesignKit_by_ChatGPT/) [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) | FSM・PID・LLM制御のテンプレート、ChatGPTによる Verilog生成、テストベンチ検証 | Templates for FSM, PID, LLM control; Verilog generation via ChatGPT; testbench verification |
 
 ---
 
@@ -85,34 +86,31 @@ title: EduController/README.md
 
 | Project | JP（概要） | EN (Summary) |
 |---|---|---|
-| 🎓 **Edusemi-v4x**<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | 半導体設計・プロセス教育教材（Python、sky130、OpenLane） | Semiconductor design & process education (Python, sky130, OpenLane) |
-| 🤖 **AITL-H**<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/AITL-H/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/AITL-H) | FSM×PID×LLMの三層制御フレームワーク（Part09と連携） | Three-layer control framework (FSM×PID×LLM) |
+| 🎓 **Edusemi-v4x** [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | 半導体設計・プロセス教育教材（Python、sky130、OpenLane） | Semiconductor design & process education (Python, sky130, OpenLane) |
+| 🤖 **AITL-H** [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/AITL-H/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/AITL-H) | FSM×PID×LLMの三層制御フレームワーク（Part09と連携） | Three-layer control framework (FSM×PID×LLM) |
 | 🧠 **SamizoGPT**<br>[![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/SamizoGPT/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/SamizoGPT) | ChatGPTのプロンプト設計支援テンプレート集（設計支援と連携） | Prompt design templates for ChatGPT (design assistance) |
 
 ---
 
-## 👤 **執筆者情報 | Author**
+## 👤 **著者 / Author**
 
-| 📌 項目 / Item | 内容（JP） | Details (EN) |
-|------|----------|------------|
-| **氏名 / Name** | 三溝 真一 | Shinichi Samizo |
-| **学歴 / Education** | 信州大学大学院 電気電子工学 修了 | M.Eng., Electrical & Electronic Engineering, Shinshu University |
-| **経歴 / Career** | 元 セイコーエプソン株式会社 技術者（1997年〜） | Former engineer, Seiko Epson Corp. (1997–) |
-| **経験領域 / Expertise** | 半導体デバイス（ロジック・メモリ・高耐圧混載）、インクジェット薄膜ピエゾアクチュエータ、PrecisionCore製品化・BOM管理・ISO教育 | Semiconductor devices (logic, memory, high-voltage mixed-signal), inkjet thin-film piezo actuators, PrecisionCore productization, BOM management, ISO training |
-| **連絡先 / Contact** | ✉️ [shin3t72@gmail.com](mailto:shin3t72@gmail.com)<br>🐦 [https://x.com/shin3t72](https://x.com/shin3t72)<br>💻 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/) | ✉️ [shin3t72@gmail.com](mailto:shin3t72@gmail.com)<br>🐦 [https://x.com/shin3t72](https://x.com/shin3t72)<br>💻 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/) |
+| 項目 / Item | 内容 / Details |
+|-------------|----------------|
+| **著者 / Author** | 三溝 真一（Shinichi Samizo） |
+| **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
+| **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
 
 ---
 
 ## 📄 **ライセンス | License**
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
 
-| 📌 項目 / Item | 内容（JP） | Details (EN) |
-|------|----------|------------|
-| **ライセンス種別 / Type** | MITライセンス | MIT License |
-| **利用条件 / Usage** | 自由に使用・改変・再配布可能 | Free to use, modify, and redistribute |
-| **推奨利用 / Recommended Uses** | 教育・研究・社内研修 | Education, research, corporate training |
+> 基本ライセンスは MIT とし、以下の一部ディレクトリ・教材は **ハイブリッドライセンス** を採用します。  
+> *The default license is MIT, but specific directories/materials use a Hybrid License.*
+
+| 📌 項目 / Item | ライセンス / License | 説明 / Description |
+|------|------|------|
+| **基本 / Default** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布可能 |
+| **ハイブリッド対象 / Hybrid Scope** | Part05, Part09, Part10, matlab_tools, SoC_DesignKit_by_ChatGPT, Edusemi-v4x, AITL-H | 教材・コード・図表の性質に応じて MIT / CC BY / CC BY-SA / CC BY-NC を適用 |
 
 ---
-
-## 💬 **フィードバック | Feedback**
-
-💬 [**EduController教材の議論はこちら → Discussions**](https://github.com/Samizo-AITL/EduController/discussions)
