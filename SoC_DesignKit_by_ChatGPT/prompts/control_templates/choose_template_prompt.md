@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: choose_template_prompt.md（テンプレ選択支援プロンプト）
 permalink: /SoC_DesignKit_by_ChatGPT/prompts/choose_template_prompt.html
 ---
