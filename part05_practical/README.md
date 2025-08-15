@@ -1,7 +1,7 @@
 ---
 layout: clean
 title: Part05
-permalink: /part05_practical/
+permalink: /part05_practical/ 
 ---
 
 ---
