@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 03_rl_vs_classical
 permalink: /part07_rl_control/theory/03_rl_vs_classical.html
 ---
