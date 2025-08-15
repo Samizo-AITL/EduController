@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: Part 03 適応制御・ロバスト制御 / Adaptive & Robust Control
 permalink: /part03_adaptive/
 ---
