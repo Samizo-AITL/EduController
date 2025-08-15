@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: Part06
 permalink: /part06_nn_control/
 ---
