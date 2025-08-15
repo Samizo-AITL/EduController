@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 05. データ駆動 vs モデルベース制御（統合と展望）
 permalink: /part08_data_driven/theory/05_data_vs_model.html
 ---
