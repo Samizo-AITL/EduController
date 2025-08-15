@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 01. モデルフリー制御とは？
 permalink: /part08_data_driven/theory/01_model_free_control.html
 ---
