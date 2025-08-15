@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 02. Koopman演算子と線形化
 permalink: /part08_data_driven/theory/02_koopman_operator.html
 ---
