@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 03. 離散PID制御の設計
 permalink: /part04_digital/theory/03_digital_pid.html
 ---
