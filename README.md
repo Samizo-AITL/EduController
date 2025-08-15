@@ -103,8 +103,7 @@ title: EduController/README.md
   **ChatGPTのプロンプト設計支援テンプレート集**（設計支援と連携）  
   *Prompt design templates for ChatGPT (design assistance)*
   
-
-
+---
 
 ## 🔗 **関連プロジェクト | Related Projects**
 
