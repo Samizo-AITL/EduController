@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: FSM × LLM統合制御：構成例
 permalink: /SoC_DesignKit_by_ChatGPT/llm/fsm_llm_hybrid_example.html
 ---
