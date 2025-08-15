@@ -3,8 +3,6 @@ layout: clean
 title: EduController
 ---
 
----
-
 # 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**  
 **EduController: Educational Framework for Control Theory and AI Control**
 
