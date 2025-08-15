@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 02. 可制御性と可観測性の基本 / Controllability & Observability
 permalink: /part02_modern/theory/02_controllability.html
 ---
