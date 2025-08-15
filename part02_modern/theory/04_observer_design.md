@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 04. オブザーバ設計と状態推定 / Observer Design & State Estimation
 permalink: /part02_modern/theory/04_observer_design.html
 ---
