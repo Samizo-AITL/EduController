@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: "⚙️ 01. 制御シミュレーション環境のセットアップ（Simulation Environment Setup）"
 permalink: /part05_practical/theory/01_simulation_setup.html
 ---
