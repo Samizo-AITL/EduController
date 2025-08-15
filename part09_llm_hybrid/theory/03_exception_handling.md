@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 03_exception_handling
 permalink: /part09_llm_hybrid/theory/03_exception_handling.html
 ---
