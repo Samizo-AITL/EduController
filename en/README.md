@@ -95,7 +95,8 @@ title: EduController/en/README.md
 
 - 🧠 **SamizoGPT**  
   [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/SamizoGPT/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/SamizoGPT)  
-  Prompt design templates for ChatGPT (design assistance)
+  Prompt design templates for ChatGPT (design assistance)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license)
+
 
 ---
 
@@ -115,12 +116,13 @@ title: EduController/en/README.md
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
 
-> The default license is **MIT**, but specific directories/materials use a **Hybrid License**.
+> **The default license is MIT**, but the following specific directories/materials use a **Hybrid License**.  
+> *The default license is MIT, but specific directories/materials adopt a Hybrid License.*
 
-| **Item** | **License** | **Description** |
-|----------|-------------|-----------------|
-| **Default** | [MIT License](https://opensource.org/licenses/MIT) | Free to use, modify, and redistribute |
-| **Hybrid Scope** | [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) <br>Part05, Part09, Part10, matlab_tools, SoC_DesignKit_by_ChatGPT, Edusemi-v4x, AITL-H | Applied based on the nature of materials: **MIT / CC BY / CC BY-SA / CC BY-NC** |
+| **📌 Item** | **License** | **Description** |
+|-------------|-------------|-----------------|
+| **Default** | **[MIT License](https://opensource.org/licenses/MIT)** | Free to use, modify, and redistribute |
+| **Hybrid Scope** | [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) <br>Part05, Part09, Part10, matlab_tools, SoC_DesignKit_by_ChatGPT | Depending on the nature of the materials, code, and diagrams, applies **[MIT License](https://opensource.org/licenses/MIT)** / **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** / **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)** / **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** |
 
 ---
 
