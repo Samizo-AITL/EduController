@@ -4,6 +4,8 @@ title: SoC_DesignKit_by_ChatGPT
 permalink: /SoC_DesignKit_by_ChatGPT/
 ---
 
+---
+
 # 🧩 SoC_DesignKit_by_ChatGPT  
 [![GitHub](https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT)  
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
