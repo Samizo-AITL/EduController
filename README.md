@@ -75,8 +75,6 @@ title: EduController/README.md
 
 ---
 
----
-
 ### 🔩 **実装支援ツール / Implementation Toolkit**
 
 | **ディレクトリ** | **概要 / Summary** |
