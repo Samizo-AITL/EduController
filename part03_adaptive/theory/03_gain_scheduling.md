@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 03. ゲインスケジューリング制御 / Gain Scheduling
 permalink: /part03_adaptive/theory/03_gain_scheduling.html
 ---
