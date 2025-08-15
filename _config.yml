@@ -6,39 +6,37 @@ timezone: Asia/Tokyo
 
 # --- Build & routing ---
 markdown: kramdown
-theme: null              # 自作レイアウトを使う
-permalink: pretty        # /page/ 形式にする
+theme: null              # 自作レイアウトを使う（_layouts配下）
+permalink: pretty        # /page/ 形式
 
-# 公開URL設定：
-# 1) user.github.io 直下 → url を自分のURL、baseurl は空 "" にする
-# 2) リポジトリ配下 → url は自分のURL、baseurl は "/リポジトリ名"
-url: "https://samizo-aitl.github.io"   # 例
-baseurl: "/Edusemi-v4x"                # 例（直下公開なら "" に）
+# 公開URL設定
+url: "https://samizo-aitl.github.io"   # ユーザー/組織のPages URL
+baseurl: "/EduController"               # リポジトリ名（直下公開なら ""）
 
 # --- Markdown (kramdown) ---
 kramdown:
   input: GFM
   hard_wrap: false
   syntax_highlighter: rouge
-  math_engine: mathjax   # MathJax v3 を使う（レイアウトのscriptと揃える）
+  math_engine: mathjax   # MathJax v3（clean.htmlのscriptと一致）
 
 # --- Sass/SCSS ---
 sass:
   style: compressed
   sourcemap: never
 
-# --- Plugins (GitHub Pagesで使えるもののみ) ---
+# --- Plugins (GitHub Pagesで利用可のもののみ) ---
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
 
-# --- Defaults（レイアウト未指定ページの保険）---
+# --- Defaults（レイアウト未指定ページに適用）---
 defaults:
   - scope:
-      path: ""           # すべてのファイル
+      path: ""           # リポジトリ全体
     values:
-      layout: base       # _layouts/base.html を既定に
+      layout: clean      # _layouts/clean.html を既定に
 
 # --- Excludes ---
 exclude:
