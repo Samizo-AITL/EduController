@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: Part10
 permalink: /part10_pendulum/
 ---
