@@ -3,7 +3,7 @@ layout: clean
 title: EduController
 ---
 
-# 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**  
+# 🎛️ EduController：制御理論とAI制御の教育フレームワーク  
 **EduController: Educational Framework for Control Theory and AI Control**
 
 [![Samizo-AITLポータルサイトに戻る](https://img.shields.io/badge/Samizo--AITL%20ポータルサイトに戻る-brightgreen)](https://samizo-aitl.github.io/)  
