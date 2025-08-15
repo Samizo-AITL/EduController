@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: SoC_DesignKit_by_ChatGPT
 permalink: /SoC_DesignKit_by_ChatGPT/  
 ---
