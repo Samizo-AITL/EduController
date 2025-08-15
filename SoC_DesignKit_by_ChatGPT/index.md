@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SoC_DesignKit_by_ChatGPT
-permalink: /SoC_DesignKit_by_ChatGPT/ 
+permalink: /SoC_DesignKit_by_ChatGPT/  
 ---
 
 ---
