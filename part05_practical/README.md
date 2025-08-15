@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: Part05
 permalink: /part05_practical/
 ---
