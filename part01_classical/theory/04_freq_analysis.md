@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 📉 周波数応答とボード線図の基礎 / Frequency Response & Bode Plot Basics
 permalink: /part01_classical/theory/04_frequency_response.html
 ---
