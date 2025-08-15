@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 04_goal_reasoning
 permalink: /part09_llm_hybrid/theory/04_goal_reasoning.html 
 ---
