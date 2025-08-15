@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: clean
 title: 01. サンプリングとディジタル制御の基礎
 permalink: /part04_digital/theory/01_sampling_theory.html
 ---
