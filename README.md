@@ -101,7 +101,7 @@ title: EduController/README.md
 - 🧠 **SamizoGPT**  
   [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/SamizoGPT/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/SamizoGPT)  
   **ChatGPTのプロンプト設計支援テンプレート集**（設計支援と連携）  
-  *Prompt design templates for ChatGPT (design assistance)* 
+  *Prompt design templates for ChatGPT (design assistance)* <br>
   [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
   
 ---
