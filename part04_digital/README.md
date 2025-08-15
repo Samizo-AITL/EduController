@@ -6,8 +6,9 @@ permalink: /part04_digital/
 
 ---
 
-# 💻 Part 04: デジタル制御と信号処理  
-**💻 Part 04: Digital Control & Signal Processing**
+# 💻 Part 04: デジタル制御と信号処理 / Digital Control & Signal Processing
+
+---
 
 本章では、**ディジタル実装**を意識した制御設計と信号処理技術を体系的に学びます。  
 **Z変換、離散PID、デジタルフィルタ、FFT解析**など、実機マイコン制御にも直結する内容を扱います。
