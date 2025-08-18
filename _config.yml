@@ -1,49 +1,24 @@
-# --- Site basics ---
 title: EduController
 description: 教育用制御教材ポータル
 lang: ja
 timezone: Asia/Tokyo
 
-# --- Build & routing ---
+theme: null
+permalink: pretty
+
+# ここは sitemap & canonical 用（リンク直書きでも必要）
+url: "https://samizo-aitl.github.io"
+baseurl: "/EduController"
+
 markdown: kramdown
-theme: null              # 自作レイアウトを使う（_layouts配下）
-permalink: pretty        # /page/ 形式
+kramdown: { input: GFM }
+math_engine: mathjax
 
-# 公開URL設定
-url: "https://samizo-aitl.github.io"   # ユーザー/組織のPages URL
-baseurl: "/EduController"               # リポジトリ名（直下公開なら ""）
-
-# --- Markdown (kramdown) ---
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
-  math_engine: mathjax   # MathJax v3（clean.htmlのscriptと一致）
-
-# --- Sass/SCSS ---
-sass:
-  style: compressed
-  sourcemap: never
-
-# --- Plugins (GitHub Pagesで利用可のもののみ) ---
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
 
-# --- Defaults（レイアウト未指定ページに適用）---
 defaults:
-  - scope:
-      path: ""           # リポジトリ全体
-    values:
-      layout: clean      # _layouts/clean.html を既定に
-
-# --- Excludes ---
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - README.md
-  - package.json
-  - package-lock.json
+  - scope: { path: "" }
+    values: { layout: clean }
