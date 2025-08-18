@@ -1,7 +1,7 @@
 ---
 layout: clean
 title: EduController/index.md
----
+--- 
 
 ---
 
