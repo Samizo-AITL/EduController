@@ -68,13 +68,11 @@ $$
 
 ```mermaid
 flowchart LR
-  R[/"r(t)"/] -->|+| SUM((⊕))
-  SUM -->|e(t)| C[C(s)]
-  C --> P[Plant]
-  P -->|y(t)| Y[/"y(t)"/]
-  Y -.->|−| SUM
-  classDef sum fill:#fff,stroke:#333,stroke-width:1px;
-  class SUM sum;
+  R["r(t)"] --> SUM
+  SUM -->|"e(t)"| C["C(s)"]
+  C --> P["Plant"]
+  P -->|"y(t)"| Y["y(t)"]
+  Y -.-> SUM
 ```
 
 ```mermaid
