@@ -75,7 +75,9 @@ flowchart LR
   Y -.->|−| SUM
   classDef sum fill:#fff,stroke:#333,stroke-width:1px;
   class SUM sum;
+```
 
+```mermaid
 flowchart LR
   R[/"r(t)"/] -->|+| SUM((⊕))
   SUM -->|e(t)| C[C(s)]
@@ -84,7 +86,9 @@ flowchart LR
   Y -.-> H[H(s)] -.->|−| SUM
   classDef sum fill:#fff,stroke:#333,stroke-width:1px;
   class SUM sum;
+```
 
+```mermaid
 flowchart LR
   R[/"r(t)"/] -->|+| SUM1((⊕))
   SUM1 -->|e(t)| C[C(s)]
@@ -95,7 +99,6 @@ flowchart LR
   Y -.->|−| SUM1
   classDef sum fill:#fff,stroke:#333,stroke-width:1px;
   class SUM1,SUM2 sum;
-
   ```
 
 
