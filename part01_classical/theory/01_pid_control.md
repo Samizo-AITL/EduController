@@ -66,40 +66,6 @@ $$
   <img src="../figures/pid_block_diagram.png" alt="PID Block Diagram" width="50%">
 </p>
 
-```mermaid
-flowchart LR
-  R["r(t)"] --> SUM
-  SUM -->|"e(t)"| C["C(s)"]
-  C --> P["Plant"]
-  P -->|"y(t)"| Y["y(t)"]
-  Y -.-> SUM
-```
-
-```mermaid
-flowchart LR
-  R[/"r(t)"/] -->|+| SUM((⊕))
-  SUM -->|e(t)| C[C(s)]
-  C --> P[Plant G(s)]
-  P -->|y(t)| Y[/"y(t)"/]
-  Y -.-> H[H(s)] -.->|−| SUM
-  classDef sum fill:#fff,stroke:#333,stroke-width:1px;
-  class SUM sum;
-```
-
-```mermaid
-flowchart LR
-  R[/"r(t)"/] -->|+| SUM1((⊕))
-  SUM1 -->|e(t)| C[C(s)]
-  C --> SUM2((⊕))
-  D[/"d(t)"/] -->|+| SUM2
-  SUM2 --> P[Plant G(s)]
-  P -->|y(t)| Y[/"y(t)"/]
-  Y -.->|−| SUM1
-  classDef sum fill:#fff,stroke:#333,stroke-width:1px;
-  class SUM1,SUM2 sum;
-  ```
-
-
 ー
 **▶ 伝達関数（ラプラス領域）｜Transfer Function (Laplace Domain)**  
 
