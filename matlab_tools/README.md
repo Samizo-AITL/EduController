@@ -127,24 +127,23 @@ flowchart TB;
 
 | ディレクトリ | 役割 | Directory | Role |
 |--------------|------|-----------|------|
-| [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) | CコードをVerilog HDLに変換（今後の展開） | [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) | Convert C code to Verilog HDL (future work) |
-| [`testbench/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/testbench/) | HDL化後のシミュレーション検証 | [`testbench/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/testbench/) | Simulation verification after HDL conversion |
-| [EduController](https://samizo-aitl.github.io/EduController/) | 教材本体との統合演習（Part04, Part05など） | [EduController](https://samizo-aitl.github.io/EduController/) | Integrated exercises with main materials (e.g., Part04, Part05) |
+| [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) | Cコードを Verilog HDL に変換（今後の展開） | [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) | Convert C code to Verilog HDL (future work) |
+| [`testbench/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/testbench/) | HDL 化後のシミュレーション検証 | [`testbench/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/testbench/) | Simulation verification after HDL conversion |
+| [EduController](https://samizo-aitl.github.io/EduController/) | 教材本体との統合演習（Part04, Part05 など） | [EduController](https://samizo-aitl.github.io/EduController/) | Integrated exercises with main materials (e.g., Part04, Part05) |
 
 ---
 
 ## 🛠️ 今後の拡張予定 / Future Extensions
 
-- Simulink + Embedded Coder による自動Cコード生成→HDL変換支援  
-- `fsm_simulink_example.slx` の追加（状態遷移可視化設計）  
-- `.m` ファイル形式での状態空間シミュレーションスクリプト追加  
-- SimulinkモデルからのPython連携（Simulink Compiler活用）  
+- Simulink + Embedded Coder による **自動 C コード生成 → HDL 変換支援**  
+- `fsm_simulink_example.slx` の追加（**状態遷移可視化設計**）  
+- `.m` ファイル形式での **状態空間シミュレーションスクリプト追加**  
+- Simulink モデルからの **Python 連携（Simulink Compiler 活用）**  
 
-- Support automatic C code generation → HDL conversion with Simulink + Embedded Coder.  
-- Add `fsm_simulink_example.slx` (visualized state transition design).  
-- Add state-space simulation scripts in `.m` format.  
-- Enable Python integration from Simulink models (using Simulink Compiler).  
-
+- Support **automatic C code generation → HDL conversion** with Simulink + Embedded Coder.  
+- Add `fsm_simulink_example.slx` (**visualized state transition design**).  
+- Add **state-space simulation scripts** in `.m` format.  
+- Enable **Python integration** from Simulink models (using Simulink Compiler).  
 ---
 
 ## 📖 参考ドキュメント / References
