@@ -73,12 +73,20 @@ Cコードは **2系統**（Simulink生成C / 手書きC）から入力でき、
 
 ```mermaid
 flowchart TB
-    A[Simulink Model<br/>(matlab_tools/)] --> B[C code (fixed-point)]
-    A2[Handwritten C<br/>(FSM / LLM)] --> B
-    B --> C[c_to_hdl/<br/>SoC_DesignKit_by_ChatGPT]
-    C --> D[RTL Generation<br/>Verilog / SystemVerilog]
-    D --> E[testbench/<br/>Simulation & Verification]
-    E --> F[FPGA / ASIC<br/>Synthesis & Deployment]
+    A[Simulink Model (matlab_tools/)]
+    A2[Handwritten C : FSM / LLM]
+    B[C code - fixed-point]
+    C[c_to_hdl/ (SoC_DesignKit_by_ChatGPT)]
+    D[RTL Generation : Verilog / SystemVerilog]
+    E[Testbench : Simulation & Verification]
+    F[FPGA / ASIC : Synthesis & Deployment]
+
+    A --> B
+    A2 --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
 ```
   
 ## 🎯 活用目的 / Usage Purposes
