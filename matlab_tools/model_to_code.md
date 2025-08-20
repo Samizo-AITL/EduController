@@ -81,11 +81,17 @@ output = Kp * error + Ki * integral;
 
 ---
 
-## 🔖 ライセンス / License
+## 📄 **ライセンス / License**
 
-MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
-この資料およびモデルは、教育・個人学習用途で自由に使用可能です。  
-This material and models are freely available for educational and personal learning purposes.
+> 教材・コード・図表の性質に応じたハイブリッドライセンスを採用  
+> *Hybrid licensing based on the nature of the materials, code, and diagrams.*
+
+| 項目 / Item | ライセンス / License | 説明 / Description |
+|-------------|----------------------|--------------------|
+| **コード（Code）** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布可<br>*Free to use, modify, and redistribute* |
+| **教材テキスト（Text materials）** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須<br>*Attribution required* |
+| **図表・イラスト（Figures & diagrams）** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ可<br>*Non-commercial use only* |
+| **外部引用（External references）** | 元ライセンスに従う<br>*Follow the original license* | 引用元を明記<br>*Cite the original source* |
 
 ---
 
