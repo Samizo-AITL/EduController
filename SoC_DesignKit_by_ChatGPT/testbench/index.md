@@ -1,7 +1,7 @@
 ---
 layout: clean
 title: testbench/
-permalink: /SoC_DesignKit_by_ChatGPT/testbench/
+permalink: /EduController/SoC_DesignKit_by_ChatGPT/testbench/
 ---
 
 # 🧪 testbench/
