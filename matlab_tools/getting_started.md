@@ -1,7 +1,7 @@
 ---
 layout: clean
 title: MATLAB / Simulink：導入と活用ガイド
-permalink: /matlab_tools/getting_started.html
+permalink: /matlab_tools/getting_started.html 
 ---
 
 ---
