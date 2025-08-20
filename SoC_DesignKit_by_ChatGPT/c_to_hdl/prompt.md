@@ -1,14 +1,20 @@
 ---
 layout: clean
 title: conversion_prompt.md
-permalink: /SoC_DesignKit_by_ChatGPT/c_to_hdl/prompt.html
+permalink: /SoC_DesignKit_by_ChatGPT/c_to_hdl/conversion_prompt.html
 ---
 
 ---
 
-# 🧠 conversion_prompt.md（C→Verilog変換プロンプト）
+# 🧠 conversion_prompt.md  
+**C → Verilog 変換プロンプト / Prompt for C → Verilog Conversion**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github)](https://github.com/Samizo-AITL/EduController)  
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
 
 ---
+
+## 📖 概要 / Overview
 
 **JP:**  
 このテンプレートは、**C言語で記述された制御式やアルゴリズム**を **Verilog HDL** に変換するためのプロンプト例を提供します。  
@@ -22,16 +28,17 @@ It is intended for use with LLMs such as ChatGPT to support **beginner-friendly 
 
 ## 🎯 目的 / Purpose
 
-- CコードからVerilog HDLへの変換プロセスを学習  
-  Learn the process of converting C code to Verilog HDL
-- 固定小数点演算やビット幅管理の演習  
-  Practice fixed-point arithmetic and bit-width handling
-- FSMやPID制御器などの構造設計に展開可能  
-  Expand to structural design such as FSM and PID controllers
+- **CコードからVerilog HDLへの変換プロセスを学習**  
+  *Learn the process of converting C code to Verilog HDL*  
+- **固定小数点演算やビット幅管理の演習**  
+  *Practice fixed-point arithmetic and bit-width handling*  
+- **FSMやPID制御器などの構造設計に展開可能**  
+  *Expand to structural design such as FSM and PID controllers*  
 
 ---
 
-## 📝 入力テンプレート（Cコード形式） / Input Template (C Code)
+## 📝 入力テンプレート（Cコード形式）  
+**Input Template (C Code)**
 
 ```c
 // 例: PI制御の1ステップ演算
@@ -43,7 +50,8 @@ output = Kp * error + Ki * integral;
 
 ---
 
-## 💬 ChatGPT用プロンプト例 / Example Prompt for ChatGPT
+## 💬 ChatGPT用プロンプト例  
+**Example Prompt for ChatGPT**
 
 ```
 以下のCコードを、固定小数点を考慮したVerilog HDLに変換してください。
@@ -69,26 +77,40 @@ output = Kp * error + Ki * integral;
 
 ## ✅ 注意点 / Notes
 
-- 積和演算（multiply-accumulate）のビット幅拡張に注意  
-  Pay attention to bit-width extension in multiply-accumulate operations
-- `parameter` による係数定義と `always_ff` / `always @ (posedge clk)` の使い分け  
-  Use `parameter` for coefficient definition and choose between `always_ff` or `always @ (posedge clk)`
-- リセット処理や初期化コードを必要に応じて追加  
-  Add reset or initialization logic as needed
+- **積和演算（multiply-accumulate）のビット幅拡張に注意**  
+  *Pay attention to bit-width extension in multiply-accumulate operations*  
+- **`parameter` による係数定義と `always_ff` / `always @ (posedge clk)` の使い分け**  
+  *Use `parameter` for coefficient definition and choose between `always_ff` or `always @ (posedge clk)`*  
+- **リセット処理や初期化コードを必要に応じて追加**  
+  *Add reset or initialization logic as needed*  
 
 ---
 
-## 🧪 関連リソース / Related Resources
+## 🔗 関連リソース / Related Resources
 
 - [📂 `testbench/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/testbench/) — 出力波形確認用テストベンチ  
-  Testbench for waveform verification
+  *Testbench for waveform verification*  
 
 - [📂 `fsm/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/fsm/) — FSMとの組み合わせ例  
-  Example combination with FSM
+  *Example combination with FSM*  
 
 - [📂 `pid/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/pid/) — PID制御器テンプレート  
-  PID controller template
+  *PID controller template*  
 
 ---
 
-**🏠 [SoC_DesignKit_by_ChatGPTトップへ / Back to SoC_DesignKit_by_ChatGPT](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/)**
+## 📄 **ライセンス / License**
+
+> 教材・コード・図表の性質に応じた **ハイブリッドライセンス** を採用  
+> *Hybrid licensing based on the nature of materials, code, and diagrams.*
+
+| **項目 / Item** | **ライセンス / License** | **説明 / Description** |
+|-----------------|--------------------------|-------------------------|
+| **コード（Code）** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布可<br>*Free to use, modify, and redistribute* |
+| **教材テキスト（Text materials）** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須<br>*Attribution required* |
+| **図表・イラスト（Figures & diagrams）** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ可<br>*Non-commercial use only* |
+| **外部引用（External references）** | 元ライセンスに従う<br>*Follow the original license* | 引用元を明記<br>*Cite the original source* |
+
+---
+
+🏠 [SoC_DesignKit_by_ChatGPTトップへ / Back to SoC_DesignKit_by_ChatGPT](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/)
