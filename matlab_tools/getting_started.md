@@ -1,89 +1,113 @@
 ---
 layout: clean
-title: MATLAB / Simulink：導入と活用ガイド
+title: MATLAB / Simulink：導入と活用ガイド / MATLAB / Simulink: Getting Started Guide
 permalink: /matlab_tools/getting_started.html 
 ---
 
 ---
 
-# 🧰 MATLAB / Simulink：導入と活用ガイド
+# 🧰 MATLAB / Simulink：導入と活用ガイド  
+**🧰 MATLAB / Simulink: Getting Started Guide**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools)  
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
+
+---
 
 本資料は **EduController教材** において、  
 **Simulinkを用いた制御ブロックの可視化・設計・Cコード生成** を行うための導入ガイドです。  
 
-制御理論の学習に加えて、**モデルベース設計（Model-Based Design）** の視点を養うことを目的としています。
+This guide introduces **visualization, design, and C code generation of control blocks using Simulink**  
+within the **EduController educational materials**.
+
+目的は、制御理論の学習に加えて、**モデルベース設計（Model-Based Design）** の視点を養うことです。  
+In addition to learning control theory, the goal is to cultivate the perspective of **Model-Based Design (MBD)**.
 
 ---
 
-## ✅ 本教材におけるSimulinkの役割
+## ✅ 本教材におけるSimulinkの役割 / Role of Simulink in This Material
 
 | **用途 / Use Case** | **対象章 / Target Chapters** | **目的 / Purpose** |
 |---------------------|------------------------------|--------------------|
-| **PID設計と可視化** | Part01, Part05 | ブロック図で制御構造と応答を直感的に理解 |
-| **状態空間モデル構成** | Part02 | 行列ベースの制御設計（A,B,C,D）を視覚化 |
-| **Cコード生成** | Part05 | Simulink Coder による HDL 前段階のコード出力 |
-| **FSM構造モデリング** | Part09 | Stateflow 連携による FSM 設計（応用） |
+| **PID設計と可視化 / PID Design & Visualization** | Part01, Part05 | ブロック図で制御構造と応答を直感的に理解 / Intuitively understand control structures and responses |
+| **状態空間モデル構成 / State-Space Modeling** | Part02 | 行列ベース制御設計（A,B,C,D）を視覚化 / Visualize matrix-based control design (A,B,C,D) |
+| **Cコード生成 / C Code Generation** | Part05 | Simulink Coder による HDL 前段階のコード出力 / Generate C code for HDL preparation via Simulink Coder |
+| **FSMモデリング / FSM Modeling** | Part09 | Stateflow 連携による FSM 設計（応用） / FSM design using Stateflow (advanced) |
 
 ---
 
-## 🛠️ 環境準備
+## 🛠️ 環境準備 / Environment Setup
 
-### 📦 必要ソフトウェア
+### 📦 必要ソフトウェア / Required Software
+- **MATLAB**（推奨：R2021以降 / Recommended: R2021 or later）  
+- **Simulink**（必須 / Required）  
+- **Simulink Coder**（Cコード生成に必要 / Needed for C code generation）  
+- **オプション / Optional**: Stateflow, Embedded Coder  
 
-- **MATLAB**（推奨バージョン：R2021以降）
-- **Simulink**（必須）
-- **Simulink Coder**（Cコード生成に必要）
-- **オプション**：Stateflow, Embedded Coder
-
-### 🎓 教育版・学生版ライセンス
-
+### 🎓 教育版・学生版ライセンス / Educational & Student Licenses
 MATLAB は教育機関を通じて **学生版ライセンス** や **オンキャンパスライセンス** が提供されています。  
-詳細は [📘 MathWorks公式：学術利用](https://www.mathworks.com/academia/) を参照してください。
+MATLAB provides **Student Version** and **Campus-Wide Licenses** through educational institutions.  
+
+詳細は [📘 MathWorks公式：学術利用 / MathWorks Academic Licensing](https://www.mathworks.com/academia/) を参照してください。  
 
 ---
 
-## 📂 同梱モデル一覧
+## 📂 同梱モデル一覧 / Included Models
 
-| **ファイル名** | **内容 / Description** |
-|----------------|-------------------------|
-| [`pid_simulink_example.slx`](https://samizo-aitl.github.io/EduController/matlab_tools/pid_simulink_example.slx) | 比例積分制御のモデル（応答確認付き） |
-| [`state_space_example.slx`](https://samizo-aitl.github.io/EduController/matlab_tools/state_space_example.slx) | 状態空間モデル（A,B,C,D構成）＋ステップ応答 |
-| [`model_to_code.md`](https://samizo-aitl.github.io/EduController/matlab_tools/model_to_code.html) | Simulink Coder でCコードを生成する方法 |
-
----
-
-## 📘 操作手順：PID制御モデル例
-
-1. [`pid_simulink_example.slx`](https://samizo-aitl.github.io/EduController/matlab_tools/pid_simulink_example.slx) を開く  
-2. ブロック図上で `Kp` や `Ki` を調整  
-3. **Scope** ブロックでステップ応答を観察  
-4. 必要に応じて「シミュレーション → コード生成」（要 Simulink Coder）
+| **ファイル名 / Filename** | **内容 / Description** |
+|---------------------------|-------------------------|
+| [`pid_simulink_example.slx`](https://samizo-aitl.github.io/EduController/matlab_tools/pid_simulink_example.slx) | 比例積分制御モデル（応答確認付き） / PID control model with response observation |
+| [`state_space_example.slx`](https://samizo-aitl.github.io/EduController/matlab_tools/state_space_example.slx) | 状態空間モデル（A,B,C,D構成）＋ステップ応答 / State-space model (A,B,C,D) + step response |
+| [`model_to_code.md`](https://samizo-aitl.github.io/EduController/matlab_tools/model_to_code.html) | Simulink Coder によるCコード生成手順 / Procedure for generating C code with Simulink Coder |
 
 ---
 
-## 🔄 HDL連携構想（参考）
+## 📘 操作手順：PID制御モデル例  
+**📘 Example Procedure: PID Control Model**
+
+1. [`pid_simulink_example.slx`](https://samizo-aitl.github.io/EduController/matlab_tools/pid_simulink_example.slx) を開く / Open the model  
+2. ブロック図上で `Kp` や `Ki` を調整 / Adjust `Kp` and `Ki` in the block diagram  
+3. **Scope** ブロックでステップ応答を観察 / Observe the step response in the **Scope** block  
+4. 必要に応じて「シミュレーション → コード生成」（要 Simulink Coder） / Generate C code via *Simulation → Code Generation* (requires Simulink Coder)  
+
+---
+
+## 🔄 HDL連携構想（参考） / HDL Integration Concept (Reference)
 
 Simulink Coder により生成した Cコードは、  
 [`SoC_DesignKit_by_ChatGPT/c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) に渡して  
-**ChatGPTによる C→Verilog 変換** に活用可能です。
+**ChatGPTによる C→Verilog 変換** に活用可能です。  
 
-> 💡 例：`conversion_prompt.md` に貼り付けて HDL化の指示を行う。
+C code generated by Simulink Coder can be passed to  
+[`SoC_DesignKit_by_ChatGPT/c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/)  
+for **C→Verilog conversion using ChatGPT**.  
+
+💡 例 / Example: `conversion_prompt.md` に貼り付けて HDL化を依頼 / Paste into `conversion_prompt.md` and request HDL conversion.
 
 ---
 
-## 📖 参考リンク
+## 📖 参考リンク / References
 
-- [📘 Simulink入門（MathWorks公式）](https://www.mathworks.com/learn/tutorials/simulink-onramp.html)  
-- [📘 Simulink Coder ドキュメント](https://www.mathworks.com/products/simulink-coder.html)  
+- [📘 Simulink入門 / Simulink Onramp (MathWorks)](https://www.mathworks.com/learn/tutorials/simulink-onramp.html)  
+- [📘 Simulink Coder Documentation](https://www.mathworks.com/products/simulink-coder.html)  
 - [📘 Control System Toolbox](https://www.mathworks.com/products/control.html)  
 
 ---
 
-## 🔖 ライセンス
+## 📄 ライセンス / License
 
-MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
-このガイドおよび関連モデルは、教育・個人学習用途で自由に使用可能です。
+> 教材・コード・図表の性質に応じたハイブリッドライセンスを採用  
+> *Hybrid licensing based on the nature of materials, code, and diagrams.*
+
+| 項目 / Item | ライセンス / License | 説明 / Description |
+|-------------|----------------------|--------------------|
+| **コード / Code** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布可 / Free to use, modify, and redistribute |
+| **教材テキスト / Text Materials** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須 / Attribution required |
+| **図表・イラスト / Figures & Diagrams** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ可 / Non-commercial use only |
+| **外部引用 / External References** | 元ライセンスに従う / Follow the original license | 引用元を明記 / Cite the original source |
+
+MIT & Hybrid License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
 
 ---
 
-**🏠 [トップページへ戻る](https://samizo-aitl.github.io/EduController/README.html)**
+**🏠 [トップページへ戻る / Back to Top](https://samizo-aitl.github.io/EduController/README.html)**
