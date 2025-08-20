@@ -72,12 +72,6 @@ title: EduController/en/README.md
 
 ---
 
-### 🔩 **Implementation Toolkit**
-
-| **Directory** | **Summary** |
-|---------------|-------------|
-| **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/matlab_tools/)  [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) | **Visualization in Simulink**, **C code generation**, **HDL design**. [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
-| **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) | **FSM, PID, LLM control templates**, **Verilog generation**, **testbench verification**. [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
 
 ---
 
