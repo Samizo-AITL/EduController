@@ -1,6 +1,6 @@
 ---
 layout: clean
-title: MATLAB / Simulink：導入と活用ガイド / MATLAB / Simulink: Getting Started Guide
+title: MATLAB / Simulink 導入と活用ガイド / MATLAB / Simulink: Getting Started Guide
 permalink: /matlab_tools/getting_started.html 
 ---
 
