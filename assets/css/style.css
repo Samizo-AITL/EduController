@@ -1,22 +1,22 @@
 /* ──────────────── */
-/* Minimal CSS Style */
+/* Minimal GitHub-like Style */
 /* ──────────────── */
 
-/* 基本フォント設定 */
+/* 基本フォントと色 */
 html, body {
   margin: 0;
   padding: 0;
   background: #fff;
-  color: #24292e; /* GitHub風の標準テキスト色 */
+  color: #24292e; /* GitHub標準テキスト色 */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.65;
 }
 
-/* 区切り線は黒実線（濃すぎないように調整） */
+/* 区切り線（黒実線に近い濃いグレー） */
 hr {
   border: 0;
-  border-top: 1px solid #333; /* 濃いグレー */
+  border-top: 1px solid #24292e;
   margin: 2rem 0;
 }
 
@@ -27,7 +27,7 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd; /* 薄いグレー線 */
+  border: 1px solid #d0d7de; /* GitHubっぽい薄グレー */
   padding: .5rem .75rem;
   text-align: left;
 }
