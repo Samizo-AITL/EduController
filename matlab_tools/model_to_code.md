@@ -4,6 +4,8 @@ title: SimulinkモデルからCコードを生成する方法 / How to Generate 
 permalink: /matlab_tools/model_to_code.html
 ---
 
+---
+
 # 🛠️ SimulinkモデルからCコードを生成する方法  
 **🛠️ How to Generate C Code from Simulink Models**
 
