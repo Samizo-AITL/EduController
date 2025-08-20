@@ -7,7 +7,10 @@ layout: null
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>{{ page.title | default: site.title | escape }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"/>
+
+  <!-- ✅ キャッシュバスター付きで読み込み（必ず最新のCSSを読む） -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=20250820' | relative_url }}"/>
+
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
   <!-- MathJax -->
@@ -32,7 +35,8 @@ layout: null
   </script>
 </head>
 <body>
-  <main class="container">
+  <!-- ✅ GitHub風の本文ラッパに合わせて .markdown-body を付与 -->
+  <main class="container markdown-body">
     {{ content }}
   </main>
 </body>
