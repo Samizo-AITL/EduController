@@ -1,7 +1,7 @@
 ---
 layout: clean
 title: c_to_hdl/
-permalink: /SoC_DesignKit_by_ChatGPT/c_to_hdl/README.html
+permalink: /SoC_DesignKit_by_ChatGPT/c_to_hdl/README.html 
 ---
 
 ---
