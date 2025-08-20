@@ -110,6 +110,16 @@ flowchart TB
     E --> F[FPGA / ASIC Synthesis]
 ```
 
+```mermaid
+flowchart LR
+    A[Simulinkモデル / Simulink Model] --> B[Cコード（固定小数点） / C fixed-point]
+    A2[手書きC: FSM・LLM制御 / Handwritten C: FSM・LLM control] --> B
+    B --> C[SoC_DesignKit_by_ChatGPT テンプレート適用 / Template Mapping]
+    C --> D[RTL生成 : Verilog / SystemVerilog]
+    D --> E[テストベンチ検証 / Testbench & Simulation]
+    E --> F[FPGA・ASIC合成 / FPGA & ASIC Synthesis]
+```
+
 ---
 
 ## 🔗 **関連プロジェクト | Related Projects**
