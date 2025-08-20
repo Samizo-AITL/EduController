@@ -75,7 +75,7 @@ Cコードは **2系統**（Simulink生成C / 手書きC）から入力でき、
 flowchart TB
     A[Simulink Model (matlab_tools/)]
     A2[Handwritten C : FSM / LLM]
-    B[C code - fixed-point]
+    B[C code - fixed point]
     C[c_to_hdl/ (SoC_DesignKit_by_ChatGPT)]
     D[RTL Generation : Verilog / SystemVerilog]
     E[Testbench : Simulation & Verification]
