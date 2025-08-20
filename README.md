@@ -101,7 +101,7 @@ title: EduController/README.md
    - 必要に応じて合成し、**FPGA/ASICフロー**へ展開可能。  
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Simulink Model] --> B[C fixed-point]
     A2[Handwritten C : FSM / LLM control] --> B
     B --> C[SoC_DesignKit_by_ChatGPT Template Mapping]
