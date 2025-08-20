@@ -99,12 +99,20 @@ Two types of C sources are supported (C generated from Simulink / handwritten C)
 
 ```mermaid
 flowchart TB
-    A[Simulink Model] --> B[C code (fixed-point)]
-    A2[Handwritten C: FSM / LLM control] --> B
-    B --> C[SoC_DesignKit_by_ChatGPT Template Mapping]
-    C --> D[RTL Generation : Verilog / SystemVerilog]
-    D --> E[Testbench & Simulation]
-    E --> F[FPGA / ASIC Synthesis]
+    A[Simulink Model]
+    A2[Handwritten C: FSM / LLM control]
+    B[C code - fixed-point]
+    C[SoC_DesignKit_by_ChatGPT Template Mapping]
+    D[RTL Generation : Verilog / SystemVerilog]
+    E[Testbench & Simulation]
+    F[FPGA / ASIC Synthesis]
+
+    A --> B
+    A2 --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
 ```
 
 ---
