@@ -52,6 +52,35 @@ It also serves as an educational foundation for converting design models into C 
 
 ---
 
+#### 🧭 利用フロー概要 / Usage Flow Overview
+
+このツール群は **モデル設計からRTL検証まで** を一気通貫でサポートします。  
+Cコードは **2系統**（Simulink生成C / 手書きC）から入力でき、最終的に **SoC_DesignKit_by_ChatGPT** 内でHDL化されます。  
+
+1. **Simulink または 手書きC (matlab_tools/)**  
+   - Simulinkモデルから **固定小数点Cコード**を生成  
+   - または FSM/LLM制御用の手書きC関数を用意  
+
+2. **Cコード → HDL (SoC_DesignKit_by_ChatGPT/c_to_hdl/)**  
+   - Cコードをテンプレートにマッピングし、**Verilog/SystemVerilog**と**テストベンチ**を自動生成  
+   - PID / FSM / LLM制御を **同一SoC内に統合可能**  
+
+3. **シミュレーション & 検証 (SoC_DesignKit_by_ChatGPT/testbench/)**  
+   - 自動生成テストベンチで **CとRTLの動作一致**を確認  
+
+4. **合成 & 展開**  
+   - FPGA/ASICフローに統合して実機検証へ
+
+```mermaid
+flowchart TB
+    A[Simulink Model<br/>(matlab_tools/)] --> B[C code (fixed-point)]
+    A2[Handwritten C<br/>(FSM / LLM)] --> B
+    B --> C[c_to_hdl/<br/>SoC_DesignKit_by_ChatGPT]
+    C --> D[RTL Generation<br/>Verilog / SystemVerilog]
+    D --> E[testbench/<br/>Simulation & Verification]
+    E --> F[FPGA / ASIC<br/>Synthesis & Deployment]
+```
+  
 ## 🎯 活用目的 / Usage Purposes
 
 - **EduController** の前段フェーズ（制御モデル設計）でのSimulink活用  
