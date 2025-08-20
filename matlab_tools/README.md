@@ -52,6 +52,20 @@ It also serves as an educational foundation for converting design models into C 
 
 ---
 
+## 🎯 活用目的 / Usage Purposes
+
+- **EduController** の前段フェーズ（制御モデル設計）でのSimulink活用  
+- **Cコード生成後**、[`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化への導入  
+- PID制御・状態空間制御などの設計検証  
+- MATLAB/Simulink教育から自動化・HDL連携までの一貫教材化  
+
+- Use Simulink in the **pre-stage of EduController** (control model design).  
+- After **C code generation**, introduce Verilog conversion via [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/).  
+- Verify designs such as PID control and state-space control.  
+- Provide a consistent educational material flow from MATLAB/Simulink training to automation and HDL integration.  
+
+---
+
 ## 🧭 利用フロー概要 / Usage Flow Overview
 
 このツール群は **モデル設計からRTL検証まで** を一気通貫でサポートします。  
@@ -76,18 +90,6 @@ Cコードは **2系統**（Simulink生成C / 手書きC）から入力でき、
 ```mermaid
 flowchart TB; A1["Simulink Model (matlab_tools)"]; A2["Handwritten C (FSM + LLM)"]; B["C code (fixed point)"]; C["c_to_hdl - SoC DesignKit by ChatGPT"]; D["RTL Generation (Verilog & SystemVerilog)"]; E["Testbench (Simulation & Verification)"]; F["FPGA & ASIC (Synthesis & Deployment)"]; A1-->B; A2-->B; B-->C; C-->D; D-->E; E-->F;
 ```
-  
-## 🎯 活用目的 / Usage Purposes
-
-- **EduController** の前段フェーズ（制御モデル設計）でのSimulink活用  
-- **Cコード生成後**、[`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化への導入  
-- PID制御・状態空間制御などの設計検証  
-- MATLAB/Simulink教育から自動化・HDL連携までの一貫教材化  
-
-- Use Simulink in the **pre-stage of EduController** (control model design).  
-- After **C code generation**, introduce Verilog conversion via [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/).  
-- Verify designs such as PID control and state-space control.  
-- Provide a consistent educational material flow from MATLAB/Simulink training to automation and HDL integration.  
 
 ---
 
