@@ -75,28 +75,20 @@ Cコードは **2系統**（Simulink生成C / 手書きC）から入力でき、
 
 ```mermaid
 flowchart TB
-  A1[Simulink Model<br/>matlab_tools]
-  A2[Handwritten C<br/>(FSM / LLM)]
-  B[C code<br/>(fixed point)]
-  C[c_to_hdl<br/>SoC DesignKit by ChatGPT]
-  D[RTL Generation<br/>Verilog / SystemVerilog]
-  E[Testbench<br/>Simulation & Verification]
-  F[FPGA / ASIC<br/>Synthesis & Deployment]
+  A1[Simulink Model (matlab_tools)]
+  A2[Handwritten C (FSM + LLM)]
+  B[C code (fixed point)]
+  C[c_to_hdl - SoC DesignKit by ChatGPT]
+  D[RTL Generation (Verilog & SystemVerilog)]
+  E[Testbench (Simulation & Verification)]
+  F[FPGA & ASIC (Synthesis & Deployment)]
 
   A1 --> B
   A2 --> B
-  B --> C
-  C --> D
-  D --> E
-  E --> F
-
-  style A1 fill:#dfe9ff,stroke:#4a63d3,stroke-width:2px
-  style A2 fill:#dfe9ff,stroke:#4a63d3,stroke-width:2px
-  style B  fill:#fff5d9,stroke:#c28f00,stroke-width:2px
-  style C  fill:#eaffdf,stroke:#4aa04a,stroke-width:2px
-  style D  fill:#eaffdf,stroke:#4aa04a,stroke-width:2px
-  style E  fill:#eaffdf,stroke:#4aa04a,stroke-width:2px
-  style F  fill:#ffe4e1,stroke:#d34a4a,stroke-width:2px
+  B  --> C
+  C  --> D
+  D  --> E
+  E  --> F
 ```
   
 ## 🎯 活用目的 / Usage Purposes
