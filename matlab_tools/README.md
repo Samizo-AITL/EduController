@@ -76,7 +76,7 @@ flowchart TB
     A[Simulink Model (matlab_tools)]
     A2[Handwritten C (FSM + LLM)]
     B[C code (fixed-point)]
-    C[c_to_hdl - SoC_DesignKit_by_ChatGPT]
+    C[c_to_hdl → SoC_DesignKit_by_ChatGPT]
     D[RTL Generation (Verilog & SystemVerilog)]
     E[Testbench (Simulation & Verification)]
     F[FPGA & ASIC (Synthesis & Deployment)]
