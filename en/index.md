@@ -76,8 +76,36 @@ title: EduController/en/index.md
 
 | **Directory** | **Summary** |
 |---------------|-------------|
-| **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/matlab_tools/)  [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) | **Visualization in Simulink**, **C code generation**, **HDL design**. [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
-| **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) | **FSM, PID, LLM control templates**, **Verilog generation**, **testbench verification**. [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
+| **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/matlab_tools/)  [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) | *Visualization in Simulink, C code generation, HDL design.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
+| **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) | *FSM, PID, LLM control templates, Verilog generation, testbench verification.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
+
+#### 🧭 Usage Flow Overview
+
+These tools provide an **end-to-end flow from model design to RTL verification**.  
+Two types of C sources are supported (C generated from Simulink / handwritten C), enabling **integration of PID/FSM/LLM control logic into HDL**.
+
+1. **Simulink or Handwritten C (matlab_tools/ etc.)**  
+   - Create a model in Simulink and generate **fixed-point C code**, or  
+     prepare **handwritten C step functions** for FSM/LLM control.
+
+2. **C code → HDL (SoC_DesignKit_by_ChatGPT/)**  
+   - Map C functions (PID / FSM / LLM kernels, etc.) to templates,  
+     and automatically generate **Verilog/SystemVerilog** plus **testbenches**.  
+   - Multiple C modules can be **integrated within the same SoC** (e.g., PID + FSM + LLM I/F).
+
+3. **Simulation & Verification**  
+   - Verify functional equivalence between **C implementation and RTL** using the auto-generated testbench.  
+   - Then proceed to synthesis and deployment in **FPGA/ASIC flows** as needed.
+
+```mermaid
+flowchart TB
+    A[Simulink Model] --> B[C code (fixed-point)]
+    A2[Handwritten C: FSM / LLM control] --> B
+    B --> C[SoC_DesignKit_by_ChatGPT Template Mapping]
+    C --> D[RTL Generation : Verilog / SystemVerilog]
+    D --> E[Testbench & Simulation]
+    E --> F[FPGA / ASIC Synthesis]
+```
 
 ---
 
