@@ -1,19 +1,20 @@
 ---
 layout: clean
-title: 📊 波形確認ガイド（PID制御器）
-permalink: /SoC_DesignKit_by_ChatGPT/testbench/waveform_analysis.html
+title: 🧪 テストベンチ実行ガイド
+permalink: /SoC_DesignKit_by_ChatGPT/testbench/run_testbench.html
 ---
 
 ---
 
-# 📊 波形確認ガイド（PID制御器）  
-*Waveform Verification Guide for PID Controller in Verilog*
+# 🧪 テストベンチ実行ガイド  
+*How to Run Testbenches in Verilog*
 
 ---
 
 ## 🎯 目的 / Objective
-本ガイドでは、**Verilog PID制御器**のシミュレーション結果を波形で確認する手順を解説します。  
-Icarus Verilog + GTKWave 環境を用いて、**出力挙動・内部信号の動き**を可視化します。
+本ガイドでは、**Verilogで作成したRTL**を検証するための  
+**テストベンチ（Testbench）実行方法**を説明します。  
+Icarus Verilog / Verilator を利用して、**動作検証・デバッグ**を行います。
 
 ---
 
@@ -21,62 +22,72 @@ Icarus Verilog + GTKWave 環境を用いて、**出力挙動・内部信号の�
 
 | ツール名 | 用途 |
 |----------|------|
-| **Icarus Verilog** (`iverilog`) | Verilogソースのコンパイルとシミュレーション |
-| **GTKWave** (`gtkwave`) | VCD波形ファイルの可視化 |
-
-> 💡 これらはLinux/Mac/Windows（WSL含む）で利用可能。インストールは各OSのパッケージマネージャを推奨。
+| **Icarus Verilog** (`iverilog`, `vvp`) | ソースのコンパイルとシミュレーション |
+| **Verilator** | 高速シミュレーション、C++連携 |
+| **GTKWave** | 波形ファイル（VCD/FST）の可視化 |
 
 ---
 
-## 🔧 シミュレーション手順 / Simulation Steps
+## 🔧 実行手順 / Execution Steps
 
+### Icarus Verilog を使う場合
 ```bash
 # 1. コンパイル（テストベンチ + DUT）
-$ iverilog -o sim_pid tb_pid_controller.v ../pid/pid_controller.v
+$ iverilog -o sim_out tb_module.v ../rtl/module.v
 
-# 2. 実行（VCDファイル出力）
-$ vvp sim_pid
+# 2. 実行（シミュレーション）
+$ vvp sim_out
 
 # 3. 波形表示（GTKWave）
 $ gtkwave wave.vcd
 ```
 
-> 📝 **補足**：  
-> - `$dumpfile("wave.vcd")` と `$dumpvars` をテストベンチに記述することで、波形ファイルが生成されます。  
-> - 信号の階層パスに注意し、必要な内部信号も `$dumpvars` に追加すると解析が容易になります。
+### Verilator を使う場合
+```bash
+# 1. C++コード生成
+$ verilator --cc --exe tb_module.cpp ../rtl/module.v
+
+# 2. ビルド & 実行
+$ make -C obj_dir -f Vmodule.mk Vmodule
+$ ./obj_dir/Vmodule
+```
 
 ---
 
-## 🧪 観測ポイント / Key Signals to Observe
+## 🧪 観測ポイント / Key Checks
 
-| 信号名 | 説明 / Description |
-|--------|--------------------|
-| `ref` | 目標値（定数または可変） |
-| `meas` | 測定値（毎クロック変化） |
-| `ctrl_out` | PID制御出力（追従挙動を確認） |
-| `error` | 目標値と測定値の差 |
-| `integral` | 積分項（オプション、固定小数点精度を確認） |
+| 観測対象 | 説明 / Description |
+|----------|--------------------|
+| **リセット処理** | `reset` が期待通りに効いているか |
+| **クロック同期** | `posedge clk` の動作確認 |
+| **出力信号** | DUTからの出力が期待値と一致するか |
+| **波形ログ** | VCDファイルで内部信号も確認 |
 
 ---
 
 ## 📘 教材との接続 / Related Learning Resources
 
-| モジュール | 関連内容 |
-|------------|----------|
-| [`pid_controller.v`](../pid/pid_controller.v) | テスト対象（DUT） |
-| [`tb_pid_controller.v`](../testbench/tb_pid_controller.v) | テストベンチ |
-| [`fixed_point_notes.md`](../notes/fixed_point_notes.md) | 固定小数点の精度と演算方法 |
-| [`execution_logs/`](../execution_logs/) | 実行条件・結果記録用フォルダ |
+| ファイル | 内容 |
+|----------|------|
+| [`tb/`](../testbench/) | テストベンチサンプル |
+| [`rtl/`](../rtl/) | C→HDL生成済みRTL |
+| [`waveform_analysis.md`](../testbench/waveform_analysis.md) | 波形解析ガイド |
+| [`execution_logs/`](../execution_logs/) | 実行ログ保存用 |
 
 ---
 
 ## 📎 ヒント / Tips
-- 波形は時間軸をズームして確認することで、制御応答の細部が把握しやすくなります。  
-- `ctrl_out` のオーバーシュートや整定時間を測定することで、PIDゲインの適否を評価できます。  
-- 複数シナリオを異なるVCDファイルに出力し、比較分析するのも効果的です。
+- まずは**小規模回路**から動作検証を始めるとデバッグが容易。  
+- `$monitor` を活用してコンソール出力でも確認可能。  
+- 波形解析と組み合わせることで、RTLの不具合箇所を特定しやすくなります。
 
 ---
 
 ## 📄 ライセンス / License
-MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
-本ガイドは**教育・設計支援目的**で自由に利用・改変可能です。
+本教材は **ハイブリッドライセンス** で提供されます。
+
+- **MIT License** © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
+  → コード・ドキュメント部分はMITライセンスで自由に利用可能  
+- **Educational Use License**  
+  → 教材部分（解説・図表・演習ガイド）は教育・研究用途での利用・改変を許諾  
+  → 商用利用は要相談  
