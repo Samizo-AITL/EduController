@@ -37,7 +37,7 @@ flowchart LR
     subgraph LLM
         L1[状況入力] --> L2[推論処理] --> L3[Action指示]
     end
-    B <-->|action="halt"/"adjust"/"continue"| LLM
+    B <-->|action: halt / adjust / continue| LLM
 ```
 
 ---
