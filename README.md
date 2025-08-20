@@ -94,7 +94,46 @@ title: EduController/README.md
 
 3. **シミュレーション & 検証**  
    自動生成テストベンチで **C実装とRTLの一致**を確認し、合成やFPGA/ASICフローへ展開可能。
-   
+
+### 🔩 **実装支援ツール / Implementation Toolkit**
+
+| **ディレクトリ** | **概要 / Summary** |
+|------------------|--------------------|
+| **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/matlab_tools/)  [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) | **Simulinkによる可視化**、**Cコード生成**、**HDL設計**への展開。<br>*Visualization in Simulink, C code generation, HDL design.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+| **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) | **FSM・PID・LLM制御テンプレート**、**Verilog生成**、**テストベンチ検証**。<br>*FSM, PID, LLM control templates, Verilog generation, testbench verification.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+
+---
+
+#### 🧭 利用フロー概要 / Usage Flow Overview
+
+このツール群は **モデル設計からRTL検証まで** を一気通貫でサポートします。  
+**Cの出所は2系統**（Simulink生成C / 手書きC）を想定し、**PID/FSM/LLM制御ロジック**を**統合してHDL化**できます。
+
+1. **Simulink または 手書きC (matlab_tools/ など)**  
+   - Simulinkでモデルを作成して**固定小数点C**を生成、または  
+     FSM／LLM制御用の**手書きC関数**（ステップ関数形式）を用意。  
+
+2. **Cコード → HDL (SoC_DesignKit_by_ChatGPT/)**  
+   - C関数（PID / FSM / LLM制御カーネル など）をテンプレートにマッピングし、  
+     **Verilog/SystemVerilog** と **テストベンチ**を自動生成。  
+   - 複数のC機能を**同一SoC内に統合**可能（例：PID + FSM + LLM制御I/F）。  
+
+3. **シミュレーション & 検証**  
+   - 自動生成テストベンチで **C実装とRTLの一致**を確認。  
+   - 必要に応じて合成し、**FPGA/ASICフロー**へ展開可能。  
+
+```mermaid
+flowchart LR
+  A[Simulink Model]:::n -->|C generation| B[C (fixed-point)]
+  A2[Handwritten C<br/>(FSM / LLM control)]:::n --> B
+  B --> C[SoC_DesignKit_by_ChatGPT<br/>テンプレート適用]
+  C --> D[RTL (Verilog/SystemVerilog)]
+  D --> E[Testbench / Simulation]
+  E --> F[FPGA/ASIC Synthesis]
+
+  classDef n fill:#fff,stroke:#999,color:#333;
+```
+
 ---
 
 ## 🔗 **関連プロジェクト | Related Projects**
