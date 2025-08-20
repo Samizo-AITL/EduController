@@ -1,132 +1,20 @@
-:root{
-  color-scheme: light;
-  --fg:#24292e; --bg:#fff; --muted:#6a737d;
-  --border-table:#e5e7eb;   /* 表は薄いグレー */
-  --border-divider:#000000; /* 区切り線は黒実線 */
-  --accent:#0366d6;
-  --content-max:1080px; --pad-x:clamp(1rem,4vw,2rem); --pad-y:1.5rem;
-  --radius:8px; --shadow:0 1px 2px rgba(0,0,0,.04);
-}
+/* ──────────────── */
+/* Minimal CSS Style */
+/* ──────────────── */
 
-html,body {
-  margin:0; padding:0;
-  background:var(--bg); color:var(--fg);
-  font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-}
-
-a { color:var(--accent); text-decoration:none; }
-a:hover { text-decoration:underline; }
-
-img,svg,canvas,video { max-width:100%; height:auto; }
-
-pre,code {
-  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
-}
-pre {
-  background:#f6f8fa;
-  border:1px solid var(--border-table);
-  padding:1rem;
-  border-radius:var(--radius);
-  overflow:auto;
-}
-code {
-  background:#f6f8fa;
-  border:1px solid var(--border-table);
-  border-radius:4px;
-  padding:.1em .3em;
-}
-
-table {
-  border-collapse:collapse;
-  width:100%;
-  overflow-x:auto;
-  display:block;
-}
-th,td {
-  border:1px solid var(--border-table); /* 表は薄い線 */
-  padding:.5rem .75rem;
-}
-
-p { margin:.75rem 0; }
-
-.container {
-  max-width:var(--content-max);
-  margin:0 auto;
-  padding:var(--pad-y) var(--pad-x);
-}
-
-h1,h2,h3 { scroll-margin-top:80px; }
-h1 { font-size:clamp(1.8rem,3vw,2.2rem); margin:0 0 1rem; }
-h2 { font-size:clamp(1.4rem,2.2vw,1.8rem); margin:2rem 0 1rem; }
-h3 { font-size:1.2rem; margin:1.5rem 0 .75rem; }
-
-.note {
-  border-left:4px solid var(--accent);
-  padding:.5rem 1rem;
-  background:#f6f8fa;
-  border-radius:6px;
-}
-
-mjx-container[jax="CHTML"][display="true"] {
-  display:block;
-  text-align:center;
-  margin:1em auto;
-}
-
-.mermaid { display:block; margin:1.25rem auto; max-width:100%; }
-.mermaid svg { height:auto !important; width:100% !important; }
-
-hr { border:0; border-top:2px solid var(--border-divider); margin:2rem 0; } /* 区切り線は黒実線 */
-
-blockquote {
-  border-left:4px solid var(--border-table);
-  margin:1rem 0;
-  padding:.5rem 1rem;
-  color:var(--muted);
-  background:#fafafa;
-}
-
-/* ========== Dividers(区切り線)は黒実線 ========== */
-.markdown-body hr,
-.container hr,
+/* 区切り線は黒実線 */
 hr {
-  border: 0 !important;
-  border-top: 2px solid #000 !important; /* 黒実線 */
-  margin: 2rem 0 !important;
+  border: 0;
+  border-top: 2px solid #000;
 }
 
-/* ========== 表の罫線は薄いグレー ========== */
-.markdown-body table,
-.markdown-body thead,
-.markdown-body tbody,
-.markdown-body tr,
-.markdown-body th,
-.markdown-body td,
-table, thead, tbody, tr, th, td {
-  border-color: #e5e7eb !important;      /* 薄い線 */
-}
-
-.markdown-body table,
+/* 表のスタイル */
 table {
-  border-collapse: collapse !important;
-  width: 100% !important;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.markdown-body th,
-.markdown-body td,
 th, td {
-  border: 1px solid #e5e7eb !important;
-  padding: .5rem .75rem !important;
-}
-
-/* コード枠・インラインコードも薄い枠で統一（任意） */
-.markdown-body pre, pre {
-  background: #f6f8fa !important;
-  border: 1px solid #e5e7eb !important;
-}
-.markdown-body code, code {
-  background: #f6f8fa !important;
-  border: 1px solid #e5e7eb !important;
-  border-radius: 4px !important;
-  padding: .1em .3em !important;
+  border: 1px solid #e5e7eb; /* 薄い線 */
+  padding: .5rem .75rem;
 }
