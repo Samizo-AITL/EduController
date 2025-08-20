@@ -74,6 +74,10 @@ Cコードは **2系統**（Simulink生成C / 手書きC）から入力でき、
 ### 📐 ワークフロー全体図 / Workflow Overview
 
 ```mermaid
+flowchart TB; A1["Simulink Model (matlab_tools)"]; A2["Handwritten C (FSM + LLM)"]; B["C code (fixed point)"]; C["c_to_hdl - SoC DesignKit by ChatGPT"]; D["RTL Generation (Verilog & SystemVerilog)"]; E["Testbench (Simulation & Verification)"]; F["FPGA & ASIC (Synthesis & Deployment)"]; A1-->B; A2-->B; B-->C; C-->D; D-->E; E-->F;
+```
+
+```mermaid
 flowchart TB
   A1[Simulink Model (matlab_tools)]
   A2[Handwritten C (FSM + LLM)]
