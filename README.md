@@ -103,9 +103,9 @@ title: EduController/README.md
 ```mermaid
 flowchart LR
     A[Simulink Model] --> B[C fixed-point]
-    A2[Handwritten C (FSM / LLM control)] --> B
+    A2[Handwritten C : FSM / LLM control] --> B
     B --> C[SoC_DesignKit_by_ChatGPT Template Mapping]
-    C --> D[RTL (Verilog/SystemVerilog)]
+    C --> D[RTL : Verilog / SystemVerilog]
     D --> E[Testbench / Simulation]
     E --> F[FPGA / ASIC Synthesis]
 ```
