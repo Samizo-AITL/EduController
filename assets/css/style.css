@@ -2,10 +2,22 @@
 /* Minimal CSS Style */
 /* ──────────────── */
 
-/* 区切り線は黒実線 */
+/* 基本フォント設定 */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #24292e; /* GitHub風の標準テキスト色 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* 区切り線は黒実線（濃すぎないように調整） */
 hr {
   border: 0;
-  border-top: 2px solid #000;
+  border-top: 1px solid #333; /* 濃いグレー */
+  margin: 2rem 0;
 }
 
 /* 表のスタイル */
@@ -15,6 +27,7 @@ table {
 }
 
 th, td {
-  border: 1px solid #e5e7eb; /* 薄い線 */
+  border: 1px solid #ddd; /* 薄いグレー線 */
   padding: .5rem .75rem;
+  text-align: left;
 }
