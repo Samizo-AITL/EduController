@@ -52,7 +52,7 @@ It also serves as an educational foundation for converting design models into C 
 
 ---
 
-#### 🧭 利用フロー概要 / Usage Flow Overview
+## 🧭 利用フロー概要 / Usage Flow Overview
 
 このツール群は **モデル設計からRTL検証まで** を一気通貫でサポートします。  
 Cコードは **2系統**（Simulink生成C / 手書きC）から入力でき、最終的に **SoC_DesignKit_by_ChatGPT** 内でHDL化されます。  
@@ -71,15 +71,17 @@ Cコードは **2系統**（Simulink生成C / 手書きC）から入力でき、
 4. **合成 & 展開**  
    - FPGA/ASICフローに統合して実機検証へ
 
+### 📐 ワークフロー全体図 / Workflow Overview
+
 ```mermaid
 flowchart TB
-  A[Simulink Model matlab_tools]
-  A2[Handwritten C FSM LLM]
-  B[C code fixed point]
-  C[c_to_hdl SoC DesignKit by ChatGPT]
-  D[RTL Generation Verilog SystemVerilog]
-  E[Testbench Simulation Verification]
-  F[FPGA and ASIC Synthesis Deployment]
+  A[Simulink Model<br/>matlab_tools]
+  A2[Handwritten C<br/>(FSM / LLM)]
+  B[C code<br/>(fixed point)]
+  C[c_to_hdl<br/>SoC DesignKit by ChatGPT]
+  D[RTL Generation<br/>Verilog / SystemVerilog]
+  E[Testbench<br/>Simulation & Verification]
+  F[FPGA / ASIC<br/>Synthesis & Deployment]
 
   A --> B
   A2 --> B
@@ -87,6 +89,14 @@ flowchart TB
   C --> D
   D --> E
   E --> F
+
+  style A fill:#dfe9ff,stroke:#4a63d3,stroke-width:2px
+  style A2 fill:#dfe9ff,stroke:#4a63d3,stroke-width:2px
+  style B fill:#fff5d9,stroke:#c28f00,stroke-width:2px
+  style C fill:#eaffdf,stroke:#4aa04a,stroke-width:2px
+  style D fill:#eaffdf,stroke:#4aa04a,stroke-width:2px
+  style E fill:#eaffdf,stroke:#4aa04a,stroke-width:2px
+  style F fill:#ffe4e1,stroke:#d34a4a,stroke-width:2px
 ```
   
 ## 🎯 活用目的 / Usage Purposes
