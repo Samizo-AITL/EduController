@@ -47,7 +47,7 @@ permalink: /matlab_tools/
 ## 🎯 活用目的
 
 - **EduController** の前段フェーズ（制御モデル設計）でのSimulink活用
-- **Cコード生成後**、[`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl) によるVerilog化への導入
+- **Cコード生成後**、[`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化への導入
 - PID制御・状態空間制御などの設計検証
 - MATLAB/Simulink教育から自動化・HDL連携までの一貫教材化
 
