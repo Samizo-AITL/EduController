@@ -54,6 +54,75 @@ It also serves as an educational foundation for converting design models into C 
 
 ## 🎯 活用目的 / Usage Purposes
 
+- **EduController** の前段フェーズ（制御モデル設計）での Simulink 活用  
+- **Cコード生成後**、[`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) による Verilog 化への導入  
+- PID 制御・状態空間制御などの設計検証  
+- MATLAB/Simulink 教育から自動化・HDL 連携までの一貫教材化  
+
+- Use Simulink in the **pre-stage of EduController** (control model design).  
+- After **C code generation**, introduce Verilog conversion via [`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/).  
+- Verify designs such as PID control and state-space control.  
+- Provide a consistent educational material flow from MATLAB/Simulink training to automation and HDL integration.  
+
+---
+
+## 🧭 利用フロー概要 / Usage Flow Overview
+
+このツール群は **モデル設計から RTL 検証まで** を一気通貫でサポートします。  
+Cコードは **2系統**（Simulink 生成 C / 手書き C）から入力でき、最終的に **SoC_DesignKit_by_ChatGPT** 内で HDL 化されます。  
+
+This toolchain supports a **seamless flow from model design to RTL verification**.  
+C code can be input from **two sources** (Simulink-generated C / handwritten C), and finally converted into HDL within **SoC_DesignKit_by_ChatGPT**.  
+
+1. **Simulink または 手書き C (matlab_tools/)**  
+   - Simulink モデルから **固定小数点 C コード**を生成  
+   - または FSM / LLM 制御用の手書き C 関数を用意  
+   
+   **Simulink or handwritten C (matlab_tools/)**  
+   - Generate **fixed-point C code** from Simulink models  
+   - Or prepare handwritten C functions for FSM / LLM control  
+
+2. **Cコード → HDL (SoC_DesignKit_by_ChatGPT/c_to_hdl/)**  
+   - C コードをテンプレートにマッピングし、**Verilog/SystemVerilog** と **テストベンチ**を自動生成  
+   - PID / FSM / LLM 制御を **同一 SoC 内に統合可能**  
+
+   **C code → HDL (SoC_DesignKit_by_ChatGPT/c_to_hdl/)**  
+   - Map C code into templates to auto-generate **Verilog/SystemVerilog** and **testbenches**  
+   - Integrate PID / FSM / LLM control into the **same SoC**  
+
+3. **シミュレーション & 検証 (SoC_DesignKit_by_ChatGPT/testbench/)**  
+   - 自動生成テストベンチで **C と RTL の動作一致**を確認  
+
+   **Simulation & Verification (SoC_DesignKit_by_ChatGPT/testbench/)**  
+   - Verify **functional equivalence between C and RTL** with auto-generated testbenches  
+
+4. **合成 & 展開**  
+   - FPGA/ASIC フローに統合して実機検証へ  
+
+   **Synthesis & Deployment**  
+   - Integrate into FPGA/ASIC flow for real hardware validation  
+
+### 📐 ワークフロー全体図 / Workflow Overview
+
+```mermaid
+flowchart TB;
+  A1["Simulink Model (matlab_tools)"];
+  A2["Handwritten C (FSM + LLM)"];
+  B["C code (fixed point)"];
+  C["c_to_hdl - SoC DesignKit by ChatGPT"];
+  D["RTL Generation (Verilog & SystemVerilog)"];
+  E["Testbench (Simulation & Verification)"];
+  F["FPGA & ASIC (Synthesis & Deployment)"];
+  A1 --> B;
+  A2 --> B;
+  B --> C;
+  C --> D;
+  D --> E;
+  E --> F;
+```
+
+## 🎯 活用目的 / Usage Purposes
+
 - **EduController** の前段フェーズ（制御モデル設計）でのSimulink活用  
 - **Cコード生成後**、[`c_to_hdl/`](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/c_to_hdl/) によるVerilog化への導入  
 - PID制御・状態空間制御などの設計検証  
