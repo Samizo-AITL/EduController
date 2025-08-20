@@ -6,7 +6,8 @@ permalink: /SoC_DesignKit_by_ChatGPT/fsm/fsm_template.html
 
 ---
 
-# 🧭 FSM設計テンプレート（YAML形式）
+# 🧭 FSM設計テンプレート（YAML形式）  
+**FSM Design Template (YAML Format)**
 
 ---
 
@@ -52,8 +53,8 @@ fsm:
 
 ## 🧩 各項目の説明 / Field Descriptions
 
-| キー / Key | 説明 / Description |
-|------------|--------------------|
+| **キー / Key** | **説明 / Description** |
+|----------------|-------------------------|
 | `name` | FSMの名称（任意） / FSM name (optional) |
 | `states` | 状態のリスト / List of states |
 | `transitions` | 状態遷移の定義（from → to + trigger） / State transitions (from → to + trigger) |
@@ -63,19 +64,21 @@ fsm:
 
 ## 🧪 使用方法 / How to Use
 
-1. このテンプレートを基に、例：`fsm_example_counter.yaml` を作成  
-   Create your FSM definition file (e.g., `fsm_example_counter.yaml`) based on this template.
-2. [`fsm_to_mermaid.py`](../fsm_to_mermaid.py) でMermaid.jsコードへ変換  
-   Convert it to Mermaid.js code using [`fsm_to_mermaid.py`](../fsm_to_mermaid.py).
-3. [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT) の `fsm_prompt.md` を利用してVerilogコードへ展開  
-   Use `fsm_prompt.md` in [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT) to generate Verilog code.
+1. **テンプレートを基にFSM定義ファイル作成**（例：`fsm_example_counter.yaml`）  
+   Create your FSM definition file (e.g., `fsm_example_counter.yaml`) based on this template.  
+
+2. **Mermaid図に変換** — [`fsm_to_mermaid.py`](../fsm_to_mermaid.py) を用いて可視化  
+   Convert to Mermaid.js diagram using [`fsm_to_mermaid.py`](../fsm_to_mermaid.py).  
+
+3. **Verilogコードへ展開** — [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT) の `fsm_prompt.md` を利用  
+   Use `fsm_prompt.md` in [SamizoGPT](https://github.com/Samizo-AITL/SamizoGPT) to generate Verilog code.  
 
 ---
 
 ## 📘 関連ファイル / Related Files
 
-| ファイル / File | 説明 / Description |
-|-----------------|--------------------|
+| **ファイル / File** | **説明 / Description** |
+|----------------------|-------------------------|
 | [`fsm_example_counter.yaml`](./fsm_example_counter.yaml) | カウンタ用の簡易FSMサンプル / Sample FSM for counter logic |
 | [`fsm_to_mermaid.py`](../fsm_to_mermaid.py) | YAML→Mermaid.js変換スクリプト / YAML to Mermaid.js converter |
 | [`fsm_prompt.md`](../prompts/control_templates/fsm_prompt.md) | SamizoGPT用FSM生成プロンプト / Prompt for FSM code generation |
@@ -84,17 +87,28 @@ fsm:
 
 ## 🔖 YAML作法の注意点 / YAML Syntax Notes
 
-- **インデントは半角スペース2つ**（Tabは使用不可）  
-  Use two spaces for indentation (no tabs).
-- 文字列はクォート不要（特殊文字含む場合は `""` 推奨）  
-  Strings can be unquoted unless they contain special characters.
+- **インデントは半角スペース2つ**（Tab禁止）  
+  Use **two spaces** for indentation (tabs not allowed).  
+- 文字列は基本クォート不要（特殊文字含む場合は `""` 推奨）  
+  Strings can be unquoted unless they contain special characters.  
 
 ---
 
-## 📝 著作・ライセンス / Author & License
+## 📄 **ライセンス / License**
 
-MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
-This template is provided under the MIT License for educational and personal use.
+> 教材・コード・図表の性質に応じた **ハイブリッドライセンス** を採用  
+> *Hybrid licensing based on the nature of the materials, code, and diagrams.*
+
+| **項目 / Item** | **ライセンス / License** | **説明 / Description** |
+|-----------------|--------------------------|-------------------------|
+| **コード（Code）** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布可<br>*Free to use, modify, and redistribute* |
+| **教材テキスト（Text materials）** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須<br>*Attribution required* |
+| **図表・イラスト（Figures & diagrams）** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ可<br>*Non-commercial use only* |
+| **外部引用（External references）** | 元ライセンスに従う<br>*Follow the original license* | 引用元を明記<br>*Cite the original source* |
+
+---
+
+👤 MIT License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)  
 
 ---
 
