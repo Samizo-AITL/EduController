@@ -85,3 +85,48 @@ blockquote {
   color:var(--muted);
   background:#fafafa;
 }
+
+/* ========== Dividers(区切り線)は黒実線 ========== */
+.markdown-body hr,
+.container hr,
+hr {
+  border: 0 !important;
+  border-top: 2px solid #000 !important; /* 黒実線 */
+  margin: 2rem 0 !important;
+}
+
+/* ========== 表の罫線は薄いグレー ========== */
+.markdown-body table,
+.markdown-body thead,
+.markdown-body tbody,
+.markdown-body tr,
+.markdown-body th,
+.markdown-body td,
+table, thead, tbody, tr, th, td {
+  border-color: #e5e7eb !important;      /* 薄い線 */
+}
+
+.markdown-body table,
+table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+}
+
+.markdown-body th,
+.markdown-body td,
+th, td {
+  border: 1px solid #e5e7eb !important;
+  padding: .5rem .75rem !important;
+}
+
+/* コード枠・インラインコードも薄い枠で統一（任意） */
+.markdown-body pre, pre {
+  background: #f6f8fa !important;
+  border: 1px solid #e5e7eb !important;
+}
+.markdown-body code, code {
+  background: #f6f8fa !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 4px !important;
+  padding: .1em .3em !important;
+}
