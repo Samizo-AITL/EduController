@@ -74,7 +74,6 @@ Cコードは **2系統**（Simulink生成C / 手書きC）から入力でき、
 ### 📐 ワークフロー全体図 / Workflow Overview
 
 ```mermaid
-
 flowchart TB
   A1[Simulink Model (matlab_tools)]
   A2[Handwritten C (FSM + LLM)]
@@ -90,7 +89,6 @@ flowchart TB
   C  --> D
   D  --> E
   E  --> F
-
 ```
   
 ## 🎯 活用目的 / Usage Purposes
