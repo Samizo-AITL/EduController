@@ -62,7 +62,15 @@ LLMは以下の二系統で利用可能です：
 **LLMの最小理屈（制御視点）**  
 - **Attentionの役割**：過去系列を動的に加重（PIDゲインに相当）  
 - **潜在表現**：観測から状態を近似（状態推定器として機能）  
-- **確率的出力**：候補行動分布を生成（制御入力候補に対応）
+- **確率的出力**：候補行動分布を生成（制御入力候補に対応）  
+
+📐 Attention の基本数式（比較用）：  
+
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$  
+
+この式は「入力系列のどの部分を強調すべきか」を決定し、PIDにおける**ゲイン調整**と対比できる。
 
 ---
 
@@ -117,3 +125,4 @@ In the next section, we will discuss **scenario-based control and LLM utilizatio
 
 **⬅️ [Part 9 トップに戻る / Back to Part 9 Top](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/)**  
 **🏠 [トップページ / Back to Home](https://samizo-aitl.github.io/EduController/)**
+
