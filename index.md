@@ -37,7 +37,7 @@ title: EduController/index.md
   <h2>🌐 次世代制御へ — FSM × PID × LLM</h2>
   <p><b>AITLフレームワークによる三層ハイブリッド制御</b><br>
      <i>Hybrid Control with FSM, PID, and LLM (AITL Framework)</i></p>
-  <a href="{{ site.baseurl }}/part09_llm_hybrid/" 
+  <a href="https://samizo-aitl.github.io/EduController/part09_llm_hybrid/" 
      style="display:inline-block; margin-top:10px; padding:10px 20px; background:#4B0082; color:white; border-radius:8px; text-decoration:none; font-weight:bold;">
      🚀 Learn More
   </a>
