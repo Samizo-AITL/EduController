@@ -54,21 +54,25 @@ LLM：
 - 条件分岐や環境変化に応じた行動パターンの選択  
   Selects behavior patterns based on conditional branches and environment changes  
 - 状態・遷移の追加など**シナリオ拡張**を実行  
-  Executes **scenario extension** by adding states or transitions
+  Executes **scenario extension** by adding states or transitions  
+- 高次目標（例：「安全優先」「省エネ重視」）を解釈し、FSMに反映  
+  Interprets high-level goals (e.g., "safety first", "energy saving") and maps them into FSM transitions  
+
+👉 LLMはクラウド型（ChatGPT等）でも組み込み型（軽量LLM）でも利用可能。前者は設計支援やシナリオ自動生成、後者はリアルタイムな状態遷移推論に適しています。
 
 ---
 
-## 🧪 **実験例：GPTによるシナリオ遷移制御 / Example: Scenario Transition with GPT**
+## 🧪 **実験例：LLMによるシナリオ遷移制御 / Example: Scenario Transition with LLM**
 
 1. 状態テーブルを用意（FSM）  
    Prepare a state table (FSM)  
 2. 状況記述（自然言語）を入力  
    Input a natural language description of the situation  
-3. ChatGPTに次の状態を問い合わせる  
-   Query ChatGPT for the next state:  
+3. LLMに次の状態を問い合わせる  
+   Query the LLM for the next state:  
     ```python
     prompt = "現在の状態は「搬送中」、周囲に障害物があります。次に取るべき状態は？"
-    response = chatgpt_respond(prompt)
+    response = llm_respond(prompt)
     # → 返答：『障害物回避』状態へ遷移してください。
     ```
 
@@ -80,7 +84,7 @@ LLM：
 states = ['IDLE', 'SEARCH', 'CARRY', 'AVOID', 'CHARGE']
 
 def next_state_from_llm(current_state, observation_text):
-    # LLM APIへの問い合わせ / Query to LLM API
+    # LLM APIまたはローカル組み込みモデルへの問い合わせ
     return response_suggested_state
 ```
 
@@ -91,7 +95,7 @@ def next_state_from_llm(current_state, observation_text):
 - 自律移動ロボット / Autonomous mobile robots  
 - ドローン制御 / Drone control  
 - ゲームAI、教育ロボット / Game AI, educational robots  
-- 工場シナリオ自動化・異常対話対応 / Factory automation & exception dialogue handling
+- 工場シナリオ自動化・異常対話対応 / Factory automation & exception dialogue handling  
 
 ---
 
@@ -99,8 +103,10 @@ def next_state_from_llm(current_state, observation_text):
 
 - シナリオ制御はFSMで構築できるが、LLMを組み合わせることで**柔軟性と文脈理解が向上**  
   Scenario control can be built with FSM alone, but combining it with LLMs increases flexibility and contextual understanding  
+- **クラウド型LLM**は設計支援や知識参照に、**組み込みLLM**はリアルタイム適応に強み  
+  Cloud-based LLMs support design/knowledge, embedded LLMs support real-time adaptation  
 - 人間との対話や動的環境への適応が可能な**知能的フロー制御**を実現できる  
-  Enables intelligent flow control that adapts to human dialogue and dynamic environments
+  Enables intelligent flow control that adapts to human dialogue and dynamic environments  
 
 ---
 
@@ -111,4 +117,4 @@ def next_state_from_llm(current_state, observation_text):
 ---
 
 **⬅️ [01_fsm_pid_llm.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/01_fsm_pid_llm.html)**  
-**🏠 [Part 9 トップに戻る / Back to Part 9 Top](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/)**
+**🏠 [Part 9 トップに戻る / Back to Part 9 Top](https://samizo-aitl.github.io/EduController/)**
