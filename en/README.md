@@ -29,6 +29,19 @@ title: EduController/en/README.md
 
 ---
 
+<!-- 🚀 Part09 Banner (English Version) -->
+<div style="border: 2px solid #4B0082; border-radius: 12px; padding: 16px; background: #f9f7ff; text-align: center; margin: 20px 0;">
+  <h2>🌐 Toward Next-Generation Control — FSM × PID × LLM</h2>
+  <p><b>A three-layer hybrid control architecture with AITL Framework</b><br>
+     <i>Integrating FSM, PID, and LLM for intelligent control systems</i></p>
+  <a href="https://samizo-aitl.github.io/EduController/part09_llm_hybrid/" 
+     style="display:inline-block; margin-top:10px; padding:10px 20px; background:#4B0082; color:white; border-radius:8px; text-decoration:none; font-weight:bold;">
+     🚀 Learn More
+  </a>
+</div>
+
+---
+
 ## 🧭 **Structure Overview**
 
 | **Track** | **Overview (EN)** |
