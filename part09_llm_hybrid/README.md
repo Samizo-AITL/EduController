@@ -73,6 +73,46 @@ It is based on the **AITL framework (FSM × PID × LLM)**, aiming to build adapt
 
 ---
 
+## 🧠 **LLMの最小理屈と利用形態**
+
+LLM（Large Language Model）はTransformer構造に基づき、系列データを入力し **自己注意機構（Self-Attention）** によって重み付きで処理します。
+
+- **Attentionの役割**  
+  過去系列の情報を動的に重み付けして利用  
+  → 制御では「PIDの固定ゲイン」と対比し、**可変的な重み付け**が可能  
+
+- **潜在表現と状態推定**  
+  内部のベクトル表現は観測値からの **状態空間近似** と見なせる  
+
+- **確率的出力**  
+  次の系列要素を分布として予測  
+  → 制御では「行動候補分布」の生成と対応  
+
+さらにLLMは形態に応じて2系統に分類されます：  
+- **クラウド型LLM（例: ChatGPT）**：設計支援・自然言語インタフェースに強い  
+- **組み込み型LLM（例: LLaMA系, Phi-3-mini, Mistral等）**：制御ループ内に統合し、リアルタイム推定・ゲイン調整・高次目標解釈を担う  
+
+👉 FSMやPIDと併用することで **安定性を担保しつつ柔軟性を拡張** できます。  
+
+---
+
+## 🔗 **三層統合制御アーキテクチャ（概念図）**
+
+```mermaid
+graph TD
+  S[センサ入力 / Sensor Data] --> P[PID制御 / PID Control]
+  S --> F[FSM状態遷移 / FSM Transition]
+  S --> L[LLM（推論器） / LLM Inference]
+
+  P --> U[制御入力 / Control Signal]
+  F --> U
+  L --> U
+
+  U --> A[アクチュエータ / Actuator]
+```
+
+---
+
 ## 🔜 **今後の展開 / Next Steps**
 
 - ChatGPT API とリアル連携による**実機制御**の検証  
