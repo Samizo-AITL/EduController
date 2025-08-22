@@ -50,6 +50,15 @@ AITL (Artificial Instinct–Thinking–Language) is a control model with the fol
 - 実時間で物理系とやり取り  
 - Interacts with the physical system in real time
 
+📐 PID制御の基本数式：  
+
+$$
+u(t) = K_p \, e(t) + K_i \int_0^t e(\tau) \, d\tau + K_d \frac{de(t)}{dt}
+$$  
+
+ここで $e(t)$ は目標値と現在値の偏差、$u(t)$ は制御入力。  
+比例・積分・微分の各項はそれぞれ「応答速度」「定常偏差除去」「外乱抑制」に対応する。
+
 ### ✅ **LLM（Large Language Model）**
 
 LLMは以下の二系統で利用可能です：  
