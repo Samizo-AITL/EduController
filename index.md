@@ -30,6 +30,8 @@ title: EduController/index.md
 **EN:**  
 **EduController** is a **step-by-step**, **practical educational project** covering **classical**, **modern**, and **AI-based next-generation control**. It supports learning from **control theory in Python** to **HDL coding** and **LLM-integrated design**.
 
+---
+
 <!-- 🚀 Part09誘導バナー -->
 <div style="border: 2px solid #4B0082; border-radius: 12px; padding: 16px; background: #f9f7ff; text-align: center; margin: 20px 0;">
   <h2>🌐 次世代制御へ — FSM × PID × LLM</h2>
