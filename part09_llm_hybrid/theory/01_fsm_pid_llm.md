@@ -50,14 +50,19 @@ AITL (Artificial Instinct–Thinking–Language) is a control model with the fol
 - 実時間で物理系とやり取り  
 - Interacts with the physical system in real time
 
-### ✅ **LLM（Large Language Model, e.g., GPT）**
+### ✅ **LLM（Large Language Model）**
 
-- 状況判断・文脈理解・例外時の指示生成  
-- Contextual reasoning, understanding, and exception handling  
-- FSMの状態遷移条件や制御パラメータ変更に関与  
-- Influences FSM state transitions and control parameters  
-- ChatGPT API等とのリアルタイム連携も可能  
-- Can work in real time with APIs like ChatGPT
+LLMは以下の二系統で利用可能です：  
+
+- **クラウド型（ChatGPT等）**  
+  - 設計支援、自然言語インタフェース、知識検索  
+- **組み込み型（LLaMA系, Phi-3-mini, Mistral等）**  
+  - 制御ループに直接組み込み、リアルタイムな推定やゲイン調整に使用  
+
+**LLMの最小理屈（制御視点）**  
+- **Attentionの役割**：過去系列を動的に加重（PIDゲインに相当）  
+- **潜在表現**：観測から状態を近似（状態推定器として機能）  
+- **確率的出力**：候補行動分布を生成（制御入力候補に対応）
 
 ---
 
@@ -65,18 +70,15 @@ AITL (Artificial Instinct–Thinking–Language) is a control model with the fol
 
 ```mermaid
 flowchart TB
-    subgraph LLM [LLM: 知性層 / Intelligence Layer]
-        L1[指示・推論 / Commands & Reasoning]
-    end
-    subgraph FSM [FSM: 本能層 / Instinct Layer]
-        F1[状態遷移ロジック / State Transition Logic]
-    end
-    subgraph PID [PID: 理性層 / Reasoning Layer]
-        P1[実時間制御信号 / Real-Time Control Signal]
-    end
+    S[センサ入力 / Sensor Data] --> P[PID制御 / PID Control]
+    S --> F[FSM状態遷移 / FSM Transition]
+    S --> L[LLM（推論器） / LLM Inference]
 
-    LLM --> FSM
-    FSM --> PID
+    P --> U[制御入力 / Control Signal]
+    F --> U
+    L --> U
+
+    U --> A[アクチュエータ / Actuator]
 ```
 
 ---
