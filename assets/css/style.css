@@ -123,3 +123,70 @@ tbody tr:nth-child(even) td { background: #fbfcfd; }
   a { color: #000; text-decoration: underline; }
   pre, code, blockquote { background: #fff; }
 }
+
+/* === Portal/Edusemi と完全一致させる強制パッチ（末尾に追加） === */
+
+/* 本文：セピア＋日本語ゴシック・英語サンセリフ */
+html body.theme-sepia {
+  background: #fdf6e3 !important;
+  color: #3b2f2f !important;
+  font-family: "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",
+               "Segoe UI","Helvetica Neue",Arial,sans-serif !important;
+  line-height: 1.9 !important;
+  font-size: 1.05em !important;
+}
+
+/* 見出し：青字・左寄せ（下線なし） */
+html body.theme-sepia h1,
+html body.theme-sepia h2,
+html body.theme-sepia h3 {
+  color: #003366 !important;
+  font-weight: 700 !important;
+  border-bottom: none !important;
+  text-align: left !important;
+}
+html body.theme-sepia h1 { font-size: 2em !important; margin-bottom: .8em !important; }
+html body.theme-sepia h2 { font-size: 1.5em !important; margin-top: 1.6em !important; }
+html body.theme-sepia h3 { font-size: 1.2em !important; margin-top: 1.2em !important; }
+
+/* リンク：太字＋下線（やや小さめ） */
+html body.theme-sepia a {
+  color: #0066cc !important;
+  font-weight: 600 !important;
+  font-size: .95em !important;
+  text-decoration: underline !important;
+}
+html body.theme-sepia a:hover { color: #004c99 !important; }
+
+/* 表：ヘッダー薄茶／外枠2px／セル1.5px／ストライプ（Portal Fix と同じ） */
+html body.theme-sepia table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin-top: 1em !important;
+  font-size: 1em !important;
+  border: 2px solid #999 !important;
+}
+html body.theme-sepia th {
+  background: #e9ddc9 !important;
+  color: #2b2b2b !important;
+  border: 2px solid #999 !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  padding: .8em 1em !important;
+}
+html body.theme-sepia td {
+  border: 1.5px solid #bbb !important;
+  color: #2b2b2b !important;
+  padding: .8em 1em !important;
+}
+html body.theme-sepia tr:nth-child(odd)  td { background: #ffffff !important; }
+html body.theme-sepia tr:nth-child(even) td { background: #f3efe6 !important; }
+
+/* 引用：落ち着いた青アクセント（Portalと同じ） */
+html body.theme-sepia blockquote {
+  background: #fbf6eb !important;
+  border-left: 4px solid #007acc !important;
+  color: #3a3028 !important;
+  padding: .8em 1em !important;
+  margin: 1em 0 !important;
+}
