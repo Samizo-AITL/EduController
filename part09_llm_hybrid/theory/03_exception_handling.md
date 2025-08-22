@@ -36,14 +36,16 @@ This section introduces an approach to handling **exceptional or unknown situati
 | **対応策提案 / Action Proposal** | 適切な行動を提案（例：「電源を落として30秒待ってください」）<br>Suggests appropriate actions |
 | **FSM補完 / FSM Integration** | 例外パスとして状態遷移に挿入（例：回復状態 → 通常復帰）<br>Adds exception paths to FSM transitions |
 
+👉 LLMは **クラウド型（ChatGPT等）** と **組み込み型（軽量LLM）** の両方で利用可能です。前者は設計支援・知識参照に、後者はリアルタイムでの異常推定に強みがあります。
+
 ---
 
-## 📘 **実装例（ChatGPTベース） / Implementation Example (ChatGPT-based)**
+## 📘 **実装例（LLM利用） / Implementation Example (with LLM)**
 
 ```python
 def handle_exception(observation_text):
     prompt = f"異常が発生しました：{observation_text}。原因と対応策を述べてください。"
-    return chatgpt_respond(prompt)
+    return llm_respond(prompt)  # API or local embedded LLM
 ```
 
 **入力例 / Input Example**  
@@ -51,7 +53,7 @@ def handle_exception(observation_text):
 「センサが全く反応しない」「温度が急上昇している」
 ```
 
-**出力例（ChatGPT） / Output Example (ChatGPT)**  
+**出力例（LLM） / Output Example (LLM)**  
 ```
 「センサ断線の可能性があります。機器を停止し、センサ接続を確認してください。」
 ```
@@ -94,4 +96,4 @@ def handle_exception(observation_text):
 ---
 
 **⬅️ [02_scenario_control.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/02_scenario_control.html)**  
-**🏠 [Part 9 トップに戻る / Back to Part 9 Top](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/)**
+**🏠 [Part 9 トップに戻る / Back to Part 9 Top](https://samizo-aitl.github.io/EduController/)**
