@@ -33,12 +33,16 @@ This section explains an intelligent control strategy that leverages the natural
 
 | **機能 / Function** | **内容 / Description** |
 |------|--------------|
-| **意図理解 / Intent Understanding** | 命令の背後にある目的を推定（例：「充電せよ」→ バッテリー低下） |
-| **ゴール再構成 / Goal Reconstruction** | 環境変化やユーザ指示による目標更新 |
-| **サブゴール生成 / Subgoal Generation** | 「探索 → 発見 → 運搬 → 充電」などのステップ提案 |
-| **対話制御 / Dialogue Control** | ユーザとの言語的インタラクションによる目標確認 |
+| **意図理解 / Intent Understanding** | 命令の背後にある目的を推定（例：「充電せよ」→ バッテリー低下）<br>*Infers the underlying purpose behind commands (e.g., "Recharge" → low battery)* |
+| **ゴール再構成 / Goal Reconstruction** | 環境変化やユーザ指示による目標更新<br>*Updates goals based on environmental changes or user instructions* |
+| **サブゴール生成 / Subgoal Generation** | 「探索 → 発見 → 運搬 → 充電」などのステップ提案<br>*Generates sub-steps such as "Explore → Detect → Transport → Recharge"* |
+| **対話制御 / Dialogue Control** | ユーザとの言語的インタラクションによる目標確認<br>*Confirms goals through linguistic interaction with the user* |
 
-👉 LLMは **クラウド型（ChatGPT等）** では設計支援・目標分解に、**組み込み型LLM** ではリアルタイムな目標更新やFSMとの統合に活用可能です。
+👉 LLMは **クラウド型（ChatGPT等）** では設計支援・目標分解に活用され、  
+*LLMs in **cloud-based form (e.g., ChatGPT)** are useful for design assistance and goal decomposition,*  
+
+**組み込み型LLM** ではリアルタイムな目標更新やFSMとの統合に利用可能です。  
+*while **embedded LLMs** can be leveraged for real-time goal updates and integration with FSM.*  
 
 ---
 
