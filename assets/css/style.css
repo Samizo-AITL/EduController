@@ -1,40 +1,125 @@
 /* ──────────────── */
-/* Minimal CSS Style */
+/* Minimal CSS Style (revised) */
 /* ──────────────── */
 
-/* 区切り線は黒実線 */
-hr {
-  border: 0;
-  border-top: 2px solid #000;
-}
+/* すべての要素を安定させる */
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
-/* 表のスタイル */
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  border: 1px solid #e5e7eb; /* 薄い線 */
-  padding: .5rem .75rem;
-}
-
-/* フォント（GitHub風） */
+/* ベース（GitHub寄りの読みやすさ） */
+html { -webkit-text-size-adjust: 100%; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #24292e;
   background: #fff;
   margin: 0;
-  padding: 0;
 }
 
-/* Mermaid 図は中央寄せ */
+/* 見出し：間隔だけ最小限調整 */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.6rem 0 .8rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+/* 段落とリストの間隔 */
+p, ul, ol { margin: .7rem 0 1rem; }
+ul, ol { padding-left: 1.25rem; }
+
+/* リンク（シンプルに太字＋下線） */
+a {
+  color: #0366d6;
+  font-weight: 600;
+  text-decoration: underline;
+}
+a:hover { color: #024ea3; }
+
+/* 区切り線は黒実線（指定どおり） */
+hr {
+  border: 0;
+  border-top: 2px solid #000;
+  margin: 1.5rem 0;
+}
+
+/* 画像は横幅にフィット */
+img, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+/* コード */
+code, kbd, samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: .95em;
+  background: #f6f8fa;
+  padding: .15em .35em;
+  border-radius: 4px;
+}
+pre {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  padding: .9rem 1rem;
+  border-radius: 6px;
+  overflow: auto;
+}
+pre code { background: transparent; padding: 0; }
+
+/* 引用（控えめ） */
+blockquote {
+  margin: 1rem 0;
+  padding: .6rem 1rem;
+  color: #57606a;
+  background: #f6f8fa;
+  border-left: .25rem solid #d0d7de;
+}
+
+/* 表（薄い罫線＋最小限の強調） */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+th, td {
+  border: 1px solid #e5e7eb;     /* 薄い線 */
+  padding: .5rem .75rem;         /* 横余白やや広め */
+  vertical-align: top;
+}
+th {
+  background: #f6f8fa;           /* 見出し行だけ淡色 */
+  font-weight: 700;
+  text-align: left;
+}
+/* 交互行（読みやすさ用。不要なら削除） */
+tbody tr:nth-child(even) td { background: #fbfcfd; }
+
+/* Mermaid 図は中央寄せ（そのまま） */
 .mermaid {
   display: block;
   margin: 1.25rem auto;
   max-width: 100%;
   text-align: center;
+}
+
+/* モバイル微調整 */
+@media (max-width: 768px) {
+  body { font-size: 15.5px; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.35rem; }
+  h3 { font-size: 1.15rem; }
+}
+
+/* 印刷時の無駄な色抑制（必要最低限） */
+@media print {
+  a { color: #000; text-decoration: underline; }
+  pre, code, blockquote { background: #fff; }
 }
