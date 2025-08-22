@@ -135,6 +135,23 @@ graph TD
 
 ---
 
+## 🔗 関連章リンク / Related Chapters
+
+- 📘 **FSM基礎 / Introduction to FSM**  
+  [2.6 FSM導入と状態制御の基本 (Edusmei-v4x)](https://samizo-aitl.github.io/Edusemi-v4x/chapter2_comb_logic/2.6_fsm_intro.html)  
+
+- 📗 **FSM設計 / FSM Design**  
+  [第8章 FSM設計 (Edusmei-v4x)](https://samizo-aitl.github.io/Edusemi-v4x/d_chapter8_fsm_design_basics/)  
+
+- 📙 **PID制御基礎 / Introduction to PID Control**  
+  [01 PID制御の基礎 (EduController)](https://samizo-aitl.github.io/EduController/part01_classical/theory/01_pid_control.html)  
+
+> 🔎 これらの章を参照することで、FSM・PIDの基礎理解から出発し、  
+> 本章 Part09 の **FSM × PID × LLM ハイブリッド制御** にスムーズに接続できます。  
+> *By referring to these chapters, learners can smoothly transition from fundamentals of FSM and PID to the hybrid FSM × PID × LLM control in Part09.*
+
+---
+
 ## 📚 **参考資料 / References**
 
 - OpenAI ChatGPT: [https://platform.openai.com/](https://platform.openai.com/)  
