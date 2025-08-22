@@ -38,6 +38,8 @@ This section explains an intelligent control strategy that leverages the natural
 | **サブゴール生成 / Subgoal Generation** | 「探索 → 発見 → 運搬 → 充電」などのステップ提案 |
 | **対話制御 / Dialogue Control** | ユーザとの言語的インタラクションによる目標確認 |
 
+👉 LLMは **クラウド型（ChatGPT等）** では設計支援・目標分解に、**組み込み型LLM** ではリアルタイムな目標更新やFSMとの統合に活用可能です。
+
 ---
 
 ## 💬 **例：LLMによるゴール判断プロンプト / Example Prompt for Goal Reasoning**
@@ -49,7 +51,7 @@ prompt = '''
 目的は「最短で充電地点に到達する」。
 最適な行動は？
 '''
-response = chatgpt_respond(prompt)
+response = llm_respond(prompt)  # API または 組み込みLLM
 # 例 / Example:
 # 「障害物を回避し、最短経路を再計算して移動してください。」
 ```
@@ -64,7 +66,7 @@ class GoalReasoningAgent:
         self.goal = "探索"
     def update_goal(self, observation_text):
         prompt = f"現在の目的は「{self.goal}」。状況：{observation_text}。次の目的は？"
-        self.goal = chatgpt_respond(prompt)
+        self.goal = llm_respond(prompt)
 ```
 
 ---
@@ -74,7 +76,7 @@ class GoalReasoningAgent:
 - FSMの遷移先や目標条件を、LLMが柔軟に切り替える  
   LLM can flexibly change FSM target states and goal conditions  
 - 状態遷移ではなく「目的の変更」に直接対応可能  
-  Can directly handle **goal changes** instead of just state transitions
+  Can directly handle **goal changes** instead of just state transitions  
 
 ---
 
@@ -92,6 +94,8 @@ class GoalReasoningAgent:
 
 - ゴールベース制御は **柔軟性・汎化性・自律性** を大幅に向上  
   Goal-based control greatly improves **flexibility, generalization, and autonomy**  
+- **クラウド型LLM** は高次推論や設計支援に、**組み込み型LLM** はリアルタイム適応に有効  
+  Cloud-based LLMs help with high-level reasoning, embedded LLMs help with real-time adaptation  
 - LLM統合により「対話的・文脈的な制御」が現実的に可能  
   Integration with LLMs enables **interactive and context-aware control**
 
