@@ -162,7 +162,13 @@ flowchart TB
 | 🤖 **AITL-H** | [🌐 View Site](https://samizo-aitl.github.io/AITL-H/) ・ [💻 View Repo](https://github.com/Samizo-AITL/AITL-H) | FSM×PID×LLMの三層制御フレームワーク（Part09と連携）<br>*Three-layer control framework (FSM×PID×LLM)* | [Hybrid License](#-ライセンス--license) |
 | 🧠 **SamizoGPT** | [🌐 View Site](https://samizo-aitl.github.io/SamizoGPT/) ・ [💻 View Repo](https://github.com/Samizo-AITL/SamizoGPT) | ChatGPTのプロンプト設計支援テンプレート集（設計支援と連携）<br>*Prompt design templates for ChatGPT (design assistance)* | [Hybrid License](#-ライセンス--license) |
   
+## 🔗 **関連プロジェクト | Related Projects**
 
+| プロジェクト | リンク | 概要 | ライセンス |
+|--------------|--------|------|------------|
+| 🎓 **Edusemi-v4x** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | 半導体設計・プロセス教育教材（Python、sky130、OpenLane）<br>*Semiconductor design & process education (Python, sky130, OpenLane)* | [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+| 🤖 **AITL-H** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/AITL-H/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/AITL-H) | FSM×PID×LLMの三層制御フレームワーク（Part09と連携）<br>*Three-layer control framework (FSM×PID×LLM)* | [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
+| 🧠 **SamizoGPT** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/SamizoGPT/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/SamizoGPT) | ChatGPTのプロンプト設計支援テンプレート集（設計支援と連携）<br>*Prompt design templates for ChatGPT (design assistance)* | [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
 
 ---
 
