@@ -112,14 +112,14 @@ Kd = c2d(K, Ts, 'tustin');  % デジタル制御器 / Digital controller
   Compare step response and frequency response  
 
 <p align="center">
-  <img src="https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_step.png" alt="Step Response: Continuous vs Digital H∞" width="60%">
+  <img src="https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_step.png" alt="Step Response: Continuous vs Digital H∞" width="80%">
 </p>  
 **図1 / Fig.1 — ステップ応答（連続 vs 離散H∞）**  
 連続設計と離散実装の応答を比較。離散側はわずかに帯域が低く、減衰が大きい。  
 *Step responses of continuous design and digital implementation. The digital one shows slightly lower bandwidth and higher damping.*
 
 <p align="center">
-  <img src="https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_bode.png" alt="Bode Plot: Continuous vs Digital H∞" width="60%">
+  <img src="https://samizo-aitl.github.io/EduController/part04_digital/figures/digital_hinf_bode.png" alt="Bode Plot: Continuous vs Digital H∞" width="80%">
 </p>  
 **図2 / Fig.2 — ボード線図（連続 vs 離散H∞）**  
 中高周波でのゲイン差を可視化し、離散化の影響を確認。  
