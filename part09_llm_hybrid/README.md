@@ -160,14 +160,12 @@ graph TD
 
 ---
 
-## 👤 **執筆者 / Author**
+## 👤 **著者・ライセンス | Author & License**
 
-| **項目 / Item** | **内容 / Details** |
-|-----------------|--------------------|
-| **著者 / Author** | 三溝 真一（Shinichi Samizo） |
-| **Email** | [![Email](https://img.shields.io/badge/Email-shin3t72%40gmail.com-red?style=for-the-badge&logo=gmail)](mailto:shin3t72@gmail.com) |
-| **X** | [![X](https://img.shields.io/badge/X-@shin3t72-black?style=for-the-badge&logo=x)](https://x.com/shin3t72) |
-| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
+| 📌 項目 / Item | 📄 内容 / Details |
+|------|------|
+| **著者 / Author** | **三溝 真一**（Shinichi Samizo） |
+| **💻 GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
 
 ---
 
