@@ -156,8 +156,8 @@ flowchart TB;
 
 ## 👤 **著者 / Author**
 
-| 項目 / Item | 詳細 / Details |
-|-------------|----------------|
+| **項目 / Item** | **詳細 / Details** |
+|-----------------|---------------------|
 | **著者 / Author** | 三溝 真一（Shinichi Samizo） / Shinichi Samizo |
 | **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
 | **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
