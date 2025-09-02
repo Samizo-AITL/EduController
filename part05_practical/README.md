@@ -83,13 +83,12 @@ This chapter focuses on **practical implementation methods** such as
 
 ---
 
-## 👤 **著者 / Author**
+## 👤 **著者・ライセンス | Author & License**
 
-| **項目 / Item** | **内容 / Details** |
-|------------------|---------------------|
-| **著者 / Author** | 三溝 真一（Shinichi Samizo） |
-| **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
-| **Email** | [shin3t72@gmail.com](mailto:shin3t72@gmail.com) |
+| 📌 項目 / Item | 📄 内容 / Details |
+|------|------|
+| **著者 / Author** | **三溝 真一**（Shinichi Samizo） |
+| **💻 GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
 
 ---
 
