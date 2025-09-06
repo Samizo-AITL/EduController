@@ -117,6 +117,8 @@ graph TD
   U --> A[アクチュエータ / Actuator]
 ```
 
+---
+
 ## 📑 **Appendix / Expert Notes**
 
 - [appendix_expert.md](appendix_expert.md)  
