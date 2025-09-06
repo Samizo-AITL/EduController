@@ -11,6 +11,16 @@ permalink: /part09_llm_hybrid/
 
 ---
 
+> ⚠️ **Note / 注記**  
+> 本章は **教育・研究用の構想段階** の内容です。  
+> - **安定性と応答設計はPID等の制御理論に基づく**ことを前提としています。  
+> - **FSMやLLMは外層の監督・支援層**であり、直接的な安定性保証の対象には含まれません。  
+> - 記述内容はPoCや教育実験の一部であり、今後の検証で変更される可能性があります。  
+> *This chapter is at a **conceptual / research stage**.  
+> - **Stability and response design rely on classical control theory (e.g., PID)**.  
+> - **FSM and LLM act as outer supervisory / support layers**, not part of the stability-guaranteed control loop.  
+> - Contents are PoC / educational experiments and may change with further validation.*
+
 本章では、**状態機械（FSM）・物理制御（PID）・大規模言語モデル（LLM）** を組み合わせた  
 柔軟かつ適応的な**三層統合型制御アーキテクチャ**を設計・実装します。  
 *This chapter explores the design and implementation of a three-layer hybrid control architecture,  
