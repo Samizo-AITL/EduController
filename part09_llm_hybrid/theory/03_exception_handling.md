@@ -14,86 +14,74 @@ permalink: /part09_llm_hybrid/theory/03_exception_handling.html
 本節では、従来の制御系では困難だった **例外的状況や未知の事象への対応** について、  
 LLMを活用して「知識ベース制御」や「意味的補完」を行うアプローチを紹介します。  
 
-This section introduces an approach to handling **exceptional or unknown situations** in control systems by leveraging LLMs for **knowledge-based control** and **semantic augmentation**.
-
 ---
 
-## 🔧 **例外処理とは？ / What is Exception Handling?**
+## 🔧 **例外処理とは？**
 
 - 想定外の状況・入力・環境変化に対して、システムを安全・安定に保つための処理  
-  A process to maintain system safety and stability in the face of unexpected situations, inputs, or environmental changes  
 - 通常のFSMやPIDでは事前定義が困難なケースが多い  
-  Many cases are difficult to predefine in FSM or PID (e.g., abnormal noise, communication loss, operator error)
+  （例：異常ノイズ、通信断、オペレータの誤操作）
 
 ---
 
-## 🧠 **LLMが担う役割 / Role of LLMs**
+## 🧠 **LLMが担う役割**
 
-| **項目 / Function** | **内容 / Description** |
+| **項目** | **内容** |
 |------|--------------|
-| **状況理解 / Situation Understanding** | 自然言語的異常記述を文脈理解（例：「ブザー音が鳴っている」）<br>Understands abnormal conditions described in natural language |
-| **原因推定 / Cause Estimation** | 過去知識から原因を推測（例：「過熱異常の可能性がある」）<br>Infers possible causes from prior knowledge |
-| **対応策提案 / Action Proposal** | 適切な行動を提案（例：「電源を落として30秒待ってください」）<br>Suggests appropriate actions |
-| **FSM補完 / FSM Integration** | 例外パスとして状態遷移に挿入（例：回復状態 → 通常復帰）<br>Adds exception paths to FSM transitions |
-
-👉 LLMは **クラウド型（ChatGPT等）** と **組み込み型（軽量LLM）** の両方で利用可能です。前者は設計支援・知識参照に、後者はリアルタイムでの異常推定に強みがあります。
+| **状況理解** | 自然言語的異常記述を文脈理解（例：「ブザー音が鳴っている」） |
+| **原因推定** | 過去知識から原因を推測（例：「過熱異常の可能性」） |
+| **対応策提案** | 適切な行動を提案（例：「電源を落として30秒待つ」） |
+| **FSM補完** | 例外パスを状態遷移に追加（例：回復状態 → 通常復帰） |
 
 ---
 
-## 📘 **実装例（LLM利用） / Implementation Example (with LLM)**
+## 📘 **実装例（LLM利用）**
 
 ```python
 def handle_exception(observation_text):
     prompt = f"異常が発生しました：{observation_text}。原因と対応策を述べてください。"
-    return llm_respond(prompt)  # API or local embedded LLM
+    return llm_respond(prompt)  # API または ローカル LLM
 ```
 
-**入力例 / Input Example**  
+**入力例**
 ```
 「センサが全く反応しない」「温度が急上昇している」
 ```
 
-**出力例（LLM） / Output Example (LLM)**  
+**出力例（LLM）**
 ```
 「センサ断線の可能性があります。機器を停止し、センサ接続を確認してください。」
 ```
 
 ---
 
-## 💬 **FSMへの統合イメージ / FSM Integration Concept**
+## 💬 **FSMへの統合イメージ**
 
-- 通常の状態遷移に **異常状態** や **再初期化状態** を追加  
-  Add **error states** or **reinitialization states** to normal transitions  
-- LLMが状況を判断し、FSM構造の一部を再構築（自己適応）  
-  LLM assesses the situation and partially reconstructs the FSM (self-adaptation)
+- 通常の状態遷移に「異常状態」「再初期化状態」を追加  
+- LLMが状況を判断し、FSM構造を部分的に再構築（自己適応）
 
 ---
 
-## 🔒 **安全性と制約 / Safety and Constraints**
+## 🔒 **安全性と制約**
 
-- 制御に関わる判断は **信頼できる例外クラス** のみに限定  
-  Limit control-related decisions to **trusted exception classes**  
-- LLM出力は **最終判断者ではなく提案者** として位置づけ  
-  Position LLM output as a **proposal**, not the final decision-maker  
-- 実時間性・検証性とのトレードオフを意識  
-  Be aware of trade-offs between real-time performance and verifiability
+- 制御判断は **信頼できる例外クラス** に限定  
+- LLM出力は **最終判断者ではなく提案者** として扱う  
+- 実時間性・検証性のトレードオフに注意  
 
 ---
 
-## 🔚 **まとめ / Summary**
+## 🔚 **まとめ**
 
-- LLMは人間的な状況理解により、例外処理・知識注入の重要な役割を担う  
-  LLMs play a key role in exception handling and knowledge injection through human-like contextual understanding  
-- FSMと組み合わせることで、**頑健かつ柔軟な制御システム**を構築可能  
-  Combining with FSM enables **robust and adaptive control systems**
+- LLMは人間的な状況理解により、例外処理・知識注入を担える  
+- FSMと組み合わせることで **頑健かつ柔軟な制御システム** を実現可能  
 
 ---
 
 ## 📁 **次へ / Next**
 
-📄 [04_goal_reasoning.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/04_goal_reasoning.html)
+📄 [04_goal_reasoning.md](04_goal_reasoning.md)
 
 ---
 
-**⬅️ [02_scenario_control.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/02_scenario_control.html)**  
-**🏠 [Part 9 トップに戻る / Back to Part 9 Top](https://samizo-aitl.github.io/EduController/)**
+**⬅️ [02_scenario_control.md](02_scenario_control.md)**  
+**🏠 [Part 9 トップに戻る](../index.md)**
