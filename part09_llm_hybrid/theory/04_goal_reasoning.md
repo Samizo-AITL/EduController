@@ -7,35 +7,42 @@ permalink: /part09_llm_hybrid/theory/04_goal_reasoning.html
 ---
 
 # 🎯 04. 目的推論と対話型制御  
-**Goal Reasoning and Dialogue-based Control**
+*Goal Reasoning and Dialogue-based Control*
 
 ---
 
 本節では、LLMの自然言語理解能力を活用し、  
 **目的の認識・修正・分解** を行う知能的制御戦略について解説します。  
+*This section explains an intelligent control strategy that leverages the natural language understanding capabilities of LLMs to **recognize, modify, and decompose goals**.*  
 
 ---
 
-## 🤔 **目的推論とは？**
+## 🤔 **目的推論とは？ / What is Goal Reasoning?**
 
 - 単なる命令実行ではなく、「何を目指すべきか」を推論・理解するプロセス  
+  *Not just executing commands, but reasoning and understanding **what should be achieved***  
 - 状況や対話に応じて目標そのものが変化する可能性がある  
+  *Goals may change according to situations or dialogue*  
 - プランニングや意図理解とも密接に関連  
+  *Closely related to planning and intent recognition*  
 
 ---
 
-## 🧠 **LLMによる目的推論の役割**
+## 🧠 **LLMによる目的推論の役割 / Role of LLMs in Goal Reasoning**
 
-| **機能** | **内容** |
+| **機能 / Function** | **内容 / Description** |
 |------|--------------|
-| **意図理解** | 命令の背後にある目的を推定（例：「充電せよ」→ バッテリー低下） |
-| **ゴール再構成** | 環境変化やユーザ指示による目標更新 |
-| **サブゴール生成** | 「探索 → 発見 → 運搬 → 充電」などのステップ提案 |
-| **対話制御** | ユーザとの言語的インタラクションによる目標確認 |
+| **意図理解 / Intent Understanding** | 命令の背後にある目的を推定（例：「充電せよ」→ バッテリー低下） <br>*Infers the underlying purpose behind commands (e.g., “Recharge” → low battery)* |
+| **ゴール再構成 / Goal Reconstruction** | 環境変化やユーザ指示による目標更新 <br>*Updates goals based on environmental changes or user instructions* |
+| **サブゴール生成 / Subgoal Generation** | 「探索 → 発見 → 運搬 → 充電」などのステップ提案 <br>*Generates sub-steps such as “Explore → Detect → Transport → Recharge”* |
+| **対話制御 / Dialogue Control** | ユーザとの言語的インタラクションによる目標確認 <br>*Confirms goals through linguistic interaction with the user* |
+
+👉 LLMは **クラウド型** では高次推論や目標分解に、**組み込み型** ではリアルタイム適応に強みを持つ。  
+*👉 Cloud-based LLMs are strong in high-level reasoning and goal decomposition, while embedded LLMs excel in real-time adaptation.*  
 
 ---
 
-## 💬 **例：LLMによるゴール判断プロンプト**
+## 💬 **例：LLMによるゴール判断プロンプト / Example Prompt for Goal Reasoning**
 
 ```python
 prompt = '''
@@ -45,16 +52,18 @@ prompt = '''
 最適な行動は？
 '''
 response = llm_respond(prompt)
+# 例: 「障害物を回避し、最短経路を再計算して移動してください。」
+# Example: "Avoid the obstacle, recalculate the shortest path, and proceed."
 ```
 
 ---
 
-## 📘 **実装概要（エージェント構造）**
+## 📘 **実装概要（エージェント構造） / Implementation Overview (Agent Structure)**
 
 ```python
 class GoalReasoningAgent:
     def __init__(self):
-        self.goal = "探索"
+        self.goal = "探索"  # "Exploration"
     def update_goal(self, observation_text):
         prompt = f"現在の目的は「{self.goal}」。状況：{observation_text}。次の目的は？"
         self.goal = llm_respond(prompt)
@@ -62,36 +71,44 @@ class GoalReasoningAgent:
 
 ---
 
-## 🔄 **FSMとの接続**
+## 🔄 **FSMとの接続 / Connection with FSM**
 
 - FSMの遷移先や目標条件を、LLMが柔軟に切り替える  
+  *LLM flexibly changes FSM target states and goal conditions*  
 - 状態遷移ではなく「目的の変更」に直接対応可能  
+  *Capable of handling **goal changes** directly instead of only state transitions*  
 
 ---
 
-## 🧠 **AITL構想における知性層の展開**
+## 🧠 **AITL構想における知性層の展開 / Role of the Intelligence Layer in AITL**
 
-| **層** | **役割** |
+| **層 / Layer** | **役割 / Role** |
 |------|----------|
-| 本能層（FSM） | 状態の切り替え |
-| 理性層（PID） | 実時間制御 |
-| 知性層（LLM） | 目的生成・修正・多段階判断 |
+| 本能層（FSM） / Instinct Layer (FSM) | 状態の切り替え <br>*State switching* |
+| 理性層（PID） / Rational Layer (PID) | 実時間制御 <br>*Real-time control* |
+| 知性層（LLM） / Intelligence Layer (LLM) | 目的生成・修正・多段階判断 <br>*Goal generation, modification, multi-step reasoning* |
 
 ---
 
-## 🔚 **まとめ**
+## 🔚 **まとめ / Summary**
 
 - ゴールベース制御は **柔軟性・汎化性・自律性** を大幅に向上  
+  *Goal-based control greatly improves **flexibility, generalization, and autonomy***  
 - **クラウド型LLM** は高次推論や設計支援に、**組み込み型LLM** はリアルタイム適応に有効  
+  *Cloud-based LLMs are effective for high-level reasoning and design assistance, while embedded LLMs are effective for real-time adaptation*  
 - LLM統合により「対話的・文脈的な制御」が現実的に可能  
+  *Integration with LLMs makes **interactive and context-aware control** practically achievable*  
 
 ---
 
 ## 📁 **次へ / Next**
 
-📄 [fsm_pid_llm_sim.py（3層統合制御の実装）](../simulation/fsm_pid_llm_sim.py)
+📄 [fsm_pid_llm_sim.py（3層統合制御の実装）](../simulation/fsm_pid_llm_sim.py)  
+*Proceed to fsm_pid_llm_sim.py (implementation of three-layer integrated control)*  
 
 ---
 
 **⬅️ [03_exception_handling.md](03_exception_handling.md)**  
-**🏠 [Part 9 トップに戻る](../index.md)**
+*Back to 03_exception_handling.md*  
+**🏠 [Part 9 トップに戻る](../index.md)**  
+*Back to Part 9 Top*
