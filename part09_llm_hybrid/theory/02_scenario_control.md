@@ -14,27 +14,23 @@ permalink: /part09_llm_hybrid/theory/02_scenario_control.html
 本節では、**タスクの流れや状況分岐を含む「シナリオ制御」**を  
 LLM（大規模言語モデル）と組み合わせて柔軟に設計する方法について解説します。  
 
-This section explains how to design **scenario-based control**—including task flows and conditional branching—combined with **Large Language Models (LLMs)** for greater flexibility.
-
 ---
 
 ## 🎯 **シナリオ制御とは？ / What is Scenario-Based Control?**
 
 - 一連の状態遷移や判断ルールをもとに制御対象を動かす方式  
-  A control approach that drives the target system based on a series of state transitions and decision rules  
-- **代表例 / Example**：ロボットの「起動 → 探索 → 発見 → 報告 → 充電」  
-  Example workflow: "Startup → Search → Detect → Report → Recharge"
+- **代表例**：ロボットの「起動 → 探索 → 発見 → 報告 → 充電」  
 
 ---
 
-## 🔄 **FSMとLLMによるハイブリッドシナリオ / Hybrid Scenarios with FSM & LLM**
+## 🔄 **FSMとLLMによるハイブリッドシナリオ**
 
 | **構成要素 / Component** | **役割 / Role** |
 |----------|------|
-| **FSM** | 状態管理と基本遷移制御（if/elseの拡張）<br>Manages states and basic transitions (extended if/else) |
-| **LLM** | 状況判断・次状態の推論・新規イベント適応<br>Determines next states, infers transitions, and adapts to new events |
+| **FSM** | 状態管理と基本遷移制御（if/elseの拡張） |
+| **LLM** | 状況判断・次状態の推論・新規イベント適応 |
 
-### ✅ **例：倉庫ロボット / Example: Warehouse Robot**
+### ✅ **例：倉庫ロボット**
 
 ```
 FSM：
@@ -47,74 +43,49 @@ LLM：
 
 ---
 
-## 🧠 **LLMが関与する部分 / LLM Involvement**
+## 🧠 **LLMが関与する部分**
 
 - 自然言語記述から次の状態遷移を判断  
-  Infers next state from natural language descriptions  
-- 条件分岐や環境変化に応じた行動パターンの選択  
-  Selects behavior patterns based on conditional branches and environment changes  
+- 条件分岐や環境変化に応じた行動パターンを選択  
 - 状態・遷移の追加など**シナリオ拡張**を実行  
-  Executes **scenario extension** by adding states or transitions  
-- 高次目標（例：「安全優先」「省エネ重視」）を解釈し、FSMに反映  
-  Interprets high-level goals (e.g., "safety first", "energy saving") and maps them into FSM transitions  
-
-👉 LLMはクラウド型（ChatGPT等）でも組み込み型（軽量LLM）でも利用可能。前者は設計支援やシナリオ自動生成、後者はリアルタイムな状態遷移推論に適しています。
+- 高次目標（例：「安全優先」「省エネ重視」）を解釈しFSMに反映  
 
 ---
 
-## 🧪 **実験例：LLMによるシナリオ遷移制御 / Example: Scenario Transition with LLM**
-
-1. 状態テーブルを用意（FSM）  
-   Prepare a state table (FSM)  
-2. 状況記述（自然言語）を入力  
-   Input a natural language description of the situation  
-3. LLMに次の状態を問い合わせる  
-   Query the LLM for the next state:  
-    ```python
-    prompt = "現在の状態は「搬送中」、周囲に障害物があります。次に取るべき状態は？"
-    response = llm_respond(prompt)
-    # → 返答：『障害物回避』状態へ遷移してください。
-    ```
-
----
-
-## ⚙️ **Python実装例（概要） / Python Implementation (Overview)**
+## 🧪 **実験例：シナリオ遷移制御**
 
 ```python
 states = ['IDLE', 'SEARCH', 'CARRY', 'AVOID', 'CHARGE']
 
 def next_state_from_llm(current_state, observation_text):
-    # LLM APIまたはローカル組み込みモデルへの問い合わせ
+    # LLM APIまたは組込みモデルに問い合わせ
     return response_suggested_state
 ```
 
 ---
 
-## 💡 **応用可能な分野 / Applicable Domains**
+## 💡 **応用可能な分野**
 
-- 自律移動ロボット / Autonomous mobile robots  
-- ドローン制御 / Drone control  
-- ゲームAI、教育ロボット / Game AI, educational robots  
-- 工場シナリオ自動化・異常対話対応 / Factory automation & exception dialogue handling  
+- 自律移動ロボット  
+- ドローン制御  
+- ゲームAI・教育ロボット  
+- 工場シナリオ自動化・異常対話対応  
 
 ---
 
-## 🔚 **まとめ / Summary**
+## 🔚 **まとめ**
 
-- シナリオ制御はFSMで構築できるが、LLMを組み合わせることで**柔軟性と文脈理解が向上**  
-  Scenario control can be built with FSM alone, but combining it with LLMs increases flexibility and contextual understanding  
-- **クラウド型LLM**は設計支援や知識参照に、**組み込みLLM**はリアルタイム適応に強み  
-  Cloud-based LLMs support design/knowledge, embedded LLMs support real-time adaptation  
-- 人間との対話や動的環境への適応が可能な**知能的フロー制御**を実現できる  
-  Enables intelligent flow control that adapts to human dialogue and dynamic environments  
+- シナリオ制御はFSMで構築できるが、LLMを加えると**柔軟性と文脈理解**が増す  
+- クラウド型LLMは設計支援、組込み型LLMはリアルタイム適応に強み  
+- **知能的フロー制御**を実現可能  
 
 ---
 
 ## 📁 **次へ / Next**
 
-📄 [03_exception_handling.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/03_exception_handling.html)
+📄 [03_exception_handling.md](03_exception_handling.md)
 
 ---
 
-**⬅️ [01_fsm_pid_llm.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/01_fsm_pid_llm.html)**  
-**🏠 [Part 9 トップに戻る / Back to Part 9 Top](https://samizo-aitl.github.io/EduController/)**
+**⬅️ [01_fsm_pid_llm.md](01_fsm_pid_llm.md)**  
+**🏠 [Part 9 トップに戻る](../index.md)**
