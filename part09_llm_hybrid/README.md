@@ -13,21 +13,17 @@ permalink: /part09_llm_hybrid/
 
 ---
 
-> ⚠️ **Note / 注記**  
-> 本章は **教育・研究用の構想段階** の内容です。  
-> *This chapter is at a **conceptual / research stage**.*  
-> - **安定性と応答設計はPID等の制御理論に基づく**ことを前提としています。  
->   *Stability and response design rely on classical control theory (e.g., PID).*  
-> - **FSMやLLMは外層の監督・支援層**であり、直接的な安定性保証の対象には含まれません。  
->   *FSM and LLM act as outer supervisory / support layers, not part of the stability-guaranteed control loop.*  
-> - 記述内容はPoCや教育実験の一部であり、今後の検証で変更される可能性があります。  
->   *Contents are PoC / educational experiments and may change with further validation.*
+本章は **教育・研究用の構想段階** の内容です。  
+*This chapter is at a **conceptual / research stage**.*  
 
-本章では、**状態機械（FSM）・物理制御（PID）・大規模言語モデル（LLM）** を組み合わせた  
-柔軟かつ適応的な**三層統合型制御アーキテクチャ**を設計・実装します。  
-*This chapter explores the design and implementation of a three-layer hybrid control architecture,  
-combining FSM (Finite State Machine), PID control, and LLMs (Large Language Models).  
-It is based on the AITL framework (FSM × PID × LLM), aiming to build adaptable and intelligent control systems for the AI era.*
+- **安定性と応答設計はPID等の制御理論に基づく**ことを前提としています。  
+  *Stability and response design rely on classical control theory (e.g., PID).*  
+- **FSMやLLMは外層の監督・支援層**であり、直接的な安定性保証の対象には含まれません。  
+  *FSM and LLM act as outer supervisory / support layers, not part of the stability-guaranteed control loop.*  
+- 運転中の安定性は **PIDループで担保**し、LLM出力は監督下でのみ適用します（LLMは制御ループに直接介入しません）。  
+  *Stability is guaranteed by the PID loop; LLM proposals are applied only under supervision and never run inside the real-time loop.*  
+- 記述内容はPoCや教育実験の一部であり、今後の検証で変更される可能性があります。  
+  *Contents are PoC / educational experiments and may change with further validation.*
 
 ---
 
@@ -119,85 +115,3 @@ graph TD
   L --> U
 
   U --> A[アクチュエータ / Actuator]
-```
-
----
-
-## 📑 **Appendix / Expert Notes**
-
-- [appendix_expert.md](appendix_expert.md)  
-  *専門家向け補足資料。制御工学とAIの接点をより深掘りした解説。*  
-  *Expert supplement: deeper exploration of control engineering × AI integration.*
-
----
-
-## 🛠 **実行環境ファイル / Execution Environment Files**
-
-- [requirements.txt](requirements.txt)  
-  *必要最小限の依存関係 / Minimal dependencies*  
-- [Makefile](Makefile)  
-  *シミュレーション・デモ実行用コマンド / Commands for running simulations and demos*  
-- [.gitignore](.gitignore)  
-  *不要ファイルをリポジトリから除外 / Ignore unnecessary files*
-
----
-
-## 🔜 **今後の展開 / Next Steps**
-
-- ChatGPT API と実機制御の検証  
-  *Verification of real-machine control with ChatGPT API*  
-- ロボット／GUI／音声対話によるシナリオ制御  
-  *Scenario control with robots, GUI, and voice interaction*  
-- 強化学習との統合による自己適応制御（Part 10 予定）  
-  *Integration with reinforcement learning for self-adaptive control (Planned in Part 10)*  
-
----
-
-## 🔗 関連章リンク / Related Chapters
-
-- [2.6 FSM導入と状態制御の基本 (Edusemi-v4x)](https://samizo-aitl.github.io/Edusemi-v4x/chapter2_comb_logic/2.6_fsm_intro.html)  
-  *Introduction to FSM and state control basics*  
-- [第8章 FSM設計 (Edusemi-v4x)](https://samizo-aitl.github.io/Edusemi-v4x/d_chapter8_fsm_design_basics/)  
-  *Chapter 8: FSM Design*  
-- [01 PID制御の基礎 (EduController)](../part01_classical/theory/01_pid_control.md)  
-  *01 Basics of PID Control*  
-
----
-
-## 📚 **参考資料 / References**
-
-- OpenAI ChatGPT: <https://platform.openai.com/>  
-- EduController (GitHub): <https://github.com/Samizo-AITL/EduController>  
-- FSM/PID/LLM の統合構想：AITL構想（AITL-H）  
-  *Integration concept of FSM/PID/LLM: AITL framework (AITL-H)*  
-
----
-
-## 👤 **著者・ライセンス | Author & License**
-
-| 📌 項目 / Item | 📄 内容 / Details |
-|------|------|
-| **著者 / Author** | **三溝 真一**（Shinichi Samizo） <br>*Shinichi Samizo* |
-| **💻 GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
-
----
-
-## 📄 **ライセンス / License**
-
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)  
-
-> 教材・コード・図表の性質に応じたハイブリッドライセンスを採用。  
-> *Hybrid licensing based on the nature of the materials, code, and diagrams.*
-
-| 📌 項目 / Item | ライセンス / License | 説明 / Description |
-|------|------|------|
-| **コード（Code）** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布が可能 <br>*Free to use, modify, and redistribute* |
-| **教材テキスト（Text materials）** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須 <br>*Attribution required* |
-| **図表・イラスト（Figures & diagrams）** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ許可 <br>*Non-commercial use only* |
-| **外部引用（External references）** | 元ライセンスに従う <br>*Follow the original license* | 引用元を明記 <br>*Cite the original source* |
-
----
-
-**⬅️ [前章 / Previous Chapter](../part08_data_driven/index.md)**  
-**[次章 / Next Chapter ➡️➡️](../part10_pendulum/index.md)**  
-**🏠 [トップページ / Back to Home](../index.md)**
