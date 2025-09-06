@@ -123,6 +123,25 @@ graph TD
 
 ---
 
+## 📑 **Appendix / Expert Notes**
+
+- [appendix_expert.md](appendix_expert.md)  
+  *専門家向け補足資料。制御工学とAIの接点をより深掘りした解説。*  
+  *Expert supplement: deeper exploration of control engineering × AI integration.*
+
+---
+
+## 🛠 **実行環境ファイル / Execution Environment Files**
+
+- [requirements.txt](requirements.txt)  
+  *必要最小限の依存関係 / Minimal dependencies*  
+- [Makefile](Makefile)  
+  *シミュレーション・デモ実行用コマンド / Commands for running simulations and demos*  
+- [.gitignore](.gitignore)  
+  *不要ファイルをリポジトリから除外 / Ignore unnecessary files*
+
+---
+
 ## 🔜 **今後の展開 / Next Steps**
 
 - ChatGPT API と実機制御の検証  
