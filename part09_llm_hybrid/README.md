@@ -133,22 +133,25 @@ graph TD
 
 ## 👤 **著者・ライセンス | Author & License**
 
-| 📌 項目 | 📄 内容 |
+| 📌 項目 / Item | 📄 内容 / Details |
 |------|------|
-| **著者** | **三溝 真一**（Shinichi Samizo） |
-| **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
+| **著者 / Author** | **三溝 真一**（Shinichi Samizo） |
+| **💻 GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
 
 ---
 
 ## 📄 **ライセンス / License**
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)  
 
-| 📌 項目 | ライセンス | 説明 |
-|------|-----------|------|
-| **コード** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布が可能 |
-| **教材テキスト** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須 |
-| **図表・イラスト** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ許可 |
-| **外部引用** | 元ライセンスに従う | 引用元を明記 |
+> 教材・コード・図表の性質に応じたハイブリッドライセンスを採用。  
+> *Hybrid licensing based on the nature of the materials, code, and diagrams.*
+
+| 📌 項目 / Item | ライセンス / License | 説明 / Description |
+|------|------|------|
+| **コード（Code）** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布が可能<br>*Free to use, modify, and redistribute* |
+| **教材テキスト（Text materials）** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須<br>*Attribution required* |
+| **図表・イラスト（Figures & diagrams）** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ許可<br>*Non-commercial use only* |
+| **外部引用（External references）** | 元ライセンスに従う<br>*Follow the original license* | 引用元を明記<br>*Cite the original source* |
 
 ---
 
