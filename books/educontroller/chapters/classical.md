@@ -1,4 +1,4 @@
-# ⚙️ Part 1: 古典制御理論 / Classical Control Theory　
+# ⚙️ Part 1: 古典制御理論 / Classical Control Theory　　
 
 ---
 
