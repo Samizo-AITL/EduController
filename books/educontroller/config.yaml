@@ -8,13 +8,13 @@ topics:
 published: false
 
 chapters:
-  - chapters/01_classical.md
-  - chapters/02_modern.md
-  - chapters/03_adaptive.md
-  - chapters/04_digital.md
-  - chapters/05_practical.md
-  - chapters/06_nn_control.md
-  - chapters/07_rl_control.md
-  - chapters/08_data_driven.md
-  - chapters/09_llm_hybrid.md
-  - chapters/10_pendulum.md
+  - classical
+  - modern
+  - adaptive
+  - digital
+  - practical
+  - nn_control
+  - rl_control
+  - data_driven
+  - llm_hybrid
+  - pendulum
