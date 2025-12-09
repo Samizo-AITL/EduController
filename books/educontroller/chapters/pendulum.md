@@ -1,3 +1,7 @@
+---
+title: "倒立振子制御 / Inverted Pendulum Control"
+---
+
 # 🎯 Part 10：倒立振子の総合制御 / Hybrid Control of Inverted Pendulum
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
 
