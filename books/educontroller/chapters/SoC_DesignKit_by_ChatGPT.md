@@ -1,3 +1,7 @@
+---
+title: "SoC 制御設計キット / SoC Design Kit"
+---
+
 # 🧩 **SoC_DesignKit_by_ChatGPT**
 
 [![Samizo-AITLポータルに戻る / Back to Samizo-AITL Portal](https://img.shields.io/badge/Portal-Samizo--AITL-brightgreen)](https://samizo-aitl.github.io/)  
