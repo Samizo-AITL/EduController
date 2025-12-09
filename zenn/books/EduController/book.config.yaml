@@ -1,0 +1,11 @@
+title: "EduController：制御理論とAI制御の統合フレームワーク"
+summary: "PID・状態空間・デジタル制御からNN・RL・LLM統合制御までを学べる総合教材"
+topics:
+  - control
+  - pid
+  - fsm
+  - ai
+  - llm
+  - robotics
+published: false
+price: 0
