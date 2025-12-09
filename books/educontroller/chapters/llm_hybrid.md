@@ -1,3 +1,7 @@
+---
+title: "LLMハイブリッド制御 / LLM-Hybrid Control"
+---
+
 # 🤖 Part 9: ハイブリッド制御とLLM統合  
 *Part 9: Hybrid Control with LLM Integration*
 
