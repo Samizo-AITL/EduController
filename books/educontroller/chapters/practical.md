@@ -1,3 +1,7 @@
+---
+title: "実践制御・応用 / Practical Control Applications"
+---
+
 # 🧪 Part 5: 実装・応用編 / Implementation and Applications
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
 
