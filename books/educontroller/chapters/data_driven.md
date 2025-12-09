@@ -1,3 +1,7 @@
+---
+title: "データ駆動型制御 / Data-Driven Control"
+---
+
 # 📊 Part 8: データ駆動型制御 / Data-Driven Control
 
 ---
