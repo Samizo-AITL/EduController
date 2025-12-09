@@ -1,3 +1,7 @@
+---
+title: "現代制御理論 / Modern Control Theory"
+---
+
 # 🧠 Part 2: 現代制御理論 / Modern Control Theory
 
 ---
