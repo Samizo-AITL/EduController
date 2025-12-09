@@ -8,15 +8,15 @@ topics:
 published: false
 
 chapters:
-  - chapters/classical.md
-  - chapters/modern.md
-  - chapters/adaptive.md
-  - chapters/digital.md
-  - chapters/practical.md
-  - chapters/nn_control.md
-  - chapters/rl_control.md
-  - chapters/data_driven.md
-  - chapters/llm_hybrid.md
-  - chapters/pendulum.md
-  - chapters/matlab_tools.md
-  - chapters/SoC_DesignKit_by_ChatGPT.md
+  - classical.md
+  - modern.md
+  - adaptive.md
+  - digital.md
+  - practical.md
+  - nn_control.md
+  - rl_control.md
+  - data_driven.md
+  - llm_hybrid.md
+  - pendulum.md
+  - matlab_tools.md
+  - SoC_DesignKit_by_ChatGPT.md
