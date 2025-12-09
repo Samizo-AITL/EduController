@@ -1,3 +1,7 @@
+---
+title: "MATLAB 制御ツール / MATLAB Tools for Control"
+---
+
 # 🧰 matlab_tools/  
 [![GitHub](https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools)  
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
