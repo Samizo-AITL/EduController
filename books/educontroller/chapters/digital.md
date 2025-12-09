@@ -1,3 +1,7 @@
+---
+title: "デジタル制御 / Digital Control"
+---
+
 # 💻 Part 04: デジタル制御と信号処理 / Digital Control & Signal Processing
 
 ---
