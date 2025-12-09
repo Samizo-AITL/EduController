@@ -1,5 +1,5 @@
 title: "EduController"
-summary: "古典・現代・デジタル制御理論を体系的に学ぶ構造化教材" 
+summary: "古典・現代・デジタル制御理論を体系的に学ぶ構造化教材"
 topics:
   - control
   - pid
@@ -18,5 +18,3 @@ chapters:
   - chapters/08_data_driven.md
   - chapters/09_llm_hybrid.md
   - chapters/10_pendulum.md
-  - matlab_tools.md
-  - SoC_DesignKit_by_ChatGPT.md
