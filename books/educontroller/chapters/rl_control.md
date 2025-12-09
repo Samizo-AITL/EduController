@@ -1,3 +1,7 @@
+---
+title: "強化学習制御 / Reinforcement Learning Control"
+---
+
 # 🧠 Part 7: 強化学習による制御 / Reinforcement Learning Control
 
 ---
