@@ -18,3 +18,5 @@ chapters:
   - chapters/data_driven.md
   - chapters/llm_hybrid.md
   - chapters/pendulum.md
+  - chapters/matlab_tools.md
+  - chapters/SoC_DesignKit_by_ChatGPT.md
