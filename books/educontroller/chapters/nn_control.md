@@ -1,3 +1,7 @@
+---
+title: "ニューラルネット制御 / Neural Network Control"
+---
+
 # 🤖 Part 6: ニューラルネットによる制御 / Neural Network-based Control
 
 ---
