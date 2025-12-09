@@ -1,3 +1,7 @@
+---
+title: "適応制御 / Adaptive Control"
+---
+
 # 🔄 Part 03: 適応制御・ロバスト制御 / Adaptive & Robust Control
 
 本章では、制御対象のパラメータ変動・モデリング誤差に対応する  
