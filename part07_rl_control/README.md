@@ -10,6 +10,14 @@ permalink: /part07_rl_control/
 
 ---
 
+## 🔗 公式リンク | *Official Links*
+
+| 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
+|-----------------|----------------|-----------|
+| 🇯🇵 日本語 / *Japanese* | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語版-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part07_rl_control/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語版-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part07_rl_control)
+
+---
+
 本章では、**強化学習（Reinforcement Learning, RL）**を用いた制御設計手法を学びます。  
 制御対象との**インタラクションを通じて最適な行動ポリシーを獲得**し、モデルフリーな自律制御を実現します。
 
