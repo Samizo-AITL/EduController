@@ -8,13 +8,6 @@ permalink: /SoC_DesignKit_by_ChatGPT/
 
 # 🧩 **SoC_DesignKit_by_ChatGPT**
 
-[![Samizo-AITLポータルに戻る / Back to Samizo-AITL Portal](https://img.shields.io/badge/Portal-Samizo--AITL-brightgreen)](https://samizo-aitl.github.io/)  
-[![GitHub](https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT)  
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
-
-💡 **このページは概要です。詳細なコードやテンプレートは [GitHubリポジトリ](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) を参照してください。**  
-*This page is an overview. For detailed code and templates, please see the [GitHub repository](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT).*
-
 ---
 
 ## 📖 **概要 / Overview**
