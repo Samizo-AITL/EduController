@@ -10,6 +10,14 @@ permalink: /part06_nn_control/
 
 ---
 
+## 🔗 公式リンク | *Official Links*
+
+| 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
+|-----------------|----------------|-----------|
+| 🇯🇵 日本語 / *Japanese* | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語版-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part06_nn_control/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語版-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part06_nn_control)
+
+---
+
 本章では、**ニューラルネットワーク（NN）を用いた制御手法**を学びます。  
 従来の**PID制御との比較**や、**NNによる補正・逆モデル制御**、**強化学習との接続可能性**についても扱います。
 
