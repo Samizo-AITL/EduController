@@ -21,6 +21,7 @@ published: false
 - 入力（水平力）：u = F [N]
 
 状態変数：
+
 $$
 \mathbf{x}=
 \begin{bmatrix}
@@ -50,9 +51,11 @@ $$
 ## 3. 明示形（加速度）
 
 分母を
+
 $$
 D(\theta)= (M+m) - m\cos^2\theta
 $$
+
 と定義すると，
 
 $$
@@ -78,6 +81,7 @@ $$
 ## 4. 線形化（直立平衡点）
 
 近似条件：
+
 $$
 \theta \approx 0,\quad
 \dot{\theta}\approx 0,\quad
@@ -95,6 +99,7 @@ D(0)= (M+m) - m = M
 $$
 
 線形化結果：
+
 $$
 \ddot{x} \approx \frac{1}{M}u - \frac{m g}{M}\theta
 $$
