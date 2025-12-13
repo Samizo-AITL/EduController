@@ -10,6 +10,16 @@ permalink: /matlab_tools/
 [![GitHub](https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools)  
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
 
+---
+
+## 🔗 公式リンク | *Official Links*
+
+| 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
+|-----------------|----------------|-----------|
+| 🇯🇵 日本語 / *Japanese* | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語版-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/matlab_tools/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語版-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) 
+
+---
+
 💡 **このページは概要です。詳細なコードやモデルは [GitHubリポジトリ](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools/) を参照してください。**  
 ブラウザ上で直接ファイル閲覧・ダウンロード・履歴確認が可能です。  
 *This page provides an overview. For detailed code and models, please refer to the [GitHub repository](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools/).  
