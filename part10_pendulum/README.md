@@ -7,7 +7,6 @@ permalink: /part10_pendulum/
 ---
 
 # 🎯 Part 10：倒立振子の総合制御 / Hybrid Control of Inverted Pendulum
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
 
 ---
 
@@ -19,88 +18,66 @@ permalink: /part10_pendulum/
 
 ---
 
-本章では、**倒立振子（Inverted Pendulum）** を題材として、  
-以下の制御手法を段階的に**実装・比較**しながら学びます：
+このディレクトリは、**倒立振子を題材にした制御教材**である。  
+目的は「高度な制御を紹介すること」ではなく、
 
-- 📐 **PID制御**（古典制御 / Classical Control）  
-- 🧮 **LQR制御**（最適制御 / Optimal Control）  
-- 🧠 **強化学習（DDPG, PPO） / Reinforcement Learning**  
-- ⚙️ **HDL実装（FSM×PID） / HDL-based FSM×PID Implementation**  
-- 🤖 **LLM連携による制御設計 / Control Design with LLMs**
+> **PID制御の限界と、FSMによる構造化の効果と限界を示すこと**
 
-> 本章は、**不安定系の代表例を通じて制御理論とAI制御を統合的に学ぶ**ことを目的とします。  
-> Through this unstable system model, we aim to understand and integrate both classical and AI-based control approaches.
+にある。
 
 ---
 
-## 🧭 **構成概要 / Structure Overview**
+## 内容構成
 
-| ディレクトリ / Directory | 内容 / Description |
-|--------------------------|---------------------|
-| [`model/`](https://samizo-aitl.github.io/EduController/part10_pendulum/model/) | 倒立振子の物理モデルと線形化<br>Physics-based modeling and linearization |
-| [`classical_control/`](https://samizo-aitl.github.io/EduController/part10_pendulum/classical_control/) | PID制御の設計と応答解析<br>PID implementation and analysis |
-| [`modern_control/`](https://samizo-aitl.github.io/EduController/part10_pendulum/modern_control/) | LQR制御・状態推定（カルマン）<br>LQR & Kalman filtering |
-| [`rl_control/`](https://samizo-aitl.github.io/EduController/part10_pendulum/rl_control/) | Gymを用いたDDPG・PPO制御<br>RL control using Gym |
-| [`hdl_implementation/`](https://samizo-aitl.github.io/EduController/part10_pendulum/hdl_implementation/) | FSM×PIDのVerilog記述<br>Verilog HDL implementation |
-| [`llm_prompt_design/`](https://samizo-aitl.github.io/EduController/part10_pendulum/llm_prompt_design/) | LLMによるコード設計支援<br>Code generation with LLM prompts |
-| [`ros_simulation/`](https://samizo-aitl.github.io/EduController/part10_pendulum/ros_simulation/) | ROS/Gazeboによる物理シミュレーション（予定）<br>ROS/Gazebo physical simulation (planned) |
+本パートは、以下の3章のみで完結している。
+
+| ファイル | 内容 |
+|---|---|
+| [10-1_model.md](./10-1_model.md) | 倒立振子の非線形モデル、線形化、状態空間表現 |
+| [10-2_pid_limit.md](./10-2_pid_limit.md) | PID制御が成立する条件と、成立しない理由 |
+| [10-3_fsm_overlay.md](./10-3_fsm_overlay.md) | FSMを被せた場合の改善点と限界 |
 
 ---
 
-## 🎓 **学習のステップ / Learning Workflow**
+## 読み方（重要）
 
-1. **モデル構築 / Modeling**  
-   - 倒立振子の数理モデル化と線形近似  
-   - Build mathematical models and linearize the pendulum system  
+**必ずこの順で読むこと。**
 
-2. **PID制御 / Classical PID**  
-   - Python・SimulinkによるPID設計・応答解析  
-   - Design PID controllers in Python/Simulink  
+1. [10-1_model.md](./10-1_model.md)  
+2. [10-2_pid_limit.md](./10-2_pid_limit.md)  
+3. [10-3_fsm_overlay.md](./10-3_fsm_overlay.md)  
 
-3. **状態空間制御 / State-Space Control**  
-   - LQR設計・カルマンフィルタによる推定器構築  
-   - Design LQR controllers and state estimators  
-
-4. **強化学習 / Reinforcement Learning**  
-   - Gym/PyTorchでのDDPG・PPO訓練と評価  
-   - Train DDPG/PPO agents for stabilization  
-
-5. **HDL設計 / HDL Implementation**  
-   - FSM＋PID制御器をVerilogで実装、GTKW・ModelSimで波形確認  
-   - Implement HDL-based control using Verilog and testbench tools  
-
-6. **LLM連携 / LLM Integration**  
-   - ChatGPTを活用したプロンプト設計、Verilog自動生成支援  
-   - Use ChatGPT for prompt-based Verilog code generation
+途中の章を飛ばすと、結論を誤解する。
 
 ---
 
-## 🔧 **実行環境 / Execution Environment**
+## できること／できないこと
 
-| 分類 / Type | ツール / Tools | 用途 / Purpose |
-|-------------|----------------|----------------|
-| 🐍 Python | `control`, `gymnasium`, `torch`, `matplotlib` | 制御器設計・学習 |
-| 📊 Simulink | Simulink / Simscape | ブロック設計・応答解析 |
-| 🔬 HDL | Verilog / GTKWave / ModelSim | HDL記述・波形検証 |
-| 🤖 LLM | ChatGPT（GPT-4o推奨） | プロンプト設計支援 |
-| 🧪 ROS | ROS2 / Gazebo | 拡張用の物理シミュレーション |
+### できること
+- 倒立振子の **数式モデル** を理解できる
+- PID制御が **なぜ破綻するか** を説明できる
+- FSMを入れると **何が整理され、何が解決しないか** が分かる
 
----
-
-## 📌 **本章の目的 / Purpose of This Chapter**
-
-- ✅ **理論と実装の統合**：倒立振子を通じて物理・状態空間・HDLを接続  
-  Bridge theory and practice through inverted pendulum control  
-- ✅ **多様な制御手法の比較体験**：PID、LQR、RLの効果を可視的に理解  
-  Visually compare classical and AI control techniques  
-- ✅ **LLM活用による設計支援**：LLMによる自動化・設計提案を体験  
-  Leverage LLMs to support control design and code generation  
+### できないこと
+- 倒立振子を「誰でも安定化」できるようにはならない
+- LQR・MPC・RLの実装方法は扱わない
+- 実機制御を保証するものではない
 
 ---
 
-## 🚀 **今後の展開 / Future Expansions**
+## 位置づけ
 
-（中略：内容は同じ）
+本教材は **EduController** における次の問いに答えるためのものだ。
+
+> なぜ「PIDだけ」では足りず、  
+> それでも「PIDを捨てるべきではない」のか？
+
+---
+
+## 注意
+
+- 数式は教育目的の簡略モデルである  
+- 実装・実機適用は読者の責任で行うこと  
 
 ---
 
@@ -119,20 +96,7 @@ permalink: /part10_pendulum/
 | **著者 / Author** | **三溝 真一**（Shinichi Samizo） |
 | **💻 GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
 
----
-
-## 📄 **ライセンス / License**
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)  
-
-> 教材・コード・図表の性質に応じたハイブリッドライセンスを採用。  
-> *Hybrid licensing based on the nature of the materials, code, and diagrams.*
-
-| 📌 項目 / Item | ライセンス / License | 説明 / Description |
-|------|------|------|
-| **コード（Code）** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布が可能<br>*Free to use, modify, and redistribute* |
-| **教材テキスト（Text materials）** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須<br>*Attribution required* |
-| **図表・イラスト（Figures & diagrams）** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ許可<br>*Non-commercial use only* |
-| **外部引用（External references）** | 元ライセンスに従う<br>*Follow the original license* | 引用元を明記<br>*Cite the original source* |
+MIT License
 
 ---
 
