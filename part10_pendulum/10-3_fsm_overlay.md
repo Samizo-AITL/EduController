@@ -105,9 +105,7 @@ $$
 
 $$
 u =
-K_p (-\theta)
-+ K_d (-\dot{\theta})
-+ K_i \int (-\theta)\,dt
+K_p (-\theta) + K_d (-\dot{\theta}) + K_i \int (-\theta)\,dt
 $$
 
 FSMは **ゲインを変えない**。  
