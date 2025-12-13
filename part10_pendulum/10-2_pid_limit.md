@@ -1,7 +1,7 @@
 ---
 layout: clean
 title: 📉 10-2 PID制御の限界：なぜ倒立振子は安定しないのか
-permalink: /part10_pendulum/10-1_model.html
+permalink: /part10_pendulum/10-2_pid_limit.html
 ---
 
 # 10-2 PID制御の限界  
