@@ -8,8 +8,6 @@ permalink: /SoC_DesignKit_by_ChatGPT/
 
 # 🧩 **SoC_DesignKit_by_ChatGPT**
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
-
 ---
 
 ## 🔗 公式リンク | *Official Links*
