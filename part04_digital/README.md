@@ -10,6 +10,14 @@ permalink: /part04_digital/
 
 ---
 
+## 🔗 公式リンク | *Official Links*
+
+| 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
+|-----------------|----------------|-----------|
+| 🇯🇵 日本語 / *Japanese* | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語版-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part04_digital/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語版-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part04_digital)
+
+---
+
 本章では、**ディジタル実装**を意識した制御設計と信号処理技術を体系的に学びます。  
 **Z変換、離散PID、デジタルフィルタ、FFT解析**など、実機マイコン制御にも直結する内容を扱います。
 
