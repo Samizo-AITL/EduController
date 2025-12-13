@@ -10,6 +10,14 @@ permalink: /SoC_DesignKit_by_ChatGPT/
 
 ---
 
+## 🔗 公式リンク | *Official Links*
+
+| 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
+|-----------------|----------------|-----------|
+| 🇯🇵 日本語 / *Japanese* | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語版-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語版-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT)
+
+---
+
 ## 📖 **概要 / Overview**
 
 **JP:** FSM・PID・LLM統合制御の **HDL実装テンプレート** と、ChatGPT用プロンプト集をまとめた教材・開発キットです。  
