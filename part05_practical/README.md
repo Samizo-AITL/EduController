@@ -11,6 +11,14 @@ permalink: /part05_practical/
 
 ---
 
+## 🔗 公式リンク | *Official Links*
+
+| 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
+|-----------------|----------------|-----------|
+| 🇯🇵 日本語 / *Japanese* | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語版-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part05_practical/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語版-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part05_practical)
+
+---
+
 この章では、制御理論を実際のシステムに適用するための  
 **Python実装・マイコン展開・ROS連携** などの実践的な応用手法を学びます。
 
