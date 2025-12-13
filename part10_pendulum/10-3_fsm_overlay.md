@@ -91,7 +91,7 @@ $$
 u =
 K_e \left(
 E_{\text{ref}} - E(\theta,\dot{\theta})
-\right)\operatorname{sgn}(\dot{\theta}\cos\theta)
+\right)\mathrm{sgn}(\dot{\theta}\cos\theta)
 $$
 
 ※ 詳細は本教材の範囲外。  
