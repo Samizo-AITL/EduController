@@ -1,9 +1,7 @@
 ---
-title: "10-3 FSMオーバレイ制御：効いた点と効かなかった点"
-emoji: "🧭"
-type: "tech"
-topics: ["制御", "倒立振子", "FSM", "PID"]
-published: false
+layout: clean
+title: 🧭 10-3 FSMオーバレイ制御：効いた点と効かなかった点
+permalink: /part10_pendulum/10-3_fsm_overlay.html
 ---
 
 # 10-3 FSMオーバレイ制御  
