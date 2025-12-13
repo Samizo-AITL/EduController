@@ -10,6 +10,14 @@ permalink: /part08_data_driven/
 
 ---
 
+## 🔗 公式リンク | *Official Links*
+
+| 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
+|-----------------|----------------|-----------|
+| 🇯🇵 日本語 / *Japanese* | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語版-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part08_data_driven/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語版-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part08_data_driven)
+
+---
+
 本章では、**数式モデルを用いずに観測データから制御器や予測モデルを構築**する  
 データ駆動型制御（Data-Driven Control）の基本から応用までを学びます。  
 これは現代制御やAI制御とも親和性が高く、**産業界でも注目される実践技術**です。
