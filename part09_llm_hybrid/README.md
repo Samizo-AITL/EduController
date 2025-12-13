@@ -9,8 +9,6 @@ permalink: /part09_llm_hybrid/
 # 🤖 Part 9: ハイブリッド制御とLLM統合  
 *Part 9: Hybrid Control with LLM Integration*
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license)
-
 ---
 
 ## 🔗 公式リンク | *Official Links*
