@@ -90,7 +90,7 @@ $$
 $$
 u =
 K_e \left(
-E_{\text{ref}}-E(\theta,\dot{\theta})
+E_{\text{ref}} - E(\theta,\dot{\theta})
 \right)\operatorname{sgn}(\dot{\theta}\cos\theta)
 $$
 
