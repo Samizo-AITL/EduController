@@ -22,6 +22,7 @@ published: false
 ## 1. 対象モデル（再掲）
 
 状態：
+
 $$
 \mathbf{x}=
 \begin{bmatrix}
@@ -33,6 +34,7 @@ x \\
 $$
 
 線形化モデル：
+
 $$
 \dot{\mathbf{x}} = A\mathbf{x} + B u
 $$
