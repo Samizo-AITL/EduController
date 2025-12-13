@@ -11,6 +11,14 @@ permalink: /part10_pendulum/
 
 ---
 
+## 🔗 公式リンク | *Official Links*
+
+| 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
+|-----------------|----------------|-----------|
+| 🇯🇵 日本語 / *Japanese* | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語版-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part10_pendulum/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語版-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part10_pendulum) 
+
+---
+
 本章では、**倒立振子（Inverted Pendulum）** を題材として、  
 以下の制御手法を段階的に**実装・比較**しながら学びます：
 
