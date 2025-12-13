@@ -10,6 +10,14 @@ permalink: /part01_classical/
 
 ---
 
+## 🔗 公式リンク | *Official Links*
+
+| 言語 / Language | GitHub Pages 🌐 | GitHub 💻 |
+|-----------------|----------------|-----------|
+| 🇯🇵 日本語 / *Japanese* | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語版-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part01_classical/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語版-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part01_classical)
+
+---
+
 本章では、**PID制御**を中心とした古典制御理論を扱い、**時間領域および周波数領域**での応答解析・設計法を体系的に学びます。  
 制御の基本構造から、**安定性・ロバスト性**までを段階的に理解し、**Pythonによる可視化・シミュレーション**を通じて実装感覚も身につけます。
 
