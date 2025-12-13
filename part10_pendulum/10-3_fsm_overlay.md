@@ -83,14 +83,14 @@ $$
 
 ## 4. 各状態での制御則
 
-### 4.1 Swing-up（$$S_1$$）
+### 4.1 Swing-up（ $$S_1$$ ）
 
 単純なエネルギー制御（例）：
 
 $$
 u =
 K_e \left(
-E_{\text{ref}} - E(\theta,\dot{\theta})
+E_{\text{ref}}-E(\theta,\dot{\theta})
 \right)\operatorname{sgn}(\dot{\theta}\cos\theta)
 $$
 
@@ -99,7 +99,7 @@ $$
 
 ---
 
-### 4.2 Balance（$$S_2$$）
+### 4.2 Balance（ $$S_2$$ ）
 
 前章と同じ PID：
 
