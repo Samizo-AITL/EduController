@@ -70,7 +70,7 @@ $$
 $$
 \ddot{\theta} =
 \frac{
-- u\cos\theta - m l \dot{\theta}^2\sin\theta\cos\theta + (M+m)g\sin\theta
+u\cos\theta - m l \dot{\theta}^2\sin\theta\cos\theta + (M+m)g\sin\theta
 }{
 l\,D(\theta)
 }
