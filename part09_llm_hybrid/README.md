@@ -46,10 +46,10 @@ permalink: /part09_llm_hybrid/
 
 | **ファイル / File** | **内容 / Description** |
 |---------------------|-------------------------|
-| [01_fsm_pid_llm.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/01_fsm_pid_llm.md) | FSM・PID・LLMによる三層制御構造の全体像 <br>*Overview of FSM × PID × LLM architecture* |
-| [02_scenario_control.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/02_scenario_control.md) | シナリオ制御と状態モード切替の設計 <br>*Scenario-based control and state switching design* |
-| [03_exception_handling.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/03_exception_handling.md) | LLMを用いた異常検出と例外対応 <br>*LLM-based anomaly detection and exception handling* |
-| [04_goal_reasoning.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/04_goal_reasoning.md) | 目的推論と対話型制御の導入 <br>*Introduction to goal reasoning and dialogue-based control* |
+| [01_fsm_pid_llm.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/01_fsm_pid_llm.html) | FSM・PID・LLMによる三層制御構造の全体像 <br>*Overview of FSM × PID × LLM architecture* |
+| [02_scenario_control.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/02_scenario_control.html) | シナリオ制御と状態モード切替の設計 <br>*Scenario-based control and state switching design* |
+| [03_exception_handling.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/03_exception_handling.html) | LLMを用いた異常検出と例外対応 <br>*LLM-based anomaly detection and exception handling* |
+| [04_goal_reasoning.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/theory/04_goal_reasoning.html) | 目的推論と対話型制御の導入 <br>*Introduction to goal reasoning and dialogue-based control* |
 
 ---
 
@@ -121,7 +121,7 @@ graph TD
 
 ## 📑 **Appendix / Expert Notes**
 
-- [appendix_expert.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/appendix_expert.md)  
+- [appendix_expert.md](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/appendix_expert.html)  
   *専門家向け補足資料。制御工学とAIの接点をより深掘りした解説。*  
   *Expert supplement: deeper exploration of control engineering × AI integration.*
 
