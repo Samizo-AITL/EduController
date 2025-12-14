@@ -135,8 +135,6 @@ flowchart TB
 | Project | Links | Description |
 |---------|-------|-------------|
 | 🎓 **Edusemi-v4x** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | Semiconductor design & process education (Python, sky130, OpenLane)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
-| 🤖 **AITL-H** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/AITL-H/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/AITL-H) | Three-layer control framework (FSM×PID×LLM)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
-| 🧠 **SamizoGPT** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/SamizoGPT/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/SamizoGPT) | Prompt design templates for ChatGPT (design assistance)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
 
 ---
 
