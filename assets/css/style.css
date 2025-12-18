@@ -1,54 +1,84 @@
-/* ──────────────── */
-/* Minimal CSS Style (revised) */
-/* ──────────────── */
+/* ─────────────────────────────
+   Samizo-AITL Minimal Engineering CSS
+   Semiconductor / Control / AITL
+   ───────────────────────────── */
 
-/* すべての要素を安定させる */
+/* ==============================
+   Reset / Stability
+   ============================== */
 *,
 *::before,
-*::after { box-sizing: border-box; }
+*::after {
+  box-sizing: border-box;
+}
 
-/* ベース（GitHub寄りの読みやすさ） */
-html { -webkit-text-size-adjust: 100%; }
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ==============================
+   Base (GitHub / IEEE readable)
+   ============================== */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 16px;
   line-height: 1.7;
-  color: #24292e;
-  background: #fff;
-  margin: 0;
+  color: #1f2933;          /* 工学向けダークグレー */
+  background: #f9fafb;    /* クールホワイト */
 }
 
-/* 見出し：間隔だけ最小限調整 */
+/* ==============================
+   Headings
+   ============================== */
 h1, h2, h3, h4, h5, h6 {
-  margin: 1.6rem 0 .8rem;
+  margin: 1.6rem 0 0.8rem;
   line-height: 1.25;
   font-weight: 700;
+  color: #003366;         /* 工学ブルー */
 }
+
 h1 { font-size: 1.8rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.25rem; }
 
-/* 段落とリストの間隔 */
-p, ul, ol { margin: .7rem 0 1rem; }
-ul, ol { padding-left: 1.25rem; }
+/* ==============================
+   Paragraph / Lists
+   ============================== */
+p, ul, ol {
+  margin: 0.7rem 0 1rem;
+}
 
-/* リンク（シンプルに太字＋下線） */
+ul, ol {
+  padding-left: 1.25rem;
+}
+
+/* ==============================
+   Links
+   ============================== */
 a {
-  color: #0366d6;
+  color: #2563eb;         /* 制御・仕様書寄り */
   font-weight: 600;
   text-decoration: underline;
 }
-a:hover { color: #024ea3; }
 
-/* 区切り線は黒実線（指定どおり） */
+a:hover {
+  color: #1d4ed8;
+}
+
+/* ==============================
+   Horizontal Rule (explicit black)
+   ============================== */
 hr {
   border: 0;
   border-top: 2px solid #000;
   margin: 1.5rem 0;
 }
 
-/* 画像は横幅にフィット */
+/* ==============================
+   Media
+   ============================== */
 img, video, canvas, svg {
   display: block;
   max-width: 100%;
@@ -56,53 +86,73 @@ img, video, canvas, svg {
   margin: 1rem 0;
 }
 
-/* コード */
+/* ==============================
+   Code / Pre / Math
+   ============================== */
 code, kbd, samp {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
-  font-size: .95em;
-  background: #f6f8fa;
-  padding: .15em .35em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95em;
+  background: #eef2f7;
+  padding: 0.15em 0.35em;
   border-radius: 4px;
+  color: #0f172a;
 }
+
 pre {
-  background: #f6f8fa;
-  border: 1px solid #e1e4e8;
-  padding: .9rem 1rem;
+  background: #eef2f7;
+  border: 1px solid #cbd5e1;
+  padding: 0.9rem 1rem;
   border-radius: 6px;
   overflow: auto;
 }
-pre code { background: transparent; padding: 0; }
 
-/* 引用（控えめ） */
-blockquote {
-  margin: 1rem 0;
-  padding: .6rem 1rem;
-  color: #57606a;
-  background: #f6f8fa;
-  border-left: .25rem solid #d0d7de;
+pre code {
+  background: transparent;
+  padding: 0;
 }
 
-/* 表（薄い罫線＋最小限の強調） */
+/* ==============================
+   Blockquote (spec / note tone)
+   ============================== */
+blockquote {
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+  color: #334155;
+  background: #f1f5f9;
+  border-left: 4px solid #2563eb;
+}
+
+/* ==============================
+   Tables (Data-sheet style)
+   ============================== */
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 1rem 0;
+  border: 1.5px solid #cbd5e1;
 }
+
 th, td {
-  border: 1px solid #e5e7eb;     /* 薄い線 */
-  padding: .5rem .75rem;         /* 横余白やや広め */
+  border: 1px solid #cbd5e1;
+  padding: 0.5rem 0.75rem;
   vertical-align: top;
 }
+
 th {
-  background: #f6f8fa;           /* 見出し行だけ淡色 */
+  background: #e5e7eb;
   font-weight: 700;
   text-align: left;
 }
-/* 交互行（読みやすさ用。不要なら削除） */
-tbody tr:nth-child(even) td { background: #fbfcfd; }
 
-/* Mermaid 図は中央寄せ（そのまま） */
+/* Optional subtle striping */
+tbody tr:nth-child(even) td {
+  background: #ffffff;
+}
+
+/* ==============================
+   Mermaid
+   ============================== */
 .mermaid {
   display: block;
   margin: 1.25rem auto;
@@ -110,83 +160,35 @@ tbody tr:nth-child(even) td { background: #fbfcfd; }
   text-align: center;
 }
 
-/* モバイル微調整 */
+/* ==============================
+   Responsive
+   ============================== */
 @media (max-width: 768px) {
-  body { font-size: 15.5px; }
+  body {
+    font-size: 15.5px;
+  }
+
   h1 { font-size: 1.6rem; }
   h2 { font-size: 1.35rem; }
   h3 { font-size: 1.15rem; }
 }
 
-/* 印刷時の無駄な色抑制（必要最低限） */
+/* ==============================
+   Print (engineering doc friendly)
+   ============================== */
 @media print {
-  a { color: #000; text-decoration: underline; }
-  pre, code, blockquote { background: #fff; }
-}
+  body {
+    background: #fff;
+    color: #000;
+  }
 
-/* === Portal/Edusemi と完全一致させる強制パッチ（末尾に追加） === */
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
 
-/* 本文：セピア＋日本語ゴシック・英語サンセリフ */
-html body.theme-sepia {
-  background: #fdf6e3 !important;
-  color: #3b2f2f !important;
-  font-family: "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",
-               "Segoe UI","Helvetica Neue",Arial,sans-serif !important;
-  line-height: 1.9 !important;
-  font-size: 1.05em !important;
-}
-
-/* 見出し：青字・左寄せ（下線なし） */
-html body.theme-sepia h1,
-html body.theme-sepia h2,
-html body.theme-sepia h3 {
-  color: #003366 !important;
-  font-weight: 700 !important;
-  border-bottom: none !important;
-  text-align: left !important;
-}
-html body.theme-sepia h1 { font-size: 2em !important; margin-bottom: .8em !important; }
-html body.theme-sepia h2 { font-size: 1.5em !important; margin-top: 1.6em !important; }
-html body.theme-sepia h3 { font-size: 1.2em !important; margin-top: 1.2em !important; }
-
-/* リンク：太字＋下線（やや小さめ） */
-html body.theme-sepia a {
-  color: #0066cc !important;
-  font-weight: 600 !important;
-  font-size: .95em !important;
-  text-decoration: underline !important;
-}
-html body.theme-sepia a:hover { color: #004c99 !important; }
-
-/* 表：ヘッダー薄茶／外枠2px／セル1.5px／ストライプ（Portal Fix と同じ） */
-html body.theme-sepia table {
-  border-collapse: collapse !important;
-  width: 100% !important;
-  margin-top: 1em !important;
-  font-size: 1em !important;
-  border: 2px solid #999 !important;
-}
-html body.theme-sepia th {
-  background: #e9ddc9 !important;
-  color: #2b2b2b !important;
-  border: 2px solid #999 !important;
-  font-weight: 700 !important;
-  text-align: left !important;
-  padding: .8em 1em !important;
-}
-html body.theme-sepia td {
-  border: 1.5px solid #bbb !important;
-  color: #2b2b2b !important;
-  padding: .8em 1em !important;
-}
-html body.theme-sepia tr:nth-child(odd)  td { background: #ffffff !important; }
-html body.theme-sepia tr:nth-child(even) td { background: #f3efe6 !important; }
-
-/* 引用：落ち着いた青アクセント（Portalと同じ） */
-html body.theme-sepia blockquote {
-  background: #fbf6eb !important;
-  border-left: 4px solid #007acc !important;
-  color: #3a3028 !important;
-  padding: .8em 1em !important;
-  margin: 1em 0 !important;
+  pre, code, blockquote {
+    background: #fff;
+    border-color: #000;
+  }
 }
