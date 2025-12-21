@@ -82,43 +82,6 @@ title: EduController/README.md
 | **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/matlab_tools/)  [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) | **Simulinkによる可視化**、**Cコード生成**、**HDL設計**への展開。<br>*Visualization in Simulink, C code generation, HDL design.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
 | **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) | **FSM・PID・LLM制御テンプレート**、**Verilog生成**、**テストベンチ検証**。<br>*FSM, PID, LLM control templates, Verilog generation, testbench verification.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) |
 
-#### 🧭 利用フロー概要 / Usage Flow Overview
-
-このツール群は **モデル設計からRTL検証まで** を一気通貫でサポートします。  
-**Cの出所は2系統**（Simulink生成C / 手書きC）を想定し、**PID/FSM/LLM制御ロジック**を**統合してHDL化**できます。  
-*These tools provide an end-to-end flow from **model design to RTL verification**.  
-Two types of C sources are supported (C generated from Simulink / handwritten C), enabling **integration of PID/FSM/LLM control logic into HDL**.*
-
-1. **Simulink または 手書きC (matlab_tools/ など)**  
-   - Simulinkでモデルを作成して**固定小数点C**を生成、または  
-     FSM／LLM制御用の**手書きC関数**（ステップ関数形式）を用意。  
-   *Create a model in Simulink and generate **fixed-point C code**, or  
-   prepare **handwritten C step functions** for FSM/LLM control.*
-
-2. **Cコード → HDL (SoC_DesignKit_by_ChatGPT/)**  
-   - C関数（PID / FSM / LLM制御カーネル など）をテンプレートにマッピングし、  
-     **Verilog/SystemVerilog** と **テストベンチ**を自動生成。  
-   - 複数のC機能を**同一SoC内に統合**可能（例：PID + FSM + LLM制御I/F）。  
-   *Map C functions (PID / FSM / LLM kernels, etc.) to templates,  
-   and automatically generate **Verilog/SystemVerilog** plus **testbenches**.  
-   Multiple C modules can be **integrated within the same SoC** (e.g., PID + FSM + LLM I/F).*
-
-3. **シミュレーション & 検証**  
-   - 自動生成テストベンチで **C実装とRTLの一致**を確認。  
-   - 必要に応じて合成し、**FPGA/ASICフロー**へ展開可能。  
-   *Verify functional equivalence between **C implementation and RTL** using the auto-generated testbench.  
-   Then proceed to synthesis and deployment in **FPGA/ASIC flows** as needed.*
-
-```mermaid
-flowchart TB
-    A[Simulinkモデル / Simulink Model] --> B[Cコード（固定小数点） / C fixed-point]
-    A2[手書きC: FSM・LLM制御 / Handwritten C: FSM・LLM control] --> B
-    B --> C[SoC_DesignKit_by_ChatGPT テンプレート適用 / Template Mapping]
-    C --> D[RTL生成 : Verilog / SystemVerilog]
-    D --> E[テストベンチ検証 / Testbench & Simulation]
-    E --> F[FPGA・ASIC合成 / FPGA & ASIC Synthesis]
-```
-
 ---
 
 ## 🔗 **関連プロジェクト | Related Projects**
