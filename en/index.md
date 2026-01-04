@@ -85,7 +85,7 @@ title: EduController/en/index.md
 
 | Project | Links | Description |
 |---------|-------|-------------|
-| 🎓 **Edusemi-v4x** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | Semiconductor design & process education (Python, sky130, OpenLane)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
+| 🎓 **Edusemi-v4x** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/en/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | Semiconductor design & process education (Python, sky130, OpenLane)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
 
 ---
 
