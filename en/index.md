@@ -8,7 +8,7 @@ title: EduController/en/index.md
 # 🎛️ **EduController: Educational Framework for Control Theory and AI Control**  
 
 [![Back to Samizo-AITL Portal](https://img.shields.io/badge/Back%20to%20Samizo--AITL%20Portal-brightgreen)](https://samizo-aitl.github.io/en/)  
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/EduController/#-ライセンス--license)
 
 ---
 
@@ -49,7 +49,7 @@ title: EduController/en/index.md
 | **Part 02** | **Modern Control Theory**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part02_modern/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part02_modern) | Covers **state-space representation**, **controllability**, **observability**, **pole placement**, and **observer design**. |
 | **Part 03** | **Adaptive & Robust Control**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part03_adaptive/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part03_adaptive) | **MRAC**, **H∞ control**, **L1 control** for robustness against parameter variations and disturbances. |
 | **Part 04** | **Digital Control & Signal Processing**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part04_digital/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part04_digital) | **Z-transform**, **discrete PID**, **digital filter design** for implementation. |
-| **Part 05** | **Implementation & Applications**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part05_practical/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part05_practical) | **Python implementation**, **ROS practice**, **FPGA-based control** for real systems. [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
+| **Part 05** | **Implementation & Applications**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part05_practical/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part05_practical) | **Python implementation**, **ROS practice**, **FPGA-based control** for real systems. |
 
 ---
 
@@ -67,8 +67,8 @@ title: EduController/en/index.md
 
 | **Chapter** | **Title** | **Summary** |
 |-------------|-----------|-------------|
-| **Part 09** | **Hybrid Control with LLM Integration**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part09_llm_hybrid) | Three-layer architecture (**FSM×PID×LLM**) for next-gen control. [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
-| **Part 10** | **Integrated Control of Inverted Pendulum**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part10_pendulum/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part10_pendulum) | Integrated **PID**, **LQR**, **RL**, and **HDL implementation** for inverted pendulum control. [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
+| **Part 09** | **Hybrid Control with LLM Integration**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part09_llm_hybrid/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part09_llm_hybrid) | Three-layer architecture (**FSM×PID×LLM**) for next-gen control. |
+| **Part 10** | **Integrated Control of Inverted Pendulum**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/part10_pendulum/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/part10_pendulum) | Integrated **PID**, **LQR**, **RL**, and **HDL implementation** for inverted pendulum control. |
 
 ---
 
@@ -76,8 +76,8 @@ title: EduController/en/index.md
 
 | **Directory** | **Summary** |
 |---------------|-------------|
-| **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/matlab_tools/)  [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) | *Visualization in Simulink, C code generation, HDL design.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
-| **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) | *FSM, PID, LLM control templates, Verilog generation, testbench verification.* [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
+| **matlab_tools/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/matlab_tools/)  [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/matlab_tools) | *Visualization in Simulink, C code generation, HDL design.*|
+| **SoC_DesignKit_by_ChatGPT/**<br>[![View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/EduController/SoC_DesignKit_by_ChatGPT/) [![View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/EduController/tree/main/SoC_DesignKit_by_ChatGPT) | *FSM, PID, LLM control templates, Verilog generation, testbench verification.* |
 
 ---
 
@@ -85,7 +85,7 @@ title: EduController/en/index.md
 
 | Project | Links | Description |
 |---------|-------|-------------|
-| 🎓 **Edusemi-v4x** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/en/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | Semiconductor design & process education (Python, sky130, OpenLane)<br>[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) |
+| 🎓 **Edusemi-v4x** | [![🌐 View Site](https://img.shields.io/badge/View-Site-brightgreen?logo=github)](https://samizo-aitl.github.io/Edusemi-v4x/en/) [![💻 View Repo](https://img.shields.io/badge/View-Repo-blue?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x) | Semiconductor design & process education (Python, sky130, OpenLane) |
 
 ---
 
@@ -100,16 +100,16 @@ title: EduController/en/index.md
 ---
 
 ## 📄 **License**
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/EduController/#-ライセンス--license)
+> Adopts a hybrid licensing model according to the nature of the materials, code, and diagrams.  
+> *Hybrid licensing based on the nature of the materials, code, and diagrams.*
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
-
-> **The default license is MIT**, but the following specific directories/materials use a **Hybrid License**.  
-> *The default license is MIT, but specific directories/materials adopt a Hybrid License.*
-
-| **📌 Item** | **License** | **Description** |
-|-------------|-------------|-----------------|
-| **Default** | **[MIT License](https://opensource.org/licenses/MIT)** | Free to use, modify, and redistribute |
-| **Hybrid Scope** | [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-license) <br>Part05, Part09, Part10, matlab_tools, SoC_DesignKit_by_ChatGPT | Depending on the nature of the materials, code, and diagrams, applies **[MIT License](https://opensource.org/licenses/MIT)** / **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** / **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)** / **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** |
+| 📌 Item | License | Description |
+|------|------|------|
+| **Code** | [**MIT License**](https://opensource.org/licenses/MIT) | Free to use, modify, and redistribute |
+| **Text materials** | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/) or [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/) | Attribution required, share-alike for BY-SA |
+| **Figures & diagrams** | [**CC BY-NC 4.0**](https://creativecommons.org/licenses/by-nc/4.0/) | Non-commercial use only |
+| **External references** | Follow the original license | Cite the original source |
 
 ---
 
