@@ -81,22 +81,7 @@ gtkwave wave.vcd
 |------|------|
 | **著者 / Author** | **三溝 真一**（Shinichi Samizo） |
 | **💻 GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
-
----
-
-## 📄 **ライセンス / License**
-
-> 教材・コード・図表の性質に応じた **ハイブリッドライセンス** を採用  
-> *Hybrid licensing based on the nature of materials, code, and diagrams.*
-
-| **項目 / Item** | **ライセンス / License** | **説明 / Description** |
-|-----------------|---------------------------|-------------------------|
-| **コード / Code** | [MIT License](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布可 / Free to use, modify, and redistribute |
-| **教材テキスト / Text Materials** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 著者表示必須 / Attribution required |
-| **図表・イラスト / Figures & Diagrams** | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ可 / Non-commercial use only |
-| **外部引用 / External References** | 元ライセンスに従う / Follow the original license | 引用元を明記 / Cite the original source |
-
-**MIT & Hybrid License © 2025 [Shinichi Samizo](https://github.com/Samizo-AITL)**  
+| **📜 ライセンス / License** | [![Hybrid License](https://img.shields.io/badge/License-Hybrid-blueviolet?style=for-the-badge)](https://samizo-aitl.github.io/EduController/#-ライセンス--license)<br>コード / Code: [MIT](https://opensource.org/licenses/MIT)<br>教材テキスト / Text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)<br>図表 / Figures: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) |
 
 ---
 
