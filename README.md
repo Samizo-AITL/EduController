@@ -103,16 +103,16 @@ title: EduController/README.md
 ---
 
 ## 📄 **ライセンス | License**
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/Edusemi-v4x/#-ライセンス--license)
+> 教材・コード・図表の性質に応じたハイブリッドライセンスを採用。  
+> *Hybrid licensing based on the nature of the materials, code, and diagrams.*
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
-
-> **基本ライセンスは MIT** とし、以下の一部ディレクトリ・教材は **ハイブリッドライセンス** を採用します。  
-> *The default license is MIT, but specific directories/materials use a Hybrid License.*
-
-| **📌 項目 / Item** | **ライセンス / License** | **説明 / Description** |
-|--------------------|--------------------------|------------------------|
-| **基本 / Default** | **[MIT License](https://opensource.org/licenses/MIT)** | 自由に使用・改変・再配布可能 |
-| **ハイブリッド対象 / Hybrid Scope** | [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](#-ライセンス--license) <br>Part05, Part09, Part10, matlab_tools, SoC_DesignKit_by_ChatGPT | 教材・コード・図表の性質に応じて **[MIT License](https://opensource.org/licenses/MIT)** / **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** / **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)** / **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** を適用 |
+| 📌 項目 / Item | ライセンス / License | 説明 / Description |
+|------|------|------|
+| **コード（Code）** | [**MIT License**](https://opensource.org/licenses/MIT) | 自由に使用・改変・再配布が可能<br>*Free to use, modify, and redistribute* |
+| **教材テキスト（Text materials）** | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/) または [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/) | 著者表示必須、継承条件あり（BY-SAの場合）<br>*Attribution required, share-alike for BY-SA* |
+| **図表・イラスト（Figures & diagrams）** | [**CC BY-NC 4.0**](https://creativecommons.org/licenses/by-nc/4.0/) | 非商用利用のみ許可<br>*Non-commercial use only* |
+| **外部引用（External references）** | 元ライセンスに従う<br>*Follow the original license* | 引用元を明記<br>*Cite the original source* |
 
 ---
 
