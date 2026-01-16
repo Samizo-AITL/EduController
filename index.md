@@ -3,13 +3,8 @@ layout: clean
 title: EduController/README.md
 ---
 
----
-
 # 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**  
 **EduController: Educational Framework for Control Theory and AI Control**
-
-[![Samizo-AITLポータルサイトに戻る](https://img.shields.io/badge/Samizo--AITL%20ポータルサイトに戻る-brightgreen)](https://samizo-aitl.github.io/)  
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/EduController/#-ライセンス--license)
 
 ---
 
