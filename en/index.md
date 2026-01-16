@@ -3,12 +3,7 @@ layout: clean
 title: EduController/en/index.md
 ---
 
----
-
 # 🎛️ **EduController: Educational Framework for Control Theory and AI Control**  
-
-[![Back to Samizo-AITL Portal](https://img.shields.io/badge/Back%20to%20Samizo--AITL%20Portal-brightgreen)](https://samizo-aitl.github.io/en/)  
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/EduController/#-ライセンス--license)
 
 ---
 
