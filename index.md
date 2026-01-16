@@ -3,12 +3,12 @@ layout: clean
 title: EduController/README.md
 ---
 
-# 🎛️ **EduController：制御理論とAI制御の教育フレームワーク**  
-**EduController: Educational Framework for Control Theory and AI Control**
+# 🎛️ EduController：制御理論とAI制御の教育フレームワーク 
+*EduController: Educational Framework for Control Theory and AI Control*
 
 ---
 
-## 🔗 **公式リンク | Official Links**
+## 🔗 公式リンク | Official Links
 
 | **言語 / Language** | **GitHub Pages 🌐** | **GitHub 💻** |
 |---------------------|--------------------|---------------|
@@ -17,7 +17,7 @@ title: EduController/README.md
 
 ---
 
-## 📘 **概要 | Overview**
+## 📘 概要 | Overview
 
 **JP:**  
 **EduController** は、**古典制御**から**現代制御**、さらに **AI ベースの次世代型制御**までを体系的に学べる、**段階的かつ実践的な教材プロジェクト**です。Python による制御理論の直感的理解から **HDL 記述**、**LLM 統合設計**まで幅広くサポートします。  
@@ -27,7 +27,7 @@ title: EduController/README.md
 
 ---
 
-## 🧭 **構成概要 | Structure Overview**
+## 🧭 構成概要 | Structure Overview
 
 | **系統 / Track** | **内容（JP）** | **Overview (EN)** |
 |------------------|---------------|-------------------|
@@ -37,9 +37,9 @@ title: EduController/README.md
 
 ---
 
-## 📚 **章構成一覧 | Chapter Structure**
+## 📚 章構成一覧 | Chapter Structure
 
-### 🎛️ **制御理論系 / Classical & Modern Control**
+### 🎛️ 制御理論系 / Classical & Modern Control
 
 | **Chapter** | **Title** | **Summary** |
 |-------------|-----------|-------------|
@@ -51,7 +51,7 @@ title: EduController/README.md
 
 ---
 
-### 🤖 **AI制御系 / AI-based Control**
+### 🤖 AI制御系 / AI-based Control
 
 | **Chapter** | **Title** | **Summary** |
 |-------------|-----------|-------------|
@@ -61,7 +61,7 @@ title: EduController/README.md
 
 ---
 
-### 🧠 **統合・応用制御系 / Integrated Control**
+### 🧠 統合・応用制御系 / Integrated Control
 
 | **Chapter** | **Title** | **Summary** |
 |-------------|-----------|-------------|
@@ -70,7 +70,7 @@ title: EduController/README.md
 
 ---
 
-### 🔩 **実装支援ツール / Implementation Toolkit**
+### 🔩 実装支援ツール / Implementation Toolkit
 
 | **ディレクトリ** | **概要 / Summary** |
 |------------------|--------------------|
@@ -79,7 +79,7 @@ title: EduController/README.md
 
 ---
 
-## 🔗 **関連プロジェクト | Related Projects**
+## 🔗 関連プロジェクト | Related Projects
 
 | プロジェクト | リンク | 概要 |
 |--------------|--------|------|
@@ -87,7 +87,7 @@ title: EduController/README.md
 
 ---
 
-## 👤 **執筆者情報 / Author**
+## 👤 執筆者情報 / Author
 
 | **📌 項目 / Item** | **内容 / Details** |
 |--------------------|--------------------|
@@ -97,7 +97,7 @@ title: EduController/README.md
 
 ---
 
-## 📄 **ライセンス | License**
+## 📄 ライセンス | License
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/EduController/#-ライセンス--license)
 > 教材・コード・図表の性質に応じたハイブリッドライセンスを採用。  
 > *Hybrid licensing based on the nature of the materials, code, and diagrams.*
@@ -111,7 +111,7 @@ title: EduController/README.md
 
 ---
 
-## 💬 **フィードバック | Feedback**
+## 💬 フィードバック | Feedback
 
 > 改善提案や議論は **GitHub Discussions** からお願いします。  
 > *Propose improvements or start discussions via GitHub Discussions.*
