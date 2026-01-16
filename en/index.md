@@ -3,11 +3,11 @@ layout: clean
 title: EduController/en/index.md
 ---
 
-# 🎛️ **EduController: Educational Framework for Control Theory and AI Control**  
+# 🎛️ EduController: Educational Framework for Control Theory and AI Control
 
 ---
 
-## 🔗 **Official Links**
+## 🔗 Official Links
 
 | **Language** | **GitHub Pages 🌐** | **GitHub 💻** |
 |--------------|--------------------|---------------|
@@ -17,14 +17,14 @@ title: EduController/en/index.md
 
 ---
 
-## 📘 **Overview**
+## 📘 Overview
 
 **EN:**  
 **EduController** is a **step-by-step**, **practical educational project** that covers **classical control**, **modern control**, and **AI-based next-generation control**. It supports a wide range of topics from intuitive understanding of control theory in Python to **HDL coding** and **LLM-integrated design**.
 
 ---
 
-## 🧭 **Structure Overview**
+## 🧭 Structure Overview
 
 | **Track** | **Overview (EN)** |
 |-----------|-------------------|
@@ -34,9 +34,9 @@ title: EduController/en/index.md
 
 ---
 
-## 📚 **Chapter Structure**
+## 📚 Chapter Structure
 
-### 🎛️ **Control Theory Track / Classical & Modern Control**
+### 🎛️ Control Theory Track / Classical & Modern Control
 
 | **Chapter** | **Title** | **Summary** |
 |-------------|-----------|-------------|
@@ -48,7 +48,7 @@ title: EduController/en/index.md
 
 ---
 
-### 🤖 **AI Control Track / AI-based Control**
+### 🤖 AI Control Track / AI-based Control
 
 | **Chapter** | **Title** | **Summary** |
 |-------------|-----------|-------------|
@@ -58,7 +58,7 @@ title: EduController/en/index.md
 
 ---
 
-### 🧠 **Integrated & Applied Control Track / Integrated Control**
+### 🧠 Integrated & Applied Control Track / Integrated Control
 
 | **Chapter** | **Title** | **Summary** |
 |-------------|-----------|-------------|
@@ -67,7 +67,7 @@ title: EduController/en/index.md
 
 ---
 
-### 🔩 **Implementation Toolkit**
+### 🔩 Implementation Toolkit
 
 | **Directory** | **Summary** |
 |---------------|-------------|
@@ -76,7 +76,7 @@ title: EduController/en/index.md
 
 ---
 
-## 🔗 **Related Projects**
+## 🔗 Related Projects
 
 | Project | Links | Description |
 |---------|-------|-------------|
@@ -84,7 +84,7 @@ title: EduController/en/index.md
 
 ---
 
-## 👤 **Author**
+## 👤 Author
 
 | **Item** | **Details** |
 |----------|-------------|
@@ -94,7 +94,7 @@ title: EduController/en/index.md
 
 ---
 
-## 📄 **License**
+## 📄 License
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/EduController/#-ライセンス--license)
 > Adopts a hybrid licensing model according to the nature of the materials, code, and diagrams.  
 > *Hybrid licensing based on the nature of the materials, code, and diagrams.*
@@ -108,7 +108,7 @@ title: EduController/en/index.md
 
 ---
 
-## 💬 **Feedback**
+## 💬 Feedback
 
 > Propose improvements or start discussions via **GitHub Discussions**.
 
