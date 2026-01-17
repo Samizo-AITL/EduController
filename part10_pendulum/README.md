@@ -55,7 +55,8 @@ permalink: /part10_pendulum/
 
 1. [10-1_model.md](./10-1_model.md)  
 2. [10-2_pid_limit.md](./10-2_pid_limit.md)  
-3. [10-3_fsm_overlay.md](./10-3_fsm_overlay.md)  
+3. [10-3_fsm_overlay.md](./10-3_fsm_overlay.md)
+4. [10-4_Example.md](./10-4_Example.md)  
 
 途中の章を飛ばすと、結論を誤解する。
 
