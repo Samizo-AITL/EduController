@@ -1,5 +1,7 @@
 ---
+layout: clean
 title: Part10-4 Example
+permalink: /part10_pendulum/10-4_Exmple.html
 ---
 
 # 10-4：設計上の実例 / Practical Examples
