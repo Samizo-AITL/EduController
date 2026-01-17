@@ -4,22 +4,39 @@ title: 📉 10-2 PID制御の限界：なぜ倒立振子は安定しないのか
 permalink: /part10_pendulum/10-2_pid_limit.html
 ---
 
-# 10-2 PID制御の限界  
-## なぜ倒立振子は安定しないのか
-
-本章では、**10-1で得た線形モデル**に対して  
-「PID制御だけで何が起きるか」を **逃げずに示す**。
-
-結論は先に書く。
-
-> **倒立振子は、PIDでは「たまたま立つ」ことはあっても、  
-> 安定性を保証できない。**
+# 📉 10-2 PID制御の限界  
+## なぜ倒立振子は安定しないのか  
+*Limits of PID Control: Why the Inverted Pendulum Cannot Be Stabilized*
 
 ---
 
-## 1. 対象モデル（再掲）
+## 📌 本章のスタンス  
+*Position of This Chapter*
 
-状態：
+本章では、**10-1 で導出した線形モデル**に対して、  
+「**PID制御だけを適用すると何が起きるのか**」を  
+**ごまかさず、逃げずに示します。**
+
+*In this chapter, we honestly examine what happens when only PID control is applied to the linearized model derived in 10-1.*
+
+最初に、結論を明示します。
+
+*The conclusion is stated upfront.*
+
+> **倒立振子は、PID制御で  
+> 「たまたま立つ」ことはあっても、  
+> 安定性を保証することはできない。**
+
+> *With PID control, an inverted pendulum may stand “by chance,”  
+> but its stability cannot be guaranteed.*
+
+---
+
+## 1️⃣ 対象モデル（再掲）  
+*Target Model (Recap)*
+
+### 状態変数  
+*State Vector*
 
 $$
 \mathbf{x}=
@@ -31,7 +48,8 @@ x \\
 \end{bmatrix}
 $$
 
-線形化モデル：
+### 線形化モデル  
+*Linearized Model*
 
 $$
 \dot{\mathbf{x}} = A\mathbf{x} + B u
@@ -57,44 +75,59 @@ $$
 
 ---
 
-## 2. 制御対象の本質（不安定極）
+## 2️⃣ 制御対象の本質：不安定極  
+*Essence of the Plant: Unstable Pole*
 
-角度系だけを抜き出すと：
+角度系のみを抜き出すと、次式になります。
+
+*Extracting only the angular dynamics yields:*
 
 $$
 \ddot{\theta} =
 \frac{(M+m)g}{lM}\theta - \frac{1}{lM}u
 $$
 
-制御入力が無い場合：
+制御入力が存在しない場合：
+
+*Without control input:*
 
 $$
 \ddot{\theta} =
 \frac{(M+m)g}{lM}\theta
 $$
 
-これは
+この解は、
+
+*The solution behaves as:*
 
 $$
 \theta(t) \sim e^{\lambda t}, \quad
 \lambda = \sqrt{\frac{(M+m)g}{lM}} > 0
 $$
 
-すなわち **指数発散系**である。
+すなわち、**指数的に発散する系**です。
 
-→ **元々不安定**
+*That is, the system is exponentially unstable.*
+
+➡️ **元々不安定な対象である**  
+*➡️ The plant is inherently unstable.*
 
 ---
 
-## 3. PID制御の構成
+## 3️⃣ PID制御の構成  
+*PID Control Structure*
 
-角度のみを制御対象とし，
+角度のみを制御対象とし、誤差を定義します。
+
+*The control target is the angle only.*
 
 $$
 e(t) = \theta_{\text{ref}} - \theta(t)
 $$
 
-PID制御則：
+PID制御則は次式です。
+
+*The PID control law is:*
 
 $$
 u(t) =
@@ -103,7 +136,9 @@ K_p e(t)
 + K_d \frac{de(t)}{dt}
 $$
 
-直立保持なので：
+直立保持問題では、
+
+*For upright stabilization:*
 
 $$
 \theta_{\text{ref}} = 0
@@ -111,70 +146,99 @@ $$
 
 ---
 
-## 4. PIDを入れても何が起きるか
+## 4️⃣ PIDを入れても何が起きるか  
+*What Actually Happens with PID*
 
-### 4.1 理想連続時間（幻想）
+### 4.1 🌈 理想連続時間（幻想）  
+*Ideal Continuous-Time World (Fantasy)*
 
-- 微分はノイズ無し
-- 飽和無し
-- 遅延無し
+- ノイズ無し  
+- 飽和無し  
+- 遅延無し  
 
-この **理想世界** では、  
-適切な $$K_p, K_d$$ を選べば **一応安定** する。
+*No noise, no saturation, no delay.*
 
-👉 しかしこれは **教材として意味が無い**。
+この **理想世界** では、
+
+*In this idealized world,*
+
+- 適切な \(K_p, K_d\) を選べば  
+- **一応は安定** します  
+
+*the system can be stabilized by tuning gains.*
+
+👉 しかし、**これは現実の制御ではありません。**  
+*👉 This has little educational or practical value.*
 
 ---
 
-### 4.2 現実1：入力飽和
+### 4.2 ⚠️ 現実1：入力飽和  
+*Reality 1: Input Saturation*
 
-実機では：
+実機では、必ず制約があります。
+
+*Real systems always have limits.*
 
 $$
 |u| \le u_{\max}
 $$
 
-倒れ始めると：
+角度が大きくなると、
+
+*As the angle grows:*
 
 $$
 K_p \theta \gg u_{\max}
 $$
 
-となり、
+結果として、
+
+*As a result:*
 
 $$
 u \rightarrow \text{飽和}
 $$
 
-→ **線形設計が即破綻**
+➡️ **線形設計は即座に破綻**  
+*➡️ Linear control assumptions collapse immediately.*
 
 ---
 
-### 4.3 現実2：微分項のノイズ増幅
+### 4.3 📡 現実2：微分項のノイズ増幅  
+*Reality 2: Noise Amplification by Derivative Term*
+
+微分項
+
+*The derivative term*
 
 $$
 K_d \dot{\theta}
 $$
 
-は
+は、以下を **そのまま増幅** します。
 
-- センサノイズ
-- 量子化誤差
-- サンプリング遅延
+*directly amplifies:*
 
-を **そのまま増幅** する。
+- センサノイズ  
+- 量子化誤差  
+- サンプリング遅延  
 
-結果：
+結果として：
 
-- 制御入力が振動
-- 実効的に $$K_d$$ を下げざるを得ない
-- 位相余裕が消える
+*This leads to:*
+
+- 制御入力の振動  
+- 実効的に \(K_d\) を下げざるを得ない  
+- 位相余裕の消失  
 
 ---
 
-### 4.4 現実3：離散時間化
+### 4.4 ⏱ 現実3：離散時間化  
+*Reality 3: Discretization*
 
-サンプリング周期 $$T_s$$ を導入すると，
+サンプリング周期 \(T_s\) を導入すると、
+
+*With sampling period \(T_s\):*
 
 $$
 u[k] =
@@ -183,9 +247,13 @@ K_p e[k]
 + K_d \frac{e[k]-e[k-1]}{T_s}
 $$
 
-ここで重要なのは：
+ここで致命的なのは、
 
-> **倒立振子の発散速度は速い**
+*The critical issue is:*
+
+> **倒立振子の発散速度は非常に速い**
+
+*The divergence speed of the inverted pendulum is very high.*
 
 $$
 \theta(t+T_s) \approx \theta(t)e^{\lambda T_s}
@@ -197,69 +265,95 @@ $$
 
 となった瞬間、
 
-→ **制御前に倒れる**
+*Once this condition is met:*
+
+➡️ **制御が入る前に倒れる**  
+*➡️ The pendulum falls before control reacts.*
 
 ---
 
-## 5. シミュレーションで起きる典型例
+## 5️⃣ シミュレーションで必ず起きる典型例  
+*Typical Simulation Outcomes*
 
-PID単体で必ず起きるパターン：
+PID単体で必ず観測されるパターン：
 
-1. 小さな初期角  
-   → 立つ
-2. 少し大きな初期角  
-   → 飽和 → 発散
-3. ノイズ追加  
-   → 微分暴走
-4. サンプリング周期増大  
-   → 不安定化
+*Typical behaviors with PID alone:*
 
-**「条件付きでしか成立しない」**
+1. 小さな初期角 → 立つ  
+   *Small initial angle → stable*
+2. やや大きな初期角 → 飽和 → 発散  
+   *Larger angle → saturation → divergence*
+3. ノイズ追加 → 微分暴走  
+   *Noise added → derivative blow-up*
+4. サンプリング周期増大 → 不安定化  
+   *Larger sampling time → instability*
+
+➡️ **条件付きでしか成立しない制御**  
+*➡️ Control works only under limited conditions.*
 
 ---
 
-## 6. ここでの結論（重要）
+## 6️⃣ 本章の結論（重要）  
+*Conclusion of This Chapter*
 
-PIDは：
+PID制御は：
 
-- ❌ 不安定系を根本的に救えない
-- ❌ 動作範囲を自分で判断できない
-- ❌ 飽和・モードを意識できない
+*PID control:*
 
-PIDが悪いのではない。
+- ❌ 不安定系を根本的に救えない  
+- ❌ 動作範囲を自律的に判断できない  
+- ❌ 飽和やモード遷移を扱えない  
+
+PIDが悪いのではありません。
+
+*PID itself is not the problem.*
 
 > **役割を超えた使い方をしている**
 
----
-
-## 7. 次章への必然
-
-ここで自然に出る要求は：
-
-- 大振幅か？
-- 小振幅か？
-- 制御を切り替えるべきか？
-- もう手遅れか？
-
-PIDは **判断できない**。
-
-👉 そこで **FSM（Finite State Machine）** を上に載せる。
+> *It is being used beyond its intended role.*
 
 ---
 
-## 8. 次章予告
+## 7️⃣ 次章への必然  
+*Why the Next Chapter Is Necessary*
 
-**10-3 FSMオーバレイ制御**
+ここで、自然に次の問いが生まれます。
 
-- PIDはそのまま
-- 上位で「使い分けるだけ」
-- **それでも効かないケースも、正直に出す**
+*This naturally raises new questions:*
+
+- 今は大振幅か？  
+- 小振幅か？  
+- 制御を切り替えるべきか？  
+- もう回復不能か？  
+
+PIDは **これらを判断できません。**
+
+*PID cannot make these decisions.*
+
+➡️ そこで、**FSM（Finite State Machine）** を  
+**PIDの上位に載せます。**
+
+*➡️ This motivates introducing an FSM above PID.*
 
 ---
 
-## チェックリスト
+## 8️⃣ 次章予告  
+*Preview of the Next Chapter*
 
-- [ ] 不安定極を明示した
-- [ ] PIDの幻想と現実を切った
-- [ ] 飽和・離散化を外さなかった
-- [ ] FSM導入の必然を作った
+### **10-3 FSMオーバレイ制御**
+
+- PIDは捨てない  
+- 上位で「使い分けるだけ」  
+- **それでも効かないケースも正直に示す**
+
+*PID remains, FSM supervises, and remaining limitations are openly discussed.*
+
+---
+
+## ✅ チェックリスト  
+*Checklist*
+
+- [x] 不安定極を明示した  
+- [x] PIDの幻想と現実を切り分けた  
+- [x] 飽和・離散化を外さなかった  
+- [x] FSM導入の必然を構造的に示した  
