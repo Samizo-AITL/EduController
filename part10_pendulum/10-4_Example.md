@@ -23,7 +23,7 @@ title: Part10-4 Example
 ### 観測される挙動
 - 小角近似が成立する  
 - 状態は線形近似モデルで十分に表現できる  
-- PID 制御により安定化が可能
+- PID 制御により安定化が可能  
 
 ### 設計上の意味
 - PID が「強い」のではない  
@@ -53,10 +53,14 @@ title: Part10-4 Example
 
 ### 構造例（概念）
 
-- Swing-Up  
-- Capture  
-- Balance（PID）  
-- Emergency Stop  
+```mermaid
+stateDiagram-v2
+    [*] --> SwingUp
+    SwingUp --> Capture
+    Capture --> Balance
+    Balance --> EmergencyStop
+    EmergencyStop --> SwingUp
+```
 
 ### 観測される変化
 - PID を使用する状態が明確に限定される  
