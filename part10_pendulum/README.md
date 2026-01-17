@@ -92,14 +92,6 @@ permalink: /part10_pendulum/
 
 ---
 
-## 🔗 **関連リンク / Related Links**
-
-- 📚 [EduController トップへ戻る / Back to EduController Home](https://samizo-aitl.github.io/EduController/)  
-- 🤖 [AITL-H: FSM × PID × LLM アーキテクチャ](https://github.com/Samizo-AITL/AITL-H)  
-- ✏️ [SamizoGPT: ChatGPT プロンプト集](https://github.com/Samizo-AITL/SamizoGPT)
-
----
-
 ## 👤 **著者・ライセンス | Author & License**
 
 | 📌 項目 / Item | 📄 内容 / Details |
