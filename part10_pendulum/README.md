@@ -45,6 +45,7 @@ permalink: /part10_pendulum/
 | [10-1_model.md](./10-1_model.md) | 倒立振子の非線形モデル、線形化、状態空間表現 |
 | [10-2_pid_limit.md](./10-2_pid_limit.md) | PID制御が成立する条件と、成立しない理由 |
 | [10-3_fsm_overlay.md](./10-3_fsm_overlay.md) | FSMを被せた場合の改善点と限界 |
+| [10-4_Example.md](./10-4_Example.md) | 設計上の実例（成立条件と破綻条件の整理） |
 
 ---
 
