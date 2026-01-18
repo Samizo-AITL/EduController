@@ -70,7 +70,6 @@ gtkwave wave.vcd
 ## 📘 **関連リンク / Related Links**
 
 - [EduController](https://samizo-aitl.github.io/EduController/) — 本体教材（Part05/09連動）<br>*Main materials (linked with Part05/09)*  
-- [SamizoGPT](https://samizo-aitl.github.io/SamizoGPT/) — プロンプト生成支援<br>*Prompt generation support*  
 - [`execution_logs/`](execution_logs/) — 実行ログ<br>*Execution logs*  
 
 ---
