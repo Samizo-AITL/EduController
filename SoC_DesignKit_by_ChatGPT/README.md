@@ -1,12 +1,12 @@
 ---
 layout: clean
-title: SoC_DesignKit_by_ChatGPT
+title: SoC_DesignKit
 permalink: /SoC_DesignKit_by_ChatGPT/
 ---
 
 ---
 
-# 🧩 **SoC_DesignKit_by_ChatGPT**
+# 🧩 **SoC_DesignKit**
 
 ---
 
