@@ -6,6 +6,8 @@ title: EduController/README.md
 # 🎛️ EduController：制御理論とAI制御の教育フレームワーク 
 *EduController: Educational Framework for Control Theory and AI Control*
 
+[![Back to Portal](https://img.shields.io/badge/Back%20to%20Portal-0B5FFF?style=for-the-badge&logo=homeassistant&logoColor=white)](https://samizo-aitl.github.io/portal/)
+
 ---
 
 ## 🔗 公式リンク | Official Links
