@@ -21,7 +21,6 @@ title: EduController/en/index.md
 
 ## 📘 Overview
 
-**EN:**  
 **EduController** is a **step-by-step**, **practical educational project** that covers **classical control**, **modern control**, and **AI-based next-generation control**. It supports a wide range of topics from intuitive understanding of control theory in Python to **HDL coding** and **LLM-integrated design**.
 
 ---
